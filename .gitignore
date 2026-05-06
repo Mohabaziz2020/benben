@@ -1,26 +1,42 @@
-# SYSTEM
-.obsidian/workspace.json
-.obsidian/cache
-.obsidian/workspaces.json
+# =========================================
+# BENBENHUB — GITIGNORE
+# =========================================
 
-# OS
+# OBSIDIAN UI STATE
+.obsidian/workspace.json
+.obsidian/workspaces.json
+.obsidian/cache/
+
+# LOCAL OS FILES
 Thumbs.db
 Desktop.ini
 
-# TEMP
+# TEMP FILES
 *.tmp
 *.log
+
+# PYTHON
+__pycache__/
+*.pyc
+
+# NODE
+node_modules/
+
+# ENV FILES
+.env
+.env.local
+.env.production
+
+# RUNTIME SECRETS
+98_RUNTIME/SECRETS/
 
 # BACKUPS
 backup/
 temp/
 
-# NODE
-node_modules/
+# IDE
+.vscode/
+.idea/
 
-# PYTHON
-__pycache__/
-
-# ENV
-.env
-.env.local
+# SYSTEM
+.DS_Store
