@@ -1,0 +1,26 @@
+# SYSTEM
+.obsidian/workspace.json
+.obsidian/cache
+.obsidian/workspaces.json
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# TEMP
+*.tmp
+*.log
+
+# BACKUPS
+backup/
+temp/
+
+# NODE
+node_modules/
+
+# PYTHON
+__pycache__/
+
+# ENV
+.env
+.env.local
