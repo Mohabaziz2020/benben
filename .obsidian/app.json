@@ -1,4 +1,8 @@
 {
+  "newFileLocation": "folder",
+  "newFileFolderPath": "00_ROOT_DASHBOARD/INBOX",
+  "alwaysUpdateLinks": true,
+  "showInlineTitle": false,
   "pdfExportSettings": {
     "includeName": true,
     "pageSize": "Letter",

@@ -1,42 +1,64 @@
 # =========================================
-# BENBENHUB — GITIGNORE
+# BB HUB Obsidian â€” .gitignore
 # =========================================
 
-# OBSIDIAN UI STATE
+# --- Obsidian local / volatile UI state ---
 .obsidian/workspace.json
 .obsidian/workspaces.json
+.obsidian/workspace-mobile.json
 .obsidian/cache/
+.obsidian/plugins/*/data.json
+.obsidian/plugins/*/cache/
+.obsidian/plugins/*/.data/
+.obsidian/plugins/*/node_modules/
 
-# LOCAL OS FILES
+# Optional: ignore hotkeys/appearance if you sync settings via Sync only
+# .obsidian/hotkeys.json
+# .obsidian/appearance.json
+
+# --- OS junk ---
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+.DS_Store
+*.lnk
 
-# TEMP FILES
+# --- Temp & logs ---
 *.tmp
+*.temp
+*.swp
+*.swo
+*~
 *.log
 
-# PYTHON
-__pycache__/
-*.pyc
+# --- Secrets & env ---
+.env
+.env.*
+!.env.example
+98_RUNTIME/SECRETS/
+98_RUNTIME/ENV/.env
 
-# NODE
+# --- Backups & scratch ---
+backup/
+backups/
+temp/
+tmp/
+*.bak
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# --- Node ---
 node_modules/
 
-# ENV FILES
-.env
-.env.local
-.env.production
-
-# RUNTIME SECRETS
-98_RUNTIME/SECRETS/
-
-# BACKUPS
-backup/
-temp/
-
-# IDE
+# --- IDE ---
 .vscode/
 .idea/
+*.sublime-*
 
-# SYSTEM
-.DS_Store
+# --- Large / generated (add paths as needed) ---
+# *.pdf
+# *.zip
