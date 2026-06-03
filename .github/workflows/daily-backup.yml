@@ -3,6 +3,11 @@
 # Schedule: 02:00 Africa/Cairo = 00:00 UTC (cron below).
 # Local Obsidian edits must be pushed from your PC first — see:
 #   97_AUTOMATION/SCRIPTS/08_local_vault_backup.ps1
+#
+# --- Failure notifications (optional secrets) ---
+# Telegram (preferred): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+# Email fallback (SMTP):  SMTP_SERVER, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, NOTIFY_EMAIL_TO
+# Setup guide: .github/TELEGRAM_SETUP.md
 
 name: Daily Backup
 
@@ -186,25 +191,168 @@ jobs:
     needs: backup
     if: failure()
     runs-on: ubuntu-latest
+    env:
+      TZ: Africa/Cairo
     steps:
-      - name: Open or update failure issue
+      - name: Collect failure details
+        id: failure
         uses: actions/github-script@v7
         with:
           script: |
             const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const datetime = new Date().toLocaleString('en-GB', {
+              timeZone: 'Africa/Cairo',
+              dateStyle: 'medium',
+              timeStyle: 'short',
+              hour12: false
+            }) + ' (Africa/Cairo)';
+
+            const { data: jobsData } = await github.rest.actions.listJobsForWorkflowRun({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId
+            });
+
+            const failedJobs = jobsData.jobs.filter(j => j.conclusion === 'failure');
+            let errorDetails = 'Unknown error — open the workflow run logs for details.';
+            if (failedJobs.length > 0) {
+              errorDetails = failedJobs.map(job => {
+                const badSteps = (job.steps || []).filter(s => s.conclusion === 'failure');
+                const stepNames = badSteps.map(s => s.name).join(', ') || 'see job logs';
+                return `• ${job.name}: ${stepNames}`;
+              }).join('\n');
+            }
+
+            const repo = `${context.repo.owner}/${context.repo.repo}`;
+            const plainMessage = [
+              'BB HUB Daily Backup Failed',
+              '',
+              `Repo: ${repo}`,
+              `Date & Time: ${datetime}`,
+              '',
+              'Error details:',
+              errorDetails,
+              '',
+              `Failed run: ${runUrl}`
+            ].join('\n');
+
+            core.setOutput('repo', repo);
+            core.setOutput('datetime', datetime);
+            core.setOutput('run_url', runUrl);
+            core.setOutput('error_details', errorDetails);
+            core.setOutput('plain_message', plainMessage);
+
+      - name: Notify via Telegram
+        id: telegram
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPO: ${{ steps.failure.outputs.repo }}
+          DATETIME: ${{ steps.failure.outputs.datetime }}
+          ERROR_DETAILS: ${{ steps.failure.outputs.error_details }}
+          RUN_URL: ${{ steps.failure.outputs.run_url }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "sent=false" >> "$GITHUB_OUTPUT"
+            echo "Telegram secrets not configured (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID)."
+            exit 0
+          fi
+
+          MESSAGE="🔴 *BB HUB Daily Backup Failed*
+
+          📦 *Repo:* \`${REPO}\`
+          🕐 *Date & Time:* ${DATETIME}
+
+          ❌ *Error details:*
+          ${ERROR_DETAILS}
+
+          🔗 [View failed run](${RUN_URL})"
+
+          HTTP_CODE=$(curl -s -o /tmp/tg_response.json -w "%{http_code}" -X POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${MESSAGE}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "disable_web_page_preview=false")
+
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "sent=true" >> "$GITHUB_OUTPUT"
+            echo "Telegram notification sent."
+          else
+            echo "sent=false" >> "$GITHUB_OUTPUT"
+            echo "Telegram API error (HTTP ${HTTP_CODE}):"
+            cat /tmp/tg_response.json
+            exit 1
+          fi
+
+      - name: Check SMTP configured
+        id: smtp_check
+        if: steps.telegram.outputs.sent != 'true'
+        run: |
+          if [ -n "${{ secrets.SMTP_SERVER }}" ] && [ -n "${{ secrets.NOTIFY_EMAIL_TO }}" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Email fallback (SMTP)
+        id: email
+        if: steps.telegram.outputs.sent != 'true' && steps.smtp_check.outputs.configured == 'true'
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "BB HUB Daily Backup Failed — ${{ steps.failure.outputs.repo }}"
+          to: ${{ secrets.NOTIFY_EMAIL_TO }}
+          from: ${{ secrets.SMTP_USERNAME }}
+          secure: true
+          body: |
+            ${{ steps.failure.outputs.plain_message }}
+
+      - name: Email fallback status
+        if: steps.telegram.outputs.sent != 'true'
+        run: |
+          if [ -z "${{ secrets.SMTP_SERVER }}" ] || [ -z "${{ secrets.NOTIFY_EMAIL_TO }}" ]; then
+            echo "SMTP secrets not configured (SMTP_SERVER / NOTIFY_EMAIL_TO)."
+            echo "Fallback: GitHub issue + enable Actions email in profile notifications."
+          elif [ "${{ steps.email.outcome }}" = "success" ]; then
+            echo "Email sent via SMTP."
+          else
+            echo "Email step did not succeed — check SMTP secrets."
+          fi
+
+      - name: Open or update failure issue
+        uses: actions/github-script@v7
+        env:
+          PLAIN_MESSAGE: ${{ steps.failure.outputs.plain_message }}
+          RUN_URL: ${{ steps.failure.outputs.run_url }}
+          TELEGRAM_SENT: ${{ steps.telegram.outputs.sent }}
+        with:
+          script: |
+            const runUrl = process.env.RUN_URL;
             const title = `Daily backup failed — ${new Date().toISOString().slice(0, 10)}`;
+            const notifyNote = process.env.TELEGRAM_SENT === 'true'
+              ? 'Telegram alert sent.'
+              : 'Telegram not sent — configure secrets or SMTP email fallback.';
+
             const body = [
               '## Daily auto-backup workflow failed',
               '',
-              `**Workflow:** \`daily-backup.yml\``,
-              `**Run:** [${context.runId}](${runUrl})`,
+              '```text',
+              process.env.PLAIN_MESSAGE,
+              '```',
               '',
-              '### Checks',
-              '- Repo **Settings → Actions → Workflow permissions** → Read and write',
-              '- Branch protection allows `github-actions[bot]` pushes',
-              '- Run `08_local_vault_backup.ps1` locally so Obsidian edits reach GitHub',
+              `**Notifications:** ${notifyNote}`,
               '',
-              'Enable email alerts: GitHub **Settings → Notifications → Actions**.'
+              '### Setup',
+              '- Telegram: see `.github/TELEGRAM_SETUP.md`',
+              '- GitHub email: profile **Settings → Notifications → Actions**',
+              '',
+              `[Open failed run](${runUrl})`
             ].join('\n');
 
             const { data: openIssues } = await github.rest.issues.listForRepo({
@@ -220,7 +368,7 @@ jobs:
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 issue_number: existing.number,
-                body: `Repeat failure: ${runUrl}`
+                body: `${notifyNote}\n\n${process.env.PLAIN_MESSAGE}\n\n${runUrl}`
               });
               return;
             }
@@ -234,6 +382,16 @@ jobs:
             });
 
       - name: Failure summary
+        if: always()
         run: |
-          echo "## Backup failed" >> "$GITHUB_STEP_SUMMARY"
-          echo "Issue opened with label \`backup-failure\`." >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo "## Backup failed"
+            echo ""
+            echo "| Channel | Status |"
+            echo "|---------|--------|"
+            echo "| Telegram | \`${{ steps.telegram.outputs.sent || 'false' }}\` |"
+            echo "| Email SMTP | \`${{ steps.email.outcome || 'skipped' }}\` |"
+            echo "| GitHub issue | \`opened/updated\` |"
+            echo ""
+            echo "**Run:** ${{ steps.failure.outputs.run_url }}"
+          } >> "$GITHUB_STEP_SUMMARY"
