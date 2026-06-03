@@ -1,0 +1,239 @@
+# BB HUB Obsidian — daily backup (Cairo time)
+#
+# Schedule: 02:00 Africa/Cairo = 00:00 UTC (cron below).
+# Local Obsidian edits must be pushed from your PC first — see:
+#   97_AUTOMATION/SCRIPTS/08_local_vault_backup.ps1
+
+name: Daily Backup
+
+on:
+  schedule:
+    # 02:00 Cairo (UTC+2) = 00:00 UTC
+    - cron: "0 0 * * *"
+    # Weekly tag: Sunday 02:00 Cairo
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    inputs:
+      create_weekly_tag:
+        description: "Force weekly backup tag on current HEAD"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: daily-backup
+  cancel-in-progress: false
+
+env:
+  TZ: Africa/Cairo
+  GIT_USER_NAME: bb-hub-backup[bot]
+  GIT_USER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+
+jobs:
+  backup:
+    name: Daily backup
+    runs-on: ubuntu-latest
+    outputs:
+      committed: ${{ steps.commit.outputs.committed }}
+      backup_date: ${{ steps.meta.outputs.backup_date }}
+      weekly_tag: ${{ steps.weekly_tag.outputs.tag }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "${{ env.GIT_USER_NAME }}"
+          git config user.email "${{ env.GIT_USER_EMAIL }}"
+          git config pull.rebase true
+
+      - name: Set backup date (Cairo)
+        id: meta
+        run: |
+          BACKUP_DATE=$(date +%Y-%m-%d)
+          echo "backup_date=${BACKUP_DATE}" >> "$GITHUB_OUTPUT"
+          echo "Backup date (Cairo): ${BACKUP_DATE}"
+
+      - name: Pull latest main
+        run: git pull origin main
+
+      - name: Stage all changes
+        run: git add -A
+
+      - name: Commit uncommitted changes
+        id: commit
+        run: |
+          BACKUP_DATE="${{ steps.meta.outputs.backup_date }}"
+          MSG="Daily auto-backup: ${BACKUP_DATE}"
+          if git diff --staged --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit."
+            exit 0
+          fi
+          git diff --staged --stat
+          git commit -m "${MSG}"
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+          echo "Committed: ${MSG}"
+
+      - name: Push to main
+        if: steps.commit.outputs.committed == 'true'
+        run: git push origin main
+
+      - name: Create weekly backup tag
+        id: weekly_tag
+        if: >-
+          github.event.schedule == '0 0 * * 0' ||
+          inputs.create_weekly_tag == 'true'
+        run: |
+          TAG="backup-${{ steps.meta.outputs.backup_date }}"
+          if git rev-parse "refs/tags/${TAG}" >/dev/null 2>&1; then
+            echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+            echo "Tag already exists: ${TAG}"
+            exit 0
+          fi
+          git tag -a "${TAG}" -m "Weekly backup ${TAG} (Cairo $(date '+%Y-%m-%d %H:%M'))"
+          git push origin "${TAG}"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "Created tag: ${TAG}"
+
+      - name: Prune old workflow runs
+        uses: actions/github-script@v7
+        env:
+          KEEP_DAYS: 30
+          KEEP_MINIMUM: 15
+        with:
+          script: |
+            const keepDays = parseInt(process.env.KEEP_DAYS, 10);
+            const keepMinimum = parseInt(process.env.KEEP_MINIMUM, 10);
+            const cutoff = Date.now() - keepDays * 24 * 60 * 60 * 1000;
+            const workflowFile = 'daily-backup.yml';
+
+            const { data: workflows } = await github.rest.actions.listRepoWorkflows({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            const workflow = workflows.workflows.find(w => w.path.endsWith(workflowFile));
+            if (!workflow) {
+              core.warning(`Workflow ${workflowFile} not found; skip pruning.`);
+              return;
+            }
+
+            let page = 1;
+            const allRuns = [];
+            while (page <= 5) {
+              const { data } = await github.rest.actions.listWorkflowRuns({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: workflow.id,
+                per_page: 100,
+                page
+              });
+              allRuns.push(...data.workflow_runs);
+              if (data.workflow_runs.length < 100) break;
+              page++;
+            }
+
+            const sorted = allRuns.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            const toDelete = sorted.filter((run, index) => {
+              if (run.id === context.runId) return false;
+              if (index < keepMinimum) return false;
+              return new Date(run.created_at).getTime() < cutoff;
+            });
+
+            core.info(`Found ${allRuns.length} runs; deleting ${toDelete.length} older than ${keepDays} days (keeping min ${keepMinimum}).`);
+
+            for (const run of toDelete) {
+              try {
+                await github.rest.actions.deleteWorkflowRun({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  run_id: run.id
+                });
+                core.info(`Deleted run ${run.id} (${run.created_at})`);
+              } catch (err) {
+                core.warning(`Failed to delete run ${run.id}: ${err.message}`);
+              }
+            }
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Daily backup summary"
+            echo ""
+            echo "| Item | Value |"
+            echo "|------|-------|"
+            echo "| Date (Cairo) | ${{ steps.meta.outputs.backup_date }} |"
+            echo "| Committed | ${{ steps.commit.outputs.committed || 'false' }} |"
+            echo "| Weekly tag | ${{ steps.weekly_tag.outputs.tag || 'n/a' }} |"
+            echo "| Workflow | \`daily-backup.yml\` |"
+            echo "| Run | ${{ github.run_id }} |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  notify-failure:
+    name: Failure notification
+    needs: backup
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open or update failure issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const title = `Daily backup failed — ${new Date().toISOString().slice(0, 10)}`;
+            const body = [
+              '## Daily auto-backup workflow failed',
+              '',
+              `**Workflow:** \`daily-backup.yml\``,
+              `**Run:** [${context.runId}](${runUrl})`,
+              '',
+              '### Checks',
+              '- Repo **Settings → Actions → Workflow permissions** → Read and write',
+              '- Branch protection allows `github-actions[bot]` pushes',
+              '- Run `08_local_vault_backup.ps1` locally so Obsidian edits reach GitHub',
+              '',
+              'Enable email alerts: GitHub **Settings → Notifications → Actions**.'
+            ].join('\n');
+
+            const { data: openIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'backup-failure'
+            });
+
+            const existing = openIssues.find(i => i.title.startsWith('Daily backup failed'));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `Repeat failure: ${runUrl}`
+              });
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['backup-failure', 'automated', 'daily-backup']
+            });
+
+      - name: Failure summary
+        run: |
+          echo "## Backup failed" >> "$GITHUB_STEP_SUMMARY"
+          echo "Issue opened with label \`backup-failure\`." >> "$GITHUB_STEP_SUMMARY"
