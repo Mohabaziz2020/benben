@@ -244,7 +244,7 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 **AR:** يجب أن يبقى العمل ضمن التركيز المعلن وحدود عزل المنصات وقواعد الأب المخفي. النطاق العابر للمنصات يتطلب مروراً صريحاً عبر البوابات.
 
-**Operational detail:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/ADR_RULES]]
+**See frozen SSOT:** [[#Governance Core]]
 
 ---
 
@@ -270,8 +270,7 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 | Integration Law | Backend-only contracts | قواعد التكامل الخلفي | [[04_GOVERNANCE/INTEGRATION_RULES]] |
 | Governance Index | Navigation hub | فهرس الحوكمة | [[04_GOVERNANCE/README]] |
 
-**Frozen Files Status:**  
-`VAULT_GOVERNANCE.md` • `ADR_RULES.md` • `AI_MEMORY_PROTOCOL.md` → **Approved & Frozen**
+**Frozen Files:** `VAULT_GOVERNANCE.md`, `ADR_RULES.md`, `AI_MEMORY_PROTOCOL.md` → **Approved & Frozen**
 
 **Related:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[91_DECISIONS/ADR-2026-06-06-001]]
 
@@ -1116,8 +1115,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE]]
 
 ### Governance (`04_GOVERNANCE/`)
-- [[#Governance Core]] — frozen SSOT (see [[91_DECISIONS/ADR-2026-06-06-001]])
-- [[04_GOVERNANCE/README]] · [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/decisions/README]]
+- [[#Governance Core]] · [[04_GOVERNANCE/README]] · [[04_GOVERNANCE/decisions/README]]
 
 ---
 
@@ -1159,6 +1157,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.7.1 · 2026-06-06** — Governance Core section cleaned: single canonical table, frozen files list, no duplication
 - **3.7.2 · 2026-06-06** — Final Governance Core trim: lean table, consolidated frozen list, ADR in Related only
 - **3.7.3 · 2026-06-06** — Ultimate Governance Core: single canonical section, EN/AR description columns, one-line frozen status
+- **3.7.4 · 2026-06-06** — Ultimate final clean: one Governance Core section only; deduped gate links → anchor
 
 ---
 
