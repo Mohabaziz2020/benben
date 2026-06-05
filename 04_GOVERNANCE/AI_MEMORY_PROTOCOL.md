@@ -1,6 +1,7 @@
 ---
 type: governance
-status: proposed
+status: approved
+frozen: true
 updated: 2026-06-06
 author: Maestro
 tags: [governance, ai, protocol, grok, truth-gate, bilingual]
@@ -58,7 +59,8 @@ Each new session starts clean unless the user provides context explicitly.
 | Item | Status |
 |------|--------|
 | Draft created | 2026-06-06 |
-| Final Architect approval | Pending · في انتظار موافقتك النهائية |
+| Final Architect approval | Approved & Frozen · معتمد ومجمّد — 2026-06-06 |
+| Ratifying ADR | [[91_DECISIONS/ADR-2026-06-06-001]] |
 
 **آخر تحديث | Last updated:** 2026-06-06  
-**Status:** Proposed (awaiting final approval)
+**Status:** Approved & Frozen

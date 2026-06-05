@@ -1,6 +1,7 @@
 ---
 type: governance
 status: approved
+frozen: true
 updated: 2026-06-06
 author: Maestro
 tags: [governance, adr, rules, immutability, truth-gate, bilingual]
@@ -69,5 +70,7 @@ tags: [governance, adr, rules, immutability, truth-gate, bilingual]
 | Platform-level | Architect + Review |
 | Operational | AI Agents with Logging |
 
+**Ratifying ADR:** [[91_DECISIONS/ADR-2026-06-06-001]]
+
 **آخر تحديث | Last updated:** 2026-06-06  
-**Status:** Approved
+**Status:** Approved & Frozen

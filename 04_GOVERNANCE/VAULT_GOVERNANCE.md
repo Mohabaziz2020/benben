@@ -70,5 +70,7 @@ Full definitions: [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 See [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]].
 
+**Ratifying ADR:** [[91_DECISIONS/ADR-2026-06-06-001]]
+
 **آخر تحديث | Last updated:** 2026-06-06  
 **Status:** Approved & Frozen

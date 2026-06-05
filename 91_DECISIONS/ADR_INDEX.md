@@ -15,4 +15,4 @@ tags: [adr, decisions]
 
 | ID | Title | Status | Platform | Date |
 |----|-------|--------|----------|------|
-| *(add rows as ADRs are accepted)* | | | | |
+| [[91_DECISIONS/ADR-2026-06-06-001]] | Governance core complete & freeze · إكمال نواة الحوكمة وتجميد الملفات | Frozen | ecosystem | 2026-06-06 |

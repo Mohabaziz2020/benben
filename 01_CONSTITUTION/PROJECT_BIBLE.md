@@ -1,10 +1,10 @@
 ---
 type: constitution
 status: active
-version: "3.5"
+version: "3.7"
 color: gold
 brand: benbenhub
-updated: 2026-06-05
+updated: 2026-06-06
 author: Maestro
 tags: [benbenhub, ssot, project-bible, graph-hub]
 ---
@@ -18,7 +18,7 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 |:---:|:---:|:---:|
 | ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|140]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|140]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|140]] |
 
-**Single Source of Truth · مصدر الحقيقة الواحد** · **v3.5** · **2026-06-05** · Bilingual Master Edition (EN/AR)
+**Single Source of Truth · مصدر الحقيقة الواحد** · **v3.7** · **2026-06-06** · Bilingual Master Edition (EN/AR)
 
 **EN:** Master constitution for BENBENHUB: hidden parent entity, three sovereign platforms, backend-only integration, three governance gates.
 
@@ -35,26 +35,27 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 2. [Company Structure & Governance](#company-structure--governance)
 3. [Branding & Visual Identity](#branding--visual-identity)
 4. [Key Governance Gates](#key-governance-gates)
-5. [Platform Survivability & Continuity Vision](#platform-survivability--continuity-vision)
+5. [Governance Core](#governance-core)
+6. [Platform Survivability & Continuity Vision](#platform-survivability--continuity-vision)
 
 **Part II — Sovereign Platforms (Separated)**
-6. [Platforms Overview](#platforms-overview)
-7. [Circuit Rack](#circuit-rack)
-8. [Circuit Pro](#circuit-pro)
-9. [Circuit Labs](#circuit-labs)
+7. [Platforms Overview](#platforms-overview)
+8. [Circuit Rack](#circuit-rack)
+9. [Circuit Pro](#circuit-pro)
+10. [Circuit Labs](#circuit-labs)
 
 **Part III — Integration, Features & Technology**
-10. [Platform Relationships & Backend Integration Rules](#platform-relationships--backend-integration-rules)
-11. [Shared Core vs Platform-Specific](#shared-core-vs-platform-specific)
-12. [Full Features & Modules Database](#full-features--modules-database)
-13. [Technical Architecture](#technical-architecture)
-14. [UI/UX Specifications](#uiux-specifications)
-15. [Legal & Consents](#legal--consents)
-16. [Backlog & Roadmap](#backlog--roadmap)
+11. [Platform Relationships & Backend Integration Rules](#platform-relationships--backend-integration-rules)
+12. [Shared Core vs Platform-Specific](#shared-core-vs-platform-specific)
+13. [Full Features & Modules Database](#full-features--modules-database)
+14. [Technical Architecture](#technical-architecture)
+15. [UI/UX Specifications](#uiux-specifications)
+16. [Legal & Consents](#legal--consents)
+17. [Backlog & Roadmap](#backlog--roadmap)
 
-17. [Vault Documentation Map](#vault-documentation-map)
-18. [Appendix — Notion Source Archive](#appendix--notion-source-archive)
-19. [Revision History](#revision-history) · [Status](#status)
+18. [Vault Documentation Map](#vault-documentation-map)
+19. [Appendix — Notion Source Archive](#appendix--notion-source-archive)
+20. [Revision History](#revision-history) · [Status](#status)
 
 **Populated vault paths:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] · [[00_ROOT_DASHBOARD/HOME]]
 
@@ -242,6 +243,36 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 **EN:** Work must stay within declared focus, platform isolation boundaries, and hidden-parent identity rules. Cross-platform scope requires explicit gate passage.
 
 **AR:** يجب أن يبقى العمل ضمن التركيز المعلن وحدود عزل المنصات وقواعد الأب المخفي. النطاق العابر للمنصات يتطلب مروراً صريحاً عبر البوابات.
+
+**Operational detail:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/ADR_RULES]]
+
+---
+
+## Governance Core | نواة الحوكمة
+
+> **Updated 2026-06-06** · **Ratified by:** [[91_DECISIONS/ADR-2026-06-06-001]] · **Status:** Approved & Frozen · أي تغيير مستقبلي يتطلب ADR جديد.
+
+**EN:** Single Source of Truth for vault governance — frozen files in `04_GOVERNANCE/`. Notion, GitHub Pages, and AI session memory are mirrors only.
+
+**AR:** مصدر الحقيقة الواحد لحوكمة الخزنة — ملفات مجمّدة في `04_GOVERNANCE/`. نوشن وGitHub Pages وذاكرة AI مرايا فقط.
+
+| Doc | EN | AR | Link |
+|-----|----|----|------|
+| Vault constitution | Vault SSOT policy | دستور الخزنة | [[04_GOVERNANCE/VAULT_GOVERNANCE]] |
+| ADR rules | Decision recording law | قواعد توثيق القرارات | [[04_GOVERNANCE/ADR_RULES]] |
+| AI protocol | Agent interaction rules | بروتوكول تفاعل AI | [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] |
+| Three gates (detail) | Gate definitions & enforcement | البوابات الثلاث مفصلة | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| Integration law | Backend-only contracts | قواعد التكامل الخلفي | [[04_GOVERNANCE/INTEGRATION_RULES]] |
+| Governance index | Navigation hub | فهرس الحوكمة | [[04_GOVERNANCE/README]] |
+| Freeze ADR | Core governance freeze | تجميد نواة الحوكمة | [[91_DECISIONS/ADR-2026-06-06-001]] |
+
+| Frozen file | Status |
+|-------------|--------|
+| [[04_GOVERNANCE/VAULT_GOVERNANCE]] | Approved & Frozen |
+| [[04_GOVERNANCE/ADR_RULES]] | Approved & Frozen |
+| [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] | Approved & Frozen |
+
+**Change policy:** Supersede via new ADR — [[90_TEMPLATES/ADR_TEMPLATE]] · index [[91_DECISIONS/ADR_INDEX]].
 
 ---
 
@@ -1122,14 +1153,15 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.5 · 2026-06-05** — Notion Content Polish: strategic Part I tables, deduplicated bible body, archive appendix link
 - **3.5.1 · 2026-06-05** — Branding polish: platform colors & logos table, `03_SHARED_CORE/branding/` embeds
 - **3.6 · 2026-06-05** — Graph MOC v2.0: central visual hub, filter recipes, mermaid mesh, graph.json hub paths
+- **3.7 · 2026-06-06** — Governance Core freeze: ADR_RULES, VAULT_GOVERNANCE, AI_MEMORY_PROTOCOL; [[91_DECISIONS/ADR-2026-06-06-001]]; Governance Core section in bible
 
 ---
 
 ## Status | الحالة
 
-**EN:** **PROJECT_BIBLE.md** — Master SSOT **v3.5**: polished strategic constitution (Vision, Company, Branding, Agreements), three platform sections, integration & technology. Verbatim Notion export: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]]. Platform MOCs: bilingual summaries linking here.
+**EN:** **PROJECT_BIBLE.md** — Master SSOT **v3.7**: strategic constitution + **frozen Governance Core** ([[04_GOVERNANCE/VAULT_GOVERNANCE]], [[04_GOVERNANCE/ADR_RULES]], [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]]). Ratified: [[91_DECISIONS/ADR-2026-06-06-001]]. Notion archive: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]].
 
-**AR:** **PROJECT_BIBLE.md** — دستور SSOT **v3.5**: رؤية وحوكمة وهوية واتفاقات منظمة؛ أقسام المنصات الثلاث؛ أرشيف نوشن: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]].
+**AR:** **PROJECT_BIBLE.md** — دستور SSOT **v3.7**: دستور استراتيجي + **نواة حوكمة مجمّدة**. معتمد: [[91_DECISIONS/ADR-2026-06-06-001]]. أرشيف نوشن: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]].
 
 Daily starters: [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]]
 

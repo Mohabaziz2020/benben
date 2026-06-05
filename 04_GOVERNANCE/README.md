@@ -16,7 +16,9 @@ tags: [governance, index, gates, bilingual]
 | [[04_GOVERNANCE/INTEGRATION_RULES]] | Backend integration law | قواعد التكامل |
 | [[04_GOVERNANCE/ADR_RULES]] | ADR lifecycle & approval | حوكمة ADR |
 | [[04_GOVERNANCE/VAULT_GOVERNANCE]] | Vault SSOT policy (frozen) | حوكمة الخزنة |
-| [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] | AI agent protocol | بروتوكول AI |
+| [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] | AI agent protocol (frozen) | بروتوكول AI (مجمّد) |
 | [[04_GOVERNANCE/decisions/README]] | Ratified GD-* decisions | قرارات معتمدة |
 
-**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE]] · **Templates:** [[90_TEMPLATES/TEMPLATES_INDEX]] · **ADRs:** [[91_DECISIONS/ADR_INDEX]]
+**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Governance Core]] · **Freeze ADR:** [[91_DECISIONS/ADR-2026-06-06-001]] · **Templates:** [[90_TEMPLATES/TEMPLATES_INDEX]] · **ADRs:** [[91_DECISIONS/ADR_INDEX]]
+
+> **Status (2026-06-06):** Governance core **Approved & Frozen** — changes require new ADR only.
