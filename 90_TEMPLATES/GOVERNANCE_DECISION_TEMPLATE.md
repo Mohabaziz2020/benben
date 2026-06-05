@@ -1,5 +1,6 @@
 ---
 type: governance_decision
+template_version: "2.0"
 id: GD-YYYY-MM-DD-001
 status: draft
 date: "{{date}}"
@@ -10,7 +11,8 @@ gate_primary: scope
 platform: ecosystem
 supersedes: ""
 superseded_by: ""
-tags: [governance, decision, gates, benbenhub, bilingual]
+related_adr: []
+tags: [governance, decision, gates, benbenhub, bilingual, gd, immutability]
 ---
 
 # GD-{{id}} · {{title}}
@@ -35,6 +37,21 @@ tags: [governance, decision, gates, benbenhub, bilingual]
 | **Gates SSOT** | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
 | **Constitution** | [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates]] |
 | **Technical ADR (if any)** | [[90_TEMPLATES/ADR_TEMPLATE]] → `91_DECISIONS/` |
+| **Graph hub** | [[02_PLATFORMS/GRAPH_MOC]] |
+| **Branding law** | [[01_CONSTITUTION/PROJECT_BIBLE#Branding & Visual Identity]] |
+
+---
+
+## Governance decision vs ADR | قرار حوكمة مقابل ADR
+
+| Topic | Use this GD | Use [[90_TEMPLATES/ADR_TEMPLATE]] |
+|-------|-------------|-----------------------------------|
+| Gate definition or enforcement change | ✓ | |
+| Hidden-parent / public branding policy | ✓ | |
+| Platform isolation exception (rare) | ✓ | |
+| Survivability / continuity mandate | ✓ | |
+| API payload · schema · webhook design | | ✓ |
+| Framework or library choice | | ✓ |
 
 ---
 

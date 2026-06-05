@@ -39,9 +39,9 @@ tags: [daily, benbenhub, bilingual, operations]
 
 ### Platform scope | نطاق المنصة *(check one primary)*
 
-- [ ] 🔵 **Rack** — commerce SSOT → [[02_PLATFORMS/rack/README]]
-- [ ] 🟣 **Pro** — identity & geo SSOT → [[02_PLATFORMS/pro/README]]
-- [ ] 🟢 **Labs** — content SSOT → [[02_PLATFORMS/labs/README]]
+- [ ] 🔵 **Rack** — commerce SSOT → [[02_PLATFORMS/Rack/README]]
+- [ ] 🟣 **Pro** — identity & geo SSOT → [[02_PLATFORMS/Pro/README]]
+- [ ] 🟢 **Labs** — content SSOT → [[02_PLATFORMS/Labs/README]]
 - [ ] ⚖️ **Governance / vault** — gates, bible, docs only
 
 ### Top 3 outcomes | أهم ثلاث نتائج

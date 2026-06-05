@@ -38,7 +38,7 @@ aliases: []
 
 1. Duplicate this template when adding a **new sovereign platform** under `02_PLATFORMS/<slug>/`.
 2. Rename folder to lowercase slug (e.g. `rack`, `pro`, `labs`) — never reuse another platform's schema.
-3. Create companion files: `OVERVIEW.md`, `FEATURES_MODULES.md`, `ISOLATION.md` (copy patterns from [[02_PLATFORMS/rack/README]]).
+3. Create companion files: `OVERVIEW.md`, `FEATURES_MODULES.md`, `ISOLATION.md` (copy patterns from [[02_PLATFORMS/Rack/README]]).
 4. Register platform in [[02_PLATFORMS/PLATFORMS_INDEX]] and [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview]].
 5. Pass **Scope Boundary Gate** before `status: active` — no shared consumer UI with other islands.
 
@@ -124,7 +124,7 @@ aliases: []
 | 5 | Integration only via documented APIs/events | تكامل عبر API/أحداث موثّقة | [ ] |
 | 6 | Failure domain isolated from other islands | نطاق فشل معزول | [ ] |
 
-Full detail → create `ISOLATION.md` from [[02_PLATFORMS/rack/ISOLATION]] pattern.
+Full detail → create `ISOLATION.md` from [[02_PLATFORMS/Rack/ISOLATION]] pattern.
 
 ---
 

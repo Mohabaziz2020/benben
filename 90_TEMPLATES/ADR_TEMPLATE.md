@@ -1,5 +1,6 @@
 ---
 type: adr
+template_version: "2.0"
 id: ADR-YYYY-MM-DD-001
 status: draft
 date: "{{date}}"
@@ -7,97 +8,134 @@ created: "{{date}}"
 updated: "{{date}}"
 author: Maestro
 platform: none
+category: architecture
+gate_primary: scope
 supersedes: ""
 superseded_by: ""
-tags: [adr, architecture, benbenhub, bilingual, decision]
+related_gd: ""
+reviewers: []
+tags: [adr, architecture, governance, benbenhub, bilingual, decision, immutability]
 ---
 
 # ADR-{{id}} · {{title}}
 
-**Architectural Decision Record · سجل قرار معماري**
+**Architectural Decision Record · سجل قرار معماري (نسخة حوكمة كاملة)**
 
 | Field | EN | AR | Value |
 |-------|----|----|-------|
-| **ID** | Unique ADR identifier | المعرّف | `ADR-YYYY-MM-DD-001` |
+| **ID** | `ADR-YYYY-MM-DD-NNN` | المعرّف | `ADR-YYYY-MM-DD-001` |
 | **Status** | draft · proposed · accepted · rejected · superseded | الحالة | `draft` |
 | **Date** | Decision date | التاريخ | `{{date}}` |
 | **Author** | Decision owner | المالك | |
-| **Platform** | rack · pro · labs · shared · governance · ecosystem | المنصة | `none` |
+| **Platform** | `none` · `rack` · `pro` · `labs` · `shared` · `ecosystem` | المنصة | `none` |
+| **Category** | architecture · integration · data · security · ops · ux | التصنيف | `architecture` |
+| **Primary gate** | truth · immutability · scope | البوابة الأساسية | `scope` |
+| **Related GD** | Governance decision (if any) | قرار حوكمة مرتبط | `related_gd:` |
 
-**EN:** Document a significant architectural choice. Required when changing integration boundaries, SSOT ownership, or platform isolation.  
-**AR:** وثّق اختياراً معمارياً مهماً. مطلوب عند تغيير حدود التكامل أو ملكية SSOT أو عزل المنصات.
+**EN:** Binding technical/architectural record — integration boundaries, SSOT ownership, schemas, APIs, deploy isolation. **Not** for changing gate definitions (use [[90_TEMPLATES/GOVERNANCE_DECISION_TEMPLATE]]).  
+**AR:** سجل تقني/معماري ملزم — حدود التكامل وملكية SSOT. **ليس** لتغيير تعريف البوابات (استخدم قالب قرار الحوكمة).
 
 | Save to | Link |
 |---------|------|
-| **Folder** | `91_DECISIONS/ADR-YYYY-MM-DD-001_<short-title>.md` |
+| **Folder** | `91_DECISIONS/ADR-YYYY-MM-DD-001_<short-kebab-title>.md` |
 | **Index** | [[91_DECISIONS/ADR_INDEX]] |
-| **Gates** | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| **Gates SSOT** | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
 | **Constitution** | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| **Integration law** | [[04_GOVERNANCE/INTEGRATION_RULES]] |
+| **Graph hub** | [[02_PLATFORMS/GRAPH_MOC]] |
+
+---
+
+## ADR vs governance decision | ADR مقابل قرار الحوكمة
+
+| Topic | Use this ADR | Use [[90_TEMPLATES/GOVERNANCE_DECISION_TEMPLATE]] |
+|-------|--------------|---------------------------------------------------|
+| API contract between Rack and Pro | ✓ | |
+| Database schema ownership | ✓ | |
+| Webhook vs shared DB access | ✓ | |
+| Changing Truth / Immutability / Scope gate definitions | | ✓ |
+| Public cross-branding policy | | ✓ |
+| Hidden-parent visibility rules | | ✓ |
+| Platform survivability mandate | | ✓ |
 
 ---
 
 ## Instructions | التعليمات
 
-**EN (how to use):**
+**EN (workflow):**
 
-1. Copy this template → save under `91_DECISIONS/` with filename `ADR-YYYY-MM-DD-NNN_<kebab-title>.md`.
-2. Set `id`, `status`, `platform`, and `author` in frontmatter.
-3. Fill **Context** and **Decision** before implementation starts.
-4. Run the **Governance gate checklist** — all three gates must pass before `status: accepted`.
-5. If replacing an old ADR: set `supersedes: ADR-...` on this file and `superseded_by: ADR-...` on the old file (Immutability gate).
+1. **Insert** via Obsidian → *Templates: Insert template* → `ADR_TEMPLATE`, or copy file to `91_DECISIONS/`.
+2. Set frontmatter: `id`, `status`, `platform`, `category`, `gate_primary`, `author`.
+3. Complete **Context** and **Decision** *before* coding — Documentation Before Expansion ([[#Architectural Laws]]).
+4. Run **Governance gate checklist** — all three gates must pass before `status: accepted`.
+5. If superseding: set `supersedes` here + `superseded_by` on old ADR (never edit accepted ADR in place).
+6. Cross-platform? Update [[04_GOVERNANCE/INTEGRATION_RULES]] + affected [[02_PLATFORMS/Rack/README]] / Pro / Labs isolation docs.
 
-**AR (كيفية الاستخدام):**
+**AR:** املأ السياق والقرار قبل الكود؛ اجتز البوابات الثلاث؛ استبدل عبر `supersedes` لا تحريراً صامتاً.
 
-1. انسخ القالب → احفظ في `91_DECISIONS/` باسم `ADR-YYYY-MM-DD-NNN_<عنوان-قصير>.md`.
-2. عيّن `id` و`status` و`platform` و`author` في المقدمة.
-3. املأ **السياق** و**القرار** قبل بدء التنفيذ.
-4. نفّذ **قائمة بوابات الحوكمة** — يجب اجتياز البوابات الثلاث قبل `accepted`.
-5. عند استبدال ADR قديم: اربط `supersedes` و`superseded_by` (بوابة الثبات).
+**Example filename | مثال اسم ملف:** `91_DECISIONS/ADR-2026-06-05-001_rack-pro-order-webhooks.md`
 
 ---
 
 ## Status workflow | مسار الحالة
 
-| Status | EN | AR | Who acts |
-|--------|----|----|----------|
-| `draft` | Working document | مسودة عمل | Author |
-| `proposed` | Ready for review | مقترح للمراجعة | Author → reviewer |
-| `accepted` | Binding decision | مقبول وملزم | Maestro / lead |
-| `rejected` | Not adopted | مرفوض | Reviewer |
-| `superseded` | Replaced by newer ADR | مستبدَل | Author of new ADR |
+| Status | EN | AR | Next action |
+|--------|----|----|-------------|
+| `draft` | Working document | مسودة | Author fills sections |
+| `proposed` | Ready for review | مقترح | Reviewer + gate checklist |
+| `accepted` | Binding | مقبول وملزم | Implement + link from specs |
+| `rejected` | Not adopted | مرفوض | Archive with reason |
+| `superseded` | Replaced | مستبدَل | New ADR owns truth |
 
 ---
 
 ## Context | السياق
 
-**EN:** What is the problem, constraint, or force driving this decision? Include current state, stakeholders, and risks of inaction.
+**EN:** Problem, constraints, stakeholders, current state, risks of inaction. Link evidence (specs, tickets, metrics).
 
-**AR:** ما المشكلة أو القيد أو القوة الدافعة؟ ضمّن الوضع الحالي وأصحاب المصلحة ومخاطر عدم التصرف.
+**AR:** المشكلة والقيود وأصحاب المصلحة والوضع الحالي ومخاطر عدم التصرف.
 
-<!-- Replace example below with your situation -->
+> **Example | مثال:**  
+> **EN:** Circuit Rack must notify Circuit Pro when order state changes, without Pro reading schema `rack` or hosting Rack checkout UI.  
+> **AR:** راك يُخطر Pro بتغيّر حالة الطلب دون أن يقرأ Pro مخطط `rack` أو يستضيف واجهة دفع راك.
 
-**Example | مثال:**
+**Drivers | محفّزات:**
 
-> **EN:** Circuit Rack needs order status webhooks for Pro identity verification without sharing Rack's DB schema with Pro.  
-> **AR:** راك يحتاج webhooks لحالة الطلب للتحقق من الهوية في Pro دون مشاركة مخطط قاعدة راك مع Pro.
+- [ ] Performance / الأداء
+- [ ] Security / الأمن
+- [ ] Isolation / العزل
+- [ ] SSOT clarity / وضوح مصدر الحقيقة
+- [ ] Compliance / امتثال
+- [ ] Cost / التكلفة
 
 ---
 
 ## Decision | القرار
 
-**EN:** State the decision clearly in one paragraph, then bullet the concrete rules.
+**EN:** One clear paragraph, then numbered rules implementers must follow.
 
-**AR:** اكتب القرار بوضوح في فقرة، ثم نقاط القواعد العملية.
+**AR:** فقرة واضحة، ثم قواعد مرقّمة للمنفّذين.
 
-We will … / سنقوم بـ …
+**We will / سنقوم بـ:**
 
-- [ ] Rule 1 |
-- [ ] Rule 2 |
+1. 
+2. 
+3. 
 
-**Example | مثال:**
+> **Example | مثال:**  
+> **EN:** Rack publishes `order.status_changed` events on a versioned HTTPS webhook with HMAC signatures; Pro stores only `order_id` + snapshot fields in schema `pro`; no cross-schema SQL.  
+> **AR:** راك ينشر أحداث webhook موقّعة؛ Pro يخزن لقطات فقط في `pro`؛ بلا SQL عابر للمخططات.
 
-> **EN:** Pro will consume Rack order events via a versioned REST webhook + signed payloads; no direct DB access.  
-> **AR:** Pro يستهلك أحداث طلبات راك عبر webhook REST موقّع؛ بلا وصول مباشر لقاعدة البيانات.
+---
+
+## Platform impact | تأثير المنصات
+
+| Platform | EN impact | AR | Doc to update |
+|----------|-----------|-----|---------------|
+| Rack | | | [[02_PLATFORMS/Rack/ISOLATION]] |
+| Pro | | | [[02_PLATFORMS/Pro/ISOLATION]] |
+| Labs | | | [[02_PLATFORMS/Labs/ISOLATION]] |
+| Shared core | | | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] |
 
 ---
 
@@ -119,38 +157,56 @@ We will … / سنقوم بـ …
 
 ## Alternatives considered | البدائل المدروسة
 
-| # | Alternative | EN summary | AR | Rejected because |
-|---|-------------|------------|-----|------------------|
-| A | | | | |
+| # | Alternative | EN | AR | Rejected because |
+|---|-------------|----|----|------------------|
+| A | **Chosen** | | | — |
 | B | | | | |
 | C | | | | |
 
 ---
 
-## Governance gate checklist | قائمة بوابات الحوكمة
+## Governance gate checklist | قائمة بوابات الحوكمة (required)
 
-**EN:** Complete before setting `status: accepted`.  
-**AR:** أكمل قبل تعيين `accepted`.
+**EN:** Mandatory before `status: accepted`. Primary gate: `{{gate_primary}}` — still review all three.  
+**AR:** إلزامي قبل `accepted`. راجع البوابات الثلاث.
 
 | Gate | EN requirement | AR | Pass |
 |------|----------------|-----|:----:|
-| **Truth** | Context matches verified reality; links to specs/runbooks | السياق يطابق الواقع الموثّق | [ ] |
-| **Immutability** | Supersession links set if replacing prior ADR | روابط الاستبدال إن وُجد سابق | [ ] |
-| **Scope** | Stays within platform isolation + hidden parent | ضمن العزل والأب المخفي | [ ] |
+| **Truth** | Context matches verified reality; links to specs/runbooks/tests | السياق يطابق الواقع الموثّق | [ ] |
+| **Immutability** | `supersedes` / `superseded_by` set if replacing prior ADR; no silent edits | روابط استبدال؛ بلا تحريف صامت | [ ] |
+| **Scope** | Within platform isolation + hidden parent; cross-platform has ADR + integration rules | ضمن العزل والأب المخفي | [ ] |
 
-**Cross-platform impact? | تأثير عابر للمنصات?** [ ] Yes · [ ] No  
-If yes → update [[04_GOVERNANCE/INTEGRATION_RULES]] and affected platform MOCs.
+| Additional checks | EN | AR | Pass |
+|-------------------|----|----|:----:|
+| Bible section cited | [[01_CONSTITUTION/PROJECT_BIBLE#]] | قسم الدستور | [ ] |
+| No public cross-branding introduced | Per [[01_CONSTITUTION/PROJECT_BIBLE#Branding & Visual Identity]] | لا تشعب علني | [ ] |
+| Phrase bank updated (if UX copy) | [[03_SHARED_CORE/REUSABLE_PHRASES]] | بنك الجمل | [ ] |
 
 ---
 
 ## References | المراجع
 
-| Kind | Link / path |
-|------|-------------|
-| Bible section | [[01_CONSTITUTION/PROJECT_BIBLE#]] |
+| Kind | Link |
+|------|------|
+| Bible — Vision | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Philosophy]] |
+| Bible — Integration | [[01_CONSTITUTION/PROJECT_BIBLE#Platform Relationships & Backend Integration Rules]] |
 | Platform MOC | [[02_PLATFORMS/PLATFORMS_INDEX]] |
-| Related ADR | [[91_DECISIONS/]] |
-| API / spec | |
+| Related ADR | `[[91_DECISIONS/ADR-...]]` |
+| Related GD | `[[04_GOVERNANCE/decisions/GD-...]]` |
+| Technical architecture | [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE]] |
+
+---
+
+## Approval | الاعتماد
+
+| Role | Name | Date | ✓ |
+|------|------|------|:-:|
+| Author | | | [ ] |
+| Technical reviewer | | | [ ] |
+| Maestro / lead accept | | | [ ] |
+
+**Accepted date | تاريخ القبول:**  
+**Effective from | ساري من:**
 
 ---
 
@@ -158,8 +214,8 @@ If yes → update [[04_GOVERNANCE/INTEGRATION_RULES]] and affected platform MOCs
 
 | Date | Author | Change | Status |
 |------|--------|--------|--------|
-| {{date}} | | Created from [[90_TEMPLATES/ADR_TEMPLATE]] | draft |
+| {{date}} | | Created from [[90_TEMPLATES/ADR_TEMPLATE]] v2.0 | draft |
 
 ---
 
-[[91_DECISIONS/ADR_INDEX]] · [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[90_TEMPLATES/TEMPLATES_INDEX]]
+[[91_DECISIONS/ADR_INDEX]] · [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[90_TEMPLATES/GOVERNANCE_DECISION_TEMPLATE]] · [[90_TEMPLATES/TEMPLATES_INDEX]]
