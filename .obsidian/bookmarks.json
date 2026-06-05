@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "path": "INDEX.md",
+      "title": "⭐ Master Index (daily)"
+    },
+    {
+      "type": "file",
+      "path": "00_ROOT_DASHBOARD/HOME.md",
+      "title": "⭐ Home (daily)"
+    },
+    {
+      "type": "file",
+      "path": "01_CONSTITUTION/PROJECT_BIBLE.md",
+      "title": "Constitution SSOT"
+    },
+    {
+      "type": "file",
+      "path": "03_SHARED_CORE/REUSABLE_PHRASES.md",
+      "title": "Phrases EN/AR"
+    }
+  ]
+}

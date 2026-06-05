@@ -1,0 +1,397 @@
+# BENBENHUB-CORE — daily backup (Cairo time)
+#
+# Schedule: 02:00 Africa/Cairo = 00:00 UTC (cron below).
+# Local Obsidian edits must be pushed from your PC first — see:
+#   scripts/backup-vault.ps1
+#
+# --- Failure notifications (optional secrets) ---
+# Telegram (preferred): TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+# Email fallback (SMTP):  SMTP_SERVER, SMTP_PORT, SMTP_USERNAME, SMTP_PASSWORD, NOTIFY_EMAIL_TO
+# Setup guide: .github/TELEGRAM_SETUP.md
+
+name: Daily Backup
+
+on:
+  schedule:
+    # 02:00 Cairo (UTC+2) = 00:00 UTC
+    - cron: "0 0 * * *"
+    # Weekly tag: Sunday 02:00 Cairo
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+    inputs:
+      create_weekly_tag:
+        description: "Force weekly backup tag on current HEAD"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency:
+  group: daily-backup
+  cancel-in-progress: false
+
+env:
+  TZ: Africa/Cairo
+  GIT_USER_NAME: bb-hub-backup[bot]
+  GIT_USER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+
+jobs:
+  backup:
+    name: Daily backup
+    runs-on: ubuntu-latest
+    outputs:
+      committed: ${{ steps.commit.outputs.committed }}
+      backup_date: ${{ steps.meta.outputs.backup_date }}
+      weekly_tag: ${{ steps.weekly_tag.outputs.tag }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "${{ env.GIT_USER_NAME }}"
+          git config user.email "${{ env.GIT_USER_EMAIL }}"
+          git config pull.rebase true
+
+      - name: Set backup date (Cairo)
+        id: meta
+        run: |
+          BACKUP_DATE=$(date +%Y-%m-%d)
+          echo "backup_date=${BACKUP_DATE}" >> "$GITHUB_OUTPUT"
+          echo "Backup date (Cairo): ${BACKUP_DATE}"
+
+      - name: Pull latest main
+        run: git pull origin main
+
+      - name: Stage all changes
+        run: git add -A
+
+      - name: Commit uncommitted changes
+        id: commit
+        run: |
+          BACKUP_DATE="${{ steps.meta.outputs.backup_date }}"
+          MSG="Daily auto-backup: ${BACKUP_DATE}"
+          if git diff --staged --quiet; then
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes to commit."
+            exit 0
+          fi
+          git diff --staged --stat
+          git commit -m "${MSG}"
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+          echo "Committed: ${MSG}"
+
+      - name: Push to main
+        if: steps.commit.outputs.committed == 'true'
+        run: git push origin main
+
+      - name: Create weekly backup tag
+        id: weekly_tag
+        if: >-
+          github.event.schedule == '0 0 * * 0' ||
+          inputs.create_weekly_tag == 'true'
+        run: |
+          TAG="backup-${{ steps.meta.outputs.backup_date }}"
+          if git rev-parse "refs/tags/${TAG}" >/dev/null 2>&1; then
+            echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+            echo "Tag already exists: ${TAG}"
+            exit 0
+          fi
+          git tag -a "${TAG}" -m "Weekly backup ${TAG} (Cairo $(date '+%Y-%m-%d %H:%M'))"
+          git push origin "${TAG}"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "Created tag: ${TAG}"
+
+      - name: Prune old workflow runs
+        uses: actions/github-script@v7
+        env:
+          KEEP_DAYS: 30
+          KEEP_MINIMUM: 15
+        with:
+          script: |
+            const keepDays = parseInt(process.env.KEEP_DAYS, 10);
+            const keepMinimum = parseInt(process.env.KEEP_MINIMUM, 10);
+            const cutoff = Date.now() - keepDays * 24 * 60 * 60 * 1000;
+            const workflowFile = 'daily-backup.yml';
+
+            const { data: workflows } = await github.rest.actions.listRepoWorkflows({
+              owner: context.repo.owner,
+              repo: context.repo.repo
+            });
+            const workflow = workflows.workflows.find(w => w.path.endsWith(workflowFile));
+            if (!workflow) {
+              core.warning(`Workflow ${workflowFile} not found; skip pruning.`);
+              return;
+            }
+
+            let page = 1;
+            const allRuns = [];
+            while (page <= 5) {
+              const { data } = await github.rest.actions.listWorkflowRuns({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                workflow_id: workflow.id,
+                per_page: 100,
+                page
+              });
+              allRuns.push(...data.workflow_runs);
+              if (data.workflow_runs.length < 100) break;
+              page++;
+            }
+
+            const sorted = allRuns.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+            const toDelete = sorted.filter((run, index) => {
+              if (run.id === context.runId) return false;
+              if (index < keepMinimum) return false;
+              return new Date(run.created_at).getTime() < cutoff;
+            });
+
+            core.info(`Found ${allRuns.length} runs; deleting ${toDelete.length} older than ${keepDays} days (keeping min ${keepMinimum}).`);
+
+            for (const run of toDelete) {
+              try {
+                await github.rest.actions.deleteWorkflowRun({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  run_id: run.id
+                });
+                core.info(`Deleted run ${run.id} (${run.created_at})`);
+              } catch (err) {
+                core.warning(`Failed to delete run ${run.id}: ${err.message}`);
+              }
+            }
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "## Daily backup summary"
+            echo ""
+            echo "| Item | Value |"
+            echo "|------|-------|"
+            echo "| Date (Cairo) | ${{ steps.meta.outputs.backup_date }} |"
+            echo "| Committed | ${{ steps.commit.outputs.committed || 'false' }} |"
+            echo "| Weekly tag | ${{ steps.weekly_tag.outputs.tag || 'n/a' }} |"
+            echo "| Workflow | \`daily-backup.yml\` |"
+            echo "| Run | ${{ github.run_id }} |"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  notify-failure:
+    name: Failure notification
+    needs: backup
+    if: failure()
+    runs-on: ubuntu-latest
+    env:
+      TZ: Africa/Cairo
+    steps:
+      - name: Collect failure details
+        id: failure
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const datetime = new Date().toLocaleString('en-GB', {
+              timeZone: 'Africa/Cairo',
+              dateStyle: 'medium',
+              timeStyle: 'short',
+              hour12: false
+            }) + ' (Africa/Cairo)';
+
+            const { data: jobsData } = await github.rest.actions.listJobsForWorkflowRun({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              run_id: context.runId
+            });
+
+            const failedJobs = jobsData.jobs.filter(j => j.conclusion === 'failure');
+            let errorDetails = 'Unknown error — open the workflow run logs for details.';
+            if (failedJobs.length > 0) {
+              errorDetails = failedJobs.map(job => {
+                const badSteps = (job.steps || []).filter(s => s.conclusion === 'failure');
+                const stepNames = badSteps.map(s => s.name).join(', ') || 'see job logs';
+                return `• ${job.name}: ${stepNames}`;
+              }).join('\n');
+            }
+
+            const repo = `${context.repo.owner}/${context.repo.repo}`;
+            const plainMessage = [
+              'BB HUB Daily Backup Failed',
+              '',
+              `Repo: ${repo}`,
+              `Date & Time: ${datetime}`,
+              '',
+              'Error details:',
+              errorDetails,
+              '',
+              `Failed run: ${runUrl}`
+            ].join('\n');
+
+            core.setOutput('repo', repo);
+            core.setOutput('datetime', datetime);
+            core.setOutput('run_url', runUrl);
+            core.setOutput('error_details', errorDetails);
+            core.setOutput('plain_message', plainMessage);
+
+      - name: Notify via Telegram
+        id: telegram
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          REPO: ${{ steps.failure.outputs.repo }}
+          DATETIME: ${{ steps.failure.outputs.datetime }}
+          ERROR_DETAILS: ${{ steps.failure.outputs.error_details }}
+          RUN_URL: ${{ steps.failure.outputs.run_url }}
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "sent=false" >> "$GITHUB_OUTPUT"
+            echo "Telegram secrets not configured (TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID)."
+            exit 0
+          fi
+
+          MESSAGE="🔴 *BB HUB Daily Backup Failed*
+
+          📦 *Repo:* \`${REPO}\`
+          🕐 *Date & Time:* ${DATETIME}
+
+          ❌ *Error details:*
+          ${ERROR_DETAILS}
+
+          🔗 [View failed run](${RUN_URL})"
+
+          HTTP_CODE=$(curl -s -o /tmp/tg_response.json -w "%{http_code}" -X POST \
+            "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            --data-urlencode "chat_id=${TELEGRAM_CHAT_ID}" \
+            --data-urlencode "text=${MESSAGE}" \
+            --data-urlencode "parse_mode=Markdown" \
+            --data-urlencode "disable_web_page_preview=false")
+
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "sent=true" >> "$GITHUB_OUTPUT"
+            echo "Telegram notification sent."
+          else
+            echo "sent=false" >> "$GITHUB_OUTPUT"
+            echo "Telegram API error (HTTP ${HTTP_CODE}):"
+            cat /tmp/tg_response.json
+            exit 1
+          fi
+
+      - name: Check SMTP configured
+        id: smtp_check
+        if: steps.telegram.outputs.sent != 'true'
+        run: |
+          if [ -n "${{ secrets.SMTP_SERVER }}" ] && [ -n "${{ secrets.NOTIFY_EMAIL_TO }}" ]; then
+            echo "configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "configured=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Email fallback (SMTP)
+        id: email
+        if: steps.telegram.outputs.sent != 'true' && steps.smtp_check.outputs.configured == 'true'
+        continue-on-error: true
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.SMTP_SERVER }}
+          server_port: ${{ secrets.SMTP_PORT }}
+          username: ${{ secrets.SMTP_USERNAME }}
+          password: ${{ secrets.SMTP_PASSWORD }}
+          subject: "BB HUB Daily Backup Failed — ${{ steps.failure.outputs.repo }}"
+          to: ${{ secrets.NOTIFY_EMAIL_TO }}
+          from: ${{ secrets.SMTP_USERNAME }}
+          secure: true
+          body: |
+            ${{ steps.failure.outputs.plain_message }}
+
+      - name: Email fallback status
+        if: steps.telegram.outputs.sent != 'true'
+        run: |
+          if [ -z "${{ secrets.SMTP_SERVER }}" ] || [ -z "${{ secrets.NOTIFY_EMAIL_TO }}" ]; then
+            echo "SMTP secrets not configured (SMTP_SERVER / NOTIFY_EMAIL_TO)."
+            echo "Fallback: GitHub issue + enable Actions email in profile notifications."
+          elif [ "${{ steps.email.outcome }}" = "success" ]; then
+            echo "Email sent via SMTP."
+          else
+            echo "Email step did not succeed — check SMTP secrets."
+          fi
+
+      - name: Open or update failure issue
+        uses: actions/github-script@v7
+        env:
+          PLAIN_MESSAGE: ${{ steps.failure.outputs.plain_message }}
+          RUN_URL: ${{ steps.failure.outputs.run_url }}
+          TELEGRAM_SENT: ${{ steps.telegram.outputs.sent }}
+        with:
+          script: |
+            const runUrl = process.env.RUN_URL;
+            const title = `Daily backup failed — ${new Date().toISOString().slice(0, 10)}`;
+            const notifyNote = process.env.TELEGRAM_SENT === 'true'
+              ? 'Telegram alert sent.'
+              : 'Telegram not sent — configure secrets or SMTP email fallback.';
+
+            const body = [
+              '## Daily auto-backup workflow failed',
+              '',
+              '```text',
+              process.env.PLAIN_MESSAGE,
+              '```',
+              '',
+              `**Notifications:** ${notifyNote}`,
+              '',
+              '### Setup',
+              '- Telegram: see `.github/TELEGRAM_SETUP.md`',
+              '- GitHub email: profile **Settings → Notifications → Actions**',
+              '',
+              `[Open failed run](${runUrl})`
+            ].join('\n');
+
+            const { data: openIssues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'backup-failure'
+            });
+
+            const existing = openIssues.find(i => i.title.startsWith('Daily backup failed'));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `${notifyNote}\n\n${process.env.PLAIN_MESSAGE}\n\n${runUrl}`
+              });
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body,
+              labels: ['backup-failure', 'automated', 'daily-backup']
+            });
+
+      - name: Failure summary
+        if: always()
+        run: |
+          {
+            echo "## Backup failed"
+            echo ""
+            echo "| Channel | Status |"
+            echo "|---------|--------|"
+            echo "| Telegram | \`${{ steps.telegram.outputs.sent || 'false' }}\` |"
+            echo "| Email SMTP | \`${{ steps.email.outcome || 'skipped' }}\` |"
+            echo "| GitHub issue | \`opened/updated\` |"
+            echo ""
+            echo "**Run:** ${{ steps.failure.outputs.run_url }}"
+          } >> "$GITHUB_STEP_SUMMARY"
