@@ -2,7 +2,6 @@
   "types": {
     "color": "text",
     "brand": "text",
-    "platform": "text",
-    "circuit": "text"
+    "platform": "text"
   }
 }

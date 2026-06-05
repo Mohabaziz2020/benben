@@ -39,7 +39,7 @@ pin: true
 | BenBenHub / Constitution | `gold` | `#FFD700` | [[01_CONSTITUTION/PROJECT_BIBLE]] · [[INDEX]] |
 | Circuit Rack | `red` | `#E53935` | [[02_PLATFORMS/rack/README]] |
 | Circuit Pro | `green` | `#2E7D32` | [[02_PLATFORMS/pro/README]] |
-| Circuit Labs | `teal` | `#00ACC1` | [[02_PLATFORMS/labs/README]] |
+| Circuit Labs | `teal` | `#009688` | [[02_PLATFORMS/labs/README]] |
 
 **Graph setup:** [[02_PLATFORMS/GRAPH_MOC#Visual identity · نظام الألوان (Graph View)]] · CSS: `.obsidian/snippets/benbenhub-visual-identity.css`
 

@@ -8,28 +8,21 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "color:gold",
-      "color": {
-        "a": 1,
-        "rgb": 16766720
-      }
-    },
-    {
-      "query": "color:red",
+      "query": "path:02_PLATFORMS/rack",
       "color": {
         "a": 1,
         "rgb": 15022389
       }
     },
     {
-      "query": "color:teal",
+      "query": "path:02_PLATFORMS/labs",
       "color": {
         "a": 1,
-        "rgb": 35195
+        "rgb": 38664
       }
     },
     {
-      "query": "color:green",
+      "query": "path:02_PLATFORMS/pro",
       "color": {
         "a": 1,
         "rgb": 3046706
@@ -43,21 +36,84 @@
       }
     },
     {
-      "query": "path:02_PLATFORMS/rack",
+      "query": "path:INDEX",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:00_ROOT_DASHBOARD/HOME",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:02_PLATFORMS/GRAPH_MOC",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:02_PLATFORMS/PLATFORMS_INDEX",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:02_PLATFORMS/FEATURES_MODULES_DATABASE",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "[color:red]",
       "color": {
         "a": 1,
         "rgb": 15022389
       }
     },
     {
-      "query": "path:02_PLATFORMS/labs",
+      "query": "[color:teal]",
       "color": {
         "a": 1,
-        "rgb": 35195
+        "rgb": 38664
       }
     },
     {
-      "query": "path:02_PLATFORMS/pro",
+      "query": "[color:green]",
+      "color": {
+        "a": 1,
+        "rgb": 3046706
+      }
+    },
+    {
+      "query": "[color:gold]",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "tag:#graph-color-rack",
+      "color": {
+        "a": 1,
+        "rgb": 15022389
+      }
+    },
+    {
+      "query": "tag:#graph-color-labs",
+      "color": {
+        "a": 1,
+        "rgb": 38664
+      }
+    },
+    {
+      "query": "tag:#graph-color-pro",
       "color": {
         "a": 1,
         "rgb": 3046706
@@ -85,16 +141,16 @@
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": true,
   "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1.1,
+  "nodeSizeMultiplier": 1.15,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
+  "centerStrength": 0.52,
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 200,
-  "scale": 1.4019828977760873,
-  "close": true
+  "scale": 1,
+  "close": false
 }

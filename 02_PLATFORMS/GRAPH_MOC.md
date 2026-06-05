@@ -30,7 +30,7 @@ pin: true
 |--------|---------|-----|--------------|-------------------|
 | **BenBenHub / Constitution** | `gold` | `#FFD700` | `color:gold` · `path:01_CONSTITUTION` | [[01_CONSTITUTION/PROJECT_BIBLE]] · [[01_CONSTITUTION/README]] · [[INDEX]] |
 | **Circuit Rack** | `red` | `#E53935` | `color:red` · `path:02_PLATFORMS/rack` | `02_PLATFORMS/rack/*` |
-| **Circuit Labs** | `teal` | `#00ACC1` (teal-blue) | `path:02_PLATFORMS/labs` · `[color:teal]` | `02_PLATFORMS/labs/*` |
+| **Circuit Labs** | `teal` | `#009688` | `path:02_PLATFORMS/labs` · `[color:teal]` | `02_PLATFORMS/labs/*` |
 | **Circuit Pro** | `green` | `#2E7D32` | `color:green` · `path:02_PLATFORMS/pro` | `02_PLATFORMS/pro/*` |
 | Shared core | *(neutral)* | `#9392AD` | `path:03_SHARED_CORE` | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
 | Governance | *(neutral)* | `#B7791F` | `path:04_GOVERNANCE` | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
@@ -104,14 +104,35 @@ pin: true
 
 ---
 
-## Graph View tips · نصائح عرض الرسم
+## Graph View activation · تفعيل ألوان الرسم
 
-1. **Reload vault index:** **Ctrl+P** → type `Reload app without saving` → Enter (required after `graph.json` changes).
-2. **Open Graph:** **Ctrl+G** (or ribbon → graph fork icon).
-3. **Open Groups panel:** In Graph View, look at the **right sidebar** → section **Groups** (if hidden: click gear ⚙ on graph → ensure groups visible; `graph.json` has `"close": false`).
-4. **Verify toggles:** Each row should be **on** (colored dot): `path:02_PLATFORMS/rack` (red), `path:02_PLATFORMS/labs` (teal-blue), `path:02_PLATFORMS/pro` (green), `path:01_CONSTITUTION` (gold).
-5. **Test filter:** In graph search box type `path:02_PLATFORMS/rack` — only red nodes should remain.
-6. **Local graph:** Open [[02_PLATFORMS/pro/README]] → **Ctrl+P** → `Graph view: Open local graph` — center node green, neighbors colored by folder.
-7. **CSS (optional):** Settings → Appearance → CSS snippets → **benbenhub-visual-identity** on (folder names in file explorer).
+### Step-by-step (see colored nodes)
+
+1. Vault folder: **`E:\BENBENHUB-CORE`** (must be the folder Obsidian opens — contains `INDEX.md`).
+2. **Ctrl+P** → **`Reload app without saving`** → Enter.
+3. **Ctrl+G** → open **Graph view**.
+4. Right sidebar → **Groups** → ensure **expanded** (`graph.json` has `"close": false`).
+5. Confirm **top 4 groups are ON** (filled color dot):
+   - `path:02_PLATFORMS/rack` → **red** `#E53935`
+   - `path:02_PLATFORMS/labs` → **teal** `#009688`
+   - `path:02_PLATFORMS/pro` → **green** `#2E7D32`
+   - `path:01_CONSTITUTION` → **gold** `#FFD700`
+6. If nodes are still gray: click **gear** on graph → reset display → reload app again.
+
+### Filters & groups (how to use)
+
+| Goal | Type in graph **search** box | Result |
+|------|------------------------------|--------|
+| Rack only | `path:02_PLATFORMS/rack` | Red cluster |
+| Labs only | `path:02_PLATFORMS/labs` | Teal cluster |
+| Pro only | `path:02_PLATFORMS/pro` | Green cluster |
+| Constitution | `path:01_CONSTITUTION` | Gold cluster |
+| By property | `[color:red]` · `[color:teal]` · `[color:green]` · `[color:gold]` | Matches frontmatter |
+| Hide shared core | `-path:03_SHARED_CORE` | Removes neutral nodes |
+| Local island | Open platform README → **Ctrl+P** → `Graph view: Open local graph` | Neighbors only |
+
+**Groups panel:** Each row is a **color rule**. First matching rule (top to bottom) wins. Do not move `tag:#graph-hub` above platform paths.
+
+**CSS (optional):** Settings → Appearance → CSS snippets → **benbenhub-visual-identity** (colored folder names).
 
 *Maestro · Graph hub · [[01_CONSTITUTION/PROJECT_BIBLE]] ↔ platforms ↔ [[03_SHARED_CORE/REUSABLE_PHRASES]] ↔ [[04_GOVERNANCE/GOVERNANCE_GATES]]*

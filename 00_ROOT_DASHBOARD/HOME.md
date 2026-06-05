@@ -1,10 +1,12 @@
 ---
 type: dashboard
 status: active
+color: gold
+brand: benbenhub
 edition: master
 version: "2.0"
 updated: 2026-06-05
-tags: [home, dashboard, bilingual, daily, command-center]
+tags: [home, dashboard, bilingual, daily, command-center, graph-hub]
 pin: true
 ---
 
