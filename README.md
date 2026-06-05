@@ -17,6 +17,21 @@
 
 > **Obsidian users:** Wikilinks (`[[note]]`) work inside the vault. This README uses standard links for GitHub.
 
+### Brand marks | شعارات المنصات
+
+| BENBENHUB | Circuit Rack | Circuit Pro | Circuit Labs |
+|:---:|:---:|:---:|:---:|
+| ![[03_SHARED_CORE/branding/benbenhub-logo.png\|48]] | ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|64]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|64]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|64]] |
+
+| | EN | AR | MOC |
+|--|----|----|-----|
+| Parent | Hidden architecture SSOT | مصدر الحقيقة المعمارية | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) |
+| Rack | Commerce island | جزيرة التجارة | [Rack README](02_PLATFORMS/Rack/README.md) |
+| Pro | Identity & geo | الهوية والجغرافيا | [Pro README](02_PLATFORMS/Pro/README.md) |
+| Labs | Knowledge & learning | المعرفة والتعلم | [Labs README](02_PLATFORMS/Labs/README.md) |
+
+*Obsidian Reading view* shows sized embeds above. *GitHub* does not render `![[wikilinks]]` — open the vault locally for preview.
+
 ---
 
 ## Quick Start | بداية سريعة
@@ -31,7 +46,7 @@
 | 2 | **Today's daily note** | مذكرة اليوم | Obsidian → *Daily notes: Open today's* · [Template](90_TEMPLATES/DAILY_NOTE_TEMPLATE.md) |
 | 3 | **Constitution (law)** | الدستور | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) |
 | 4 | **Full vault map** | خريطة الخزنة | [INDEX](INDEX.md) |
-| 5 | **Your platform** (one only) | منصتك (واحدة) | [Rack](02_PLATFORMS/rack/README.md) · [Pro](02_PLATFORMS/pro/README.md) · [Labs](02_PLATFORMS/labs/README.md) |
+| 5 | **Your platform** (one only) | منصتك (واحدة) | [Rack](02_PLATFORMS/Rack/README.md) · [Pro](02_PLATFORMS/Pro/README.md) · [Labs](02_PLATFORMS/Labs/README.md) |
 | 6 | **Phrase bank** (copy/UI) | بنك الجمل | [REUSABLE_PHRASES](03_SHARED_CORE/REUSABLE_PHRASES.md) |
 | 7 | **End of day backup** | نسخ احتياطي | `scripts/backup-vault.ps1` |
 
@@ -99,9 +114,9 @@ BENBENHUB-CORE/
 | See everything | Master index | الفهرس الشامل | [INDEX](INDEX.md) |
 | Read the law | Constitution SSOT | الدستور | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) |
 | All platforms | Ecosystem index | فهرس المنصات | [PLATFORMS_INDEX](02_PLATFORMS/PLATFORMS_INDEX.md) |
-| Commerce island | Circuit Rack MOC | راك | [rack/README](02_PLATFORMS/rack/README.md) |
-| Identity island | Circuit Pro MOC | برو | [pro/README](02_PLATFORMS/pro/README.md) |
-| Knowledge island | Circuit Labs MOC | لابز | [labs/README](02_PLATFORMS/labs/README.md) |
+| Commerce island | Circuit Rack MOC | راك | [rack/README](02_PLATFORMS/Rack/README.md) |
+| Identity island | Circuit Pro MOC | برو | [pro/README](02_PLATFORMS/Pro/README.md) |
+| Knowledge island | Circuit Labs MOC | لابز | [labs/README](02_PLATFORMS/Labs/README.md) |
 | Feature registry | Modules database | سجل الوحدات | [FEATURES_MODULES_DATABASE](02_PLATFORMS/FEATURES_MODULES_DATABASE.md) |
 | UI & docs copy | Phrase bank EN/AR | بنك الجمل | [REUSABLE_PHRASES](03_SHARED_CORE/REUSABLE_PHRASES.md) |
 | Shared services | Core boundaries | حدود النواة | [SHARED_CORE_OVERVIEW](03_SHARED_CORE/SHARED_CORE_OVERVIEW.md) |
@@ -187,9 +202,9 @@ BENBENHUB-CORE/
 | ⭐ | [REUSABLE_PHRASES](03_SHARED_CORE/REUSABLE_PHRASES.md) | Bilingual phrase bank | بنك الجمل |
 | ⭐ | [PLATFORMS_INDEX](02_PLATFORMS/PLATFORMS_INDEX.md) | All platforms | كل المنصات |
 | | [HOME](00_ROOT_DASHBOARD/HOME.md) | Today’s dashboard | لوحة اليوم |
-| | [rack/README](02_PLATFORMS/rack/README.md) | Rack MOC | راك |
-| | [pro/README](02_PLATFORMS/pro/README.md) | Pro MOC | برو |
-| | [labs/README](02_PLATFORMS/labs/README.md) | Labs MOC | لابز |
+| | [rack/README](02_PLATFORMS/Rack/README.md) | Rack MOC | راك |
+| | [pro/README](02_PLATFORMS/Pro/README.md) | Pro MOC | برو |
+| | [labs/README](02_PLATFORMS/Labs/README.md) | Labs MOC | لابز |
 | | [GOVERNANCE_GATES](04_GOVERNANCE/GOVERNANCE_GATES.md) | Three gates | البوابات |
 | | [INTEGRATION_RULES](04_GOVERNANCE/INTEGRATION_RULES.md) | Integration law | قانون التكامل |
 

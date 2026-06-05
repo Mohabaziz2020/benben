@@ -20,6 +20,14 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 **Entry:** [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]]
 
+### Ecosystem brand marks | شعارات المنظومة
+
+| BENBENHUB | Circuit Rack | Circuit Pro | Circuit Labs |
+|:---:|:---:|:---:|:---:|
+| ![[03_SHARED_CORE/branding/benbenhub-logo.png\|52]] | ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|52]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|52]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|52]] |
+
+*Obsidian:* `![[03_SHARED_CORE/branding/<file>.png\|width]]` — logos render in **Reading view**; **Graph View** uses `color:` frontmatter and path groups in `.obsidian/graph.json`, not embed thumbnails.
+
 ---
 
 ## Table of Contents
@@ -187,9 +195,9 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 | Platform | Folder | **Platform MOC (start here)** | Bible section | Modules | Isolation |
 |----------|--------|-------------------------------|---------------|---------|-----------|
-| **Circuit Rack** | `02_PLATFORMS/rack/` | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/rack/ISOLATION]] |
-| **Circuit Pro** | `02_PLATFORMS/pro/` | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
-| **Circuit Labs** | `02_PLATFORMS/labs/` | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
+| **Circuit Rack** | `02_PLATFORMS/rack/` | [[02_PLATFORMS/Rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/Rack/FEATURES_MODULES]] | [[02_PLATFORMS/Rack/ISOLATION]] |
+| **Circuit Pro** | `02_PLATFORMS/pro/` | [[02_PLATFORMS/Pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/Pro/FEATURES_MODULES]] | [[02_PLATFORMS/Pro/ISOLATION]] |
+| **Circuit Labs** | `02_PLATFORMS/labs/` | [[02_PLATFORMS/Labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/Labs/FEATURES_MODULES]] | [[02_PLATFORMS/Labs/ISOLATION]] |
 
 **Vault index:** [[INDEX#Platforms · المنصات]] · [[02_PLATFORMS/PLATFORMS_INDEX]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]] · **Module registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
 
@@ -201,9 +209,9 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 | Link type | Rack | Pro | Labs |
 |-----------|------|-----|------|
-| **MOC ↔ Bible** | [[02_PLATFORMS/rack/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/pro/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/labs/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] |
+| **MOC ↔ Bible** | [[02_PLATFORMS/Rack/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/Pro/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/Labs/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] |
 | **MOC ↔ Phrases** | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] |
-| **MOC ↔ Governance** | [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[02_PLATFORMS/rack/ISOLATION]] | same gates · [[02_PLATFORMS/pro/ISOLATION]] | same gates · [[02_PLATFORMS/labs/ISOLATION]] |
+| **MOC ↔ Governance** | [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[02_PLATFORMS/Rack/ISOLATION]] | same gates · [[02_PLATFORMS/Pro/ISOLATION]] | same gates · [[02_PLATFORMS/Labs/ISOLATION]] |
 
 ---
 
@@ -211,7 +219,7 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 > **Sovereign commerce island** · Primary revenue engine · **Vault:** `02_PLATFORMS/rack/`
 
-**→ Platform MOC:** [[02_PLATFORMS/rack/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/rack/OVERVIEW]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/Rack/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/Rack/OVERVIEW]] · [[02_PLATFORMS/Rack/FEATURES_MODULES]] · [[02_PLATFORMS/Rack/ISOLATION]]
 
 ---
 
@@ -248,7 +256,7 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 | **Revenue** | Listings, Boost, bidding, secondary, hidden offers | قوائم، Boost، مزايدة، ثانوي، عروض مخفية |
 | **Trust** | Pro badges + Labs metadata — no sibling UI | شارات Pro + بيانات Labs — بلا واجهات أخوة |
 
-**Platform summary (MOC):** [[02_PLATFORMS/rack/README#Vision & Mission | الرؤية والمهمة — ملخص]]
+**Platform summary (MOC):** [[02_PLATFORMS/Rack/README#Vision & Mission| الرؤية والمهمة — ملخص]]
 
 ---
 
@@ -283,7 +291,7 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 **Forbidden | ممنوع:** One checkbox covering Pro verification or Labs courses · cross-brand “accept all platforms” · storing commerce SSOT in shared core consent tables.
 
-**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `R-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/rack/README#Key Agreements | الاتفاقات — ملخص]]
+**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `R-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/Rack/README#Key Agreements| الاتفاقات — ملخص]]
 
 ---
 
@@ -293,7 +301,7 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 **AR:** أساسي (R-C*): كتالوج وتجارة وبحث وطلبات. نمو (R-G*): Boost ومزايدة وسوق ثانوي وعروض مخفية وتقييمات وإشعارات. قوة (R-P*): صلاحيات جملة وتحليلات وحزم وERP (مقيد). وحدات M-001–M-005؛ SSOT الكتالوج لراك.
 
-Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[02_PLATFORMS/rack/FEATURES_MODULES | الميزات الرئيسية]]
+Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[02_PLATFORMS/Rack/FEATURES_MODULES| الميزات الرئيسية]]
 
 ---
 
@@ -323,7 +331,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[0
 
 **AR:** لا واجهات أخوة على مسارات راك؛ لا قراءة مخاطات `pro`/`labs`؛ سجل المحفظة في النواة بوسم `platform_source=rack`؛ نشر وقانون مستقلان؛ SSOT المنتج في قاعدة راك فقط.
 
-Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
+Full: [[02_PLATFORMS/Rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 ---
 
@@ -352,7 +360,7 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 > **Sovereign professional island** · Identity & geo layer · **Vault:** `02_PLATFORMS/pro/`
 
-**→ Platform MOC:** [[02_PLATFORMS/pro/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/pro/OVERVIEW]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/Pro/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/Pro/OVERVIEW]] · [[02_PLATFORMS/Pro/FEATURES_MODULES]] · [[02_PLATFORMS/Pro/ISOLATION]]
 
 ---
 
@@ -389,7 +397,7 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 | **Exports** | Versioned APIs — Rack badges, Labs `profile_id` links | API نسخة — شارات راك، روابط Labs |
 | **Forbidden** | Rack catalog/cart/checkout; Labs editor on Pro routes | كتالوج/سلة/دفع راك؛ محرر Labs على Pro |
 
-**Platform summary (MOC):** [[02_PLATFORMS/pro/README#Vision & Mission | الرؤية والمهمة — ملخص]]
+**Platform summary (MOC):** [[02_PLATFORMS/Pro/README#Vision & Mission| الرؤية والمهمة — ملخص]]
 
 ---
 
@@ -418,7 +426,7 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 **Forbidden | ممنوع:** Pro terms obligating Rack listing purchase · Labs editorial license bundled into verification · `verified_pro` truth in Rack/Labs DB.
 
-**Summary:** [[02_PLATFORMS/pro/README#Key Agreements | الاتفاقات — ملخص]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+**Summary:** [[02_PLATFORMS/Pro/README#Key Agreements| الاتفاقات — ملخص]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
 
 ---
 
@@ -428,7 +436,7 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 **AR:** ملفات وتحقق واكتشاف جغرافي وواجهات سمعة؛ نمو: معارض وإحالات وفهرسة لـ Rack/Labs؛ قوة: درجات ثقة ووكيل إقليمي (مقيد).
 
-→ [[02_PLATFORMS/pro/FEATURES_MODULES | الميزات الرئيسية]]
+→ [[02_PLATFORMS/Pro/FEATURES_MODULES| الميزات الرئيسية]]
 
 **Growth (P-G*)** — Geo-services · portfolios/credentials · referrals (backend) · indexing API for Rack/Labs
 
@@ -465,7 +473,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **AR:** لا تجارة راك ولا CMS Labs على Pro؛ لا جداول أخوة كـ SSOT؛ تصدير API بنسخة فقط؛ نشر مستقل؛ التحقق في Pro هو المرجع.
 
-[[02_PLATFORMS/pro/ISOLATION]]
+[[02_PLATFORMS/Pro/ISOLATION]]
 
 ---
 
@@ -488,7 +496,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **AR:** أدوار: مهني، verified_pro، وكيل إقليمي (مقيد)، مراجع ثقة، API شريك، إدارة Pro. لا دفع سوق ولا كتالوج على Pro.
 
-**MOC teaser:** [[02_PLATFORMS/pro/README#Business Rules · قواعد العمل (ملخص) | قواعد العمل — ملخص]]
+**MOC teaser:** [[02_PLATFORMS/Pro/README#Business Rules · قواعد العمل (ملخص)| قواعد العمل — ملخص]]
 
 ---
 
@@ -496,7 +504,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 > **Sovereign knowledge island** · Documentation & learning · **Vault:** `02_PLATFORMS/labs/`
 
-**→ Platform MOC:** [[02_PLATFORMS/labs/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/labs/OVERVIEW]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/Labs/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/Labs/OVERVIEW]] · [[02_PLATFORMS/Labs/FEATURES_MODULES]] · [[02_PLATFORMS/Labs/ISOLATION]]
 
 ---
 
@@ -552,7 +560,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 | **Forbidden** | Product pricing, inventory, verification SSOT; Rack cart on Labs | تسعير، مخزون، تحقق؛ سلة راك على Labs |
 | **Deploy independence** | Content releases decoupled from Rack marketplace cycles | إصدارات محتوى مستقلة عن دورات سوق راك |
 
-**Platform summary (MOC):** [[02_PLATFORMS/labs/README#Vision & Mission | الرؤية والمهمة — ملخص]]
+**Platform summary (MOC):** [[02_PLATFORMS/Labs/README#Vision & Mission| الرؤية والمهمة — ملخص]]
 
 ---
 
@@ -590,7 +598,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **Forbidden | ممنوع:** Labs checkout for Rack products · Labs storing `verified_pro` or listing price/inventory · bundled Rack seller terms on course enrollment · one “accept all BENBENHUB platforms” checkbox.
 
-**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `L-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/labs/README#Key Agreements | الاتفاقات — ملخص]]
+**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `L-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/Labs/README#Key Agreements| الاتفاقات — ملخص]]
 
 ---
 
@@ -600,7 +608,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **AR:** نشر وقواعد معرفة ومسارات تعلم وإشراف؛ نمو: واجهات مرجعية وإصدارات؛ قوة: دورات مدفوعة (مقيدة).
 
-→ [[02_PLATFORMS/labs/FEATURES_MODULES | الميزات الرئيسية]]
+→ [[02_PLATFORMS/Labs/FEATURES_MODULES| الميزات الرئيسية]]
 
 **Growth (L-G*)** — Learning paths · support-agent workflows · cross-ref APIs · versioning/lifecycle
 
@@ -637,7 +645,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
 
 **AR:** لا تجارة راك ولا محرر Pro على Labs؛ ليس SSOT للسعر أو المخزون أو التحقق؛ مراجع API فقط بلا iframe؛ نشر محتوى مستقل؛ النصوص في مخطط `labs` فقط.
 
-[[02_PLATFORMS/labs/ISOLATION]]
+[[02_PLATFORMS/Labs/ISOLATION]]
 
 ---
 
@@ -949,9 +957,9 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 ### Platforms (`02_PLATFORMS/`)
 - [[02_PLATFORMS/GRAPH_MOC]] — **Graph hub** (Bible ↔ MOCs ↔ Phrases ↔ Governance)
 - [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
-- **rack/** — [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
-- **pro/** — [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
-- **labs/** — [[02_PLATFORMS/labs/README]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
+- **rack/** — [[02_PLATFORMS/Rack/README]] · [[02_PLATFORMS/Rack/FEATURES_MODULES]] · [[02_PLATFORMS/Rack/ISOLATION]]
+- **pro/** — [[02_PLATFORMS/Pro/README]] · [[02_PLATFORMS/Pro/FEATURES_MODULES]] · [[02_PLATFORMS/Pro/ISOLATION]]
+- **labs/** — [[02_PLATFORMS/Labs/README]] · [[02_PLATFORMS/Labs/FEATURES_MODULES]] · [[02_PLATFORMS/Labs/ISOLATION]]
 
 ### Shared Core (`03_SHARED_CORE/`)
 - [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]]
