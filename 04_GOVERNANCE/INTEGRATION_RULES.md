@@ -10,7 +10,15 @@ tags: [integration, isolation, rules]
 **EN** — Operational enforcement of backend-only contracts between islands.  
 **AR** — تطبيق عملي لعقود التكامل الخلفي بين الجزر.
 
-[[03_SHARED_CORE/PLATFORM_INTEGRATION]] · [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/pro/ISOLATION]] · [[02_PLATFORMS/labs/ISOLATION]]
+**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Platform Relationships & Backend Integration Rules]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Isolation & Governance]]
+
+[[03_SHARED_CORE/PLATFORM_INTEGRATION]] · [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/decisions/README]]
+
+| Platform | MOC | Phrases | Isolation |
+|----------|-----|---------|-----------|
+| Rack | [[02_PLATFORMS/rack/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] | [[02_PLATFORMS/rack/ISOLATION]] |
+| Pro | [[02_PLATFORMS/pro/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] | [[02_PLATFORMS/pro/ISOLATION]] |
+| Labs | [[02_PLATFORMS/labs/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] | [[02_PLATFORMS/labs/ISOLATION]] |
 
 ---
 

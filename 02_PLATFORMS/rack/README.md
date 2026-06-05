@@ -8,7 +8,7 @@ theme: blue
 domain: rack.*
 updated: 2026-06-05
 author: Maestro
-tags: [rack, commerce, marketplace, moc, bilingual]
+tags: [rack, commerce, marketplace, moc, bilingual, graph-hub]
 aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 ---
 
@@ -63,6 +63,11 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | Constitution (SSOT) | الدستور |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT \| الرؤية والمهمة]] | Vision & mission | الرؤية والمهمة |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT \| الاتفاقات]] | Agreements | الاتفاقات |
+| [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] | Phrases (`R-*`) | جمل راك |
+| [[04_GOVERNANCE/GOVERNANCE_GATES]] | Governance gates | بوابات الحوكمة |
+| [[04_GOVERNANCE/INTEGRATION_RULES]] | Integration law | قانون التكامل |
+| [[04_GOVERNANCE/decisions/README]] | Governance decisions | قرارات الحوكمة |
+| [[02_PLATFORMS/GRAPH_MOC]] | Graph hub (all links) | مركز الرسم |
 
 **Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
 

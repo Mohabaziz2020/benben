@@ -11,7 +11,9 @@ tags: [platforms, rack, pro, labs, bilingual]
 **EN** — Three **sovereign platform MOCs** under a hidden parent. Each README is the island map (not a shared app).  
 **AR** — ثلاث **خرائط منصات سيادية** تحت أب مخفي. كل README خريطة الجزيرة.
 
-**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]] · **Master index:** [[INDEX#Platforms · المنصات]] · **Home:** [[00_ROOT_DASHBOARD/HOME]]
+**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]] · **Master index:** [[INDEX#Platforms · المنصات]] · **Home:** [[00_ROOT_DASHBOARD/HOME]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]]
+
+**Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 ---
 

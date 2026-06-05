@@ -17,6 +17,11 @@
     },
     {
       "type": "file",
+      "path": "02_PLATFORMS/GRAPH_MOC.md",
+      "title": "Graph hub (Obsidian)"
+    },
+    {
+      "type": "file",
       "path": "03_SHARED_CORE/REUSABLE_PHRASES.md",
       "title": "Phrases EN/AR"
     },

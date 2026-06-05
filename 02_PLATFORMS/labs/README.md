@@ -8,7 +8,7 @@ theme: green
 domain: labs.*
 updated: 2026-06-05
 author: Maestro
-tags: [labs, knowledge, content, moc, bilingual]
+tags: [labs, knowledge, content, moc, bilingual, graph-hub]
 aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 ---
 
@@ -63,6 +63,11 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | Constitution (SSOT) | الدستور |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT \| الرؤية والمهمة]] | Vision & mission | الرؤية والمهمة |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT \| الاتفاقات]] | Agreements | الاتفاقات |
+| [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] | Phrases (`L-*`) | جمل لابز |
+| [[04_GOVERNANCE/GOVERNANCE_GATES]] | Governance gates | بوابات الحوكمة |
+| [[04_GOVERNANCE/INTEGRATION_RULES]] | Integration law | قانون التكامل |
+| [[04_GOVERNANCE/decisions/README]] | Governance decisions | قرارات الحوكمة |
+| [[02_PLATFORMS/GRAPH_MOC]] | Graph hub (all links) | مركز الرسم |
 
 **Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
 

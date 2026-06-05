@@ -16,7 +16,7 @@ tags: [benbenhub, ssot, project-bible]
 
 **AR:** الدستور الأعلى لـ BENBENHUB: كيان أب غير معلن على المنصات بهدف اطفاء شخصية اعتبارية لكل منصة ، ثلاث منصات سيادية معزولة، تكامل خلفي فقط، وثلاث بوابات حوكمة ملزمة.
 
-**Entry:** [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]]
+**Entry:** [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]]
 
 ---
 
@@ -189,7 +189,19 @@ tags: [benbenhub, ssot, project-bible]
 | **Circuit Pro** | `02_PLATFORMS/pro/` | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
 | **Circuit Labs** | `02_PLATFORMS/labs/` | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
 
-**Vault index:** [[INDEX#Platforms · المنصات]] · [[02_PLATFORMS/PLATFORMS_INDEX]] · **Module registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
+**Vault index:** [[INDEX#Platforms · المنصات]] · [[02_PLATFORMS/PLATFORMS_INDEX]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]] · **Module registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
+
+### Knowledge Graph Hub | مركز الرسم المعرفي
+
+**EN:** Use [[02_PLATFORMS/GRAPH_MOC]] as the **Obsidian graph anchor** — it wikilinks every platform MOC to this bible, [[03_SHARED_CORE/REUSABLE_PHRASES]], and [[04_GOVERNANCE/GOVERNANCE_GATES]] / [[04_GOVERNANCE/INTEGRATION_RULES]].
+
+**AR:** استخدم [[02_PLATFORMS/GRAPH_MOC]] كـ **مرساة الرسم** — يربط خرائط المنصات بالدستور وبنك الجمل وملفات الحوكمة.
+
+| Link type | Rack | Pro | Labs |
+|-----------|------|-----|------|
+| **MOC ↔ Bible** | [[02_PLATFORMS/rack/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/pro/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/labs/README]] ↔ [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] |
+| **MOC ↔ Phrases** | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] |
+| **MOC ↔ Governance** | [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[02_PLATFORMS/rack/ISOLATION]] | same gates · [[02_PLATFORMS/pro/ISOLATION]] | same gates · [[02_PLATFORMS/labs/ISOLATION]] |
 
 ---
 
@@ -197,7 +209,7 @@ tags: [benbenhub, ssot, project-bible]
 
 > **Sovereign commerce island** · Primary revenue engine · **Vault:** `02_PLATFORMS/rack/`
 
-**→ Platform MOC:** [[02_PLATFORMS/rack/README]] · **Supporting:** [[02_PLATFORMS/rack/OVERVIEW]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/rack/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/rack/OVERVIEW]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
 
 ---
 
@@ -338,7 +350,7 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 > **Sovereign professional island** · Identity & geo layer · **Vault:** `02_PLATFORMS/pro/`
 
-**→ Platform MOC:** [[02_PLATFORMS/pro/README]] · **Supporting:** [[02_PLATFORMS/pro/OVERVIEW]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/pro/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/pro/OVERVIEW]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
 
 ---
 
@@ -480,7 +492,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 > **Sovereign knowledge island** · Documentation & learning · **Vault:** `02_PLATFORMS/labs/`
 
-**→ Platform MOC:** [[02_PLATFORMS/labs/README]] · **Supporting:** [[02_PLATFORMS/labs/OVERVIEW]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/labs/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · **Supporting:** [[02_PLATFORMS/labs/OVERVIEW]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
 
 ---
 
@@ -931,19 +943,21 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - [[01_CONSTITUTION/PROJECT_BIBLE]] — this document
 
 ### Platforms (`02_PLATFORMS/`)
+- [[02_PLATFORMS/GRAPH_MOC]] — **Graph hub** (Bible ↔ MOCs ↔ Phrases ↔ Governance)
 - [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
-- **rack/** — [[02_PLATFORMS/rack/README]] · FEATURES · ISOLATION
-- **pro/** — [[02_PLATFORMS/pro/README]] · FEATURES · ISOLATION
-- **labs/** — [[02_PLATFORMS/labs/README]] · FEATURES · ISOLATION
+- **rack/** — [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
+- **pro/** — [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
+- **labs/** — [[02_PLATFORMS/labs/README]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
 
 ### Shared Core (`03_SHARED_CORE/`)
 - [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]]
+- [[03_SHARED_CORE/REUSABLE_PHRASES]] — phrase bank (linked from every platform MOC)
 - [[03_SHARED_CORE/IDENTITY_SYSTEM]] · [[03_SHARED_CORE/CIRCUIT_WALLET]]
 - [[03_SHARED_CORE/THEME_AND_I18N]] · [[03_SHARED_CORE/PLATFORM_INTEGRATION]]
 - [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE]]
 
 ### Governance (`04_GOVERNANCE/`)
-- [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
+- [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/decisions/README]]
 
 ---
 
@@ -960,6 +974,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **2.8 · 2026-06-05** — Master Edition: bilingual bible headings, README & INDEX v3.1
 - **2.9 · 2026-06-05** — Maestro P3: detailed Platform MOCs (rack/pro/labs README); INDEX v3.2; PLATFORMS_INDEX
 - **3.0 · 2026-06-05** — Bilingual Completion Phase: **EN:** / **AR:** blocks across constitution and platform MOCs
+- **3.1 · 2026-06-05** — Graph & mind-map fix: [[02_PLATFORMS/GRAPH_MOC]] hub; Bible ↔ platform MOCs ↔ [[03_SHARED_CORE/REUSABLE_PHRASES]] ↔ [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 ---
 

@@ -10,7 +10,12 @@ tags: [governance, decisions]
 **AR:** قرارات الحوكمة المعتمدة (`GD-*`) هنا. استخدم قالب قرار الحوكمة.
 
 | Gate reference | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| Integration law | [[04_GOVERNANCE/INTEGRATION_RULES]] |
+| Constitution | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| Graph hub | [[02_PLATFORMS/GRAPH_MOC]] |
 | Template | [[90_TEMPLATES/GOVERNANCE_DECISION_TEMPLATE]] |
+
+**Platforms:** [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES]]
 
 ## Index
 

@@ -10,7 +10,15 @@ tags: [gates, governance, bilingual]
 **EN** — Immutable filters for every ecosystem decision.  
 **AR** — فلاتر ثابتة لكل قرار في المنظومة.
 
-Constitution: [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates]] · Phrases: [[03_SHARED_CORE/REUSABLE_PHRASES#Governance Gates · البوابات]]
+Constitution: [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates]] · Phrases: [[03_SHARED_CORE/REUSABLE_PHRASES#Isolation & Governance]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]]
+
+| Platform | MOC | Isolation |
+|----------|-----|-----------|
+| Rack | [[02_PLATFORMS/rack/README]] | [[02_PLATFORMS/rack/ISOLATION]] |
+| Pro | [[02_PLATFORMS/pro/README]] | [[02_PLATFORMS/pro/ISOLATION]] |
+| Labs | [[02_PLATFORMS/labs/README]] | [[02_PLATFORMS/labs/ISOLATION]] |
+
+**Also:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/decisions/README]] · [[03_SHARED_CORE/REUSABLE_PHRASES]]
 
 ---
 

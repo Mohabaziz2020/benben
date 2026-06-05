@@ -11,9 +11,22 @@ tags: [shared-core, phrases, bilingual, i18n, copy]
 
 > **Use:** Product copy, UI labels, docs, ADRs, and AI prompts. Filter by section or tag.  
 > **Rule:** Platform-specific phrases stay in their section — do not leak across brands.  
-> **Related:** [[03_SHARED_CORE/THEME_AND_I18N]] · [[01_CONSTITUTION/PROJECT_BIBLE]]
+> **Related:** [[03_SHARED_CORE/THEME_AND_I18N]] · [[01_CONSTITUTION/PROJECT_BIBLE]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]]
 
-**Filter tags:** `#general` `#rack` `#pro` `#labs` `#isolation` `#governance`
+**Filter tags:** `#general` `#rack` `#pro` `#labs` `#isolation` `#governance` `#graph-hub`
+
+### Graph links · روابط الرسم
+
+| Layer | Link |
+|-------|------|
+| Constitution | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| Graph hub | [[02_PLATFORMS/GRAPH_MOC]] |
+| Rack MOC | [[02_PLATFORMS/rack/README]] |
+| Pro MOC | [[02_PLATFORMS/pro/README]] |
+| Labs MOC | [[02_PLATFORMS/labs/README]] |
+| Gates | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| Integration | [[04_GOVERNANCE/INTEGRATION_RULES]] |
+| Decisions | [[04_GOVERNANCE/decisions/README]] |
 
 ---
 
@@ -63,6 +76,8 @@ tags: [shared-core, phrases, bilingual, i18n, copy]
 ## Circuit Rack
 *(جمل خاصة بمنصة Rack)*
 
+**Platform:** [[02_PLATFORMS/rack/README]] · **Bible:** [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] · **Governance:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[02_PLATFORMS/rack/ISOLATION]]
+
 | ID | English | العربية | Context |
 |----|---------|---------|---------|
 | R-001 | Sovereign commerce island | جزيرة التجارة السيادية | Platform identity |
@@ -92,29 +107,36 @@ tags: [shared-core, phrases, bilingual, i18n, copy]
 ## Circuit Pro
 *(جمل خاصة بمنصة Pro)*
 
-| ID | English | العربية | Context |
-|----|---------|---------|---------|
-| P-001 | Sovereign professional island | جزيرة الهوية المهنية السيادية | Platform identity |
-| P-002 | Trusted professional and geo-service layer | طبقة مهنية وجغرافية موثوقة | Vision |
-| P-003 | Without owning commerce or content publishing | دون امتلاك تجارة أو نشر محتوى | Boundary |
-| P-004 | Profile, verification, and reputation SSOT | SSOT للملف والتحقق والسمعة | Mission |
-| P-005 | Discovery and trust via versioned APIs | اكتشاف وثقة عبر APIs نسخية | Mission |
-| P-006 | Never host marketplace checkout | ممنوع استضافة دفع السوق | Isolation |
-| P-007 | Professional profiles and portfolios | ملفات مهنية ومحافظ أعمال | Feature |
-| P-008 | Verification workflow and credential indexing | سير تحقق وفهرسة credentials | Feature |
-| P-009 | Geo-services and regional discovery | خدمات جغرافية واكتشاف إقليمي | Feature |
-| P-010 | Reputation signals — distinct from Rack seller ratings | إشارات سمعة — مختلفة عن تقييمات البائع في راك | Boundary |
-| P-011 | `verified_pro` · `regional_agent` | `verified_pro` · `regional_agent` | RBAC roles |
-| P-012 | `profile_id` as canonical reference | `profile_id` كمرجع أساسي | API |
-| P-013 | `profile.verified` event → Rack read-only badge | حدث `profile.verified` → شارة قراءة فقط في راك | Data flow |
-| P-014 | No Pro iframe on Rack | ممنوع iframe لـ Pro على راك | UI isolation |
-| P-015 | Verification canonical in Pro — siblings read snapshots | التحقق في Pro — الباقي لقطات قراءة | SSOT |
-| P-016 | Discovery-first UX · purple theme family | UX اكتشاف أولاً · عائلة ثيم بنفسجي | Stack/UX |
+**Platform:** [[02_PLATFORMS/pro/README]] · **Bible:** [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] · **Governance:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[02_PLATFORMS/pro/ISOLATION]]
+
+| ID    | English                                                                                                                                                                                                                                                                               | العربية                                                                                                                                                                                           | Context           |
+| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| P-001 | Sovereign professional island                                                                                                                                                                                                                                                         | جزيرة الهوية المهنية السيادية                                                                                                                                                                     | Platform identity |
+| P-002 | Trusted professional and geo-service layer                                                                                                                                                                                                                                            | طبقة مهنية وجغرافية موثوقة                                                                                                                                                                        | Vision            |
+| P-003 | Without owning commerce or content publishing                                                                                                                                                                                                                                         | دون امتلاك تجارة أو نشر محتوى                                                                                                                                                                     | Boundary          |
+| P-004 | Profile, verification, and reputation SSOT                                                                                                                                                                                                                                            | SSOT للملف والتحقق والسمعة                                                                                                                                                                        | Mission           |
+| P-005 | Discovery and trust via versioned APIs                                                                                                                                                                                                                                                | اكتشاف وثقة عبر APIs نسخية                                                                                                                                                                        | Mission           |
+| P-006 | Never host marketplace checkout                                                                                                                                                                                                                                                       | ممنوع استضافة دفع السوق                                                                                                                                                                           | Isolation         |
+| P-007 | Professional profiles and portfolios                                                                                                                                                                                                                                                  | ملفات مهنية ومحافظ أعمال                                                                                                                                                                          | Feature           |
+| P-008 | Verification workflow and credential indexing                                                                                                                                                                                                                                         | سير تحقق وفهرسة credentials                                                                                                                                                                       | Feature           |
+| P-009 | Geo-services and regional discovery                                                                                                                                                                                                                                                   | خدمات جغرافية واكتشاف إقليمي                                                                                                                                                                      | Feature           |
+| P-010 | Reputation signals — distinct from Rack seller ratings                                                                                                                                                                                                                                | إشارات سمعة — مختلفة عن تقييمات البائع في راك                                                                                                                                                     | Boundary          |
+| P-011 | `verified_pro` · `regional_agent`                                                                                                                                                                                                                                                     | `verified_pro` · `regional_agent`                                                                                                                                                                 | RBAC roles        |
+| P-012 | `profile_id` as canonical reference                                                                                                                                                                                                                                                   | `profile_id` كمرجع أساسي                                                                                                                                                                          | API               |
+| P-013 | `profile.verified` event → Rack read-only badge                                                                                                                                                                                                                                       | حدث `profile.verified` → شارة قراءة فقط في راك                                                                                                                                                    | Data flow         |
+| P-014 | No Pro iframe on Rack                                                                                                                                                                                                                                                                 | ممنوع iframe لـ Pro على راك                                                                                                                                                                       | UI isolation      |
+| P-015 | Verification canonical in Pro — siblings read snapshots                                                                                                                                                                                                                               | التحقق في Pro — الباقي لقطات قراءة                                                                                                                                                                | SSOT              |
+| P-016 | Discovery-first UX · purple theme family                                                                                                                                                                                                                                              | UX اكتشاف أولاً · عائلة ثيم بنفسجي                                                                                                                                                                | Stack/UX          |
+| P-017 | Building a specialized layer of professional identity, trust, and relationships for industry, control, and automation. It enables the discovery of the right people for the right tasks, while protecting the real value of the network from draining, scraping, and commoditization. | بناء طبقة هوية وثقة وعلاقات مهنية متخصصة للصناعة والتحكم والأتمتة، تسمح باكتشاف الأشخاص المناسبين للمهام المناسبة،<br> مع حماية القيمة الحقيقية للشبكة من الاستنزاف والقشط والتحويل إلى سلعة.<br> |                   |
+| P-018 | Transforming knowledge, expertise, and professional reputation in the industrial sector from invisible and scattered assets within personal relationships into trustworthy, discoverable, evaluable, and utilizable digital assets.<br><br>                                           | تحويل المعرفة والخبرة والسمعة المهنية فى قطاع الصناعة من أصول غير مرئية ومبعثرة داخل العلاقات الشخصية <br>إلى أصول رقمية موثوقة وقابلة للاكتشاف والتقييم والاستفادة منها.                         |                   |
+|       |                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                   |                   |
 
 ---
 
 ## Circuit Labs
 *(جمل خاصة بمنصة Labs)*
+
+**Platform:** [[02_PLATFORMS/labs/README]] · **Bible:** [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] · **Governance:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[02_PLATFORMS/labs/ISOLATION]]
 
 | ID | English | العربية | Context |
 |----|---------|---------|---------|
@@ -183,7 +205,8 @@ tags: [shared-core, phrases, bilingual, i18n, copy]
 4. New phrases: add row with ID · update `updated` in frontmatter · optional ADR if architectural
 
 **Links**
-- Rack: [[02_PLATFORMS/rack/README]]
-- Pro: [[02_PLATFORMS/pro/README]]
-- Labs: [[02_PLATFORMS/labs/README]]
-- Gates: [[04_GOVERNANCE/GOVERNANCE_GATES]]
+- **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]]
+- Rack: [[02_PLATFORMS/rack/README]] · [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]]
+- Pro: [[02_PLATFORMS/pro/README]] · [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]]
+- Labs: [[02_PLATFORMS/labs/README]] · [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]]
+- Gates: [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/decisions/README]]

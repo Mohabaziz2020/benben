@@ -45,6 +45,7 @@ PLATFORM MOC →  rack | pro | labs     خريطة المنصة
 | 2 | Constitution (SSOT) | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
 | 3 | Your platform | منصتك | Rack · Pro · Labs ↓ |
 | 4 | Copy & phrases | الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| 5 | Graph hub (links mesh) | مركز الرسم | [[02_PLATFORMS/GRAPH_MOC]] |
 
 ---
 
@@ -68,6 +69,7 @@ PLATFORM MOC →  rack | pro | labs     خريطة المنصة
 | [[00_ROOT_DASHBOARD/HOME]] | Daily center | لوحة يومية | ✅ |
 | [[01_CONSTITUTION/PROJECT_BIBLE]] | SSOT v3.0 bilingual | الدستور ثنائي | ✅ |
 | [[02_PLATFORMS/PLATFORMS_INDEX]] | Platforms | المنصات | ✅ |
+| [[02_PLATFORMS/GRAPH_MOC]] | Graph hub (Obsidian) | مركز الرسم | ✅ |
 | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] | Shared core | النواة | ✅ |
 | [[04_GOVERNANCE/GOVERNANCE_GATES]] | Governance | الحوكمة | ✅ |
 | [[05_ARCHIVES]] | Archives | أرشيف | ○ |
@@ -80,7 +82,7 @@ PLATFORM MOC →  rack | pro | labs     خريطة المنصة
 > **Three sovereign MOCs** — Vision · Features · Stack · Isolation · Relations · Bible links  
 > **ثلاث خرائط سيادية** — رؤية · ميزات · تقنية · عزل · علاقات · روابط الدستور
 
-**Index:** [[02_PLATFORMS/PLATFORMS_INDEX]] · **Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]]
+**Index:** [[02_PLATFORMS/PLATFORMS_INDEX]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]] · **Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Governance:** [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 | | Platform | Mission (EN) | AR | **Platform MOC** |
 |---|----------|--------------|-----|------------------|

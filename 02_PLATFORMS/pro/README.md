@@ -8,7 +8,7 @@ theme: purple
 domain: pro.*
 updated: 2026-06-05
 author: Maestro
-tags: [pro, identity, geo, moc, bilingual]
+tags: [pro, identity, geo, moc, bilingual, graph-hub]
 aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 ---
 
@@ -63,6 +63,11 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | Constitution (SSOT) | الدستور |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT \| الرؤية والمهمة]] | Vision & mission | الرؤية والمهمة |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT \| الاتفاقات]] | Agreements | الاتفاقات |
+| [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] | Phrases (`P-*`) | جمل برو |
+| [[04_GOVERNANCE/GOVERNANCE_GATES]] | Governance gates | بوابات الحوكمة |
+| [[04_GOVERNANCE/INTEGRATION_RULES]] | Integration law | قانون التكامل |
+| [[04_GOVERNANCE/decisions/README]] | Governance decisions | قرارات الحوكمة |
+| [[02_PLATFORMS/GRAPH_MOC]] | Graph hub (all links) | مركز الرسم |
 
 **Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/labs/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
 
