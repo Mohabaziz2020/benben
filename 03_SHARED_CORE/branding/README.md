@@ -7,17 +7,26 @@ tags: [branding, logos, maestro]
 
 # Brand assets | أصول العلامة
 
-Canonical logos for Obsidian embeds (Maestro visual identity).
+Canonical logos for BENBENHUB-CORE. **SSOT usage:** [[01_CONSTITUTION/PROJECT_BIBLE#Branding & Visual Identity | الهوية البصرية والعلامة]].
 
-| File | Entity | Header (200–250) | Table (120–150) |
-|------|--------|------------------|-----------------|
-| `benbenhub-logo.png` | BENBENHUB (parent) | `![[03_SHARED_CORE/branding/benbenhub-logo.png\|220]]` | — |
-| `circuit-rack-logo.png` | Circuit Rack | `![[03_SHARED_CORE/branding/circuit-rack-logo.png\|200]]` | `![[03_SHARED_CORE/branding/circuit-rack-logo.png\|140]]` |
-| `circuit-pro-logo.png` | Circuit Pro | `![[03_SHARED_CORE/branding/circuit-pro-logo.png\|200]]` | `![[03_SHARED_CORE/branding/circuit-pro-logo.png\|140]]` |
-| `circuit-labs-logo.png` | Circuit Labs | `![[03_SHARED_CORE/branding/circuit-labs-logo.png\|200]]` | `![[03_SHARED_CORE/branding/circuit-labs-logo.png\|140]]` |
+## Files | الملفات
 
-**Size syntax:** `![[path\|width]]` or `![[path\|widthxheight]]` (pixels in Reading view).
+| File | Entity | Graph `color` | Hex |
+|------|--------|---------------|-----|
+| `benbenhub-logo.png` | BENBENHUB (parent) | `gold` | `#FFD700` |
+| `circuit-rack-logo.png` | Circuit Rack | `red` | `#E53935` |
+| `circuit-pro-logo.png` | Circuit Pro | `green` | `#2E7D32` |
+| `circuit-labs-logo.png` | Circuit Labs | `teal` | `#009688` |
 
-**Graph View:** node color uses frontmatter `color:` and `.obsidian/graph.json` — not inline images.
+## Obsidian embeds | التضمين
 
-**Alternate drop zone:** `00_ROOT_DASHBOARD/assets/` (symlink or copy here if dashboard-specific assets are preferred).
+| Context | Syntax |
+|---------|--------|
+| Header / hero | `![[03_SHARED_CORE/branding/benbenhub-logo.png\|220]]` |
+| Platform MOC title | `![[03_SHARED_CORE/branding/circuit-pro-logo.png\|200]]` |
+| Bible branding table | `![[03_SHARED_CORE/branding/circuit-rack-logo.png\|88]]` (escape `\|` inside tables) |
+| Logo strip | `![[03_SHARED_CORE/branding/circuit-pro-logo.png\|120]]` |
+
+**Reading view:** open note → toggle preview (`Ctrl+E`) — images render from this folder.
+
+**Graph view:** node tint from frontmatter `color:` and `.obsidian/graph.json` — not logo embeds.

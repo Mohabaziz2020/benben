@@ -155,47 +155,71 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 ## Branding & Visual Identity | الهوية البصرية والعلامة
 
-> **Brand law · قانون العلامة** — Architectural law **#9** ([[#Architectural Laws]]). **Assets:** [[03_SHARED_CORE/branding/README]] · **Theme engine:** [[03_SHARED_CORE/THEME_AND_I18N]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES#General / Shared]] (`G-005`).
+**EN:** BENBENHUB maintains a **hidden industrial design system** for internal constitution and engineering docs. Each sovereign platform exposes an **independent public brand** — distinct logo, accent theme, and Graph identity — with **zero cross-branding** on consumer surfaces. Canonical logo files: `03_SHARED_CORE/branding/`.
+
+**AR:** بيتبنهب يحتفظ **بنظام تصميم صناعي مخفي** للوثائق الداخلية. كل منصة سيادية تظهر **علامة علنية مستقلة** — شعار ولون وثيم منفصل — مع **صفر تشعب علني** على واجهات المستخدم. ملفات الشعارات: `03_SHARED_CORE/branding/`.
+
+> **Links · روابط** — Law **#9:** [[#Architectural Laws]] · Assets: [[03_SHARED_CORE/branding/README]] · Theme: [[03_SHARED_CORE/THEME_AND_I18N]] · Graph colors: [[02_PLATFORMS/GRAPH_MOC#Visual identity · نظام الألوان (Graph View)]] · Phrase `G-005`: [[03_SHARED_CORE/REUSABLE_PHRASES#General / Shared]]
 
 ### Brand law | قانون العلامة
 
 | Rule | EN | AR |
 |------|----|-----|
 | **Cross-branding** | **Zero** public cross-branding between Rack, Pro, and Labs | **صفر** تشعب علني بين المنصات |
-| **Parent visibility** | BENBENHUB is **not** a consumer umbrella UI; internal docs may reference parent | الأب **ليس** واجهة مظلة؛ مرجع داخلي فقط |
-| **Token isolation** | Design tokens, CSS bundles, and legal footers do **not** leak across public brands | الرموز والقانون **لا يتسرّب** بين العلامات |
-| **Footer** | © 2026 **[Platform Name]**. A BenBenHub Company — per platform only | © 2026 **[اسم المنصة]**. A BenBenHub Company |
+| **Parent visibility** | BENBENHUB is **not** a consumer umbrella UI; internal docs may reference the parent | الأب **ليس** واجهة مظلة؛ مرجع داخلي فقط |
+| **Token isolation** | Design tokens, CSS bundles, and footers **do not** leak across public brands | الرموز والتذييل **لا يتسرّب** بين العلامات |
+| **Footer standard** | © 2026 **[Platform Name]**. A BenBenHub Company — **per platform only** | © 2026 **[اسم المنصة]**. A BenBenHub Company |
 
-### Parent design system (internal base) | نظام التصميم — الأب
+### Parent palette (design system base) | لوحة الأب — الأساس الداخلي
 
 | Token | Hex | EN | AR |
 |-------|-----|----|-----|
 | Obsidian Black | `#0B0B0F` | Primary dark surface | سطح داكن أساسي |
 | Charcoal | `#14141A` | Secondary surface | سطح ثانوي |
-| Benben Gold | `#D4AF37` | Accent · hidden industrial identity | ذهب · هوية صناعية مخفية |
+| Benben Gold | `#D4AF37` | Hidden-parent accent · constitution / graph hub | ذهب · هوية الأب المخفي |
 | Accent green | `#43A047` | Positive / growth signal | إشارة نمو |
 
-### Per-platform public identity | الهوية العلنية لكل منصة
+![[03_SHARED_CORE/branding/benbenhub-logo.png|120]]
 
-| Platform | Mission (EN) | Graph `color` | Theme accent | Logo | MOC |
-|----------|--------------|---------------|--------------|------|-----|
-| **Circuit Rack** | Industrial commerce — buy · sell · guide | `red` | Blue family | [[03_SHARED_CORE/branding/circuit-rack-logo.png\|64]] | [[02_PLATFORMS/Rack/README]] |
-| **Circuit Pro** | Identity · geo · reputation | `green` | Purple family | [[03_SHARED_CORE/branding/circuit-pro-logo.png\|64]] | [[02_PLATFORMS/Pro/README]] |
-| **Circuit Labs** | Knowledge · learning · content | `teal` | Green family | [[03_SHARED_CORE/branding/circuit-labs-logo.png\|64]] | [[02_PLATFORMS/Labs/README]] |
+| Parent | Graph `color` | Hex | Logo file | Use |
+|--------|---------------|-----|-----------|-----|
+| **BENBENHUB** | `gold` | `#FFD700` | `benbenhub-logo.png` | [[01_CONSTITUTION/PROJECT_BIBLE]] · [[INDEX]] · [[02_PLATFORMS/GRAPH_MOC]] |
 
-**EN:** Each platform loads its theme override at bootstrap — **no shared public CSS** across brands ([[03_SHARED_CORE/THEME_AND_I18N]]).
+### Platform colors & logos | ألوان المنصات والشعارات
 
-**AR:** كل منصة تحمّل ثيمها عند الإقلاع — **بلا CSS علني مشترك** بين العلامات.
+**EN:** Obsidian embeds below render in **Reading view** (`Ctrl+E`). Graph View uses `color:` frontmatter — not inline images. Filter: `path:02_PLATFORMS/{rack|pro|labs}`.
 
-### Typography & languages | الخطوط واللغات
+**AR:** الشعارات تظهر في **عرض القراءة**. الرسم البياني يستخدم `color:` في الواجهة الأمامية — وليس الصور المضمنة.
+
+| Platform | EN | AR | Graph `color` | Hex | UI theme | Logo (Reading view) | Vault MOC |
+|----------|----|----|---------------|-----|----------|---------------------|-----------|
+| **Circuit Rack** | Industrial commerce | تجارة صناعية | `red` | `#E53935` | Blue family | ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|88]] | [[02_PLATFORMS/Rack/README]] |
+| **Circuit Pro** | Identity & geo-services | هوية وخدمات جغرافية | `green` | `#2E7D32` | Purple family | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|88]] | [[02_PLATFORMS/Pro/README]] |
+| **Circuit Labs** | Knowledge & learning | معرفة وتعلم | `teal` | `#009688` | Green family | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|88]] | [[02_PLATFORMS/Labs/README]] |
+
+| | Circuit Rack | Circuit Pro | Circuit Labs |
+|:---:|:---:|:---:|:---:|
+| **Brand mark · شعار** | ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|120]] |
+
+| Path | File |
+|------|------|
+| Rack | `03_SHARED_CORE/branding/circuit-rack-logo.png` |
+| Pro | `03_SHARED_CORE/branding/circuit-pro-logo.png` |
+| Labs | `03_SHARED_CORE/branding/circuit-labs-logo.png` |
+| Parent | `03_SHARED_CORE/branding/benbenhub-logo.png` |
+
+**Embed syntax (Obsidian):** `![[03_SHARED_CORE/branding/<file>.png|width]]` — outside tables use `|120`; inside tables use `\|88` or `\|120`.
+
+### Theme & typography | الثيم والخطوط
 
 | | EN | AR |
 |---|----|-----|
-| **Arabic** | Cairo + Noto Kufi Arabic | Cairo + Noto Kufi |
-| **English** | Inter + IBM Plex Sans | Inter + IBM Plex |
-| **Locales** | Arabic · English · Chinese — RTL/LTR per locale | عربي · إنجليزي · صيني — RTL/LTR |
+| **Theme engine** | Per-platform override at bootstrap — **no shared public CSS** ([[03_SHARED_CORE/THEME_AND_I18N]]) | ثيم لكل منصة — **بلا CSS علني مشترك** |
+| **Arabic type** | Cairo + Noto Kufi Arabic | Cairo + Noto Kufi |
+| **English type** | Inter + IBM Plex Sans | Inter + IBM Plex |
+| **Locales** | Arabic · English · Chinese — RTL/LTR | عربي · إنجليزي · صيني |
 
-**UX law (ecosystem):** [[#UI/UX Specifications]] · Rack motifs (Boost, Bidding, Secondary Market, Hidden Offers) stay on Rack routes only.
+**UX law:** [[#UI/UX Specifications]] — Rack-only motifs (Boost · Bidding · Secondary Market · Hidden Offers) must not appear on Pro or Labs routes.
 
 ---
 
@@ -1096,6 +1120,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.3.1 · 2026-06-05** — Graph color fix: path-first groups in `graph.json`; removed `#graph-hub` from platform MOC tags; Labs hex `#00ACC1`
 - **3.4 · 2026-06-05** — Notion Original Recovery: verbatim archive (later moved to [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]])
 - **3.5 · 2026-06-05** — Notion Content Polish: strategic Part I tables, deduplicated bible body, archive appendix link
+- **3.5.1 · 2026-06-05** — Branding polish: platform colors & logos table, `03_SHARED_CORE/branding/` embeds
 
 ---
 
