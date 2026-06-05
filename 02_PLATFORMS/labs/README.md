@@ -55,9 +55,68 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 
 ## Vision & Mission | الرؤية والمهمة
 
+<!-- VISION MISSION SECTION — canonical; do not duplicate below -->
+
 **EN:** **Vision** — Industrial knowledge as operational power: documentation and learning that elevate manufacturing, not marketing noise. **Mission** — Own content and learning SSOT (`article_id`, courses, knowledge bases). Publish and moderate under Labs legal scope. Reference Rack `product_id` and Pro `profile_id` via stable API IDs only — never embed sibling UI. **Audience** — Writers, SMEs, learners, and platforms consuming content APIs.
 
 **AR:** **الرؤية** — المعرفة الصناعية قوة تشغيلية: توثيق وتعليم يرفع الصناعة بعيداً عن الضجيج التسويقي. **المهمة** — امتلاك مصدر الحقيقة للمحتوى والتعلم (`article_id`، دورات، قواعد معرفة)، والنشر والإشراف ضمن نطاق Labs القانوني، مع الإشارة إلى `product_id` و`profile_id` عبر معرّفات API ثابتة فقط دون تضمين واجهات المنصات الأخرى. **الجمهور** — كتّاب وخبراء ومتعلمون ومنصات تستهلك واجهات المحتوى.
+
+---
+
+<!-- AGREEMENTS SECTION -->
+
+## Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية
+
+**EN:** Labs legal scope covers **content, learning, moderation, and contributor rights** — not product pricing, orders, or identity verification outcomes.
+
+**AR:** نطاق Labs القانوني يغطي **المحتوى والتعلم والإشراف وحقوق المساهمين** — وليس تسعير المنتجات أو الطلبات أو نتائج التحقق.
+
+| Agreement | EN — when required | AR — متى تُطلب | Record |
+|-----------|-------------------|----------------|--------|
+| **Account & privacy** | First Labs session | أول جلسة Labs | `labs.consent.account` |
+| **Reader / learner** | Accessing KB or learning paths | الوصول لقاعدة معرفة أو مسار تعلم | `labs.consent.reader` |
+| **Contributor & editorial** | First publish (`editor` role) | أول نشر (دور `editor`) | `labs.consent.contributor` |
+| **Content policy** | Submitting article or course for review | تقديم مقال أو دورة للمراجعة | `labs.consent.content_policy` |
+| **Cross-reference accuracy** | Linking `product_id` or `profile_id` in content | ربط `product_id` أو `profile_id` | `labs.consent.cross_ref` |
+| **Paid course (gated)** | Enrollment with wallet debit | تسجيل دورة مدفوعة | `labs.consent.paid_course` |
+| **Support agent** | Accessing support-agent workflows | سير عمل وكيل الدعم | `labs.consent.support_agent` |
+| **Partner content API (gated)** | External syndication (L-P*) | تزويد محتوى لشركاء | `labs.consent.partner_api` + ADR |
+
+**EN — user approvals:** Material changes to published content increment version — no silent rewrite of accepted articles (Immutability). Cross-refs display disclaimer: commerce/identity truth owned by Rack/Pro.
+
+**AR — موافقات المستخدم:** تغيير جوهري للمحتوى المنشور يزيد النسخة — لا إعادة كتابة صامتة (الثبات). المراجع العابرة تعرض إخلاء مسؤولية: حقيقة التجارة/الهوية لراك/Pro.
+
+**Forbidden | ممنوع:** Labs checkout for Rack products · Labs storing verification status · bundled Rack seller terms on course enrollment.
+
+**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+
+---
+
+<!-- BUSINESS RULES SECTION -->
+
+## Business Rules & Roles | قواعد العمل والأدوار
+
+### Roles | الأدوار
+
+| Role | EN responsibility | AR | Scope |
+|------|---------------------|-----|-------|
+| `reader` | Consume KB, guides, learning paths | قراءة المعرفة والمسارات | Labs consumer |
+| `editor` | Draft, submit, revise content (versioned) | صياغة ومراجعة محتوى | L-C* editorial |
+| `support_agent` | Support workflows — no commerce SSOT | دعم دون SSOT تجارة | L-G* |
+| `moderator` | Enforce content policy, takedowns with audit | إشراف وسحب بسجل | Labs compliance |
+| `course_instructor` | Paid courses (gated, L-P*) | دورات مدفوعة | Power + wallet consent |
+| `labs_admin` | Editorial policy, API publication | سياسة تحرير ونشر API | Labs admin |
+
+### Business rules | قواعد العمل
+
+| # | EN rule | AR | Gate |
+|---|---------|-----|------|
+| 1 | Article and course bodies SSOT in schema `labs` only | نصوص المحتوى في `labs` فقط | Scope |
+| 2 | `product_id` / `profile_id` are references — fetch metadata via API, no iframe | مراجع عبر API دون iframe | Scope |
+| 3 | No listing price, inventory, or `verified_pro` state in Labs DB | لا سعر ولا مخزون ولا تحقق في Labs | Truth |
+| 4 | Moderation actions logged — retract with reason, not silent delete | إشراف بسجل وسبب | Immutability |
+| 5 | Paid courses: `platform_source=labs` wallet rules + separate consent | دورات مدفوعة بوسم وموافقة | Scope |
+| 6 | Rack may show guide cards from Labs API — Labs must not host Rack cart | راك يعرض بطاقات — Labs لا تستضيف سلة راك | Scope |
 
 ---
 

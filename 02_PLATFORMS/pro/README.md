@@ -55,9 +55,68 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 
 ## Vision & Mission | الرؤية والمهمة
 
+<!-- VISION MISSION SECTION — canonical; do not duplicate below -->
+
 **EN:** **Vision** — A trusted professional and geo-service layer for industrial ecosystems, without owning commerce or editorial content. **Mission** — Own profile, verification, and reputation SSOT. Deliver discovery and trust APIs for Rack and Labs. Never host marketplace checkout, product catalog, or Labs CMS. **Audience** — Engineers, consultants, field services, and organizations seeking verified regional expertise.
 
 **AR:** **الرؤية** — طبقة مهنية وجغرافية موثوقة للمنظومة الصناعية دون امتلاك التجارة أو المحتوى التحريري. **المهمة** — امتلاك مصدر الحقيقة للملف المهني والتحقق والسمعة، وتقديم واجهات اكتشاف وثقة لـ Rack وLabs، مع منع استضافة دفع السوق أو كتالوج المنتجات أو نظام إدارة محتوى Labs. **الجمهور** — مهندسون ومستشارون وخدمات ميدانية وجهات تبحث خبرة إقليمية موثقة.
+
+---
+
+<!-- AGREEMENTS SECTION -->
+
+## Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية
+
+**EN:** Pro legal scope covers **identity, verification, reputation, and geo disclosure** — not commerce checkout or editorial publishing.
+
+**AR:** نطاق Pro القانوني يغطي **الهوية والتحقق والسمعة والإفصاح الجغرافي** — وليس دفع التجارة أو النشر التحريري.
+
+| Agreement | EN — when required | AR — متى تُطلب | Record |
+|-----------|-------------------|----------------|--------|
+| **Account & privacy** | First Pro session | أول جلسة Pro | `pro.consent.account` |
+| **Profile accuracy** | Creating or claiming a professional profile | إنشاء أو مطالبة بملف مهني | `pro.consent.profile_accuracy` |
+| **Verification** | Submitting credentials for `verified_pro` | تقديم credentials للتحقق | `pro.consent.verification` |
+| **Geo & service area** | Publishing regional coverage or map discovery | نشر نطاق خدمة أو اكتشاف خريطة | `pro.consent.geo_services` |
+| **Portfolio & media** | Uploading credentials, certificates, case studies | رفع شهادات أو معارض أعمال | `pro.consent.portfolio` |
+| **Reputation & reviews** | Enabling public reputation signals | تفعيل إشارات السمعة العلنية | `pro.consent.reputation` |
+| **Partner API (gated)** | Issuing partner keys (P-P*) | إصدار مفاتيح شركاء | `pro.consent.partner_api` + ADR |
+| **Optional paid services** | Wallet debit for Pro-only services | خصم محفظة لخدمات Pro | `pro.consent.wallet` |
+
+**EN — user approvals:** Explicit consent per workflow · verification status is canonical in Pro DB — Rack/Labs read snapshots only · re-verification on material identity change.
+
+**AR — موافقات المستخدم:** موافقة صريحة لكل سير عمل · حالة التحقق في Pro فقط — راك/Labs يقرآن لقطات · إعادة تحقق عند تغيير جوهري للهوية.
+
+**Forbidden | ممنوع:** Pro terms that obligate Rack listing purchase · Labs editorial license bundled into verification · storing `verified_pro` truth in Rack or Labs schemas.
+
+**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+
+---
+
+<!-- BUSINESS RULES SECTION -->
+
+## Business Rules & Roles | قواعد العمل والأدوار
+
+### Roles | الأدوار
+
+| Role | EN responsibility | AR | Scope |
+|------|---------------------|-----|-------|
+| `professional` | Maintain profile, respond to inquiries | إدارة الملف والرد على الاستفسارات | Pro consumer |
+| `verified_pro` | Display trust badge eligible on Rack via API | أهلية شارة ثقة على راك عبر API | Post-verification |
+| `regional_agent` | Curated geo coverage (gated, P-P*) | تغطية جغرافية منسقة | Power tier + ADR |
+| `trust_reviewer` | Approve/reject verification evidence | مراجعة أدلة التحقق | Internal Pro ops |
+| `pro_admin` | Platform policy, API contracts | سياسة Pro وعقود API | Pro admin |
+| `partner_api` | Machine access to trust/discovery (gated) | وصول آلي للثقة والاكتشاف | P-P* + consent |
+
+### Business rules | قواعد العمل
+
+| # | EN rule | AR | Gate |
+|---|---------|-----|------|
+| 1 | Profile and verification SSOT only in schema `pro` | الملف والتحقق في `pro` فقط | Scope |
+| 2 | Export to Rack: versioned trust API — no iframe, no Pro UI on Rack routes | تصدير لراك عبر API نسخة | Scope |
+| 3 | Labs may link `profile_id` — Labs must not store verification outcome | Labs تربط `profile_id` دون تخزين نتيجة التحقق | Truth |
+| 4 | Revocation of `verified_pro` propagates via event — Rack badges must refresh | إلغاء التحقق يُبث كحدث | Truth |
+| 5 | Regional claims require geo consent + auditable service boundary | ادعاءات جغرافية بموافقة وسجل | Truth |
+| 6 | No marketplace checkout or product catalog in Pro routes | لا دفع سوق ولا كتالوج على Pro | Scope |
 
 ---
 

@@ -201,6 +201,8 @@ tags: [benbenhub, ssot, project-bible]
 
 ### Vision & Mission | الرؤية والمهمة
 
+<!-- VISION MISSION SECTION — canonical in Platform MOC; do not duplicate -->
+
 **EN:** Trustworthy, searchable industrial commerce as a regulated marketplace — not generic classifieds. Rack owns product and commerce SSOT; operates buy·sell·guide; Boost, Bidding, Secondary Market, Hidden Offers; shared identity and wallet backend only.
 
 **AR:** تجارة صناعية موثوقة وقابلة للبحث كسوق منضبط — وليس إعلانات عشوائية. راك يملك SSOT المنتجات والتجارة؛ يشغّل شراء·بيع·دليل؛ Boost والمزايدة والسوق الثانوي والعروض المخفية؛ الهوية والمحفظة من النواة خلفياً فقط.
@@ -264,6 +266,30 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Ru
 
 ---
 
+<!-- AGREEMENTS SECTION -->
+
+### Key Agreements & User Approvals | الاتفاقات والموافقات
+
+**EN:** Rack-scoped consents: account, seller/listing, buyer/purchase, Boost, bidding/secondary/hidden offers, wholesale (gated), wallet. Versioned audit trail; no cross-brand bundles.
+
+**AR:** موافقات راك: حساب، بائع/قائمة، مشتري/شراء، Boost، مزاد/ثانوي/عروض مخفية، جملة (مقيد)، محفظة. سجل بنسخة؛ بلا حزم عابرة للعلامات.
+
+*Full:* [[02_PLATFORMS/rack/README#Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية]] · [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+
+---
+
+<!-- BUSINESS RULES SECTION -->
+
+### Business Rules & Roles | قواعد العمل والأدوار
+
+**EN:** Roles: `buyer`, `seller`, `wholesale_buyer` (gated), `marketplace_ops`, `compliance_reviewer`, `rack_admin`. Rules: product SSOT in `rack`; Pro trust via API; Labs guides by ID only; wallet `platform_source=rack`.
+
+**AR:** أدوار: مشتري، بائع، جملة (مقيد)، عمليات سوق، امتثال، إدارة راك. قواعد: SSOT المنتج في `rack`؛ ثقة Pro عبر API؛ أدلة Labs بالمعرّف؛ محفظة بوسم راك.
+
+*Full:* [[02_PLATFORMS/rack/README#Business Rules & Roles | قواعد العمل والأدوار]]
+
+---
+
 ## Circuit Pro | سيركيت برو
 
 > **Sovereign professional island** · Identity & geo layer · **Vault:** `02_PLATFORMS/pro/`
@@ -273,6 +299,8 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Ru
 ---
 
 ### Vision & Mission | الرؤية والمهمة
+
+<!-- VISION MISSION SECTION — canonical in Platform MOC; do not duplicate -->
 
 **EN:** Trusted professional and geo layer; profile and verification SSOT; discovery and trust APIs for Rack and Labs; no marketplace checkout or editorial CMS.
 
@@ -344,6 +372,30 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 ---
 
+<!-- AGREEMENTS SECTION -->
+
+### Key Agreements & User Approvals | الاتفاقات والموافقات
+
+**EN:** Pro-scoped: account, profile accuracy, verification, geo/service area, portfolio, reputation, partner API (gated), optional wallet. Verification canonical in Pro; siblings read snapshots.
+
+**AR:** موافقات Pro: حساب، دقة الملف، تحقق، جغرافيا، معرض، سمعة، API شركاء (مقيد)، محفظة اختيارية. التحقق في Pro؛ الأقران لقطات.
+
+*Full:* [[02_PLATFORMS/pro/README#Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية]]
+
+---
+
+<!-- BUSINESS RULES SECTION -->
+
+### Business Rules & Roles | قواعد العمل والأدوار
+
+**EN:** Roles: `professional`, `verified_pro`, `regional_agent` (gated), `trust_reviewer`, `partner_api`, `pro_admin`. No commerce checkout or catalog on Pro routes.
+
+**AR:** أدوار: مهني، verified_pro، وكيل إقليمي (مقيد)، مراجع ثقة، API شريك، إدارة Pro. لا دفع سوق ولا كتالوج على Pro.
+
+*Full:* [[02_PLATFORMS/pro/README#Business Rules & Roles | قواعد العمل والأدوار]]
+
+---
+
 ## Circuit Labs | سيركيت لابز
 
 > **Sovereign knowledge island** · Documentation & learning · **Vault:** `02_PLATFORMS/labs/`
@@ -353,6 +405,8 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 ---
 
 ### Vision & Mission | الرؤية والمهمة
+
+<!-- VISION MISSION SECTION — canonical in Platform MOC; do not duplicate -->
 
 **EN:** Knowledge as operational power; content and learning SSOT; publish under Labs legal scope; reference Rack `product_id` and Pro `profile_id` via API IDs only.
 
@@ -421,6 +475,30 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
 **EN:** Labs guide → `product_id` → Rack link card only. **AR:** دليل Labs → `product_id` → بطاقة راك فقط.
 
 → [[02_PLATFORMS/labs/README#Relationships to Other Platforms | العلاقات]]
+
+---
+
+<!-- AGREEMENTS SECTION -->
+
+### Key Agreements & User Approvals | الاتفاقات والموافقات
+
+**EN:** Labs-scoped: account, reader/learner, contributor/editorial, content policy, cross-ref accuracy, paid course (gated), support agent, partner API (gated). Versioned content — no silent rewrites.
+
+**AR:** موافقات Labs: حساب، قارئ، مساهم/تحرير، سياسة محتوى، دقة مراجع عابرة، دورة مدفوعة (مقيد)، وكيل دعم، API شريك (مقيد). محتوى بنسخ — بلا إعادة كتابة صامتة.
+
+*Full:* [[02_PLATFORMS/labs/README#Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية]]
+
+---
+
+<!-- BUSINESS RULES SECTION -->
+
+### Business Rules & Roles | قواعد العمل والأدوار
+
+**EN:** Roles: `reader`, `editor`, `support_agent`, `moderator`, `course_instructor` (gated), `labs_admin`. Content SSOT in `labs`; no price/inventory/verification in Labs DB.
+
+**AR:** أدوار: قارئ، محرر، وكيل دعم، مشرف، مدرب دورة (مقيد)، إدارة Labs. SSOT المحتوى في `labs`؛ بلا سعر/مخزون/تحقق في Labs.
+
+*Full:* [[02_PLATFORMS/labs/README#Business Rules & Roles | قواعد العمل والأدوار]]
 
 ---
 
