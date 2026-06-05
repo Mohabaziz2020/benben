@@ -1,5 +1,11 @@
 # BENBENHUB-CORE
 
+![[03_SHARED_CORE/branding/benbenhub-logo.png|150]]
+
+| Circuit Rack · سيركيت راك | Circuit Pro · سيركيت برو | Circuit Labs · سيركيت لابز |
+|:---:|:---:|:---:|
+| ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|120]] |
+
 [![Status](https://img.shields.io/badge/status-fully%20operational-brightgreen)](https://github.com/Mohabaziz2020/benben)
 [![SSOT](https://img.shields.io/badge/SSOT-PROJECT__BIBLE%20v3.0-blue)](01_CONSTITUTION/PROJECT_BIBLE.md)
 [![Bilingual](https://img.shields.io/badge/docs-EN%20%7C%20AR-informational)](03_SHARED_CORE/REUSABLE_PHRASES.md)
@@ -15,22 +21,7 @@
 | **EN** | Law, map, and daily reference for the BENBENHUB ecosystem — not source code. |
 | **AR** | القانون والخريطة والمرجع اليومي لمنظومة BENBENHUB — وليس كوداً. |
 
-> **Obsidian users:** Wikilinks (`[[note]]`) work inside the vault. This README uses standard links for GitHub.
-
-### Brand marks | شعارات المنصات
-
-| BENBENHUB | Circuit Rack | Circuit Pro | Circuit Labs |
-|:---:|:---:|:---:|:---:|
-| ![[03_SHARED_CORE/branding/benbenhub-logo.png\|48]] | ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|64]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|64]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|64]] |
-
-| | EN | AR | MOC |
-|--|----|----|-----|
-| Parent | Hidden architecture SSOT | مصدر الحقيقة المعمارية | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) |
-| Rack | Commerce island | جزيرة التجارة | [Rack README](02_PLATFORMS/Rack/README.md) |
-| Pro | Identity & geo | الهوية والجغرافيا | [Pro README](02_PLATFORMS/Pro/README.md) |
-| Labs | Knowledge & learning | المعرفة والتعلم | [Labs README](02_PLATFORMS/Labs/README.md) |
-
-*Obsidian Reading view* shows sized embeds above. *GitHub* does not render `![[wikilinks]]` — open the vault locally for preview.
+> **Obsidian users:** Wikilinks (`[[note]]`) work inside the vault. Brand logos above render in **Reading view** only — not on GitHub. Standard links below work everywhere.
 
 ---
 

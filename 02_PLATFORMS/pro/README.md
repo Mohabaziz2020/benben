@@ -16,6 +16,8 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 
 # Circuit Pro · سيركيت برو
 
+![[03_SHARED_CORE/branding/circuit-pro-logo.png|120]]
+
 **Platform MOC · خريطة المنصة**
 
 | | EN | AR |
@@ -26,6 +28,8 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 | **SSOT owns** | Profile · verification · reputation · geo | ملف · تحقق · سمعة · جغرافيا |
 
 ### Visual identity | الهوية البصرية
+
+> **Graph node color:** `color:green` — set in frontmatter; Graph View does not use the logo embed above.
 
 | Property | Value | Graph View |
 |----------|-------|------------|
@@ -85,9 +89,9 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 
 | Doc | EN | AR |
 |-----|----|-----|
-| [[02_PLATFORMS/pro/OVERVIEW]] | Overview | نظرة مختصرة |
-| [[02_PLATFORMS/pro/FEATURES_MODULES]] | P-C* · P-G* · P-P* | وحدات الميزات |
-| [[02_PLATFORMS/pro/ISOLATION]] | Isolation checklist | قائمة العزل |
+| [[02_PLATFORMS/Pro/OVERVIEW]] | Overview | نظرة مختصرة |
+| [[02_PLATFORMS/Pro/FEATURES_MODULES]] | P-C* · P-G* · P-P* | وحدات الميزات |
+| [[02_PLATFORMS/Pro/ISOLATION]] | Isolation checklist | قائمة العزل |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | Constitution (SSOT) | الدستور |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT \| الرؤية والمهمة]] | Vision & mission | الرؤية والمهمة |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT \| الاتفاقات]] | Agreements | الاتفاقات |
@@ -95,7 +99,7 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 | [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] | Governance | الحوكمة |
 | [[02_PLATFORMS/GRAPH_MOC]] | Graph hub | مركز الرسم |
 
-**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/labs/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
+**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/Rack/README]] · [[02_PLATFORMS/Labs/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
 
 ---
 
@@ -110,7 +114,7 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 | P-G* | Geo · portfolios · cross-ref API | جغرافيا · معارض · مراجع |
 | P-P* | Trust scoring · regional agent (gated) | ثقة · وكيل إقليمي |
 
-**Detail:** [[02_PLATFORMS/pro/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]] · **Phrases:** `P-*` in [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]]
+**Detail:** [[02_PLATFORMS/Pro/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]] · **Phrases:** `P-*` in [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]]
 
 ---
 
@@ -128,7 +132,7 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 **EN:** (1) No Rack commerce or Labs CMS on Pro routes. (2) No sibling schemas as Pro SSOT. (3) Export profile/reputation via **versioned APIs only**. (4) Independent deploy vs Rack/Labs releases. (5) Verification canonical in Pro — peers read snapshots.  
 **AR:** (1) لا تجارة راك ولا CMS Labs على Pro. (2) لا مخاطط أخوة كـ SSOT لـ Pro. (3) تصدير عبر **API بنسخة فقط**. (4) نشر مستقل. (5) التحقق في Pro — الأقران لقطات.
 
-**Full checklist:** [[02_PLATFORMS/pro/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/GOVERNANCE_GATES]]
+**Full checklist:** [[02_PLATFORMS/Pro/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 ---
 
@@ -137,7 +141,7 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 **EN:** **Rack** — trust API for listings (`profile_id`); forbidden: Pro checkout or Rack UI embed. **Labs** — playbooks link `profile_id`; forbidden: Labs stores verification. **Core** — auth, optional wallet, theme. **Flow:** `profile.verified` event → Rack badge via API only.  
 **AR:** **Rack** — API ثقة للقوائم؛ ممنوع: دفع Pro أو تضمين راك. **Labs** — أدلة تربط `profile_id`؛ ممنوع: Labs تخزن التحقق. **النواة** — هوية ومحفظة وثيم. **التدفق:** تحقق → شارة راك عبر API.
 
-**Siblings:** [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/labs/README]]
+**Siblings:** [[02_PLATFORMS/Rack/README]] · [[02_PLATFORMS/Labs/README]]
 
 ---
 

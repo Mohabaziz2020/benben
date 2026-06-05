@@ -16,6 +16,8 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 
 # Circuit Labs · سيركيت لابز
 
+![[03_SHARED_CORE/branding/circuit-labs-logo.png|120]]
+
 **Platform MOC · خريطة المنصة**
 
 | | EN | AR |
@@ -26,6 +28,8 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 | **SSOT owns** | Articles · courses · KB · learning paths | مقالات · دورات · قواعد معرفة · مسارات |
 
 ### Visual identity | الهوية البصرية
+
+> **Graph node color:** `color:teal` — set in frontmatter; Graph View does not use the logo embed above.
 
 | Property | Value | Graph View |
 |----------|-------|------------|
@@ -85,9 +89,9 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 
 | Doc | EN | AR |
 |-----|----|-----|
-| [[02_PLATFORMS/labs/OVERVIEW]] | Overview | نظرة مختصرة |
-| [[02_PLATFORMS/labs/FEATURES_MODULES]] | L-C* · L-G* · L-P* | وحدات الميزات |
-| [[02_PLATFORMS/labs/ISOLATION]] | Isolation checklist | قائمة العزل |
+| [[02_PLATFORMS/Labs/OVERVIEW]] | Overview | نظرة مختصرة |
+| [[02_PLATFORMS/Labs/FEATURES_MODULES]] | L-C* · L-G* · L-P* | وحدات الميزات |
+| [[02_PLATFORMS/Labs/ISOLATION]] | Isolation checklist | قائمة العزل |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | Constitution (SSOT) | الدستور |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT \| الرؤية والمهمة]] | Vision & mission | الرؤية والمهمة |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT \| الاتفاقات]] | Agreements | الاتفاقات |
@@ -95,7 +99,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 | [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] | Governance | الحوكمة |
 | [[02_PLATFORMS/GRAPH_MOC]] | Graph hub | مركز الرسم |
 
-**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
+**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/Rack/README]] · [[02_PLATFORMS/Pro/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
 
 ---
 
@@ -110,7 +114,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 | L-G* | Learning paths · cross-ref API | مسارات · مراجع |
 | L-P* | Paid courses · Academy (gated) | دورات · أكاديمية |
 
-**Detail:** [[02_PLATFORMS/labs/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]] · **Phrases:** `L-*` in [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]]
+**Detail:** [[02_PLATFORMS/Labs/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]] · **Phrases:** `L-*` in [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]]
 
 ---
 
@@ -128,7 +132,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 **EN:** (1) No Rack commerce or Pro profile/geo UI on Labs. (2) Not SSOT for price, inventory, or verification. (3) Rack/Pro refs via API only — no iframes. (4) Content deploy independent of Rack releases. (5) Article/course bodies stay in `labs` schema.  
 **AR:** (1) لا تجارة راك ولا واجهة Pro على Labs. (2) ليس SSOT للسعر/المخزون/التحقق. (3) مراجع API فقط. (4) نشر محتوى مستقل. (5) النصوص في مخطط `labs`.
 
-**Full checklist:** [[02_PLATFORMS/labs/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/GOVERNANCE_GATES]]
+**Full checklist:** [[02_PLATFORMS/Labs/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 ---
 
@@ -137,7 +141,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 **EN:** **Rack** — guides use `product_id`; Rack shows link cards only; forbidden: Labs hosts Rack checkout. **Pro** — playbooks link `profile_id`; forbidden: Labs stores verification SSOT. **Core** — auth, theme, i18n, wallet for courses.  
 **AR:** **Rack** — أدلة بـ `product_id`؛ بطاقات روابط فقط؛ ممنوع: دفع راك على Labs. **Pro** — `profile_id` في الأدلة؛ ممنوع: تخزين التحقق. **النواة** — هوية وثيم ومحفظة.
 
-**Siblings:** [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]]
+**Siblings:** [[02_PLATFORMS/Rack/README]] · [[02_PLATFORMS/Pro/README]]
 
 ---
 

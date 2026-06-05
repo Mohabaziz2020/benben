@@ -16,7 +16,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 
 # Circuit Rack · سيركيت راك
 
-![[03_SHARED_CORE/branding/circuit-rack-logo.png|104]]
+![[03_SHARED_CORE/branding/circuit-rack-logo.png|120]]
 
 **Platform MOC · خريطة المنصة**
 
@@ -29,7 +29,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 
 ### Visual identity | الهوية البصرية
 
-> **Logo · شعار** — `![[03_SHARED_CORE/branding/circuit-rack-logo.png|88]]` · Graph node color: `color:red` (not the image).
+> **Graph node color:** `color:red` — set in frontmatter; Graph View does not use the logo embed above.
 
 | Property | Value | Graph View |
 |----------|-------|------------|

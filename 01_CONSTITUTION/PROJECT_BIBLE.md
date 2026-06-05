@@ -12,6 +12,12 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 # BenBenHub – Project Bible
 # بن بن هاب — دستور المشروع
 
+![[03_SHARED_CORE/branding/benbenhub-logo.png|150]]
+
+| Circuit Rack | Circuit Pro | Circuit Labs |
+|:---:|:---:|:---:|
+| ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|120]] |
+
 **Single Source of Truth · مصدر الحقيقة الواحد** · **v3.0** · **2026-06-05** · Bilingual Master Edition (EN/AR)
 
 **EN:** Master constitution for BENBENHUB: hidden parent entity, three sovereign platforms, backend-only integration, three governance gates.
@@ -19,14 +25,6 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 **AR:** الدستور الأعلى لـ BENBENHUB: كيان أب غير معلن على المنصات بهدف اطفاء شخصية اعتبارية لكل منصة ، ثلاث منصات سيادية معزولة، تكامل خلفي فقط، وثلاث بوابات حوكمة ملزمة.
 
 **Entry:** [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]] · **Graph hub:** [[02_PLATFORMS/GRAPH_MOC]]
-
-### Ecosystem brand marks | شعارات المنظومة
-
-| BENBENHUB | Circuit Rack | Circuit Pro | Circuit Labs |
-|:---:|:---:|:---:|:---:|
-| ![[03_SHARED_CORE/branding/benbenhub-logo.png\|52]] | ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|52]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|52]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|52]] |
-
-*Obsidian:* `![[03_SHARED_CORE/branding/<file>.png\|width]]` — logos render in **Reading view**; **Graph View** uses `color:` frontmatter and path groups in `.obsidian/graph.json`, not embed thumbnails.
 
 ---
 
