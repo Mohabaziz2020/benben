@@ -1,6 +1,8 @@
 ---
 type: platform
 platform: pro
+color: green
+brand: circuit-pro
 status: active
 updated: 2026-06-05
 tags: [pro, features, modules]

@@ -1,6 +1,8 @@
 ---
 type: reference
 status: active
+color: gold
+brand: benbenhub
 updated: 2026-06-05
 tags: [features, modules, database]
 ---

@@ -3,9 +3,11 @@ type: moc
 status: complete
 edition: master
 version: "3.2"
+color: gold
+brand: benbenhub
 updated: 2026-06-05
 author: Maestro
-tags: [benbenhub, index, moc, bilingual, entry]
+tags: [benbenhub, index, moc, bilingual, entry, graph-hub]
 pin: true
 ---
 
@@ -26,6 +28,20 @@ pin: true
 | 📋 **Vault guide** | [[README]] |
 | 🏠 **Today** | [[00_ROOT_DASHBOARD/HOME]] |
 | 📜 **Constitution** | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| 🎨 **Graph colors** | [[02_PLATFORMS/GRAPH_MOC#Visual identity · نظام الألوان (Graph View)]] |
+
+---
+
+## Visual identity · نظام الألوان
+
+| Entity | Property `color` | Hex | Start here |
+|--------|------------------|-----|------------|
+| BenBenHub / Constitution | `gold` | `#FFD700` | [[01_CONSTITUTION/PROJECT_BIBLE]] · [[INDEX]] |
+| Circuit Rack | `red` | `#E53935` | [[02_PLATFORMS/rack/README]] |
+| Circuit Pro | `green` | `#2E7D32` | [[02_PLATFORMS/pro/README]] |
+| Circuit Labs | `teal` | `#00897B` | [[02_PLATFORMS/labs/README]] |
+
+**Graph setup:** [[02_PLATFORMS/GRAPH_MOC#Visual identity · نظام الألوان (Graph View)]] · CSS: `.obsidian/snippets/benbenhub-visual-identity.css`
 
 ---
 

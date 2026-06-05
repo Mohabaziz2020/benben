@@ -1,0 +1,110 @@
+/*
+ * BENBENHUB-CORE — Visual Identity (Maestro)
+ * Enable: Settings → Appearance → CSS snippets → benbenhub-visual-identity
+ * Pairs with frontmatter `color:` + Graph View color groups in graph.json
+ */
+
+:root {
+  --bb-rack: #e53935;
+  --bb-labs: #00897b;
+  --bb-pro: #2e7d32;
+  --bb-gold: #f9a825;
+  --bb-gold-soft: rgba(249, 168, 37, 0.12);
+  --bb-rack-soft: rgba(229, 57, 53, 0.1);
+  --bb-labs-soft: rgba(0, 137, 123, 0.1);
+  --bb-pro-soft: rgba(46, 125, 50, 0.1);
+}
+
+/* ── File explorer: folder titles ── */
+.nav-folder-title[data-path="01_CONSTITUTION"],
+.nav-folder-title[data-path^="01_CONSTITUTION/"] {
+  color: var(--bb-gold) !important;
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path="02_PLATFORMS/rack"],
+.nav-folder-title[data-path^="02_PLATFORMS/rack/"] {
+  color: var(--bb-rack) !important;
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path="02_PLATFORMS/labs"],
+.nav-folder-title[data-path^="02_PLATFORMS/labs/"] {
+  color: var(--bb-labs) !important;
+  font-weight: 600;
+}
+
+.nav-folder-title[data-path="02_PLATFORMS/pro"],
+.nav-folder-title[data-path^="02_PLATFORMS/pro/"] {
+  color: var(--bb-pro) !important;
+  font-weight: 600;
+}
+
+/* ── Active file tab accent (path-based) ── */
+.workspace-tab-header[data-path^="02_PLATFORMS/rack/"] {
+  border-bottom: 2px solid var(--bb-rack);
+}
+
+.workspace-tab-header[data-path^="02_PLATFORMS/labs/"] {
+  border-bottom: 2px solid var(--bb-labs);
+}
+
+.workspace-tab-header[data-path^="02_PLATFORMS/pro/"] {
+  border-bottom: 2px solid var(--bb-pro);
+}
+
+.workspace-tab-header[data-path^="01_CONSTITUTION/"] {
+  border-bottom: 2px solid var(--bb-gold);
+}
+
+/* ── Reading view: platform MOC title underline ── */
+.markdown-preview-view h1:has(+ p),
+.markdown-source-view.mod-cm6 .cm-header-1 {
+  /* fallback — property tags below */
+}
+
+/* Property chip styling when Properties panel shows color */
+.metadata-property[data-property-key="color"][data-property-value="red"] .metadata-property-value {
+  color: var(--bb-rack);
+  font-weight: 700;
+}
+
+.metadata-property[data-property-key="color"][data-property-value="teal"] .metadata-property-value {
+  color: var(--bb-labs);
+  font-weight: 700;
+}
+
+.metadata-property[data-property-key="color"][data-property-value="green"] .metadata-property-value {
+  color: var(--bb-pro);
+  font-weight: 700;
+}
+
+.metadata-property[data-property-key="color"][data-property-value="gold"] .metadata-property-value {
+  color: var(--bb-gold);
+  font-weight: 700;
+}
+
+/* Inline callouts by platform (optional class in notes) */
+.callout[data-callout="rack"] {
+  --callout-color: var(--bb-rack);
+  border-left: 4px solid var(--bb-rack);
+  background: var(--bb-rack-soft);
+}
+
+.callout[data-callout="labs"] {
+  --callout-color: var(--bb-labs);
+  border-left: 4px solid var(--bb-labs);
+  background: var(--bb-labs-soft);
+}
+
+.callout[data-callout="pro"] {
+  --callout-color: var(--bb-pro);
+  border-left: 4px solid var(--bb-pro);
+  background: var(--bb-pro-soft);
+}
+
+.callout[data-callout="benbenhub"] {
+  --callout-color: var(--bb-gold);
+  border-left: 4px solid var(--bb-gold);
+  background: var(--bb-gold-soft);
+}

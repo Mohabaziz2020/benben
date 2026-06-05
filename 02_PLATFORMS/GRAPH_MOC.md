@@ -1,6 +1,8 @@
 ---
 type: moc
 role: graph-hub
+color: gold
+brand: benbenhub
 status: active
 updated: 2026-06-05
 author: Maestro
@@ -18,13 +20,32 @@ pin: true
 
 ---
 
+## Visual identity · نظام الألوان (Graph View)
+
+**EN:** Frontmatter `color:` on platform files drives Obsidian Graph color groups (also in `.obsidian/graph.json`). Enable CSS: Settings → Appearance → **benbenhub-visual-identity**.
+
+**AR:** خاصية `color:` في الملفات تلوّن الرسم. فعّل CSS: الإعدادات → المظهر → **benbenhub-visual-identity**.
+
+| Entity | `color` | Hex | Graph filter | Folder / key files |
+|--------|---------|-----|--------------|-------------------|
+| **BenBenHub / Constitution** | `gold` | `#FFD700` | `color:gold` · `path:01_CONSTITUTION` | [[01_CONSTITUTION/PROJECT_BIBLE]] · [[01_CONSTITUTION/README]] · [[INDEX]] |
+| **Circuit Rack** | `red` | `#E53935` | `color:red` · `path:02_PLATFORMS/rack` | `02_PLATFORMS/rack/*` |
+| **Circuit Labs** | `teal` | `#00897B` | `color:teal` · `path:02_PLATFORMS/labs` | `02_PLATFORMS/labs/*` |
+| **Circuit Pro** | `green` | `#2E7D32` | `color:green` · `path:02_PLATFORMS/pro` | `02_PLATFORMS/pro/*` |
+| Shared core | *(neutral)* | `#9392AD` | `path:03_SHARED_CORE` | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| Governance | *(neutral)* | `#B7791F` | `path:04_GOVERNANCE` | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+
+**Color groups (priority top → bottom):** `color:gold` → `color:red` → `color:teal` → `color:green` → path fallbacks — configured in `.obsidian/graph.json`.
+
+---
+
 ## Constitution ↔ Platforms · الدستور ↔ المنصات
 
 | | Bible (SSOT) | Platform MOC (summary) | Vision SSOT | Agreements SSOT |
 |---|--------------|------------------------|-------------|-----------------|
-| 🔵 Rack | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT]] |
-| 🟣 Pro | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT]] |
-| 🟢 Labs | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT]] |
+| 🔴 Rack `red` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT]] |
+| 🟢 Pro `green` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT]] |
+| 🩵 Labs `teal` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT]] |
 
 **Full constitution:** [[01_CONSTITUTION/PROJECT_BIBLE]] · **Platforms overview:** [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]]
 
@@ -85,8 +106,10 @@ pin: true
 
 ## Graph View tips · نصائح عرض الرسم
 
-1. Open this note → **Ctrl+G** (Graph View) → click **Open graph view for current file** (local graph) to see immediate neighbors.
-2. **Ctrl+G** global graph → filter `path:02_PLATFORMS` or `path:01_CONSTITUTION`.
-3. After vault sync: **Ctrl+P** → `Reload app without saving` to refresh the link index.
+1. **Enable colors:** Open Graph (**Ctrl+G**) → expand **Groups** (right panel) → confirm groups list matches table above (loaded from `.obsidian/graph.json`). Toggle groups on if dimmed.
+2. **Reload index:** **Ctrl+P** → `Reload app without saving` after git pull or bulk property edits.
+3. **Local graph:** Open [[02_PLATFORMS/rack/README]] (or pro/labs) → **Ctrl+P** → `Graph view: Open local graph`.
+4. **Filter examples:** `color:red` · `color:teal` · `color:green` · `color:gold` · `path:02_PLATFORMS`.
+5. **CSS folders:** Settings → Appearance → CSS snippets → enable **benbenhub-visual-identity** for colored File Explorer folders.
 
 *Maestro · Graph hub · [[01_CONSTITUTION/PROJECT_BIBLE]] ↔ platforms ↔ [[03_SHARED_CORE/REUSABLE_PHRASES]] ↔ [[04_GOVERNANCE/GOVERNANCE_GATES]]*

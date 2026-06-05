@@ -2,6 +2,8 @@
 type: moc
 role: platform-moc
 platform: pro
+color: green
+brand: circuit-pro
 status: active
 tier: services-professionals
 theme: purple
@@ -22,6 +24,14 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 | **Vault** | `02_PLATFORMS/pro/` | مجلد برو |
 | **Runtime** | `pro.*` · schema `pro` · purple theme | نطاق برو · مخطط معزول · بنفسجي |
 | **SSOT owns** | Profile · verification · reputation · geo | ملف · تحقق · سمعة · جغرافيا |
+
+### Visual identity | الهوية البصرية
+
+| Property | Value | Graph View |
+|----------|-------|------------|
+| **color** | `green` | Filter: `color:green` |
+| **brand** | `circuit-pro` | Path: `02_PLATFORMS/pro` |
+| **Hex** | `#2E7D32` | Matches `.obsidian/graph.json` group |
 
 **EN:** Sovereign professional and geo island — trusted identity and discovery, not commerce or editorial publishing.  
 **AR:** جزيرة مهنية وجغرافية سيادية — هوية واكتشاف موثوقان، وليست تجارة ولا نشر محتوى.

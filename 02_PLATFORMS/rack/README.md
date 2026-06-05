@@ -2,6 +2,8 @@
 type: moc
 role: platform-moc
 platform: rack
+color: red
+brand: circuit-rack
 status: active
 tier: primary-commerce
 theme: blue
@@ -22,6 +24,14 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 | **Vault** | `02_PLATFORMS/rack/` | مجلد راك |
 | **Runtime** | `rack.*` · schema `rack` · blue theme | نطاق راك · مخطط معزول · ثيم أزرق |
 | **SSOT owns** | Products · catalog · orders · marketplace | منتجات · كتالوج · طلبات · سوق |
+
+### Visual identity | الهوية البصرية
+
+| Property | Value | Graph View |
+|----------|-------|------------|
+| **color** | `red` | Filter: `color:red` |
+| **brand** | `circuit-rack` | Path: `02_PLATFORMS/rack` |
+| **Hex** | `#E53935` | Matches `.obsidian/graph.json` group |
 
 **EN:** Sovereign commerce island — regulated industrial marketplace and primary revenue engine, not generic classifieds.  
 **AR:** جزيرة تجارة سيادية — سوق صناعي منضبط ومحرك إيرادات أساسي، وليس إعلانات عشوائية.

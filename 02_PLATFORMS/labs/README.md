@@ -2,6 +2,8 @@
 type: moc
 role: platform-moc
 platform: labs
+color: teal
+brand: circuit-labs
 status: active
 tier: knowledge
 theme: green
@@ -22,6 +24,14 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 | **Vault** | `02_PLATFORMS/labs/` | مجلد لابز |
 | **Runtime** | `labs.*` · schema `labs` · green theme | نطاق لابز · مخطط معزول · أخضر |
 | **SSOT owns** | Articles · courses · KB · learning paths | مقالات · دورات · قواعد معرفة · مسارات |
+
+### Visual identity | الهوية البصرية
+
+| Property | Value | Graph View |
+|----------|-------|------------|
+| **color** | `teal` | Filter: `color:teal` |
+| **brand** | `circuit-labs` | Path: `02_PLATFORMS/labs` |
+| **Hex** | `#00897B` | Matches `.obsidian/graph.json` group |
 
 **EN:** Sovereign knowledge island — operational documentation and learning, not marketplace, identity registry, or checkout shell.  
 **AR:** جزيرة معرفة سيادية — توثيق وتعليم تشغيلي، وليست سوقاً ولا سجل هوية ولا قشرة دفع.

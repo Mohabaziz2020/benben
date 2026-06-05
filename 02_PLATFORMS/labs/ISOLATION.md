@@ -1,6 +1,8 @@
 ---
 type: platform
 platform: labs
+color: teal
+brand: circuit-labs
 status: active
 updated: 2026-06-05
 tags: [labs, isolation]

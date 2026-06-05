@@ -1,6 +1,8 @@
 ---
 type: platform
 platform: rack
+color: red
+brand: circuit-rack
 status: active
 updated: 2026-06-05
 tags: [rack, features, modules]

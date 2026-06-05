@@ -8,31 +8,59 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
+      "query": "color:gold",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "color:red",
+      "color": {
+        "a": 1,
+        "rgb": 15022389
+      }
+    },
+    {
+      "query": "color:teal",
+      "color": {
+        "a": 1,
+        "rgb": 35195
+      }
+    },
+    {
+      "query": "color:green",
+      "color": {
+        "a": 1,
+        "rgb": 3046706
+      }
+    },
+    {
       "query": "path:01_CONSTITUTION",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 16766720
       }
     },
     {
       "query": "path:02_PLATFORMS/rack",
       "color": {
         "a": 1,
-        "rgb": 359485
-      }
-    },
-    {
-      "query": "path:02_PLATFORMS/pro",
-      "color": {
-        "a": 1,
-        "rgb": 11393399
+        "rgb": 15022389
       }
     },
     {
       "query": "path:02_PLATFORMS/labs",
       "color": {
         "a": 1,
-        "rgb": 3066993
+        "rgb": 35195
+      }
+    },
+    {
+      "query": "path:02_PLATFORMS/pro",
+      "color": {
+        "a": 1,
+        "rgb": 3046706
       }
     },
     {
@@ -46,14 +74,14 @@
       "query": "path:03_SHARED_CORE",
       "color": {
         "a": 1,
-        "rgb": 16768644
+        "rgb": 9671578
       }
     },
     {
       "query": "path:04_GOVERNANCE",
       "color": {
         "a": 1,
-        "rgb": 16755200
+        "rgb": 12040119
       }
     }
   ],
@@ -67,6 +95,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 200,
-  "scale": 0.7132754626224407,
+  "scale": 1.4019828977760938,
   "close": true
 }

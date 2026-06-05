@@ -2,6 +2,8 @@
 type: moc
 status: active
 platform: ecosystem
+color: gold
+brand: benbenhub
 updated: 2026-06-05
 tags: [platforms, rack, pro, labs, bilingual]
 ---
@@ -19,11 +21,11 @@ tags: [platforms, rack, pro, labs, bilingual]
 
 ## Platform MOCs · خرائط المنصات
 
-| | Platform | SSOT owns | **MOC** | Bible |
-|---|----------|-----------|---------|-------|
-| 🔵 | **Circuit Rack** | Products · orders · marketplace | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] |
-| 🟣 | **Circuit Pro** | Profile · verification · geo | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] |
-| 🟢 | **Circuit Labs** | Content · courses · KB | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] |
+| | Platform | `color` | SSOT owns | **MOC** | Bible |
+|---|----------|---------|-----------|---------|-------|
+| 🔴 | **Circuit Rack** | `red` | Products · orders · marketplace | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] |
+| 🟢 | **Circuit Pro** | `green` | Profile · verification · geo | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] |
+| 🩵 | **Circuit Labs** | `teal` | Content · courses · KB | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] |
 
 ---
 
