@@ -22,7 +22,7 @@ pin: true
 | **Vault entry** | [[README]] |
 | **Full map** | [[INDEX]] |
 | **Law** | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| **Graph hub** | [[02_PLATFORMS/GRAPH_MOC]] |
+| **Visual start** | [[02_PLATFORMS/GRAPH_MOC]] *(Graph View — open first)* |
 
 ---
 
