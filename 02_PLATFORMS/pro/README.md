@@ -10,7 +10,7 @@ theme: purple
 domain: pro.*
 updated: 2026-06-05
 author: Maestro
-tags: [pro, identity, geo, moc, bilingual, graph-hub]
+tags: [pro, identity, geo, moc, bilingual, graph-color-pro]
 aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 ---
 

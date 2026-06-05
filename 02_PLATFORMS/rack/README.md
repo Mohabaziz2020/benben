@@ -10,7 +10,7 @@ theme: blue
 domain: rack.*
 updated: 2026-06-05
 author: Maestro
-tags: [rack, commerce, marketplace, moc, bilingual, graph-hub]
+tags: [rack, commerce, marketplace, moc, bilingual, graph-color-rack]
 aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 ---
 

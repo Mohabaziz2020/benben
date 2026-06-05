@@ -981,6 +981,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.1 · 2026-06-05** — Graph & mind-map fix: [[02_PLATFORMS/GRAPH_MOC]] hub; Bible ↔ platform MOCs ↔ [[03_SHARED_CORE/REUSABLE_PHRASES]] ↔ [[04_GOVERNANCE/GOVERNANCE_GATES]]
 - **3.2 · 2026-06-05** — Balanced platform READMEs: summaries + operational sections; full Vision & Agreements remain bible SSOT
 - **3.3 · 2026-06-05** — Visual identity: `color` properties (rack/red, labs/teal, pro/green, benbenhub/gold); graph.json + CSS snippet
+- **3.3.1 · 2026-06-05** — Graph color fix: path-first groups in `graph.json`; removed `#graph-hub` from platform MOC tags; Labs hex `#00ACC1`
 
 ---
 

@@ -6,12 +6,12 @@
 
 :root {
   --bb-rack: #e53935;
-  --bb-labs: #00897b;
+  --bb-labs: #00acc1;
   --bb-pro: #2e7d32;
   --bb-gold: #f9a825;
   --bb-gold-soft: rgba(249, 168, 37, 0.12);
   --bb-rack-soft: rgba(229, 57, 53, 0.1);
-  --bb-labs-soft: rgba(0, 137, 123, 0.1);
+  --bb-labs-soft: rgba(0, 172, 193, 0.12);
   --bb-pro-soft: rgba(46, 125, 50, 0.1);
 }
 

@@ -30,12 +30,12 @@ pin: true
 |--------|---------|-----|--------------|-------------------|
 | **BenBenHub / Constitution** | `gold` | `#FFD700` | `color:gold` · `path:01_CONSTITUTION` | [[01_CONSTITUTION/PROJECT_BIBLE]] · [[01_CONSTITUTION/README]] · [[INDEX]] |
 | **Circuit Rack** | `red` | `#E53935` | `color:red` · `path:02_PLATFORMS/rack` | `02_PLATFORMS/rack/*` |
-| **Circuit Labs** | `teal` | `#00897B` | `color:teal` · `path:02_PLATFORMS/labs` | `02_PLATFORMS/labs/*` |
+| **Circuit Labs** | `teal` | `#00ACC1` (teal-blue) | `path:02_PLATFORMS/labs` · `[color:teal]` | `02_PLATFORMS/labs/*` |
 | **Circuit Pro** | `green` | `#2E7D32` | `color:green` · `path:02_PLATFORMS/pro` | `02_PLATFORMS/pro/*` |
 | Shared core | *(neutral)* | `#9392AD` | `path:03_SHARED_CORE` | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
 | Governance | *(neutral)* | `#B7791F` | `path:04_GOVERNANCE` | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
 
-**Color groups (priority top → bottom):** `color:gold` → `color:red` → `color:teal` → `color:green` → path fallbacks — configured in `.obsidian/graph.json`.
+**Color groups (priority top → bottom):** `path:02_PLATFORMS/{rack|labs|pro}` → `path:01_CONSTITUTION` → gold hub files → `[color:*]` property fallbacks. **Do not** tag platform MOCs with `#graph-hub` (that forces gold). Config: `.obsidian/graph.json` (committed — persistent).
 
 ---
 
@@ -106,10 +106,12 @@ pin: true
 
 ## Graph View tips · نصائح عرض الرسم
 
-1. **Enable colors:** Open Graph (**Ctrl+G**) → expand **Groups** (right panel) → confirm groups list matches table above (loaded from `.obsidian/graph.json`). Toggle groups on if dimmed.
-2. **Reload index:** **Ctrl+P** → `Reload app without saving` after git pull or bulk property edits.
-3. **Local graph:** Open [[02_PLATFORMS/rack/README]] (or pro/labs) → **Ctrl+P** → `Graph view: Open local graph`.
-4. **Filter examples:** `color:red` · `color:teal` · `color:green` · `color:gold` · `path:02_PLATFORMS`.
-5. **CSS folders:** Settings → Appearance → CSS snippets → enable **benbenhub-visual-identity** for colored File Explorer folders.
+1. **Reload vault index:** **Ctrl+P** → type `Reload app without saving` → Enter (required after `graph.json` changes).
+2. **Open Graph:** **Ctrl+G** (or ribbon → graph fork icon).
+3. **Open Groups panel:** In Graph View, look at the **right sidebar** → section **Groups** (if hidden: click gear ⚙ on graph → ensure groups visible; `graph.json` has `"close": false`).
+4. **Verify toggles:** Each row should be **on** (colored dot): `path:02_PLATFORMS/rack` (red), `path:02_PLATFORMS/labs` (teal-blue), `path:02_PLATFORMS/pro` (green), `path:01_CONSTITUTION` (gold).
+5. **Test filter:** In graph search box type `path:02_PLATFORMS/rack` — only red nodes should remain.
+6. **Local graph:** Open [[02_PLATFORMS/pro/README]] → **Ctrl+P** → `Graph view: Open local graph` — center node green, neighbors colored by folder.
+7. **CSS (optional):** Settings → Appearance → CSS snippets → **benbenhub-visual-identity** on (folder names in file explorer).
 
 *Maestro · Graph hub · [[01_CONSTITUTION/PROJECT_BIBLE]] ↔ platforms ↔ [[03_SHARED_CORE/REUSABLE_PHRASES]] ↔ [[04_GOVERNANCE/GOVERNANCE_GATES]]*

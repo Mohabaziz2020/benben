@@ -10,7 +10,7 @@ theme: green
 domain: labs.*
 updated: 2026-06-05
 author: Maestro
-tags: [labs, knowledge, content, moc, bilingual, graph-hub]
+tags: [labs, knowledge, content, moc, bilingual, graph-color-labs]
 aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 ---
 
@@ -31,7 +31,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 |----------|-------|------------|
 | **color** | `teal` | Filter: `color:teal` |
 | **brand** | `circuit-labs` | Path: `02_PLATFORMS/labs` |
-| **Hex** | `#00897B` | Matches `.obsidian/graph.json` group |
+| **Hex** | `#00ACC1` (teal-blue) | Matches `.obsidian/graph.json` group |
 
 **EN:** Sovereign knowledge island — operational documentation and learning, not marketplace, identity registry, or checkout shell.  
 **AR:** جزيرة معرفة سيادية — توثيق وتعليم تشغيلي، وليست سوقاً ولا سجل هوية ولا قشرة دفع.
