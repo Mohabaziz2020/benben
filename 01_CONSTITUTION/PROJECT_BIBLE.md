@@ -165,9 +165,9 @@ tags: [benbenhub, ssot, project-bible]
 
 ## Platforms Overview | نظرة عامة على المنصات
 
-**EN:** Three **sovereign platforms** under one hidden parent. Each has a bilingual **Platform MOC** (`02_PLATFORMS/{rack|pro|labs}/README.md`) with vision, features, stack, isolation, relationships, and PROJECT_BIBLE quick links. This overview is an index — canonical detail lives in MOCs and sections below.
+**EN:** Three **sovereign platforms** under one hidden parent. Each **Platform MOC** (`02_PLATFORMS/{rack|pro|labs}/README.md`) holds **summaries** (vision, agreements teaser, business rules teaser) plus **operational** sections (features, stack, isolation, relations). **Full strategic SSOT** (vision, mission, consent tables) lives in this bible only.
 
-**AR:** ثلاث **منصات سيادية** تحت أب مخفي واحد. لكل منصة **خريطة MOC ثنائية اللغة** (`02_PLATFORMS/{rack|pro|labs}/README.md`) تشمل الرؤية والميزات والتقنية والعزل والعلاقات وروابط الدستور. هذا القسم فهرس — التفاصيل المرجعية في خرائط MOC والأقسام أدناه.
+**AR:** ثلاث **منصات سيادية** تحت أب مخفي. كل **خريطة MOC** تحتوي **ملخصات** و**أقسام تشغيلية** (ميزات، تقنية، عزل، علاقات). **الاستراتيجية الكاملة** (رؤية، مهمة، جداول موافقات) في هذا الدستور فقط.
 
 | Platform | Tier | One-line mission |
 |----------|------|------------------|
@@ -485,6 +485,8 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 **EN:** Roles: `professional`, `verified_pro`, `regional_agent` (gated), `trust_reviewer`, `partner_api`, `pro_admin`. No commerce checkout or catalog on Pro routes.
 
 **AR:** أدوار: مهني، verified_pro، وكيل إقليمي (مقيد)، مراجع ثقة، API شريك، إدارة Pro. لا دفع سوق ولا كتالوج على Pro.
+
+**MOC teaser:** [[02_PLATFORMS/pro/README#Business Rules · قواعد العمل (ملخص) | قواعد العمل — ملخص]]
 
 ---
 
@@ -975,6 +977,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **2.9 · 2026-06-05** — Maestro P3: detailed Platform MOCs (rack/pro/labs README); INDEX v3.2; PLATFORMS_INDEX
 - **3.0 · 2026-06-05** — Bilingual Completion Phase: **EN:** / **AR:** blocks across constitution and platform MOCs
 - **3.1 · 2026-06-05** — Graph & mind-map fix: [[02_PLATFORMS/GRAPH_MOC]] hub; Bible ↔ platform MOCs ↔ [[03_SHARED_CORE/REUSABLE_PHRASES]] ↔ [[04_GOVERNANCE/GOVERNANCE_GATES]]
+- **3.2 · 2026-06-05** — Balanced platform READMEs: summaries + operational sections; full Vision & Agreements remain bible SSOT
 
 ---
 
