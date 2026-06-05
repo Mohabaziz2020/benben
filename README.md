@@ -1,14 +1,12 @@
----
-type: guide
-status: complete
-edition: master
-version: "2.1"
-updated: 2026-06-05
-author: Maestro
-tags: [benbenhub, readme, bilingual, vault, landing, entry]
----
-
 # BENBENHUB-CORE
+
+[![Status](https://img.shields.io/badge/status-fully%20operational-brightgreen)](https://github.com/Mohabaziz2020/benben)
+[![SSOT](https://img.shields.io/badge/SSOT-PROJECT__BIBLE%20v3.0-blue)](01_CONSTITUTION/PROJECT_BIBLE.md)
+[![Bilingual](https://img.shields.io/badge/docs-EN%20%7C%20AR-informational)](03_SHARED_CORE/REUSABLE_PHRASES.md)
+[![Obsidian](https://img.shields.io/badge/Obsidian-vault-7c3aed)](00_ROOT_DASHBOARD/HOME.md)
+[![Platforms](https://img.shields.io/badge/platforms-3%20islands-orange)](02_PLATFORMS/PLATFORMS_INDEX.md)
+[![Gates](https://img.shields.io/badge/governance-Truth%20%7C%20Immutability%20%7C%20Scope-red)](04_GOVERNANCE/GOVERNANCE_GATES.md)
+[![Backup](https://img.shields.io/github/actions/workflow/status/Mohabaziz2020/benben/daily-backup.yml?label=daily%20backup)](https://github.com/Mohabaziz2020/benben/actions/workflows/daily-backup.yml)
 
 **Architecture SSOT vault · خزنة مصدر الحقيقة المعمارية**
 
@@ -17,31 +15,33 @@ tags: [benbenhub, readme, bilingual, vault, landing, entry]
 | **EN** | Law, map, and daily reference for the BENBENHUB ecosystem — not source code. |
 | **AR** | القانون والخريطة والمرجع اليومي لمنظومة BENBENHUB — وليس كوداً. |
 
+> **Obsidian users:** Wikilinks (`[[note]]`) work inside the vault. This README uses standard links for GitHub.
+
 ---
 
 ## Quick Start | بداية سريعة
 
-**EN:** Three clicks to a productive day — pin these in Obsidian Bookmarks.
+**EN:** Pin these links in Obsidian Bookmarks — three steps to a productive day.
 
-**AR:** ثلاث نقرات ليوم منتج — ثبّتها في Obsidian Bookmarks.
+**AR:** ثبّت هذه الروابط في Obsidian Bookmarks — ثلاث خطوات ليوم منتج.
 
 | Step | EN | AR | Link |
 |:----:|----|----|------|
-| 1 | **Daily command center** | لوحة القيادة | [[00_ROOT_DASHBOARD/HOME]] |
-| 2 | **Today's daily note** | مذكرة اليوم | Obsidian → *Daily notes: Open today's* · [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
-| 3 | **Constitution (law)** | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| 4 | **Full vault map** | خريطة الخزنة | [[INDEX]] |
-| 5 | **Your platform** (one only) | منصتك (واحدة) | [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]] |
-| 6 | **Phrase bank** (copy/UI) | بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| 1 | **Daily command center** | لوحة القيادة | [HOME](00_ROOT_DASHBOARD/HOME.md) |
+| 2 | **Today's daily note** | مذكرة اليوم | Obsidian → *Daily notes: Open today's* · [Template](90_TEMPLATES/DAILY_NOTE_TEMPLATE.md) |
+| 3 | **Constitution (law)** | الدستور | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) |
+| 4 | **Full vault map** | خريطة الخزنة | [INDEX](INDEX.md) |
+| 5 | **Your platform** (one only) | منصتك (واحدة) | [Rack](02_PLATFORMS/rack/README.md) · [Pro](02_PLATFORMS/pro/README.md) · [Labs](02_PLATFORMS/labs/README.md) |
+| 6 | **Phrase bank** (copy/UI) | بنك الجمل | [REUSABLE_PHRASES](03_SHARED_CORE/REUSABLE_PHRASES.md) |
 | 7 | **End of day backup** | نسخ احتياطي | `scripts/backup-vault.ps1` |
 
 ```
 README  →  HOME  →  Daily Note  →  PROJECT_BIBLE  →  one Platform MOC  →  backup
 ```
 
-**EN:** New to the vault? Read **Project Purpose** below, then open **HOME**.
+**EN:** New to the vault? Read **Project Purpose** below, then open [HOME](00_ROOT_DASHBOARD/HOME.md).
 
-**AR:** جديد على الخزنة؟ اقرأ **غرض المشروع** أدناه، ثم افتح **HOME**.
+**AR:** جديد على الخزنة؟ اقرأ **غرض المشروع** أدناه، ثم افتح [HOME](00_ROOT_DASHBOARD/HOME.md).
 
 ---
 
@@ -78,12 +78,12 @@ BENBENHUB-CORE/
 
 | Folder | EN | AR | Primary file |
 |--------|----|----|--------------|
-| `00_ROOT_DASHBOARD/` | Daily command center | لوحة القيادة | [[00_ROOT_DASHBOARD/HOME]] |
-| `01_CONSTITUTION/` | Master law | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| `02_PLATFORMS/` | Three islands | ثلاث جزر | [[02_PLATFORMS/PLATFORMS_INDEX]] |
-| `03_SHARED_CORE/` | Thin shared services | نواة رفيعة | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] |
-| `04_GOVERNANCE/` | Gates & rules | بوابات وقواعد | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
-| `90_TEMPLATES/` | Reusable note shapes | قوالب المذكرات | [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
+| `00_ROOT_DASHBOARD/` | Daily command center | لوحة القيادة | [HOME](00_ROOT_DASHBOARD/HOME.md) |
+| `01_CONSTITUTION/` | Master law | الدستور | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) |
+| `02_PLATFORMS/` | Three islands | ثلاث جزر | [PLATFORMS_INDEX](02_PLATFORMS/PLATFORMS_INDEX.md) |
+| `03_SHARED_CORE/` | Thin shared services | نواة رفيعة | [SHARED_CORE_OVERVIEW](03_SHARED_CORE/SHARED_CORE_OVERVIEW.md) |
+| `04_GOVERNANCE/` | Gates & rules | بوابات وقواعد | [GOVERNANCE_GATES](04_GOVERNANCE/GOVERNANCE_GATES.md) |
+| `90_TEMPLATES/` | Reusable note shapes | قوالب المذكرات | [DAILY_NOTE_TEMPLATE](90_TEMPLATES/DAILY_NOTE_TEMPLATE.md) |
 
 ---
 
@@ -95,19 +95,19 @@ BENBENHUB-CORE/
 
 | Goal | EN | AR | Link |
 |------|----|----|------|
-| Start today | Daily dashboard | لوحة اليوم | [[00_ROOT_DASHBOARD/HOME]] |
-| See everything | Master index | الفهرس الشامل | [[INDEX]] |
-| Read the law | Constitution SSOT | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| All platforms | Ecosystem index | فهرس المنصات | [[02_PLATFORMS/PLATFORMS_INDEX]] |
-| Commerce island | Circuit Rack MOC | راك | [[02_PLATFORMS/rack/README]] |
-| Identity island | Circuit Pro MOC | برو | [[02_PLATFORMS/pro/README]] |
-| Knowledge island | Circuit Labs MOC | لابز | [[02_PLATFORMS/labs/README]] |
-| Feature registry | Modules database | سجل الوحدات | [[02_PLATFORMS/FEATURES_MODULES_DATABASE]] |
-| UI & docs copy | Phrase bank EN/AR | بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
-| Shared services | Core boundaries | حدود النواة | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] |
-| Integration law | Allowed / forbidden | التكامل | [[04_GOVERNANCE/INTEGRATION_RULES]] |
-| Three gates | Truth · Immutability · Scope | البوابات الثلاث | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
-| Daily note | Template for today | قالب اليوم | [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
+| Start today | Daily dashboard | لوحة اليوم | [HOME](00_ROOT_DASHBOARD/HOME.md) |
+| See everything | Master index | الفهرس الشامل | [INDEX](INDEX.md) |
+| Read the law | Constitution SSOT | الدستور | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) |
+| All platforms | Ecosystem index | فهرس المنصات | [PLATFORMS_INDEX](02_PLATFORMS/PLATFORMS_INDEX.md) |
+| Commerce island | Circuit Rack MOC | راك | [rack/README](02_PLATFORMS/rack/README.md) |
+| Identity island | Circuit Pro MOC | برو | [pro/README](02_PLATFORMS/pro/README.md) |
+| Knowledge island | Circuit Labs MOC | لابز | [labs/README](02_PLATFORMS/labs/README.md) |
+| Feature registry | Modules database | سجل الوحدات | [FEATURES_MODULES_DATABASE](02_PLATFORMS/FEATURES_MODULES_DATABASE.md) |
+| UI & docs copy | Phrase bank EN/AR | بنك الجمل | [REUSABLE_PHRASES](03_SHARED_CORE/REUSABLE_PHRASES.md) |
+| Shared services | Core boundaries | حدود النواة | [SHARED_CORE_OVERVIEW](03_SHARED_CORE/SHARED_CORE_OVERVIEW.md) |
+| Integration law | Allowed / forbidden | التكامل | [INTEGRATION_RULES](04_GOVERNANCE/INTEGRATION_RULES.md) |
+| Three gates | Truth · Immutability · Scope | البوابات الثلاث | [GOVERNANCE_GATES](04_GOVERNANCE/GOVERNANCE_GATES.md) |
+| Daily note | Template for today | قالب اليوم | [DAILY_NOTE_TEMPLATE](90_TEMPLATES/DAILY_NOTE_TEMPLATE.md) |
 
 **Flow | المسار:** `README` → `HOME` or `INDEX` → `PROJECT_BIBLE` → one platform `README`
 
@@ -166,15 +166,15 @@ BENBENHUB-CORE/
 
 | Step | EN | AR |
 |:----:|----|----|
-| 1 | Open [[00_ROOT_DASHBOARD/HOME]] or [[INDEX]] | افتح HOME أو INDEX |
+| 1 | Open [HOME](00_ROOT_DASHBOARD/HOME.md) or [INDEX](INDEX.md) | افتح HOME أو INDEX |
 | 2 | Create/open today’s daily note (Obsidian command) | افتح مذكرة اليوم |
-| 3 | Read the matching section in [[01_CONSTITUTION/PROJECT_BIBLE]] | راجع قسم الدستور |
+| 3 | Read the matching section in [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) | راجع قسم الدستور |
 | 4 | Work inside **one** platform MOC (rack, pro, or labs) | منصة واحدة فقط |
-| 5 | Cross-platform change? Check [[04_GOVERNANCE/GOVERNANCE_GATES]] first | عابر؟ البوابات أولاً |
-| 6 | Writing copy? Use [[03_SHARED_CORE/REUSABLE_PHRASES]] | نصوص؟ بنك الجمل |
+| 5 | Cross-platform change? Check [GOVERNANCE_GATES](04_GOVERNANCE/GOVERNANCE_GATES.md) first | عابر؟ البوابات أولاً |
+| 6 | Writing copy? Use [REUSABLE_PHRASES](03_SHARED_CORE/REUSABLE_PHRASES.md) | نصوص؟ بنك الجمل |
 | 7 | Run `scripts/backup-vault.ps1` to push to GitHub | نسخ احتياطي إلى GitHub |
 
-**Tip | تلميح:** Pin [[INDEX]] and [[00_ROOT_DASHBOARD/HOME]] in Obsidian Bookmarks.
+**Tip | تلميح:** Pin [INDEX](INDEX.md) and [HOME](00_ROOT_DASHBOARD/HOME.md) in Obsidian Bookmarks.
 
 ---
 
@@ -182,16 +182,30 @@ BENBENHUB-CORE/
 
 | Priority | Resource | EN | AR |
 |:--------:|----------|----|-----|
-| ⭐ | [[01_CONSTITUTION/PROJECT_BIBLE]] | Constitution · SSOT v3.0 | الدستور |
-| ⭐ | [[INDEX]] | Master vault index | الفهرس الرئيسي |
-| ⭐ | [[03_SHARED_CORE/REUSABLE_PHRASES]] | Bilingual phrase bank | بنك الجمل |
-| ⭐ | [[02_PLATFORMS/PLATFORMS_INDEX]] | All platforms | كل المنصات |
-| | [[00_ROOT_DASHBOARD/HOME]] | Today’s dashboard | لوحة اليوم |
-| | [[02_PLATFORMS/rack/README]] | Rack MOC | راك |
-| | [[02_PLATFORMS/pro/README]] | Pro MOC | برو |
-| | [[02_PLATFORMS/labs/README]] | Labs MOC | لابز |
-| | [[04_GOVERNANCE/GOVERNANCE_GATES]] | Three gates | البوابات |
-| | [[04_GOVERNANCE/INTEGRATION_RULES]] | Integration law | قانون التكامل |
+| ⭐ | [PROJECT_BIBLE](01_CONSTITUTION/PROJECT_BIBLE.md) | Constitution · SSOT v3.0 | الدستور |
+| ⭐ | [INDEX](INDEX.md) | Master vault index | الفهرس الرئيسي |
+| ⭐ | [REUSABLE_PHRASES](03_SHARED_CORE/REUSABLE_PHRASES.md) | Bilingual phrase bank | بنك الجمل |
+| ⭐ | [PLATFORMS_INDEX](02_PLATFORMS/PLATFORMS_INDEX.md) | All platforms | كل المنصات |
+| | [HOME](00_ROOT_DASHBOARD/HOME.md) | Today’s dashboard | لوحة اليوم |
+| | [rack/README](02_PLATFORMS/rack/README.md) | Rack MOC | راك |
+| | [pro/README](02_PLATFORMS/pro/README.md) | Pro MOC | برو |
+| | [labs/README](02_PLATFORMS/labs/README.md) | Labs MOC | لابز |
+| | [GOVERNANCE_GATES](04_GOVERNANCE/GOVERNANCE_GATES.md) | Three gates | البوابات |
+| | [INTEGRATION_RULES](04_GOVERNANCE/INTEGRATION_RULES.md) | Integration law | قانون التكامل |
+
+---
+
+## Clone & use | الاستنساخ والاستخدام
+
+**EN:** Clone this repo and open the folder as an Obsidian vault. Daily backup workflow runs via GitHub Actions and `scripts/backup-vault.ps1`.
+
+**AR:** استنسخ المستودع وافتح المجلد كخزنة Obsidian. النسخ الاحتياطي اليومي عبر GitHub Actions و`scripts/backup-vault.ps1`.
+
+```bash
+git clone https://github.com/Mohabaziz2020/benben.git
+cd benben
+# Open in Obsidian → pin HOME + INDEX
+```
 
 ---
 
@@ -201,8 +215,8 @@ BENBENHUB-CORE/
 
 **AR:** BENBENHUB-CORE **جاهزة بالكامل للاستخدام اليومي** — README للهبوط، HOME للقيادة، قالب يومي ثنائي، ونسخ git احتياطي.
 
-**Start today | ابدأ اليوم:** [[00_ROOT_DASHBOARD/HOME]] · [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] · [[INDEX]]
+**Start today | ابدأ اليوم:** [HOME](00_ROOT_DASHBOARD/HOME.md) · [DAILY_NOTE_TEMPLATE](90_TEMPLATES/DAILY_NOTE_TEMPLATE.md) · [INDEX](INDEX.md)
 
 ---
 
-*Maestro P4 · Fully operational · HOME · Daily template · Quick Start · Truth · Immutability · Scope*
+*Maestro P5 · GitHub polish · [Mohabaziz2020/benben](https://github.com/Mohabaziz2020/benben) · Hidden parent · Platform isolation · Truth · Immutability · Scope*
