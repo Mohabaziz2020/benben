@@ -9,12 +9,12 @@ tags: [branding, logos, maestro]
 
 Canonical logos for Obsidian embeds (Maestro visual identity).
 
-| File | Entity | Standard embed (Maestro final) |
-|------|--------|-------------------------------|
-| `benbenhub-logo.png` | BENBENHUB (parent) | `![[03_SHARED_CORE/branding/benbenhub-logo.png\|150]]` |
-| `circuit-rack-logo.png` | Circuit Rack | `![[03_SHARED_CORE/branding/circuit-rack-logo.png\|120]]` |
-| `circuit-pro-logo.png` | Circuit Pro | `![[03_SHARED_CORE/branding/circuit-pro-logo.png\|120]]` |
-| `circuit-labs-logo.png` | Circuit Labs | `![[03_SHARED_CORE/branding/circuit-labs-logo.png\|120]]` |
+| File | Entity | Header (200–250) | Table (120–150) |
+|------|--------|------------------|-----------------|
+| `benbenhub-logo.png` | BENBENHUB (parent) | `![[03_SHARED_CORE/branding/benbenhub-logo.png\|220]]` | — |
+| `circuit-rack-logo.png` | Circuit Rack | `![[03_SHARED_CORE/branding/circuit-rack-logo.png\|200]]` | `![[03_SHARED_CORE/branding/circuit-rack-logo.png\|140]]` |
+| `circuit-pro-logo.png` | Circuit Pro | `![[03_SHARED_CORE/branding/circuit-pro-logo.png\|200]]` | `![[03_SHARED_CORE/branding/circuit-pro-logo.png\|140]]` |
+| `circuit-labs-logo.png` | Circuit Labs | `![[03_SHARED_CORE/branding/circuit-labs-logo.png\|200]]` | `![[03_SHARED_CORE/branding/circuit-labs-logo.png\|140]]` |
 
 **Size syntax:** `![[path\|width]]` or `![[path\|widthxheight]]` (pixels in Reading view).
 

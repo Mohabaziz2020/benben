@@ -16,7 +16,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 
 # Circuit Labs · سيركيت لابز
 
-![[03_SHARED_CORE/branding/circuit-labs-logo.png|120]]
+![[03_SHARED_CORE/branding/circuit-labs-logo.png|200]]
 
 **Platform MOC · خريطة المنصة**
 

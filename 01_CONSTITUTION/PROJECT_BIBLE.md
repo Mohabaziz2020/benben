@@ -12,11 +12,11 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 # BenBenHub – Project Bible
 # بن بن هاب — دستور المشروع
 
-![[03_SHARED_CORE/branding/benbenhub-logo.png|150]]
+![[03_SHARED_CORE/branding/benbenhub-logo.png|220]]
 
 | Circuit Rack | Circuit Pro | Circuit Labs |
 |:---:|:---:|:---:|
-| ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|120]] |
+| ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|140]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|140]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|140]] |
 
 **Single Source of Truth · مصدر الحقيقة الواحد** · **v3.0** · **2026-06-05** · Bilingual Master Edition (EN/AR)
 

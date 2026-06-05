@@ -16,7 +16,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 
 # Circuit Rack · سيركيت راك
 
-![[03_SHARED_CORE/branding/circuit-rack-logo.png|120]]
+![[03_SHARED_CORE/branding/circuit-rack-logo.png|200]]
 
 **Platform MOC · خريطة المنصة**
 

@@ -1,10 +1,10 @@
 # BENBENHUB-CORE
 
-![[03_SHARED_CORE/branding/benbenhub-logo.png|150]]
+![[03_SHARED_CORE/branding/benbenhub-logo.png|220]]
 
 | Circuit Rack · سيركيت راك | Circuit Pro · سيركيت برو | Circuit Labs · سيركيت لابز |
 |:---:|:---:|:---:|
-| ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|120]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|120]] |
+| ![[03_SHARED_CORE/branding/circuit-rack-logo.png\|140]] | ![[03_SHARED_CORE/branding/circuit-pro-logo.png\|140]] | ![[03_SHARED_CORE/branding/circuit-labs-logo.png\|140]] |
 
 [![Status](https://img.shields.io/badge/status-fully%20operational-brightgreen)](https://github.com/Mohabaziz2020/benben)
 [![SSOT](https://img.shields.io/badge/SSOT-PROJECT__BIBLE%20v3.0-blue)](01_CONSTITUTION/PROJECT_BIBLE.md)

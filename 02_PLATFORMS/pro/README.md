@@ -16,7 +16,7 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 
 # Circuit Pro · سيركيت برو
 
-![[03_SHARED_CORE/branding/circuit-pro-logo.png|120]]
+![[03_SHARED_CORE/branding/circuit-pro-logo.png|200]]
 
 **Platform MOC · خريطة المنصة**
 
