@@ -29,7 +29,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 
 ### Visual identity | الهوية البصرية
 
-> **Graph node color:** `color:teal` — set in frontmatter; Graph View does not use the logo embed above.
+> **SSOT:** [[01_CONSTITUTION/PROJECT_BIBLE#Branding & Visual Identity | الهوية البصرية — الدستور]] · **Assets:** [[03_SHARED_CORE/branding/README]] · **Graph:** `color:teal` (node tint, not logo embed)
 
 | Property | Value | Graph View |
 |----------|-------|------------|

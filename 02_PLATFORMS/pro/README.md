@@ -29,7 +29,7 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 
 ### Visual identity | الهوية البصرية
 
-> **Graph node color:** `color:green` — set in frontmatter; Graph View does not use the logo embed above.
+> **SSOT:** [[01_CONSTITUTION/PROJECT_BIBLE#Branding & Visual Identity | الهوية البصرية — الدستور]] · **Assets:** [[03_SHARED_CORE/branding/README]] · **Graph:** `color:green` (node tint, not logo embed)
 
 | Property | Value | Graph View |
 |----------|-------|------------|

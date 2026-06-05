@@ -29,7 +29,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 
 ### Visual identity | الهوية البصرية
 
-> **Graph node color:** `color:red` — set in frontmatter; Graph View does not use the logo embed above.
+> **SSOT:** [[01_CONSTITUTION/PROJECT_BIBLE#Branding & Visual Identity | الهوية البصرية — الدستور]] · **Assets:** [[03_SHARED_CORE/branding/README]] · **Graph:** `color:red` (node tint, not logo embed)
 
 | Property | Value | Graph View |
 |----------|-------|------------|
