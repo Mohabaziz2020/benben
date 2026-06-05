@@ -1,0 +1,319 @@
+/* BENBENHUB-CORE · GitHub Pages — vault visual identity */
+.benben-landing {
+  --bb-bg: #0b0b0f;
+  --bb-surface: #14141a;
+  --bb-surface-2: #1c1c24;
+  --bb-gold: #d4af37;
+  --bb-gold-bright: #ffd700;
+  --bb-rack: #e53935;
+  --bb-pro: #2e7d32;
+  --bb-labs: #009688;
+  --bb-text: #e8e6f0;
+  --bb-muted: #9a98ad;
+  --bb-border: rgba(212, 175, 55, 0.22);
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  color: var(--bb-text);
+  line-height: 1.55;
+  margin: -1rem -1rem 2rem;
+  padding: 0 0 2rem;
+}
+
+.benben-landing .hero {
+  text-align: center;
+  padding: 2.5rem 1.25rem 2rem;
+  background: linear-gradient(165deg, #0b0b0f 0%, #14141a 45%, #0b0b0f 100%);
+  border-bottom: 1px solid var(--bb-border);
+}
+
+.benben-landing .hero-logo {
+  max-width: 220px;
+  height: auto;
+  margin: 0 auto 1rem;
+  filter: drop-shadow(0 8px 24px rgba(212, 175, 55, 0.15));
+}
+
+.benben-landing h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin: 0 0 0.35rem;
+  background: linear-gradient(90deg, var(--bb-gold-bright), var(--bb-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.benben-landing .tagline {
+  font-size: 1.05rem;
+  color: var(--bb-muted);
+  margin: 0 0 1.25rem;
+}
+
+.benben-landing .tagline-ar {
+  font-size: 0.95rem;
+  color: var(--bb-muted);
+  direction: rtl;
+  margin: 0 0 1.5rem;
+}
+
+.benben-landing .badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.benben-landing .badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--bb-border);
+  background: var(--bb-surface);
+  color: var(--bb-gold);
+}
+
+.benben-landing .cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.benben-landing .btn-primary,
+.benben-landing .btn-secondary {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.benben-landing .btn-primary {
+  background: linear-gradient(135deg, var(--bb-gold), #b8962e);
+  color: #0b0b0f !important;
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.35);
+}
+
+.benben-landing .btn-secondary {
+  background: var(--bb-surface-2);
+  color: var(--bb-text) !important;
+  border: 1px solid var(--bb-border);
+}
+
+.benben-landing .btn-primary:hover,
+.benben-landing .btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.benben-landing section {
+  padding: 2rem 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.benben-landing h2 {
+  font-size: 1.35rem;
+  color: var(--bb-gold);
+  border-bottom: 1px solid var(--bb-border);
+  padding-bottom: 0.5rem;
+  margin: 0 0 1rem;
+}
+
+.benben-landing h3 {
+  font-size: 1.05rem;
+  margin: 1.25rem 0 0.75rem;
+}
+
+.benben-landing p,
+.benben-landing li {
+  color: var(--bb-text);
+}
+
+.benben-landing .muted {
+  color: var(--bb-muted);
+  font-size: 0.92rem;
+}
+
+.benben-landing .platform-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+.benben-landing .platform-card {
+  background: var(--bb-surface);
+  border-radius: 12px;
+  padding: 1.25rem;
+  border-top: 4px solid;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.benben-landing .platform-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.benben-landing .platform-card.rack { border-top-color: var(--bb-rack); }
+.benben-landing .platform-card.pro { border-top-color: var(--bb-pro); }
+.benben-landing .platform-card.labs { border-top-color: var(--bb-labs); }
+
+.benben-landing .platform-card img {
+  max-height: 72px;
+  width: auto;
+  margin-bottom: 0.75rem;
+}
+
+.benben-landing .platform-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+}
+
+.benben-landing .platform-card .hex {
+  font-family: ui-monospace, monospace;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+.benben-landing .platform-card a.card-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.benben-landing .platform-card.rack a { color: var(--bb-rack); }
+.benben-landing .platform-card.pro a { color: #66bb6a; }
+.benben-landing .platform-card.labs a { color: var(--bb-labs); }
+
+.benben-landing .color-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-size: 0.82rem;
+}
+
+.benben-landing .swatch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.benben-landing .swatch-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.benben-landing .nav-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.benben-landing .nav-tile {
+  display: block;
+  padding: 0.85rem 1rem;
+  background: var(--bb-surface);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  text-decoration: none !important;
+  color: var(--bb-text) !important;
+  transition: border-color 0.15s ease;
+}
+
+.benben-landing .nav-tile:hover {
+  border-color: var(--bb-gold);
+}
+
+.benben-landing .nav-tile strong {
+  display: block;
+  color: var(--bb-gold);
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+}
+
+.benben-landing .nav-tile span {
+  font-size: 0.78rem;
+  color: var(--bb-muted);
+}
+
+.benben-landing table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin: 1rem 0;
+}
+
+.benben-landing th,
+.benben-landing td {
+  padding: 0.55rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: left;
+}
+
+.benben-landing th {
+  background: var(--bb-surface);
+  color: var(--bb-gold);
+}
+
+.benben-landing tr:nth-child(even) td {
+  background: rgba(20, 20, 26, 0.6);
+}
+
+.benben-landing .flow {
+  font-family: ui-monospace, monospace;
+  font-size: 0.8rem;
+  background: var(--bb-surface);
+  padding: 1rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--bb-gold);
+  overflow-x: auto;
+  color: var(--bb-muted);
+}
+
+.benben-landing .collab-box {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(20, 20, 26, 0.9));
+  border: 1px solid var(--bb-border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.benben-landing .collab-box h2 {
+  border: none;
+  text-align: center;
+}
+
+.benben-landing footer.note {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--bb-muted);
+  padding: 1.5rem 1rem 0;
+  border-top: 1px solid var(--bb-border);
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Soften Cayman theme wrapper on landing */
+.page-content:has(.benben-landing) {
+  background: #0b0b0f;
+}
+
+.page-content:has(.benben-landing) .wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+.page-content:has(.benben-landing) .main-content {
+  padding: 0;
+}
