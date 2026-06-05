@@ -43,16 +43,15 @@ function Set-RepoViaApi {
         Accept        = "application/vnd.github+json"
         "X-GitHub-Api-Version" = "2022-11-28"
     }
-    $body = @{
-        description = $profile.description
-        homepage    = $profile.homepage
-    } | ConvertTo-Json
-    Invoke-RestMethod -Uri "https://api.github.com/repos/$repo" -Method Patch -Headers $headers -Body $body -ContentType "application/json" | Out-Null
+    $patch = @{ description = [string]$profile.description }
+    if ($profile.homepage) { $patch.homepage = [string]$profile.homepage }
+    $body = $patch | ConvertTo-Json -Compress
+    Invoke-RestMethod -Uri "https://api.github.com/repos/$repo" -Method Patch -Headers $headers -Body ([System.Text.Encoding]::UTF8.GetBytes($body)) -ContentType "application/json; charset=utf-8" | Out-Null
 
     $topicHeaders = $headers.Clone()
     $topicHeaders.Accept = "application/vnd.github.mercy-preview+json"
-    $topicBody = @{ names = @($profile.topics) } | ConvertTo-Json
-    Invoke-RestMethod -Uri "https://api.github.com/repos/$repo/topics" -Method Put -Headers $topicHeaders -Body $topicBody -ContentType "application/json" | Out-Null
+    $topicBody = (@{ names = @($profile.topics) } | ConvertTo-Json -Compress)
+    Invoke-RestMethod -Uri "https://api.github.com/repos/$repo/topics" -Method Put -Headers $topicHeaders -Body ([System.Text.Encoding]::UTF8.GetBytes($topicBody)) -ContentType "application/json; charset=utf-8" | Out-Null
 }
 
 function Set-RepoViaGh {
