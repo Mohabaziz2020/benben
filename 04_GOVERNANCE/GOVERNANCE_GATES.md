@@ -14,9 +14,9 @@ Constitution: [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates]] · Phrases:
 
 | Platform | MOC | Isolation |
 |----------|-----|-----------|
-| Rack | [[02_PLATFORMS/rack/README]] | [[02_PLATFORMS/rack/ISOLATION]] |
-| Pro | [[02_PLATFORMS/pro/README]] | [[02_PLATFORMS/pro/ISOLATION]] |
-| Labs | [[02_PLATFORMS/labs/README]] | [[02_PLATFORMS/labs/ISOLATION]] |
+| Rack | [[02_PLATFORMS/Rack/README]] | [[02_PLATFORMS/Rack/ISOLATION]] |
+| Pro | [[02_PLATFORMS/Pro/README]] | [[02_PLATFORMS/Pro/ISOLATION]] |
+| Labs | [[02_PLATFORMS/Labs/README]] | [[02_PLATFORMS/Labs/ISOLATION]] |
 
 **Also:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/decisions/README]] · [[03_SHARED_CORE/REUSABLE_PHRASES]]
 

@@ -16,9 +16,9 @@ tags: [integration, isolation, rules]
 
 | Platform | MOC | Phrases | Isolation |
 |----------|-----|---------|-----------|
-| Rack | [[02_PLATFORMS/rack/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] | [[02_PLATFORMS/rack/ISOLATION]] |
-| Pro | [[02_PLATFORMS/pro/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] | [[02_PLATFORMS/pro/ISOLATION]] |
-| Labs | [[02_PLATFORMS/labs/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] | [[02_PLATFORMS/labs/ISOLATION]] |
+| Rack | [[02_PLATFORMS/Rack/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] | [[02_PLATFORMS/Rack/ISOLATION]] |
+| Pro | [[02_PLATFORMS/Pro/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] | [[02_PLATFORMS/Pro/ISOLATION]] |
+| Labs | [[02_PLATFORMS/Labs/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] | [[02_PLATFORMS/Labs/ISOLATION]] |
 
 ---
 

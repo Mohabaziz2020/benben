@@ -15,7 +15,7 @@ tags: [governance, decisions]
 | Graph hub | [[02_PLATFORMS/GRAPH_MOC]] |
 | Template | [[90_TEMPLATES/GOVERNANCE_DECISION_TEMPLATE]] |
 
-**Platforms:** [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES]]
+**Platforms:** [[02_PLATFORMS/Rack/README]] · [[02_PLATFORMS/Pro/README]] · [[02_PLATFORMS/Labs/README]] · **Phrases:** [[03_SHARED_CORE/REUSABLE_PHRASES]]
 
 ## Index
 
