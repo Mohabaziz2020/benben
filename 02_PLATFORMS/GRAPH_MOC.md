@@ -43,9 +43,9 @@ pin: true
 
 | | Bible (SSOT) | Platform MOC (summary) | Vision SSOT | Agreements SSOT |
 |---|--------------|------------------------|-------------|-----------------|
-| 🔴 Rack `red` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT]] |
-| 🟢 Pro `green` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT]] |
-| 🩵 Labs `teal` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT]] |
+| 🔴 Rack `red` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/Rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT]] |
+| 🟢 Pro `green` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/Pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT]] |
+| 🩵 Labs `teal` | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/Labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT]] | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT]] |
 
 **Full constitution:** [[01_CONSTITUTION/PROJECT_BIBLE]] · **Platforms overview:** [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]]
 
@@ -55,9 +55,9 @@ pin: true
 
 | Platform | MOC | Phrase bank section |
 |----------|-----|---------------------|
-| Rack | [[02_PLATFORMS/rack/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] (`R-*`) |
-| Pro | [[02_PLATFORMS/pro/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] (`P-*`) |
-| Labs | [[02_PLATFORMS/labs/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] (`L-*`) |
+| Rack | [[02_PLATFORMS/Rack/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]] (`R-*`) |
+| Pro | [[02_PLATFORMS/Pro/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Pro]] (`P-*`) |
+| Labs | [[02_PLATFORMS/Labs/README]] | [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Labs]] (`L-*`) |
 
 **Shared:** [[03_SHARED_CORE/REUSABLE_PHRASES#General / Shared]] (`G-*`) · [[03_SHARED_CORE/REUSABLE_PHRASES#Isolation & Governance]] (`I-*` · `GV-*`)
 
@@ -79,9 +79,9 @@ pin: true
 
 | Platform | Isolation checklist |
 |----------|---------------------|
-| Rack | [[02_PLATFORMS/rack/ISOLATION]] |
-| Pro | [[02_PLATFORMS/pro/ISOLATION]] |
-| Labs | [[02_PLATFORMS/labs/ISOLATION]] |
+| Rack | [[02_PLATFORMS/Rack/ISOLATION]] |
+| Pro | [[02_PLATFORMS/Pro/ISOLATION]] |
+| Labs | [[02_PLATFORMS/Labs/ISOLATION]] |
 
 ---
 
@@ -98,7 +98,7 @@ pin: true
     [[INTEGRATION_RULES]] ← API-only peers →
 ```
 
-**Peer links (API-only):** [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]]
+**Peer links (API-only):** [[02_PLATFORMS/Rack/README]] · [[02_PLATFORMS/Pro/README]] · [[02_PLATFORMS/Labs/README]]
 
 **Module registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]] · **Shared core:** [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] · [[03_SHARED_CORE/PLATFORM_INTEGRATION]]
 
@@ -118,6 +118,7 @@ pin: true
    - `path:02_PLATFORMS/pro` → **green** `#2E7D32`
    - `path:01_CONSTITUTION` → **gold** `#FFD700`
 6. If nodes are still gray: click **gear** on graph → reset display → reload app again.
+7. **Rack still wrong color?** Obsidian may have cleared `colorGroups` — run `git checkout -- .obsidian/graph.json` then **Reload app without saving** (do not save graph from UI).
 
 ### Filters & groups (how to use)
 

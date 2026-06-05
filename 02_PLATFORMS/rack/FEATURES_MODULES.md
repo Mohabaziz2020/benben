@@ -5,7 +5,7 @@ color: red
 brand: circuit-rack
 status: active
 updated: 2026-06-05
-tags: [rack, features, modules]
+tags: [rack, features, modules, graph-color-rack]
 ---
 
 # Circuit Rack — Features & Modules

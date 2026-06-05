@@ -16,6 +16,8 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 
 # Circuit Rack · سيركيت راك
 
+![[03_SHARED_CORE/branding/circuit-rack-logo.png|104]]
+
 **Platform MOC · خريطة المنصة**
 
 | | EN | AR |
@@ -26,6 +28,8 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 | **SSOT owns** | Products · catalog · orders · marketplace | منتجات · كتالوج · طلبات · سوق |
 
 ### Visual identity | الهوية البصرية
+
+> **Logo · شعار** — `![[03_SHARED_CORE/branding/circuit-rack-logo.png|88]]` · Graph node color: `color:red` (not the image).
 
 | Property | Value | Graph View |
 |----------|-------|------------|
@@ -85,9 +89,9 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 
 | Doc | EN | AR |
 |-----|----|-----|
-| [[02_PLATFORMS/rack/OVERVIEW]] | Overview | نظرة مختصرة |
-| [[02_PLATFORMS/rack/FEATURES_MODULES]] | R-C* · R-G* · R-P* | وحدات الميزات |
-| [[02_PLATFORMS/rack/ISOLATION]] | Isolation checklist | قائمة العزل |
+| [[02_PLATFORMS/Rack/OVERVIEW]] | Overview | نظرة مختصرة |
+| [[02_PLATFORMS/Rack/FEATURES_MODULES]] | R-C* · R-G* · R-P* | وحدات الميزات |
+| [[02_PLATFORMS/Rack/ISOLATION]] | Isolation checklist | قائمة العزل |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | Constitution (SSOT) | الدستور |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT \| الرؤية والمهمة]] | Vision & mission | الرؤية والمهمة |
 | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT \| الاتفاقات]] | Agreements | الاتفاقات |
@@ -95,7 +99,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 | [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] | Governance | الحوكمة |
 | [[02_PLATFORMS/GRAPH_MOC]] | Graph hub | مركز الرسم |
 
-**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
+**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[02_PLATFORMS/Pro/README]] · [[02_PLATFORMS/Labs/README]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
 
 ---
 
@@ -110,7 +114,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 | R-G* | Boost · bidding · secondary · hidden | تعزيز · مزايدة · ثانوي · مخفية |
 | R-P* | Wholesale · analytics · ERP (gated) | جملة · تحليلات · ERP |
 
-**Detail:** [[02_PLATFORMS/rack/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · **Phrases:** `R-*` in [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]]
+**Detail:** [[02_PLATFORMS/Rack/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · **Phrases:** `R-*` in [[03_SHARED_CORE/REUSABLE_PHRASES#Circuit Rack]]
 
 ---
 
@@ -128,7 +132,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 **EN:** (1) No Pro/Labs consumer UI on Rack routes. (2) No cross-schema reads of `pro`/`labs`. (3) Wallet ledger in core; commerce rules in Rack. (4) Independent deploy and Rack-only legal terms. (5) Product SSOT only in Rack — peers use `product_id` via API.  
 **AR:** (1) لا واجهات Pro/Labs على راك. (2) لا قراءة مخاطط `pro`/`labs`. (3) محفظة في النواة؛ قواعد التجارة في راك. (4) نشر وشروط مستقلان. (5) SSOT المنتج في راك فقط.
 
-**Full checklist:** [[02_PLATFORMS/rack/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/GOVERNANCE_GATES]]
+**Full checklist:** [[02_PLATFORMS/Rack/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 ---
 
@@ -137,7 +141,7 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 **EN:** **Pro** — trust badges via API; forbidden: Pro UI embed. **Labs** — product guides via IDs; forbidden: Labs checkout/CMS on Rack. **Core** — auth, wallet, theme, i18n. **Flows:** Pro trust → listing badge; Labs `product_id` → link card on Rack UI only.  
 **AR:** **Pro** — شارات ثقة عبر API؛ ممنوع: تضمين Pro. **Labs** — أدلة بالمعرّف؛ ممنوع: دفع/CMS Labs على راك. **النواة** — هوية ومحفظة وثيم.
 
-**Siblings:** [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]]
+**Siblings:** [[02_PLATFORMS/Pro/README]] · [[02_PLATFORMS/Labs/README]]
 
 ---
 

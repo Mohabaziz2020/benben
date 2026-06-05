@@ -5,14 +5,14 @@ color: red
 brand: circuit-rack
 status: active
 updated: 2026-06-05
-tags: [rack, commerce, marketplace]
+tags: [rack, commerce, marketplace, graph-color-rack]
 ---
 
 # Circuit Rack — Platform Overview
 
 **Tier:** Primary commerce · **Subdomain:** `rack.*` · **Theme accent:** Blue family
 
-Constitution: [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack]] · Features: [[02_PLATFORMS/rack/FEATURES_MODULES]] · Isolation: [[02_PLATFORMS/rack/ISOLATION]]
+Constitution: [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack]] · Features: [[02_PLATFORMS/Rack/FEATURES_MODULES]] · Isolation: [[02_PLATFORMS/Rack/ISOLATION]]
 
 ---
 
@@ -69,4 +69,4 @@ Deep stack: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]]
 | **Shared Core** | Auth, wallet, theme base, i18n framework only |
 | **BENBENHUB** | Hidden parent — gates only, no public umbrella marketing |
 
-See [[02_PLATFORMS/rack/ISOLATION]] for mandatory rules.
+See [[02_PLATFORMS/Rack/ISOLATION]] for mandatory rules.

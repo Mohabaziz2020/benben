@@ -5,7 +5,7 @@ color: red
 brand: circuit-rack
 status: active
 updated: 2026-06-05
-tags: [rack, isolation]
+tags: [rack, isolation, graph-color-rack]
 ---
 
 # Circuit Rack — Isolation Rules
