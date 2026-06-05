@@ -8,13 +8,13 @@ tags: [benbenhub, ssot, project-bible]
 ---
 
 # BenBenHub – Project Bible
-# بنبنهب — دستور المشروع
+# بن بن هاب — دستور المشروع
 
 **Single Source of Truth · مصدر الحقيقة الواحد** · **v3.0** · **2026-06-05** · Bilingual Master Edition (EN/AR)
 
 **EN:** Master constitution for BENBENHUB: hidden parent entity, three sovereign platforms, backend-only integration, three governance gates.
 
-**AR:** الدستور الأعلى لـ BENBENHUB: كيان أب مخفي، ثلاث منصات سيادية معزولة، تكامل خلفي فقط، وثلاث بوابات حوكمة ملزمة.
+**AR:** الدستور الأعلى لـ BENBENHUB: كيان أب غير معلن على المنصات بهدف اطفاء شخصية اعتبارية لكل منصة ، ثلاث منصات سيادية معزولة، تكامل خلفي فقط، وثلاث بوابات حوكمة ملزمة.
 
 **Entry:** [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]]
 
@@ -279,7 +279,7 @@ tags: [benbenhub, ssot, project-bible]
 
 **AR:** أساسي (R-C*): كتالوج وتجارة وبحث وطلبات. نمو (R-G*): Boost ومزايدة وسوق ثانوي وعروض مخفية وتقييمات وإشعارات. قوة (R-P*): صلاحيات جملة وتحليلات وحزم وERP (مقيد). وحدات M-001–M-005؛ SSOT الكتالوج لراك.
 
-Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[02_PLATFORMS/rack/README#Key Features | الميزات الرئيسية]]
+Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[02_PLATFORMS/rack/FEATURES_MODULES | الميزات الرئيسية]]
 
 ---
 
@@ -297,9 +297,9 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[0
 | **Deploy** | `rack.*` subdomain · CDN/edge · independent CI |
 | **i18n** | AR/EN/ZH plumbing from core; **copy owned by Rack** |
 
-**EN:** Next.js on `platforms/rack/app`, Node.js commerce services, PostgreSQL schema `rack`, independent `rack.*` deploy. Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]] · [[02_PLATFORMS/rack/README#Technical Stack | التقنية]]
+**EN:** Next.js on `platforms/rack/app`, Node.js commerce services, PostgreSQL schema `rack`, independent `rack.*` deploy. Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]]
 
-**AR:** Next.js على `platforms/rack/app`، خدمات تجارة Node.js، مخطط PostgreSQL `rack`، نشر مستقل على `rack.*`. التفصيل: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]] · [[02_PLATFORMS/rack/README#Technical Stack | التقنية]]
+**AR:** Next.js على `platforms/rack/app`، خدمات تجارة Node.js، مخطط PostgreSQL `rack`، نشر مستقل على `rack.*`. التفصيل: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]]
 
 ---
 
@@ -309,7 +309,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[0
 
 **AR:** لا واجهات أخوة على مسارات راك؛ لا قراءة مخاطات `pro`/`labs`؛ سجل المحفظة في النواة بوسم `platform_source=rack`؛ نشر وقانون مستقلان؛ SSOT المنتج في قاعدة راك فقط.
 
-Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Rules | قواعد العزل]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
+Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 ---
 
@@ -324,19 +324,13 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Ru
 
 **EN:** Rack `product_id` → Labs API metadata → link card on Rack UI only; Pro trust via `profile_id` API; no iframes. **AR:** `product_id` في راك → API لابز → بطاقة في واجهة راك فقط؛ ثقة Pro عبر `profile_id`؛ لا iframe.
 
-→ [[02_PLATFORMS/rack/README#Relationships to Other Platforms | العلاقات]]
-
 ---
-
-<!-- BUSINESS RULES SECTION -->
 
 ### Business Rules & Roles | قواعد العمل والأدوار
 
 **EN:** Roles: `buyer`, `seller`, `wholesale_buyer` (gated), `marketplace_ops`, `compliance_reviewer`, `rack_admin`. Rules: product SSOT in `rack`; Pro trust via API; Labs guides by ID only; wallet `platform_source=rack`.
 
 **AR:** أدوار: مشتري، بائع، جملة (مقيد)، عمليات سوق، امتثال، إدارة راك. قواعد: SSOT المنتج في `rack`؛ ثقة Pro عبر API؛ أدلة Labs بالمعرّف؛ محفظة بوسم راك.
-
-*Full:* [[02_PLATFORMS/rack/README#Business Rules & Roles | قواعد العمل والأدوار]]
 
 ---
 
@@ -420,7 +414,7 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Ru
 
 **AR:** ملفات وتحقق واكتشاف جغرافي وواجهات سمعة؛ نمو: معارض وإحالات وفهرسة لـ Rack/Labs؛ قوة: درجات ثقة ووكيل إقليمي (مقيد).
 
-→ [[02_PLATFORMS/pro/README#Key Features | الميزات الرئيسية]]
+→ [[02_PLATFORMS/pro/FEATURES_MODULES | الميزات الرئيسية]]
 
 **Growth (P-G*)** — Geo-services · portfolios/credentials · referrals (backend) · indexing API for Rack/Labs
 
@@ -447,7 +441,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **EN:** Next.js `platforms/pro/app`, schema `pro` only, `pro.*` deploy. **AR:** Next.js على `platforms/pro/app`، مخطط `pro` فقط، نشر `pro.*`.
 
-[[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Pro Runtime]] · [[02_PLATFORMS/pro/README#Technical Stack | التقنية]]
+[[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Pro Runtime]]
 
 ---
 
@@ -457,7 +451,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **AR:** لا تجارة راك ولا CMS Labs على Pro؛ لا جداول أخوة كـ SSOT؛ تصدير API بنسخة فقط؛ نشر مستقل؛ التحقق في Pro هو المرجع.
 
-[[02_PLATFORMS/pro/ISOLATION]] · [[02_PLATFORMS/pro/README#Isolation Rules | قواعد العزل]]
+[[02_PLATFORMS/pro/ISOLATION]]
 
 ---
 
@@ -472,19 +466,13 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **EN:** `profile.verified` → Rack badge via API only. **AR:** `profile.verified` → شارة راك عبر API فقط.
 
-→ [[02_PLATFORMS/pro/README#Relationships to Other Platforms | العلاقات]]
-
 ---
-
-<!-- BUSINESS RULES SECTION -->
 
 ### Business Rules & Roles | قواعد العمل والأدوار
 
 **EN:** Roles: `professional`, `verified_pro`, `regional_agent` (gated), `trust_reviewer`, `partner_api`, `pro_admin`. No commerce checkout or catalog on Pro routes.
 
 **AR:** أدوار: مهني، verified_pro، وكيل إقليمي (مقيد)، مراجع ثقة، API شريك، إدارة Pro. لا دفع سوق ولا كتالوج على Pro.
-
-*Full:* [[02_PLATFORMS/pro/README#Business Rules & Roles | قواعد العمل والأدوار]]
 
 ---
 
@@ -596,7 +584,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **AR:** نشر وقواعد معرفة ومسارات تعلم وإشراف؛ نمو: واجهات مرجعية وإصدارات؛ قوة: دورات مدفوعة (مقيدة).
 
-→ [[02_PLATFORMS/labs/README#Key Features | الميزات الرئيسية]]
+→ [[02_PLATFORMS/labs/FEATURES_MODULES | الميزات الرئيسية]]
 
 **Growth (L-G*)** — Learning paths · support-agent workflows · cross-ref APIs · versioning/lifecycle
 
@@ -623,7 +611,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
 
 **EN:** Next.js `platforms/labs/app`, schema `labs`, `labs.*` deploy. **AR:** Next.js على `platforms/labs/app`، مخطط `labs`، نشر `labs.*`.
 
-[[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Labs Runtime]] · [[02_PLATFORMS/labs/README#Technical Stack | التقنية]]
+[[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Labs Runtime]]
 
 ---
 
@@ -633,7 +621,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
 
 **AR:** لا تجارة راك ولا محرر Pro على Labs؛ ليس SSOT للسعر أو المخزون أو التحقق؛ مراجع API فقط بلا iframe؛ نشر محتوى مستقل؛ النصوص في مخطط `labs` فقط.
 
-[[02_PLATFORMS/labs/ISOLATION]] · [[02_PLATFORMS/labs/README#Isolation Rules | قواعد العزل]]
+[[02_PLATFORMS/labs/ISOLATION]]
 
 ---
 
@@ -648,19 +636,13 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
 
 **EN:** Labs guide → `product_id` → Rack link card only. **AR:** دليل Labs → `product_id` → بطاقة راك فقط.
 
-→ [[02_PLATFORMS/labs/README#Relationships to Other Platforms | العلاقات]]
-
 ---
-
-<!-- BUSINESS RULES SECTION -->
 
 ### Business Rules & Roles | قواعد العمل والأدوار
 
 **EN:** Roles: `reader`, `editor`, `support_agent`, `moderator`, `course_instructor` (gated), `labs_admin`. Content SSOT in `labs`; no price/inventory/verification in Labs DB.
 
 **AR:** أدوار: قارئ، محرر، وكيل دعم، مشرف، مدرب دورة (مقيد)، إدارة Labs. SSOT المحتوى في `labs`؛ بلا سعر/مخزون/تحقق في Labs.
-
-*Full:* [[02_PLATFORMS/labs/README#Business Rules & Roles | قواعد العمل والأدوار]]
 
 ---
 
