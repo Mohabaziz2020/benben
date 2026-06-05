@@ -269,7 +269,7 @@ tags: [benbenhub, ssot, project-bible]
 
 **Forbidden | ممنوع:** One checkbox covering Pro verification or Labs courses · cross-brand “accept all platforms” · storing commerce SSOT in shared core consent tables.
 
-**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `R-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/rack/README#Key Agreements & User Approvals | الاتفاقات — ملخص]]
+**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `R-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/rack/README#Key Agreements | الاتفاقات — ملخص]]
 
 ---
 
@@ -404,7 +404,7 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 **Forbidden | ممنوع:** Pro terms obligating Rack listing purchase · Labs editorial license bundled into verification · `verified_pro` truth in Rack/Labs DB.
 
-**Summary:** [[02_PLATFORMS/pro/README#Key Agreements & User Approvals | الاتفاقات — ملخص]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+**Summary:** [[02_PLATFORMS/pro/README#Key Agreements | الاتفاقات — ملخص]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
 
 ---
 
@@ -574,7 +574,7 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 **Forbidden | ممنوع:** Labs checkout for Rack products · Labs storing `verified_pro` or listing price/inventory · bundled Rack seller terms on course enrollment · one “accept all BENBENHUB platforms” checkbox.
 
-**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `L-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/labs/README#Key Agreements & User Approvals | الاتفاقات — ملخص]]
+**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `L-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/labs/README#Key Agreements | الاتفاقات — ملخص]]
 
 ---
 
