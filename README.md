@@ -2,7 +2,7 @@
 type: guide
 status: complete
 edition: master
-version: "2.0"
+version: "2.1"
 updated: 2026-06-05
 author: Maestro
 tags: [benbenhub, readme, bilingual, vault, landing, entry]
@@ -16,6 +16,32 @@ tags: [benbenhub, readme, bilingual, vault, landing, entry]
 |---|---|
 | **EN** | Law, map, and daily reference for the BENBENHUB ecosystem — not source code. |
 | **AR** | القانون والخريطة والمرجع اليومي لمنظومة BENBENHUB — وليس كوداً. |
+
+---
+
+## Quick Start | بداية سريعة
+
+**EN:** Three clicks to a productive day — pin these in Obsidian Bookmarks.
+
+**AR:** ثلاث نقرات ليوم منتج — ثبّتها في Obsidian Bookmarks.
+
+| Step | EN | AR | Link |
+|:----:|----|----|------|
+| 1 | **Daily command center** | لوحة القيادة | [[00_ROOT_DASHBOARD/HOME]] |
+| 2 | **Today's daily note** | مذكرة اليوم | Obsidian → *Daily notes: Open today's* · [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
+| 3 | **Constitution (law)** | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| 4 | **Full vault map** | خريطة الخزنة | [[INDEX]] |
+| 5 | **Your platform** (one only) | منصتك (واحدة) | [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]] |
+| 6 | **Phrase bank** (copy/UI) | بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| 7 | **End of day backup** | نسخ احتياطي | `scripts/backup-vault.ps1` |
+
+```
+README  →  HOME  →  Daily Note  →  PROJECT_BIBLE  →  one Platform MOC  →  backup
+```
+
+**EN:** New to the vault? Read **Project Purpose** below, then open **HOME**.
+
+**AR:** جديد على الخزنة؟ اقرأ **غرض المشروع** أدناه، ثم افتح **HOME**.
 
 ---
 
@@ -171,10 +197,12 @@ BENBENHUB-CORE/
 
 ## Entry Status | حالة الدخول
 
-**EN:** BENBENHUB-CORE is **complete and ready** as the vault entry point. Open [[INDEX]] for the full map or [[00_ROOT_DASHBOARD/HOME]] to begin today.
+**EN:** BENBENHUB-CORE is **fully operational for daily use** — landing README, command center HOME, bilingual daily template, and git backup workflow are in place.
 
-**AR:** BENBENHUB-CORE **مكتملة وجاهزة** كنقطة دخول للخزنة. افتح [[INDEX]] للخريطة أو [[00_ROOT_DASHBOARD/HOME]] لبدء اليوم.
+**AR:** BENBENHUB-CORE **جاهزة بالكامل للاستخدام اليومي** — README للهبوط، HOME للقيادة، قالب يومي ثنائي، ونسخ git احتياطي.
+
+**Start today | ابدأ اليوم:** [[00_ROOT_DASHBOARD/HOME]] · [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] · [[INDEX]]
 
 ---
 
-*Maestro · BENBENHUB-CORE v2.0 landing · Hidden parent · Platform isolation · Truth · Immutability · Scope*
+*Maestro P4 · Fully operational · HOME · Daily template · Quick Start · Truth · Immutability · Scope*

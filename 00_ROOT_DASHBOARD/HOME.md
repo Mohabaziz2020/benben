@@ -2,96 +2,149 @@
 type: dashboard
 status: active
 edition: master
+version: "2.0"
 updated: 2026-06-05
-tags: [home, dashboard, bilingual, daily]
+tags: [home, dashboard, bilingual, daily, command-center]
 pin: true
 ---
 
-# Home · الرئيسية
+# Home | الرئيسية
 
-**BENBENHUB-CORE** — Daily command center · لوحة القيادة اليومية
+**Daily command center · لوحة القيادة اليومية**
 
-**EN** — Your session starts here: constitution, today's note, one platform island, phrases when you write copy.  
-**AR** — ابدأ من هنا: الدستور، مذكرة اليوم، منصة واحدة، الجمل عند الكتابة.
+**EN:** Start every session here — then daily note → bible → one platform → backup.  
+**AR:** ابدأ كل جلسة من هنا — ثم مذكرة اليوم → الدستور → منصة واحدة → نسخ احتياطي.
 
-> **Vault guide:** [[README]] · **Master map:** [[INDEX]]
+| | |
+|---|---|
+| **Vault entry** | [[README]] |
+| **Full map** | [[INDEX]] |
+| **Law** | [[01_CONSTITUTION/PROJECT_BIBLE]] |
 
 ---
 
-## Quick access · وصول سريع
+## Start now | ابدأ الآن
 
-| ⭐ | EN | AR | Open |
+**EN:** Use Obsidian command **Daily notes: Open today's daily note** (creates file from template).  
+**AR:** استخدم الأمر **Daily notes: Open today's daily note** (ينشئ الملف من القالب).
+
+| Action | EN | AR | Open |
+|--------|----|----|------|
+| 📅 **Today's note** | Operating log for this day | مذكرة اليوم | *Daily notes command* · [[00_ROOT_DASHBOARD/DAILY/DAILY_INDEX]] |
+| 📋 **Template** | Blank daily structure | القالب | [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
+| 📂 **Past days** | Chronological index | الأيام السابقة | [[00_ROOT_DASHBOARD/DAILY/DAILY_INDEX]] |
+
+---
+
+## Quick access | وصول سريع
+
+| ⭐ | EN | AR | Link |
 |:--:|----|----|------|
-| 📜 | **Constitution (SSOT)** | **الدستور** | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| 🗺️ | **Master index** | **الفهرس الرئيسي** | [[INDEX]] |
-| 📅 | **Today's daily note** | **مذكرة اليوم** | [[00_ROOT_DASHBOARD/DAILY/2026-06-05]] |
-| 💬 | **Reusable phrases (EN/AR)** | **بنك الجمل** | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
-
-> **Create today's note:** Command palette → `Daily notes: Open today's daily note`  
-> **افتح مذكرة اليوم:** لوحة الأوامر → مذكرة اليومية  
-> Template: [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] · Index: [[00_ROOT_DASHBOARD/DAILY/DAILY_INDEX]]
+| 📜 | Constitution SSOT v3.0 | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| 🗺️ | Master index | الفهرس | [[INDEX]] |
+| 💬 | Phrase bank EN/AR | بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| 🏝️ | All platforms | المنصات | [[02_PLATFORMS/PLATFORMS_INDEX]] |
 
 ---
 
-## Today's workflow · سير اليوم
+## Today's workflow | سير اليوم
 
-| Step | EN | AR | Link |
-|:----:|----|----|------|
-| 1 | Open this **HOME** or **INDEX** | افتح الرئيسية أو الفهرس | ← you are here |
-| 2 | Open or create **today's note** | مذكرة اليوم | [[00_ROOT_DASHBOARD/DAILY/2026-06-05]] |
-| 3 | Read **PROJECT_BIBLE** section for your task | قسم الدستور للمهمة | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| 4 | Work in **one platform** only | منصة واحدة فقط | ↓ Platforms |
-| 5 | Cross-platform? **Gates** first | عابر للمنصات؟ البوابات | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
-| 6 | UI/copy? Use **phrase IDs** | نصوص؟ معرّفات الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
-| 7 | End of day: note + **git backup** | نهاية اليوم: مذكرة + نسخ | `scripts/backup-vault.ps1` |
+**EN:** Seven steps — same rhythm every day.  
+**AR:** سبع خطوات — نفس الإيقاع كل يوم.
 
----
+```
+HOME  →  Daily Note  →  PROJECT_BIBLE  →  ONE Platform MOC  →  Phrases (if copy)  →  Gates (if cross)  →  Backup
+```
 
-## Platforms · المنصات
-
-> **Separate islands** — no shared consumer UI · no cross-schema DB · backend-only links
-
-| Island | EN role | AR | **Platform MOC** | Modules | Isolation |
-|--------|---------|-----|------------------|---------|-----------|
-| **Rack** | Commerce & catalog SSOT | تجارة | [[02_PLATFORMS/rack/README]] | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/rack/ISOLATION]] |
-| **Pro** | Identity, geo, verification SSOT | هوية/جغرافيا | [[02_PLATFORMS/pro/README]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
-| **Labs** | Content & knowledge SSOT | معرفة | [[02_PLATFORMS/labs/README]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
-
-**All platforms:** [[02_PLATFORMS/PLATFORMS_INDEX]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
+| Step | EN | AR | Where |
+|:----:|----|----|-------|
+| 1 | You are on **HOME** | أنت على HOME | ← here |
+| 2 | Open **today's daily note** | افتح مذكرة اليوم | Obsidian daily command |
+| 3 | Read **PROJECT_BIBLE** for your task | راجع الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| 4 | Work in **one platform MOC** only | منصة واحدة فقط | ↓ below |
+| 5 | Cross-platform? **Three gates** first | عابر؟ البوابات | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| 6 | UI/copy? **Phrase IDs** | نصوص؟ الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| 7 | `scripts/backup-vault.ps1` | نسخ git | end of day |
 
 ---
 
-## Shared core & governance · النواة والحوكمة
+## Pick your island | اختر جزيرتك
 
-| Topic | EN | AR | Open |
+**EN:** Open **only one** MOC for implementation today.
+
+**AR:** افتح **MOC واحد فقط** للتنفيذ اليوم.
+
+| | Platform | SSOT | EN | AR | **MOC** |
+|---|----------|------|----|----|---------|
+| 🔵 | **Circuit Rack** | Products · orders | Commerce | تجارة | [[02_PLATFORMS/rack/README]] |
+| 🟣 | **Circuit Pro** | Profile · verify | Identity · geo | هوية | [[02_PLATFORMS/pro/README]] |
+| 🟢 | **Circuit Labs** | Content · courses | Knowledge | معرفة | [[02_PLATFORMS/labs/README]] |
+
+**Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]] · **Isolation:** rack/pro/labs `ISOLATION.md`
+
+---
+
+## Three gates | البوابات الثلاث
+
+**EN:** Required before cross-platform or constitutional changes.
+
+**AR:** مطلوبة قبل التغيير العابر أو الدستوري.
+
+| Gate | EN | AR |
+|------|----|-----|
+| **Truth** | Document reality before closing | وثّق الواقع قبل الإغلاق |
+| **Immutability** | Formal supersede — no silent edits | استبدال رسمي — لا تحريف |
+| **Scope** | Stay in isolation + hidden parent | ضمن العزل والأب المخفي |
+
+→ [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
+
+---
+
+## Shared core & governance | النواة والحوكمة
+
+| Topic | EN | AR | Link |
 |-------|----|----|------|
-| Thin shared core | Backend wallet, identity — gated | نواة رفيعة — مقيدة | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] |
-| Integration law | APIs & events only | APIs وأحداث فقط | [[03_SHARED_CORE/PLATFORM_INTEGRATION]] |
-| Gates | Truth · Immutability · Scope | الحقيقة · الثبات · النطاق | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
-| Isolation rules | Platform boundaries | حدود المنصات | [[04_GOVERNANCE/INTEGRATION_RULES]] |
+| Thin core | Identity · wallet (gated) | نواة رفيعة | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] |
+| Integration | APIs · events · IDs only | تكامل خلفي | [[03_SHARED_CORE/PLATFORM_INTEGRATION]] |
+| Tech stack | Monorepo reference | البنية | [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE]] |
 
 ---
 
-## Daily notes · المذكرات اليومية
+## End of day | نهاية اليوم
 
-| | EN | AR |
-|---|----|-----|
-| **Today** | [[00_ROOT_DASHBOARD/DAILY/2026-06-05]] | مذكرة 2026-06-05 |
-| **All days** | [[00_ROOT_DASHBOARD/DAILY/DAILY_INDEX]] | فهرس الأيام |
-| **Template** | [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] | قالب يومي |
+**EN:** Before you leave — complete today's daily note, update SSOT if truth changed, run backup.
 
----
+**AR:** قبل المغادرة — أكمل مذكرة اليوم، حدّث SSOT إن تغيّرت الحقيقة، شغّل النسخ الاحتياطي.
 
-## Rules (always) · قواعد دائمة
+| Check | EN | AR | ✓ |
+|-------|----|----|:-:|
+| Daily note evening section filled | قسم المساء في المذكرة | [ ] |
+| Bible / platform docs updated if needed | تحديث الوثائق إن لزم | [ ] |
+| Git backup pushed | نسخ إلى GitHub | [ ] |
 
-| EN | AR |
-|----|-----|
-| **PROJECT_BIBLE** = master SSOT | **PROJECT_BIBLE** = SSOT الأعلى |
-| Hidden parent — not a public umbrella brand | أب مخفي — ليس علامة مظلة |
-| Three platforms — **isolated** deploy & failure domains | ثلاث منصات — عزل نشر وتعافٍ |
-| **Backend-only** between islands | **تكامل خلفي** بين الجزر |
-| Document reality before claiming done | وثّق الواقع قبل الإغلاق |
+```powershell
+cd E:\BENBENHUB-CORE
+.\scripts\backup-vault.ps1
+```
 
 ---
 
-*Maestro · Daily-ready · جاهز للإنتاجية اليومية · [[INDEX]] · [[README]]*
+## Rules reminder | تذكير القواعد
+
+**EN:** Bible = master SSOT · one island at a time · backend-only between platforms · document before expand.
+
+**AR:** الدستور = SSOT الأعلى · جزيرة واحدة · تكامل خلفي · وثّق قبل التوسع.
+
+---
+
+## Status | الحالة
+
+**EN:** **HOME is operational** — your daily command center for BENBENHUB-CORE.
+
+**AR:** **HOME جاهزة للتشغيل** — لوحة القيادة اليومية لـ BENBENHUB-CORE.
+
+[[README]] · [[INDEX]] · [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]]
+
+---
+
+*Maestro P4 · Daily templates & workflow · Fully operational*

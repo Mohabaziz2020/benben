@@ -1,13 +1,16 @@
 ---
 type: index
-status: evergreen
+status: active
 area: operations
-tags: [bb-hub, index, daily]
+updated: 2026-06-05
+tags: [benbenhub, index, daily, bilingual]
 ---
 
-# DAILY — Index
+# Daily Notes Index | فهرس المذكرات اليومية
 
-> Chronological logs. Today also on [[HOME]].
+**EN:** Chronological operating logs. Command center: [[00_ROOT_DASHBOARD/HOME]]. Template: [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]].
+
+**AR:** سجلات تشغيل يومية. لوحة القيادة: [[00_ROOT_DASHBOARD/HOME]]. القالب: [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]].
 
 ---
 
@@ -65,4 +68,4 @@ SORT file.name DESC
 ## Related
 
 - [[TODAY_FOCUS]] · [[HOME]] · [[WEEKLY_REVIEW_INDEX]]
-- Template: [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]]
+- Template: [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] · Home: [[00_ROOT_DASHBOARD/HOME]]
