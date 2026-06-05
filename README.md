@@ -2,175 +2,160 @@
 type: guide
 status: complete
 edition: master
-version: "1.1"
+version: "1.2"
 updated: 2026-06-05
 author: Maestro
-tags: [benbenhub, readme, bilingual, vault, landing]
+tags: [benbenhub, readme, bilingual, vault, landing, entry]
 ---
 
 # BENBENHUB-CORE
 
-**Architecture vault · خزنة المعمارية** · v3.0 bilingual SSOT
+**The architecture vault for BENBENHUB** · **خزنة المعمارية لـ BENBENHUB**
 
-| | |
-|---|---|
-| **Start here** | This page — vault landing guide |
-| **Daily work** | [[00_ROOT_DASHBOARD/HOME]] |
-| **Full map** | [[INDEX]] |
-| **Constitution** | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+*Complete · Bilingual · Ready · مكتمل · ثنائي اللغة · جاهز*
+
+```
+README (you are here)  →  INDEX or HOME  →  PROJECT_BIBLE  →  one Platform MOC
+```
 
 ---
 
-## Purpose of BENBENHUB-CORE | غرض الخزنة
+## Purpose | الغرض
 
-**EN:** BENBENHUB-CORE is the **architecture Single Source of Truth (SSOT)** for the BENBENHUB ecosystem. It holds the constitutional law, three sovereign platform maps, shared-core boundaries, governance gates, and bilingual reference material (EN/AR) for daily engineering and product work. This vault is **not a code repository** — it is the **law and map** that Maestro, engineers, and AI consult **before** writing or shipping software.
+**EN:** BENBENHUB-CORE is the **architecture Single Source of Truth (SSOT)** for the BENBENHUB ecosystem. It documents constitutional law, three sovereign platforms (Rack, Pro, Labs), thin shared-core boundaries, governance gates, and bilingual EN/AR reference material. This is **not a code repo** — it is the **law and map** used by Maestro, engineers, and AI **before** design, build, or ship.
 
-**AR:** BENBENHUB-CORE هي **مصدر الحقيقة المعمارية (SSOT)** لمنظومة BENBENHUB. تحتوي القانون الدستوري وخرائط المنصات السيادية الثلاث وحدود النواة المشتركة وبوابات الحوكمة ومرجعاً ثنائي اللغة (إنجليزي/عربي) للعمل الهندسي والمنتجي اليومي. هذه الخزنة **ليست مستودع كود** — بل **القانون والخريطة** التي يراجعها Maestro والمهندسون والذكاء الاصطناعي **قبل** كتابة أو شحن البرمجيات.
+**AR:** BENBENHUB-CORE هي **مصدر الحقيقة المعمارية (SSOT)** لمنظومة BENBENHUB. توثّق القانون الدستوري وثلاث منصات سيادية (Rack وPro وLabs) وحدود نواة مشتركة رفيعة وبوابات حوكمة ومرجعاً ثنائي اللغة. **ليست مستودع كود** — بل **القانون والخريطة** التي يستخدمها Maestro والمهندسون والذكاء الاصطناعي **قبل** التصميم والبناء والشحن.
 
-**What lives here | ماذا يوجد هنا**
+---
 
-| Area | EN | AR |
-|------|----|-----|
-| Constitution | [[01_CONSTITUTION/PROJECT_BIBLE]] v3.0 | الدستور |
-| Platforms | Rack · Pro · Labs MOCs | راك · برو · لابز |
-| Shared core | Identity, wallet, theme (gated) | النواة المشتركة |
-| Governance | Gates, integration law | الحوكمة |
-| Operations | Daily dashboard, templates, git backup | التشغيل اليومي |
+## Key Resources | الموارد الأساسية
+
+**EN:** Pin these four links — they cover 90% of daily vault use.
+
+**AR:** ثبّت هذه الروابط الأربعة — تغطي تسعين بالمئة من الاستخدام اليومي.
+
+| Resource | EN | AR | Open |
+|----------|----|----|------|
+| **Constitution** | Master SSOT · v3.0 bilingual law | الدستور · القانون الأعلى | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| **Master index** | Full vault map & platform table | الفهرس الرئيسي | [[INDEX]] |
+| **Phrase bank** | Reusable EN/AR copy (`G-` `R-` `P-` `L-`) | بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| **Platforms** | Ecosystem index + three island MOCs | المنصات | [[02_PLATFORMS/PLATFORMS_INDEX]] |
+
+**Platform MOCs | خرائط المنصات**
+
+| | Platform | EN role | AR | MOC |
+|---|----------|---------|-----|-----|
+| 🔵 | **Circuit Rack** | Commerce & marketplace SSOT | تجارة وسوق | [[02_PLATFORMS/rack/README]] |
+| 🟣 | **Circuit Pro** | Identity · verification · geo | هوية وتحقق | [[02_PLATFORMS/pro/README]] |
+| 🟢 | **Circuit Labs** | Content · learning · KB | محتوى وتعلم | [[02_PLATFORMS/labs/README]] |
+
+**Also essential | مهم أيضاً:** [[00_ROOT_DASHBOARD/HOME]] (daily dashboard) · [[02_PLATFORMS/FEATURES_MODULES_DATABASE]] (module registry) · [[04_GOVERNANCE/GOVERNANCE_GATES]] (three gates)
 
 ---
 
 ## How to Navigate | كيفية التنقل
 
-**EN:** Use this README for orientation, **HOME** for today’s session, and **INDEX** for the full vault map. Open **one platform MOC** at a time when implementing.
+**EN:** Start on this README, move to **INDEX** for the full map or **HOME** for today, then open **PROJECT_BIBLE** for law and **one platform MOC** for implementation scope.
 
-**AR:** استخدم هذا الملف للتوجيه، و**HOME** لجلسة اليوم، و**INDEX** لخريطة الخزنة الكاملة. افتح **خريطة منصة واحدة** فقط عند التنفيذ.
+**AR:** ابدأ من هذا الملف، انتقل إلى **INDEX** للخريطة الكاملة أو **HOME** لليوم، ثم افتح **PROJECT_BIBLE** للقانون و**خريطة منصة واحدة** لنطاق التنفيذ.
 
-| Need | EN | AR | Open |
-|------|----|----|------|
-| 📋 Landing guide | You are here | أنت هنا | `README.md` |
-| 🗺️ Master index | Full vault MOC | الفهرس الرئيسي | [[INDEX]] |
-| 🏠 Daily dashboard | Today’s links & workflow | لوحة اليوم | [[00_ROOT_DASHBOARD/HOME]] |
-| 📜 Constitution | Master SSOT · law & vision | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| 🏝️ All platforms | Ecosystem index | فهرس المنصات | [[02_PLATFORMS/PLATFORMS_INDEX]] |
-| 🔵 Commerce island | Circuit Rack MOC | راك | [[02_PLATFORMS/rack/README]] |
-| 🟣 Identity island | Circuit Pro MOC | برو | [[02_PLATFORMS/pro/README]] |
-| 🟢 Knowledge island | Circuit Labs MOC | لابز | [[02_PLATFORMS/labs/README]] |
-| 📦 Module registry | Features database | سجل الوحدات | [[02_PLATFORMS/FEATURES_MODULES_DATABASE]] |
-| 🔗 Shared core | Thin core boundaries | النواة | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] |
-| 💬 Phrase bank | UI/docs EN/AR copy | بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
-| ⚖️ Gates & law | Truth · Scope · Integration | البوابات والقانون | [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] |
-| 📅 Daily template | Obsidian daily note | قالب يومي | [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
+| If you need… | EN | AR | Link |
+|--------------|----|----|------|
+| Landing & orientation | Vault entry guide | دليل الدخول | ← this file |
+| Today’s session | Quick links & workflow | لوحة اليوم | [[00_ROOT_DASHBOARD/HOME]] |
+| Everything in the vault | Master MOC | الفهرس الشامل | [[INDEX]] |
+| Law & vision | Constitution SSOT | الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| UI / docs copy | Phrase bank EN/AR | بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| All platforms | Index + Rack · Pro · Labs | كل المنصات | [[02_PLATFORMS/PLATFORMS_INDEX]] |
+| Shared core | Identity · wallet (gated) | النواة المشتركة | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] |
+| Integration law | Allowed / forbidden | قانون التكامل | [[04_GOVERNANCE/INTEGRATION_RULES]] |
+| Daily note template | Obsidian daily notes | قالب يومي | [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
 
-**Folder layout | هيكل المجلدات**
+**Vault folders | مجلدات الخزنة**
 
-```
-00_ROOT_DASHBOARD/   → HOME, daily notes
-01_CONSTITUTION/     → PROJECT_BIBLE
-02_PLATFORMS/        → rack · pro · labs
-03_SHARED_CORE/      → identity, wallet, phrases
-04_GOVERNANCE/       → gates, integration rules
-05_ARCHIVES/         → history (as needed)
-90_TEMPLATES/        → daily & project templates
-```
+| Folder | EN | AR |
+|--------|----|-----|
+| `00_ROOT_DASHBOARD/` | HOME · daily notes | الرئيسية · المذكرات |
+| `01_CONSTITUTION/` | PROJECT_BIBLE | الدستور |
+| `02_PLATFORMS/` | rack · pro · labs | المنصات |
+| `03_SHARED_CORE/` | Core · phrases · tech | النواة · الجمل |
+| `04_GOVERNANCE/` | Gates · integration | الحوكمة |
+| `90_TEMPLATES/` | Daily & project templates | القوالب |
 
 ---
 
 ## Core Principles | المبادئ الأساسية
 
-### Hidden Parent | الأب المخفي
+### 1. Hidden Parent | الأب المخفي
 
-**EN:** BENBENHUB is a **hidden architectural parent** — it sets strategy, gates, and integration law **internally**. It is **not** a public consumer brand or shared marketplace shell. Each platform (Rack, Pro, Labs) stands alone in the market. Legal footers may read “A BenBenHub Company” per platform policy only.
+**EN:** BENBENHUB sets strategy, gates, and integration law **internally**. It is **not** a public consumer brand or shared app shell. Rack, Pro, and Labs each stand alone in the market.
 
-**AR:** BENBENHUB **أب معماري مخفي** — يضع الاستراتيجية والبوابات وقانون التكامل **داخلياً**. **ليس** علامة استهلاكية علنية ولا واجهة سوق مشتركة. كل منصة (Rack وPro وLabs) تظهر مستقلة في السوق. التذييل القانوني قد يذكر “A BenBenHub Company” حسب سياسة كل منصة فقط.
+**AR:** BENBENHUB يضع الاستراتيجية والبوابات وقانون التكامل **داخلياً**. **ليس** علامة استهلاكية علنية ولا تطبيقاً مشتركاً. راك وPro وLabs تظهر كلٌّ باستقلال في السوق.
 
-→ [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Philosophy | الرؤية والفلسفة]]
+### 2. Platform Isolation | عزل المنصات
 
-### Platform Isolation | عزل المنصات
+**EN:** Three sovereign islands — separate UI, schema, deploy, and failure domain. No shared consumer shell, no cross-brand nav, no cross-schema DB access, no iframes between platforms.
 
-**EN:** Three **sovereign islands** — separate brands, schemas, deploy pipelines, and failure domains. **No** shared consumer UI, **no** cross-brand navigation, **no** cross-schema database access, **no** embedding sibling UIs (no iframes). A failure in one island must not take down the others.
+**AR:** ثلاث جزر سيادية — واجهة ومخطط ونشر وتعافٍ منفصل. لا قشرة مشتركة، لا تنقل بين العلامات، لا وصول لمخططات أخرى، لا iframe بين المنصات.
 
-**AR:** ثلاث **جزر سيادية** — علامات ومخططات وخطوط نشر ونطاقات تعافٍ منفصلة. **لا** واجهة استهلاكية مشتركة، **لا** تنقل مشترك بين العلامات، **لا** وصول لمخططات قواعد أخرى، **لا** تضمين واجهات الأخوة (لا iframe). عطل جزيرة لا يجب أن يسقط الأخرى.
+### 3. Three Governance Gates | بوابات الحوكمة الثلاث
 
-| Island | SSOT owns | MOC |
-|--------|-----------|-----|
-| **Circuit Rack** | Products · orders · marketplace | [[02_PLATFORMS/rack/README]] |
-| **Circuit Pro** | Profile · verification · geo | [[02_PLATFORMS/pro/README]] |
-| **Circuit Labs** | Content · courses · knowledge | [[02_PLATFORMS/labs/README]] |
+**EN:**
 
-→ [[04_GOVERNANCE/INTEGRATION_RULES]] · [[03_SHARED_CORE/PLATFORM_INTEGRATION]]
+| Gate | Rule |
+|------|------|
+| **Truth** | Document reality faithfully before closing work |
+| **Immutability** | Supersede decisions formally — never silent edits |
+| **Scope** | Stay within isolation and hidden-parent boundaries |
 
-### Governance Gates | بوابات الحوكمة
+**AR:**
 
-**EN:** Every significant change passes three gates before it is accepted as done:
-
-| Gate | EN |
-|------|-----|
-| **Truth** | Reality is documented faithfully before closure |
-| **Immutability** | Decisions are superseded formally — never silently edited |
-| **Scope** | Work stays within platform isolation and hidden-parent rules |
-
-**AR:** كل تغيير مهم يمر بثلاث بوابات قبل اعتباره منجزاً:
-
-| البوابة | AR |
-|---------|-----|
-| **الحقيقة** | توثيق الواقع بأمانة قبل الإغلاق |
-| **الثبات** | استبدال القرارات رسمياً — بلا تحريف صامت |
-| **النطاق** | العمل ضمن عزل المنصات وقواعد الأب المخفي |
+| البوابة | القاعدة |
+|---------|---------|
+| **الحقيقة** | وثّق الواقع بأمانة قبل إغلاق العمل |
+| **الثبات** | استبدل القرارات رسمياً — لا تحريف صامت |
+| **النطاق** | ابقَ ضمن العزل وحدود الأب المخفي |
 
 → [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates | بوابات الحوكمة]]
+
+**Integration rule | قاعدة التكامل:** backend-only — APIs, events, stable IDs (`product_id`, `profile_id`, `article_id`). Never shared consumer UI.
 
 ---
 
 ## Daily Workflow | سير العمل اليومي
 
-**EN:** A repeatable rhythm for architecture-aligned work in Obsidian and git.
+**EN:** Repeat this rhythm every working session.
 
-**AR:** إيقاع متكرر للعمل المتوافق مع المعمارية في Obsidian وgit.
+**AR:** كرّر هذا الإيقاع في كل جلسة عمل.
 
-| Step | EN | AR | Link |
-|:----:|----|----|------|
-| 1 | Open **HOME** or **INDEX** | افتح الرئيسية أو الفهرس | [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]] |
-| 2 | Create or open **today’s daily note** | افتح مذكرة اليوم | Command: *Daily notes: Open today's* · [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
-| 3 | Read the relevant **PROJECT_BIBLE** section | راجع قسم الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
-| 4 | Work in **one platform MOC** only | منصة واحدة فقط | rack · pro · labs |
-| 5 | Cross-platform change? Pass **gates** first | تغيير عابر؟ البوابات أولاً | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
-| 6 | Writing UI copy? Use **phrase IDs** | نصوص واجهة؟ معرّفات الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
-| 7 | End of day: commit & **backup to GitHub** | نهاية اليوم: نسخ احتياطي | `scripts/backup-vault.ps1` |
+| # | EN | AR | Where |
+|---|----|----|-------|
+| 1 | Open **HOME** or **INDEX** | افتح HOME أو INDEX | [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]] |
+| 2 | Open **today’s daily note** | افتح مذكرة اليوم | *Daily notes: Open today's* · [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]] |
+| 3 | Read **PROJECT_BIBLE** section for your task | راجع قسم الدستور | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| 4 | Work in **one platform MOC** only | منصة واحدة فقط | [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]] |
+| 5 | Cross-platform? Pass **three gates** first | عابر للمنصات؟ البوابات أولاً | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| 6 | UI copy? Use **REUSABLE_PHRASES** | نصوص؟ بنك الجمل | [[03_SHARED_CORE/REUSABLE_PHRASES]] |
+| 7 | Backup vault to GitHub | نسخ احتياطي | `scripts/backup-vault.ps1` |
 
-**Tip | تلميح:** Pin [[INDEX]] and [[00_ROOT_DASHBOARD/HOME]] in Obsidian Bookmarks.
+**SSOT reminder | تذكير SSOT:** Product → Rack · Profile → Pro · Content → Labs · User/wallet → shared core (gated).
 
 ---
 
 ## Important Rules | قواعد مهمة
 
-### State of Truth (SSOT) | حالة الحقيقة
+**EN:** [[01_CONSTITUTION/PROJECT_BIBLE]] is master law — vault docs interpret it. Document before expand. Record every major decision (ADR). Thin shared core is deferred and gated. Do not mark done without truth documented.
 
-**EN:** [[01_CONSTITUTION/PROJECT_BIBLE]] is the **master SSOT**; all vault documents interpret it. Product truth → **Rack** only. Profile and verification → **Pro** only. Content and learning → **Labs** only. Users and wallet ledger → **shared core** (thin, gated). Never mark work “done” without documenting actual reality.
-
-**AR:** [[01_CONSTITUTION/PROJECT_BIBLE]] هو **SSOT الأعلى**؛ كل وثائق الخزنة تفسّره. حقيقة المنتج → **راك** فقط. الملف والتحقق → **برو** فقط. المحتوى والتعلم → **لابز** فقط. المستخدم وسجل المحفظة → **النواة المشتركة** (رفيعة، مقيدة). لا تُغلق مهمة دون توثيق الواقع الفعلي.
-
-### Backend Integration Only | تكامل خلفي فقط
-
-**EN:** Cross-platform links use **versioned APIs, events, and stable IDs** (`product_id`, `profile_id`, `article_id`). Identity handshake and wallet movements tag `platform_source`. **Forbidden:** shared consumer shell, cross-schema SQL in application code, public BENBENHUB umbrella site, iframes between platforms.
-
-**AR:** الربط العابر عبر **واجهات API نسخة وأحداث ومعرّفات ثابتة** (`product_id`، `profile_id`، `article_id`). المصافحة الهوية وحركات المحفظة بوسم `platform_source`. **ممنوع:** قشرة استهلاكية مشتركة، SQL عابر للمخططات في التطبيق، موقع مظلة BENBENHUB علني، iframe بين المنصات.
-
-### Operating Rhythm | إيقاع التشغيل
-
-**EN:** **Documentation before expansion** · **Decisions must be recorded** (ADR / supersede) · **Thin shared core — deferred and gated**
-
-**AR:** **التوثيق قبل التوسع** · **تسجيل القرارات إلزامي** (ADR / استبدال رسمي) · **نواة مشتركة رفيعة — مؤجلة ومقيدة بالبوابات**
+**AR:** [[01_CONSTITUTION/PROJECT_BIBLE]] هو القانون الأعلى — وثائق الخزنة تفسّره. وثّق قبل التوسع. سجّل كل قرار رئيسي (ADR). النواة المشتركة رفيعة ومؤجلة ومقيدة. لا تُغلق دون توثيق الحقيقة.
 
 ---
 
-## Status | الحالة
+## Entry Point | نقطة الدخول
 
-**EN:** BENBENHUB-CORE is **complete and ready** as the architecture landing vault — bilingual constitution v3.0, platform MOCs, daily dashboard, governance, phrase bank, and git backup workflow.
+**EN:** BENBENHUB-CORE is **ready** as your main vault landing page. **Next:** [[INDEX]] for the full map · [[00_ROOT_DASHBOARD/HOME]] to start today · [[01_CONSTITUTION/PROJECT_BIBLE]] for law.
 
-**AR:** BENBENHUB-CORE **مكتملة وجاهزة** كخزنة هبوط معمارية — دستور ثنائي v3.0، خرائط المنصات، لوحة يومية، حوكمة، بنك جمل، ونسخ git احتياطي.
-
-**Next click | الخطوة التالية:** [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]]
+**AR:** BENBENHUB-CORE **جاهزة** كصفحة هبوط رئيسية للخزنة. **التالي:** [[INDEX]] للخريطة · [[00_ROOT_DASHBOARD/HOME]] لبدء اليوم · [[01_CONSTITUTION/PROJECT_BIBLE]] للقانون.
 
 ---
 
-*Maestro · BENBENHUB-CORE · Hidden parent · Platform isolation · Backend-only · Gates: Truth · Immutability · Scope*
+*Maestro · Final landing README · Hidden parent · Platform isolation · Truth · Immutability · Scope*
