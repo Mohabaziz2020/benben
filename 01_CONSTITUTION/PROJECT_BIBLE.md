@@ -250,29 +250,34 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 ## Governance Core | نواة الحوكمة
 
-> **Updated 2026-06-06** · **Ratified by:** [[91_DECISIONS/ADR-2026-06-06-001]] · **Status:** Approved & Frozen · أي تغيير مستقبلي يتطلب ADR جديد.
+**Updated:** 2026-06-06  
+**Ratified by:** [[91_DECISIONS/ADR-2026-06-06-001]]  
+**Status:** Approved & Frozen  
+**Change Policy:** أي تغيير مستقبلي يتطلب ADR جديد (Supersede) — [[90_TEMPLATES/ADR_TEMPLATE]] · [[91_DECISIONS/ADR_INDEX]]
 
 **EN:** Single Source of Truth for vault governance — frozen files in `04_GOVERNANCE/`. Notion, GitHub Pages, and AI session memory are mirrors only.
 
-**AR:** مصدر الحقيقة الواحد لحوكمة الخزنة — ملفات مجمّدة في `04_GOVERNANCE/`. نوشن وGitHub Pages وذاكرة AI مرايا فقط.
+**AR:** مصدر الحقيقة الواحد لحوكمة الخزنة — ملفات مجمدة في `04_GOVERNANCE/`. Notion وGitHub Pages وذاكرة AI مرايا فقط.
 
-| Doc | EN | AR | Link |
-|-----|----|----|------|
-| Vault constitution | Vault SSOT policy | دستور الخزنة | [[04_GOVERNANCE/VAULT_GOVERNANCE]] |
-| ADR rules | Decision recording law | قواعد توثيق القرارات | [[04_GOVERNANCE/ADR_RULES]] |
-| AI protocol | Agent interaction rules | بروتوكول تفاعل AI | [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] |
-| Three gates (detail) | Gate definitions & enforcement | البوابات الثلاث مفصلة | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
-| Integration law | Backend-only contracts | قواعد التكامل الخلفي | [[04_GOVERNANCE/INTEGRATION_RULES]] |
-| Governance index | Navigation hub | فهرس الحوكمة | [[04_GOVERNANCE/README]] |
+### Governance Documents | مستندات الحوكمة
+
+| Doc | EN Description | AR Description | Link |
+|-----|----------------|----------------|------|
+| Vault Constitution | Vault SSOT policy | دستور الخزنة | [[04_GOVERNANCE/VAULT_GOVERNANCE]] |
+| ADR Rules | Decision recording law | قواعد توثيق القرارات | [[04_GOVERNANCE/ADR_RULES]] |
+| AI Protocol | Agent interaction rules | بروتوكول تفاعل AI | [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] |
+| Three Gates (detail) | Gate definitions & enforcement | البوابات الثلاث مفصلة | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| Integration Law | Backend-only contracts | قواعد التكامل الخلفي | [[04_GOVERNANCE/INTEGRATION_RULES]] |
+| Governance Index | Navigation hub | فهرس الحوكمة | [[04_GOVERNANCE/README]] |
 | Freeze ADR | Core governance freeze | تجميد نواة الحوكمة | [[91_DECISIONS/ADR-2026-06-06-001]] |
 
-| Frozen file | Status |
-|-------------|--------|
-| [[04_GOVERNANCE/VAULT_GOVERNANCE]] | Approved & Frozen |
-| [[04_GOVERNANCE/ADR_RULES]] | Approved & Frozen |
-| [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] | Approved & Frozen |
+**Frozen Files Status | حالة الملفات المجمدة:**
 
-**Change policy:** Supersede via new ADR — [[90_TEMPLATES/ADR_TEMPLATE]] · index [[91_DECISIONS/ADR_INDEX]].
+- `VAULT_GOVERNANCE.md` → Approved & Frozen
+- `ADR_RULES.md` → Approved & Frozen
+- `AI_MEMORY_PROTOCOL.md` → Approved & Frozen
+
+**Related:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 ---
 
@@ -1154,6 +1159,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.5.1 · 2026-06-05** — Branding polish: platform colors & logos table, `03_SHARED_CORE/branding/` embeds
 - **3.6 · 2026-06-05** — Graph MOC v2.0: central visual hub, filter recipes, mermaid mesh, graph.json hub paths
 - **3.7 · 2026-06-06** — Governance Core freeze: ADR_RULES, VAULT_GOVERNANCE, AI_MEMORY_PROTOCOL; [[91_DECISIONS/ADR-2026-06-06-001]]; Governance Core section in bible
+- **3.7.1 · 2026-06-06** — Governance Core section cleaned: single canonical table, frozen files list, no duplication
 
 ---
 
