@@ -65,4 +65,4 @@ SORT file.name DESC
 ## Related
 
 - [[TODAY_FOCUS]] · [[HOME]] · [[WEEKLY_REVIEW_INDEX]]
-- Template: [[DAILY_NOTE_TEMPLATE]]
+- Template: [[90_TEMPLATES/DAILY_NOTE_TEMPLATE]]

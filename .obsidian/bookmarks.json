@@ -19,6 +19,16 @@
       "type": "file",
       "path": "03_SHARED_CORE/REUSABLE_PHRASES.md",
       "title": "Phrases EN/AR"
+    },
+    {
+      "type": "file",
+      "path": "00_ROOT_DASHBOARD/DAILY/2026-06-05.md",
+      "title": "📅 Today"
+    },
+    {
+      "type": "file",
+      "path": "90_TEMPLATES/DAILY_NOTE_TEMPLATE.md",
+      "title": "Daily template"
     }
   ]
 }

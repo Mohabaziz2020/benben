@@ -1,5 +1,5 @@
 {
   "folder": "00_ROOT_DASHBOARD/DAILY",
   "format": "YYYY-MM-DD",
-  "template": "95_TEMPLATES/DAILY_NOTE_TEMPLATE"
+  "template": "90_TEMPLATES/DAILY_NOTE_TEMPLATE"
 }
