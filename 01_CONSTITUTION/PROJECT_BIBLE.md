@@ -179,7 +179,9 @@ tags: [benbenhub, ssot, project-bible]
 
 **AR:** **قواعد المنظومة (كل المنصات)** — لا تشعب علني؛ لا واجهة استهلاكية مشتركة؛ روابط عابرة خلفية فقط؛ نشر وتعافٍ مستقلان؛ عطل منصة لا ينتشر إلى الأخرى.
 
-**Platform MOCs (bilingual · Maestro P3):** Each island **README = Platform MOC** — Vision & Mission, Features, Stack, Isolation, Relations, **PROJECT_BIBLE quick links** → `02_PLATFORMS/{rack|pro|labs}/README.md`
+**Strategic SSOT flow · مسار مصدر الحقيقة:** [[01_CONSTITUTION/PROJECT_BIBLE]] = **full** Vision, Mission & Agreements per platform · **Platform README** = summary + link back here · Operational detail (Features, Stack, Isolation) spans both.
+
+**Platform MOCs:** `02_PLATFORMS/{rack|pro|labs}/README.md` — daily entry; constitution sections below are canonical for vision & agreements.
 
 | Platform | Folder | **Platform MOC (start here)** | Bible section | Modules | Isolation |
 |----------|--------|-------------------------------|---------------|---------|-----------|
@@ -199,15 +201,55 @@ tags: [benbenhub, ssot, project-bible]
 
 ---
 
-### Vision & Mission | الرؤية والمهمة
+### Rack Vision & Mission SSOT | راك — الرؤية والمهمة
 
-<!-- VISION MISSION SECTION — canonical in Platform MOC; do not duplicate -->
+<!-- VISION MISSION SECTION — SSOT canonical; Platform README = summary only -->
 
-**EN:** Trustworthy, searchable industrial commerce as a regulated marketplace — not generic classifieds. Rack owns product and commerce SSOT; operates buy·sell·guide; Boost, Bidding, Secondary Market, Hidden Offers; shared identity and wallet backend only.
+**EN:** **Vision** — Industrial commerce that is trustworthy, searchable, and operationally serious. Rack is the **primary revenue engine**: a regulated marketplace, not generic classifieds. Aligns with ecosystem north star: manufacturing elevated through trusted commerce, not noise.
 
-**AR:** تجارة صناعية موثوقة وقابلة للبحث كسوق منضبط — وليس إعلانات عشوائية. راك يملك SSOT المنتجات والتجارة؛ يشغّل شراء·بيع·دليل؛ Boost والمزايدة والسوق الثانوي والعروض المخفية؛ الهوية والمحفظة من النواة خلفياً فقط.
+**AR:** **الرؤية** — تجارة صناعية موثوقة، قابلة للبحث، وذات جدية تشغيلية؛ راك **محرك الإيرادات الأساسي** عبر سوق منضبط وليس إعلانات عشوائية.
 
-*Full:* [[02_PLATFORMS/rack/README#Vision & Mission | الرؤية والمهمة]]
+**EN:** **Mission** — Own product and commerce SSOT (catalog, listings, orders, marketplace mechanics). Connect supply and demand through **buy · sell · guide**. Operate Boost, Bidding, Secondary Market, and Hidden Offers under Rack UX and **Rack-only legal terms**. Consume shared identity and wallet **backend only** — never embed Pro or Labs consumer UI.
+
+**AR:** **المهمة** — امتلاك SSOT المنتجات والتجارة؛ ربط العرض بالطلب عبر **شراء · بيع · دليل**؛ تشغيل Boost والمزايدة والسوق الثانوي والعروض المخفية ضمن **شروط راك**؛ هوية ومحفظة من النواة **خلفياً فقط**.
+
+| Strategic pillar | EN | AR |
+|------------------|----|-----|
+| **SSOT** | Products, orders, pricing, inventory, marketplace rules | منتجات، طلبات، تسعير، مخزون، قواعد السوق |
+| **Revenue** | Core monetization: listings, Boost, bidding, secondary, hidden offers | إيرادات: قوائم، Boost، مزايدة، ثانوي، عروض مخفية |
+| **Trust** | Pro trust badges via API; Labs guides via `product_id` — no sibling UI | ثقة Pro عبر API؛ أدلة Labs بالمعرّف — بلا واجهات أخوة |
+| **Audience** | Manufacturers, suppliers, B2B buyers, procurement · **AR-first**, EN/ZH | مصنّعون، موردون، مشتريات B2B · **عربي أولاً** |
+
+**Platform summary (MOC):** [[02_PLATFORMS/rack/README#Vision & Mission | الرؤية والمهمة — ملخص]]
+
+---
+
+<!-- AGREEMENTS SECTION — SSOT canonical; Platform README = summary only -->
+
+### Rack Key Agreements SSOT | راك — الاتفاقات
+
+**EN:** All legal artifacts are **Rack-scoped** — never bundled with Pro or Labs public terms. Users must **explicitly accept** before the gated action fires. Parent (BENBENHUB) policy stays internal. Cross-platform legal models require ADR ([[04_GOVERNANCE/GOVERNANCE_GATES]]).
+
+**AR:** كل الوثائق القانونية **ضمن نطاق راك** — لا تُدمج مع شروط Pro أو Labs. موافقة **صريحة** قبل كل إجراء مقيد. سياسة الأب داخلية؛ نماذج قانونية عابرة تحتاج ADR.
+
+| Agreement | EN — when required | AR — متى تُطلب | Record |
+|-----------|-------------------|----------------|--------|
+| **Account & privacy** | First Rack login / registration | أول دخول أو تسجيل راك | `rack.consent.account` |
+| **Seller & listing** | Before first publish or catalog import | قبل أول نشر أو استيراد كتالوج | `rack.consent.seller_listing` |
+| **Buyer & purchase** | Checkout, bid, or offer acceptance | الدفع أو المزايدة أو قبول عرض | `rack.consent.buyer_purchase` |
+| **Boost / promotion** | Enabling paid visibility (R-G*) | تفعيل ظهور مدفوع | `rack.consent.boost` |
+| **Bidding & secondary market** | Joining auction or secondary listing | دخول مزاد أو قائمة ثانوية | `rack.consent.marketplace_rules` |
+| **Hidden offers** | Accessing confidential offer flows | الوصول لتدفقات العروض المخفية | `rack.consent.hidden_offers` |
+| **Wholesale / ERP (gated)** | Assigning `wholesale_buyer` or ERP hook | تعيين مشتري جملة أو ربط ERP | `rack.consent.wholesale` + ADR |
+| **Wallet settlement** | First wallet debit/credit on Rack | أول حركة محفظة على راك | `rack.consent.wallet` |
+
+**EN — user approvals (UX):** Checkbox + versioned terms link · audit `user_id`, `terms_version`, `locale`, `timestamp` · block action if declined · re-prompt on material version bump (**Immutability** gate).
+
+**AR — موافقات المستخدم:** خانة اختيار + شروط بنسخة · تدقيق المستخدم والنسخة واللغة والوقت · منع الإجراء عند الرفض · إعادة الطلب عند تغيير جوهري (**الثبات**).
+
+**Forbidden | ممنوع:** One checkbox covering Pro verification or Labs courses · cross-brand “accept all platforms” · storing commerce SSOT in shared core consent tables.
+
+**Ecosystem law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `R-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Summary:** [[02_PLATFORMS/rack/README#Key Agreements & User Approvals | الاتفاقات — ملخص]]
 
 ---
 
@@ -266,18 +308,6 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Ru
 
 ---
 
-<!-- AGREEMENTS SECTION -->
-
-### Key Agreements & User Approvals | الاتفاقات والموافقات
-
-**EN:** Rack-scoped consents: account, seller/listing, buyer/purchase, Boost, bidding/secondary/hidden offers, wholesale (gated), wallet. Versioned audit trail; no cross-brand bundles.
-
-**AR:** موافقات راك: حساب، بائع/قائمة، مشتري/شراء، Boost، مزاد/ثانوي/عروض مخفية، جملة (مقيد)، محفظة. سجل بنسخة؛ بلا حزم عابرة للعلامات.
-
-*Full:* [[02_PLATFORMS/rack/README#Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية]] · [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
-
----
-
 <!-- BUSINESS RULES SECTION -->
 
 ### Business Rules & Roles | قواعد العمل والأدوار
@@ -298,15 +328,55 @@ Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Ru
 
 ---
 
-### Vision & Mission | الرؤية والمهمة
+### Pro Vision & Mission SSOT | برو — الرؤية والمهمة
 
-<!-- VISION MISSION SECTION — canonical in Platform MOC; do not duplicate -->
+<!-- VISION MISSION SECTION — SSOT canonical; Platform README = summary only -->
 
-**EN:** Trusted professional and geo layer; profile and verification SSOT; discovery and trust APIs for Rack and Labs; no marketplace checkout or editorial CMS.
+**EN:** **Vision** — A trusted **professional and geo-service layer** for industrial ecosystems, without owning commerce or editorial content. Pro makes expertise discoverable and verifiable — it does not sell products or publish courses.
 
-**AR:** طبقة مهنية وجغرافية موثوقة؛ SSOT للملف والتحقق؛ واجهات اكتشاف وثقة لـ Rack وLabs؛ بدون دفع سوق أو CMS تحريري.
+**AR:** **الرؤية** — **طبقة مهنية وجغرافية موثوقة** للمنظومة الصناعية دون امتلاك التجارة أو المحتوى التحريري.
 
-*Full:* [[02_PLATFORMS/pro/README#Vision & Mission | الرؤية والمهمة]]
+**EN:** **Mission** — Own **profile, verification, and reputation SSOT**. Deliver **discovery and trust APIs** for Rack (listing badges) and Labs (playbook `profile_id` links). **Never** host marketplace checkout, product catalog, or Labs CMS. Optional wallet for Pro-only paid services when gated.
+
+**AR:** **المهمة** — امتلاك SSOT **الملف والتحقق والسمعة**؛ تقديم **واجهات اكتشاف وثقة** لـ Rack وLabs؛ **عدم** استضافة دفع سوق أو كتالوج أو CMS Labs.
+
+| Strategic pillar | EN | AR |
+|------------------|----|-----|
+| **SSOT** | Profiles, verification state, reputation, geo service boundaries | ملفات، تحقق، سمعة، حدود خدمة جغرافية |
+| **Exports** | Versioned trust/discovery APIs — snapshots to siblings | API ثقة واكتشاف — لقطات للأقران |
+| **Forbidden** | Commerce UI, Labs editor, cross-schema verification storage | واجهة تجارة، محرر Labs، تخزين تحقق عابر |
+| **Audience** | Engineers, consultants, field services, regional expertise seekers | مهنيون، مستشارون، خدمات ميدانية |
+
+**Platform summary (MOC):** [[02_PLATFORMS/pro/README#Vision & Mission | الرؤية والمهمة — ملخص]]
+
+---
+
+<!-- AGREEMENTS SECTION — SSOT canonical; Platform README = summary only -->
+
+### Pro Key Agreements SSOT | برو — الاتفاقات
+
+**EN:** Pro legal scope: **identity, verification, reputation, geo disclosure** — not commerce checkout or editorial publishing. Verification outcome is **canonical in Pro**; Rack and Labs read **snapshots/events only**.
+
+**AR:** نطاق Pro: **هوية، تحقق، سمعة، إفصاح جغرافي** — وليس دفع تجارة أو نشر تحريري. نتيجة التحقق **في Pro**؛ راك/Labs **لقطات/أحداث فقط**.
+
+| Agreement | EN — when required | AR — متى تُطلب | Record |
+|-----------|-------------------|----------------|--------|
+| **Account & privacy** | First Pro session | أول جلسة Pro | `pro.consent.account` |
+| **Profile accuracy** | Creating or claiming a professional profile | إنشاء أو مطالبة بملف مهني | `pro.consent.profile_accuracy` |
+| **Verification** | Submitting credentials for `verified_pro` | تقديم credentials للتحقق | `pro.consent.verification` |
+| **Geo & service area** | Publishing regional coverage or map discovery | نشر نطاق خدمة أو اكتشاف خريطة | `pro.consent.geo_services` |
+| **Portfolio & media** | Uploading credentials, certificates, case studies | رفع شهادات أو معارض أعمال | `pro.consent.portfolio` |
+| **Reputation & reviews** | Enabling public reputation signals | تفعيل إشارات السمعة العلنية | `pro.consent.reputation` |
+| **Partner API (gated)** | Issuing partner keys (P-P*) | إصدار مفاتيح شركاء | `pro.consent.partner_api` + ADR |
+| **Optional paid services** | Wallet debit for Pro-only services | خصم محفظة لخدمات Pro | `pro.consent.wallet` |
+
+**EN — user approvals:** Explicit consent per workflow · re-verification on material identity change · revocation events propagate to Rack badge refresh.
+
+**AR — موافقات:** موافقة لكل سير عمل · إعادة تحقق عند تغيير هوية · إلغاء التحقق يُحدّث شارات راك.
+
+**Forbidden | ممنوع:** Pro terms obligating Rack listing purchase · Labs editorial license bundled into verification · `verified_pro` truth in Rack/Labs DB.
+
+**Summary:** [[02_PLATFORMS/pro/README#Key Agreements & User Approvals | الاتفاقات — ملخص]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
 
 ---
 
@@ -372,18 +442,6 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 ---
 
-<!-- AGREEMENTS SECTION -->
-
-### Key Agreements & User Approvals | الاتفاقات والموافقات
-
-**EN:** Pro-scoped: account, profile accuracy, verification, geo/service area, portfolio, reputation, partner API (gated), optional wallet. Verification canonical in Pro; siblings read snapshots.
-
-**AR:** موافقات Pro: حساب، دقة الملف، تحقق، جغرافيا، معرض، سمعة، API شركاء (مقيد)، محفظة اختيارية. التحقق في Pro؛ الأقران لقطات.
-
-*Full:* [[02_PLATFORMS/pro/README#Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية]]
-
----
-
 <!-- BUSINESS RULES SECTION -->
 
 ### Business Rules & Roles | قواعد العمل والأدوار
@@ -404,15 +462,55 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
 ---
 
-### Vision & Mission | الرؤية والمهمة
+### Labs Vision & Mission SSOT | لابز — الرؤية والمهمة
 
-<!-- VISION MISSION SECTION — canonical in Platform MOC; do not duplicate -->
+<!-- VISION MISSION SECTION — SSOT canonical; Platform README = summary only -->
 
-**EN:** Knowledge as operational power; content and learning SSOT; publish under Labs legal scope; reference Rack `product_id` and Pro `profile_id` via API IDs only.
+**EN:** **Vision** — Industrial knowledge as **operational power**: documentation and learning that elevate manufacturing, not marketing noise. Labs turns expertise into repeatable playbooks — not a storefront or identity registry.
 
-**AR:** المعرفة قوة تشغيلية؛ SSOT المحتوى والتعلم؛ النشر ضمن قانون Labs؛ الإشارة إلى `product_id` و`profile_id` عبر معرّفات API فقط.
+**AR:** **الرؤية** — المعرفة الصناعية **قوة تشغيلية**: توثيق وتعليم يرفع الصناعة بعيداً عن الضجيج التسويقي.
 
-*Full:* [[02_PLATFORMS/labs/README#Vision & Mission | الرؤية والمهمة]]
+**EN:** **Mission** — Own **content and learning SSOT** (`article_id`, courses, knowledge bases, learning paths). **Publish and moderate** under Labs legal scope only. Reference Rack `product_id` and Pro `profile_id` via **stable API IDs** — never embed sibling consumer UI or host Rack checkout.
+
+**AR:** **المهمة** — امتلاك SSOT **المحتوى والتعلم**؛ **النشر والإشراف** ضمن قانون Labs؛ الإشارة إلى `product_id` و`profile_id` عبر **معرّفات API** دون واجهات أخوة أو دفع راك.
+
+| Strategic pillar | EN | AR |
+|------------------|----|-----|
+| **SSOT** | Articles, courses, KB structure, editorial lifecycle | مقالات، دورات، قواعد معرفة، دورة المحتوى |
+| **References** | Cross-links by ID + API metadata — disclaimers on Rack/Pro truth | مراجع بالمعرّف + بيانات API — إخلاء مسؤولية |
+| **Forbidden** | Price, inventory, verification SSOT; Rack cart on Labs routes | سعر، مخزون، تحقق؛ سلة راك على Labs |
+| **Audience** | Writers, SMEs, learners, platforms consuming content APIs | كتّاب، خبراء، متعلمون، مستهلكو API |
+
+**Platform summary (MOC):** [[02_PLATFORMS/labs/README#Vision & Mission | الرؤية والمهمة — ملخص]]
+
+---
+
+<!-- AGREEMENTS SECTION — SSOT canonical; Platform README = summary only -->
+
+### Labs Key Agreements SSOT | لابز — الاتفاقات
+
+**EN:** Labs legal scope: **content, learning, moderation, contributor rights** — not product pricing, orders, or verification outcomes. Published content is **versioned** — no silent rewrites (Immutability gate).
+
+**AR:** نطاق Labs: **محتوى، تعلم، إشراف، حقوق مساهمين** — وليس تسعير أو طلبات أو تحقق. المحتوى المنشور **بنسخ** — بلا تحريف صامت (بوابة الثبات).
+
+| Agreement | EN — when required | AR — متى تُطلب | Record |
+|-----------|-------------------|----------------|--------|
+| **Account & privacy** | First Labs session | أول جلسة Labs | `labs.consent.account` |
+| **Reader / learner** | Accessing KB or learning paths | الوصول لقاعدة معرفة أو مسار تعلم | `labs.consent.reader` |
+| **Contributor & editorial** | First publish (`editor` role) | أول نشر (دور `editor`) | `labs.consent.contributor` |
+| **Content policy** | Submitting article or course for review | تقديم مقال أو دورة للمراجعة | `labs.consent.content_policy` |
+| **Cross-reference accuracy** | Linking `product_id` or `profile_id` in content | ربط `product_id` أو `profile_id` | `labs.consent.cross_ref` |
+| **Paid course (gated)** | Enrollment with wallet debit | تسجيل دورة مدفوعة | `labs.consent.paid_course` |
+| **Support agent** | Accessing support-agent workflows | سير عمل وكيل الدعم | `labs.consent.support_agent` |
+| **Partner content API (gated)** | External syndication (L-P*) | تزويد محتوى لشركاء | `labs.consent.partner_api` + ADR |
+
+**EN — user approvals:** Cross-refs show disclaimer — commerce/identity truth owned by Rack/Pro · moderation takedowns auditable · paid courses require separate wallet consent (`platform_source=labs`).
+
+**AR — موافقات:** إخلاء مسؤولية على المراجع العابرة · سحب محتوى بسجل · دورات مدفوعة بموافقة محفظة منفصلة.
+
+**Forbidden | ممنوع:** Labs checkout for Rack products · Labs storing verification status · bundled Rack seller terms on course enrollment.
+
+**Summary:** [[02_PLATFORMS/labs/README#Key Agreements & User Approvals | الاتفاقات — ملخص]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
 
 ---
 
@@ -475,18 +573,6 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
 **EN:** Labs guide → `product_id` → Rack link card only. **AR:** دليل Labs → `product_id` → بطاقة راك فقط.
 
 → [[02_PLATFORMS/labs/README#Relationships to Other Platforms | العلاقات]]
-
----
-
-<!-- AGREEMENTS SECTION -->
-
-### Key Agreements & User Approvals | الاتفاقات والموافقات
-
-**EN:** Labs-scoped: account, reader/learner, contributor/editorial, content policy, cross-ref accuracy, paid course (gated), support agent, partner API (gated). Versioned content — no silent rewrites.
-
-**AR:** موافقات Labs: حساب، قارئ، مساهم/تحرير، سياسة محتوى، دقة مراجع عابرة، دورة مدفوعة (مقيد)، وكيل دعم، API شريك (مقيد). محتوى بنسخ — بلا إعادة كتابة صامتة.
-
-*Full:* [[02_PLATFORMS/labs/README#Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية]]
 
 ---
 

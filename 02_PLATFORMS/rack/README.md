@@ -26,6 +26,36 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 **EN:** Sovereign commerce island — regulated industrial marketplace, not generic classifieds.  
 **AR:** جزيرة تجارة سيادية — سوق صناعي منضبط، وليس إعلانات عشوائية.
 
+> **Strategic SSOT flow | مسار مصدر الحقيقة**  
+> **EN:** [[01_CONSTITUTION/PROJECT_BIBLE]] = full Vision, Mission & Agreements · this README = summary + operational MOC.  
+> **AR:** [[01_CONSTITUTION/PROJECT_BIBLE]] = الرؤية والمهمة والاتفاقات الكاملة · هذا الملف = ملخص + خريطة تشغيل.
+
+---
+
+## Vision & Mission | الرؤية والمهمة
+
+<!-- VISION MISSION SUMMARY — do not duplicate; SSOT in PROJECT_BIBLE -->
+
+| | EN | AR |
+|---|----|-----|
+| **Vision** | Trustworthy, searchable industrial commerce — regulated marketplace, not classifieds | تجارة صناعية موثوقة قابلة للبحث — سوق منضبط |
+| **Mission** | Own product & commerce SSOT; buy·sell·guide; Boost, bidding, secondary & hidden offers | امتلاك SSOT التجارة؛ شراء·بيع·دليل؛ آليات السوق |
+| **Audience** | Manufacturers, suppliers, B2B buyers · AR-first, EN/ZH | مصنّعون وموردون ومشتريات B2B |
+
+**Full strategic SSOT →** [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT | راك — الرؤية والمهمة (SSOT)]]
+
+---
+
+## Key Agreements & User Approvals | الاتفاقات (ملخص)
+
+<!-- AGREEMENTS SUMMARY — do not duplicate; SSOT in PROJECT_BIBLE -->
+
+**EN:** Rack-scoped consents only — account, seller/listing, buyer, Boost, marketplace rules, wallet. Explicit approval per gated action; versioned audit; no Pro/Labs bundled terms.
+
+**AR:** موافقات راك فقط — حساب، بائع، مشتري، Boost، قواعد السوق، محفظة. موافقة صريحة لكل إجراء؛ تدقيق بنسخة؛ بلا دمج شروط Pro/Labs.
+
+**Full consent registry →** [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT | راك — الاتفاقات (SSOT)]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+
 ---
 
 ## Navigate this island | تنقل داخل الجزيرة
@@ -46,49 +76,11 @@ aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 | Topic | Link |
 |-------|------|
 | Rack section | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] |
-| Vision & mission | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Mission \| الرؤية والمهمة]] |
+| Vision & mission (SSOT) | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Vision & Mission SSOT \| راك — الرؤية والمهمة]] |
+| Agreements (SSOT) | [[01_CONSTITUTION/PROJECT_BIBLE#Rack Key Agreements SSOT \| راك — الاتفاقات]] |
 | Features | [[01_CONSTITUTION/PROJECT_BIBLE#Features \| الميزات]] |
 | Isolation | [[01_CONSTITUTION/PROJECT_BIBLE#Isolation \| العزل]] |
 | Integration law | [[01_CONSTITUTION/PROJECT_BIBLE#Platform Relationships & Backend Integration Rules \| العلاقات وقواعد التكامل الخلفي]] |
-
----
-
-## Vision & Mission | الرؤية والمهمة
-
-<!-- VISION MISSION SECTION — canonical; do not duplicate below -->
-
-**EN:** **Vision** — Industrial commerce that is trustworthy, searchable, and operationally serious. Rack is the primary revenue engine: a regulated marketplace, not generic classifieds. **Mission** — Own the product and commerce SSOT (catalog, listings, orders, marketplace mechanics). Connect supply and demand through buy · sell · guide. Operate Boost, Bidding, Secondary Market, and Hidden Offers under Rack UX and legal terms. Use shared identity and wallet backend only — never embed Pro or Labs consumer UI. **Audience** — Manufacturers, suppliers, B2B buyers, and procurement teams; Arabic-first with EN/ZH expansion.
-
-**AR:** **الرؤية** — تجارة صناعية موثوقة، قابلة للبحث، وذات جدية تشغيلية؛ راك هو محرك الإيرادات الأساسي عبر سوق منضبط وليس إعلانات عشوائية. **المهمة** — امتلاك مصدر الحقيقة للمنتجات والتجارة (الكتالوج، القوائم، الطلبات، آليات السوق)، وربط العرض بالطلب عبر الشراء والبيع والدليل، وتشغيل Boost والمزايدة والسوق الثانوي والعروض المخفية ضمن شروط راك القانونية، مع استهلاك الهوية والمحفظة من النواة المشتركة خلفياً فقط دون تضمين واجهات المنصات الأخرى. **الجمهور** — المصنّعون والموردون وفرق المشتريات B2B؛ عربي أولاً مع توسع إنجليزي وصيني.
-
----
-
-<!-- AGREEMENTS SECTION -->
-
-## Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية
-
-**EN:** All legal artifacts are **Rack-scoped** — never bundled with Pro or Labs public terms. Users must explicitly accept before the gated action fires. Parent (BENBENHUB) policy stays internal.
-
-**AR:** كل الوثائق القانونية **ضمن نطاق راك** — لا تُدمج مع شروط Pro أو Labs العلنية. يجب موافقة صريحة قبل تنفيذ الإجراء. سياسة الأب (BENBENHUB) داخلية فقط.
-
-| Agreement | EN — when required | AR — متى تُطلب | Record |
-|-----------|-------------------|----------------|--------|
-| **Account & privacy** | First Rack login / registration | أول دخول أو تسجيل راك | `rack.consent.account` |
-| **Seller & listing** | Before first publish or catalog import | قبل أول نشر أو استيراد كتالوج | `rack.consent.seller_listing` |
-| **Buyer & purchase** | Checkout, bid, or offer acceptance | الدفع أو المزايدة أو قبول عرض | `rack.consent.buyer_purchase` |
-| **Boost / promotion** | Enabling paid visibility (R-G*) | تفعيل ظهور مدفوع | `rack.consent.boost` |
-| **Bidding & secondary market** | Joining auction or secondary listing | دخول مزاد أو قائمة ثانوية | `rack.consent.marketplace_rules` |
-| **Hidden offers** | Accessing confidential offer flows | الوصول لتدفقات العروض المخفية | `rack.consent.hidden_offers` |
-| **Wholesale / ERP (gated)** | Assigning `wholesale_buyer` or ERP hook | تعيين مشتري جملة أو ربط ERP | `rack.consent.wholesale` + ADR |
-| **Wallet settlement** | First wallet debit/credit on Rack | أول حركة محفظة على راك | `rack.consent.wallet` (core ledger, Rack rules) |
-
-**EN — user approvals (UX):** Checkbox + versioned terms link · audit `user_id`, `terms_version`, `locale`, `timestamp` · block action if declined · re-prompt on material version bump (Immutability gate).
-
-**AR — موافقات المستخدم:** خانة اختيار + رابط شروط بنسخة · تدقيق `user_id` و`terms_version` واللغة والوقت · منع الإجراء عند الرفض · إعادة الطلب عند تغيير جوهري للنسخة (بوابة الثبات).
-
-**Forbidden | ممنوع:** One checkbox covering Pro verification or Labs courses · cross-brand “accept all platforms” · storing commerce SSOT in shared core consent tables.
-
-**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]] · **Phrases:** `R-legal-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]]
 
 ---
 

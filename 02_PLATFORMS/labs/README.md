@@ -26,6 +26,36 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 **EN:** Sovereign knowledge island — operational documentation and learning, not marketplace or identity SSOT.  
 **AR:** جزيرة معرفة سيادية — توثيق وتعليم تشغيلي، وليست سوقاً ولا مصدر حقيقة للهوية.
 
+> **Strategic SSOT flow | مسار مصدر الحقيقة**  
+> **EN:** [[01_CONSTITUTION/PROJECT_BIBLE]] = full Vision, Mission & Agreements · this README = summary + operational MOC.  
+> **AR:** [[01_CONSTITUTION/PROJECT_BIBLE]] = الرؤية والمهمة والاتفاقات الكاملة · هذا الملف = ملخص + خريطة تشغيل.
+
+---
+
+## Vision & Mission | الرؤية والمهمة
+
+<!-- VISION MISSION SUMMARY — do not duplicate; SSOT in PROJECT_BIBLE -->
+
+| | EN | AR |
+|---|----|-----|
+| **Vision** | Industrial knowledge as operational power — not marketing noise | معرفة صناعية قوة تشغيلية — بلا ضجيج تسويقي |
+| **Mission** | Own content & learning SSOT; publish under Labs law; API refs only | امتلاك SSOT المحتوى والتعلم؛ نشر ضمن قانون Labs؛ مراجع API |
+| **Audience** | Writers, SMEs, learners, API consumers | كتّاب وخبراء ومتعلمون ومستهلكو API |
+
+**Full strategic SSOT →** [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT | لابز — الرؤية والمهمة (SSOT)]]
+
+---
+
+## Key Agreements & User Approvals | الاتفاقات (ملخص)
+
+<!-- AGREEMENTS SUMMARY — do not duplicate; SSOT in PROJECT_BIBLE -->
+
+**EN:** Labs-scoped consents — contributor, content policy, cross-ref accuracy, paid courses (gated). Versioned content; no silent rewrites.
+
+**AR:** موافقات Labs — مساهم، سياسة محتوى، دقة مراجع عابرة، دورات مدفوعة (مقيد). محتوى بنسخ؛ بلا تحريف صامت.
+
+**Full consent registry →** [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT | لابز — الاتفاقات (SSOT)]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+
 ---
 
 ## Navigate this island | تنقل داخل الجزيرة
@@ -46,49 +76,11 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 | Topic | Link |
 |-------|------|
 | Labs section | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] |
-| Vision & mission | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Mission \| الرؤية والمهمة]] |
+| Vision & mission (SSOT) | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Vision & Mission SSOT \| لابز — الرؤية والمهمة]] |
+| Agreements (SSOT) | [[01_CONSTITUTION/PROJECT_BIBLE#Labs Key Agreements SSOT \| لابز — الاتفاقات]] |
 | Features | [[01_CONSTITUTION/PROJECT_BIBLE#Features \| الميزات]] |
 | Isolation | [[01_CONSTITUTION/PROJECT_BIBLE#Isolation \| العزل]] |
 | Gates | [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates \| بوابات الحوكمة]] |
-
----
-
-## Vision & Mission | الرؤية والمهمة
-
-<!-- VISION MISSION SECTION — canonical; do not duplicate below -->
-
-**EN:** **Vision** — Industrial knowledge as operational power: documentation and learning that elevate manufacturing, not marketing noise. **Mission** — Own content and learning SSOT (`article_id`, courses, knowledge bases). Publish and moderate under Labs legal scope. Reference Rack `product_id` and Pro `profile_id` via stable API IDs only — never embed sibling UI. **Audience** — Writers, SMEs, learners, and platforms consuming content APIs.
-
-**AR:** **الرؤية** — المعرفة الصناعية قوة تشغيلية: توثيق وتعليم يرفع الصناعة بعيداً عن الضجيج التسويقي. **المهمة** — امتلاك مصدر الحقيقة للمحتوى والتعلم (`article_id`، دورات، قواعد معرفة)، والنشر والإشراف ضمن نطاق Labs القانوني، مع الإشارة إلى `product_id` و`profile_id` عبر معرّفات API ثابتة فقط دون تضمين واجهات المنصات الأخرى. **الجمهور** — كتّاب وخبراء ومتعلمون ومنصات تستهلك واجهات المحتوى.
-
----
-
-<!-- AGREEMENTS SECTION -->
-
-## Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية
-
-**EN:** Labs legal scope covers **content, learning, moderation, and contributor rights** — not product pricing, orders, or identity verification outcomes.
-
-**AR:** نطاق Labs القانوني يغطي **المحتوى والتعلم والإشراف وحقوق المساهمين** — وليس تسعير المنتجات أو الطلبات أو نتائج التحقق.
-
-| Agreement | EN — when required | AR — متى تُطلب | Record |
-|-----------|-------------------|----------------|--------|
-| **Account & privacy** | First Labs session | أول جلسة Labs | `labs.consent.account` |
-| **Reader / learner** | Accessing KB or learning paths | الوصول لقاعدة معرفة أو مسار تعلم | `labs.consent.reader` |
-| **Contributor & editorial** | First publish (`editor` role) | أول نشر (دور `editor`) | `labs.consent.contributor` |
-| **Content policy** | Submitting article or course for review | تقديم مقال أو دورة للمراجعة | `labs.consent.content_policy` |
-| **Cross-reference accuracy** | Linking `product_id` or `profile_id` in content | ربط `product_id` أو `profile_id` | `labs.consent.cross_ref` |
-| **Paid course (gated)** | Enrollment with wallet debit | تسجيل دورة مدفوعة | `labs.consent.paid_course` |
-| **Support agent** | Accessing support-agent workflows | سير عمل وكيل الدعم | `labs.consent.support_agent` |
-| **Partner content API (gated)** | External syndication (L-P*) | تزويد محتوى لشركاء | `labs.consent.partner_api` + ADR |
-
-**EN — user approvals:** Material changes to published content increment version — no silent rewrite of accepted articles (Immutability). Cross-refs display disclaimer: commerce/identity truth owned by Rack/Pro.
-
-**AR — موافقات المستخدم:** تغيير جوهري للمحتوى المنشور يزيد النسخة — لا إعادة كتابة صامتة (الثبات). المراجع العابرة تعرض إخلاء مسؤولية: حقيقة التجارة/الهوية لراك/Pro.
-
-**Forbidden | ممنوع:** Labs checkout for Rack products · Labs storing verification status · bundled Rack seller terms on course enrollment.
-
-**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
 
 ---
 

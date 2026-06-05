@@ -26,6 +26,36 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 **EN:** Sovereign professional and geo island — not commerce, not content publishing.  
 **AR:** جزيرة مهنية وجغرافية سيادية — ليست تجارة ولا نشر محتوى.
 
+> **Strategic SSOT flow | مسار مصدر الحقيقة**  
+> **EN:** [[01_CONSTITUTION/PROJECT_BIBLE]] = full Vision, Mission & Agreements · this README = summary + operational MOC.  
+> **AR:** [[01_CONSTITUTION/PROJECT_BIBLE]] = الرؤية والمهمة والاتفاقات الكاملة · هذا الملف = ملخص + خريطة تشغيل.
+
+---
+
+## Vision & Mission | الرؤية والمهمة
+
+<!-- VISION MISSION SUMMARY — do not duplicate; SSOT in PROJECT_BIBLE -->
+
+| | EN | AR |
+|---|----|-----|
+| **Vision** | Trusted professional & geo layer — no commerce or editorial SSOT | طبقة مهنية وجغرافية موثوقة — بلا تجارة ولا محتوى تحريري |
+| **Mission** | Own profile, verification, reputation; trust APIs for Rack & Labs | امتلاك الملف والتحقق والسمعة؛ واجهات ثقة لـ Rack وLabs |
+| **Audience** | Engineers, consultants, field services, verified regional expertise | مهنيون وخدمات ميدانية وخبرة إقليمية موثقة |
+
+**Full strategic SSOT →** [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT | برو — الرؤية والمهمة (SSOT)]]
+
+---
+
+## Key Agreements & User Approvals | الاتفاقات (ملخص)
+
+<!-- AGREEMENTS SUMMARY — do not duplicate; SSOT in PROJECT_BIBLE -->
+
+**EN:** Pro-scoped consents — profile accuracy, verification, geo, portfolio, reputation. Verification canonical in Pro; Rack/Labs read snapshots only.
+
+**AR:** موافقات Pro — دقة الملف، تحقق، جغرافيا، معرض، سمعة. التحقق في Pro؛ راك/Labs لقطات فقط.
+
+**Full consent registry →** [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT | برو — الاتفاقات (SSOT)]] · **Law:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
+
 ---
 
 ## Navigate this island | تنقل داخل الجزيرة
@@ -46,49 +76,11 @@ aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 | Topic | Link |
 |-------|------|
 | Pro section | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] |
-| Vision & mission | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Mission \| الرؤية والمهمة]] |
+| Vision & mission (SSOT) | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Vision & Mission SSOT \| برو — الرؤية والمهمة]] |
+| Agreements (SSOT) | [[01_CONSTITUTION/PROJECT_BIBLE#Pro Key Agreements SSOT \| برو — الاتفاقات]] |
 | Features | [[01_CONSTITUTION/PROJECT_BIBLE#Features \| الميزات]] |
 | Isolation | [[01_CONSTITUTION/PROJECT_BIBLE#Isolation \| العزل]] |
 | Gates | [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates \| بوابات الحوكمة]] |
-
----
-
-## Vision & Mission | الرؤية والمهمة
-
-<!-- VISION MISSION SECTION — canonical; do not duplicate below -->
-
-**EN:** **Vision** — A trusted professional and geo-service layer for industrial ecosystems, without owning commerce or editorial content. **Mission** — Own profile, verification, and reputation SSOT. Deliver discovery and trust APIs for Rack and Labs. Never host marketplace checkout, product catalog, or Labs CMS. **Audience** — Engineers, consultants, field services, and organizations seeking verified regional expertise.
-
-**AR:** **الرؤية** — طبقة مهنية وجغرافية موثوقة للمنظومة الصناعية دون امتلاك التجارة أو المحتوى التحريري. **المهمة** — امتلاك مصدر الحقيقة للملف المهني والتحقق والسمعة، وتقديم واجهات اكتشاف وثقة لـ Rack وLabs، مع منع استضافة دفع السوق أو كتالوج المنتجات أو نظام إدارة محتوى Labs. **الجمهور** — مهندسون ومستشارون وخدمات ميدانية وجهات تبحث خبرة إقليمية موثقة.
-
----
-
-<!-- AGREEMENTS SECTION -->
-
-## Key Agreements & User Approvals | الاتفاقات والموافقات الأساسية
-
-**EN:** Pro legal scope covers **identity, verification, reputation, and geo disclosure** — not commerce checkout or editorial publishing.
-
-**AR:** نطاق Pro القانوني يغطي **الهوية والتحقق والسمعة والإفصاح الجغرافي** — وليس دفع التجارة أو النشر التحريري.
-
-| Agreement | EN — when required | AR — متى تُطلب | Record |
-|-----------|-------------------|----------------|--------|
-| **Account & privacy** | First Pro session | أول جلسة Pro | `pro.consent.account` |
-| **Profile accuracy** | Creating or claiming a professional profile | إنشاء أو مطالبة بملف مهني | `pro.consent.profile_accuracy` |
-| **Verification** | Submitting credentials for `verified_pro` | تقديم credentials للتحقق | `pro.consent.verification` |
-| **Geo & service area** | Publishing regional coverage or map discovery | نشر نطاق خدمة أو اكتشاف خريطة | `pro.consent.geo_services` |
-| **Portfolio & media** | Uploading credentials, certificates, case studies | رفع شهادات أو معارض أعمال | `pro.consent.portfolio` |
-| **Reputation & reviews** | Enabling public reputation signals | تفعيل إشارات السمعة العلنية | `pro.consent.reputation` |
-| **Partner API (gated)** | Issuing partner keys (P-P*) | إصدار مفاتيح شركاء | `pro.consent.partner_api` + ADR |
-| **Optional paid services** | Wallet debit for Pro-only services | خصم محفظة لخدمات Pro | `pro.consent.wallet` |
-
-**EN — user approvals:** Explicit consent per workflow · verification status is canonical in Pro DB — Rack/Labs read snapshots only · re-verification on material identity change.
-
-**AR — موافقات المستخدم:** موافقة صريحة لكل سير عمل · حالة التحقق في Pro فقط — راك/Labs يقرآن لقطات · إعادة تحقق عند تغيير جوهري للهوية.
-
-**Forbidden | ممنوع:** Pro terms that obligate Rack listing purchase · Labs editorial license bundled into verification · storing `verified_pro` truth in Rack or Labs schemas.
-
-**Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Legal & Consents · القانوني والموافقات]]
 
 ---
 
