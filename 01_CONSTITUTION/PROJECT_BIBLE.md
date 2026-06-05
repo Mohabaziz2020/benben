@@ -261,18 +261,17 @@ tags: [benbenhub, ssot, project-bible, graph-hub]
 
 ### Governance Documents
 
-| Doc | EN | AR | Link |
-|-----|----|----|------|
+| Doc | EN Description | AR Description | Link |
+|-----|----------------|----------------|------|
 | Vault Constitution | Vault SSOT policy | دستور الخزنة | [[04_GOVERNANCE/VAULT_GOVERNANCE]] |
 | ADR Rules | Decision recording law | قواعد توثيق القرارات | [[04_GOVERNANCE/ADR_RULES]] |
 | AI Protocol | Agent interaction rules | بروتوكول تفاعل AI | [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]] |
-| Three Gates | Gate definitions | البوابات الثلاث | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
+| Three Gates | Gate definitions & enforcement | البوابات الثلاث مفصلة | [[04_GOVERNANCE/GOVERNANCE_GATES]] |
 | Integration Law | Backend-only contracts | قواعد التكامل الخلفي | [[04_GOVERNANCE/INTEGRATION_RULES]] |
 | Governance Index | Navigation hub | فهرس الحوكمة | [[04_GOVERNANCE/README]] |
 
-**Frozen Files:**
-
-- `VAULT_GOVERNANCE.md`, `ADR_RULES.md`, `AI_MEMORY_PROTOCOL.md` → **Approved & Frozen**
+**Frozen Files Status:**  
+`VAULT_GOVERNANCE.md` • `ADR_RULES.md` • `AI_MEMORY_PROTOCOL.md` → **Approved & Frozen**
 
 **Related:** [[04_GOVERNANCE/GOVERNANCE_GATES]] · [[04_GOVERNANCE/INTEGRATION_RULES]] · [[91_DECISIONS/ADR-2026-06-06-001]]
 
@@ -1159,6 +1158,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.7 · 2026-06-06** — Governance Core freeze: ADR_RULES, VAULT_GOVERNANCE, AI_MEMORY_PROTOCOL; [[91_DECISIONS/ADR-2026-06-06-001]]; Governance Core section in bible
 - **3.7.1 · 2026-06-06** — Governance Core section cleaned: single canonical table, frozen files list, no duplication
 - **3.7.2 · 2026-06-06** — Final Governance Core trim: lean table, consolidated frozen list, ADR in Related only
+- **3.7.3 · 2026-06-06** — Ultimate Governance Core: single canonical section, EN/AR description columns, one-line frozen status
 
 ---
 
