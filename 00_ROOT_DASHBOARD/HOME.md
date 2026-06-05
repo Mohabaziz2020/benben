@@ -22,6 +22,7 @@ pin: true
 | **Vault entry** | [[README]] |
 | **Full map** | [[INDEX]] |
 | **Law** | [[01_CONSTITUTION/PROJECT_BIBLE]] |
+| **Graph hub** | [[02_PLATFORMS/GRAPH_MOC]] |
 
 ---
 
@@ -78,9 +79,9 @@ HOME  →  Daily Note  →  PROJECT_BIBLE  →  ONE Platform MOC  →  Phrases (
 
 | | Platform | SSOT | EN | AR | **MOC** |
 |---|----------|------|----|----|---------|
-| 🔵 | **Circuit Rack** | Products · orders | Commerce | تجارة | [[02_PLATFORMS/rack/README]] |
-| 🟣 | **Circuit Pro** | Profile · verify | Identity · geo | هوية | [[02_PLATFORMS/pro/README]] |
-| 🟢 | **Circuit Labs** | Content · courses | Knowledge | معرفة | [[02_PLATFORMS/labs/README]] |
+| 🔵 | **Circuit Rack** | Products · orders | Commerce | تجارة | [[02_PLATFORMS/Rack/README]] |
+| 🟣 | **Circuit Pro** | Profile · verify | Identity · geo | هوية | [[02_PLATFORMS/Pro/README]] |
+| 🟢 | **Circuit Labs** | Content · courses | Knowledge | معرفة | [[02_PLATFORMS/Labs/README]] |
 
 **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]] · **Isolation:** rack/pro/labs `ISOLATION.md`
 

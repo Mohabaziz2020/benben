@@ -1121,6 +1121,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.4 · 2026-06-05** — Notion Original Recovery: verbatim archive (later moved to [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]])
 - **3.5 · 2026-06-05** — Notion Content Polish: strategic Part I tables, deduplicated bible body, archive appendix link
 - **3.5.1 · 2026-06-05** — Branding polish: platform colors & logos table, `03_SHARED_CORE/branding/` embeds
+- **3.6 · 2026-06-05** — Graph MOC v2.0: central visual hub, filter recipes, mermaid mesh, graph.json hub paths
 
 ---
 

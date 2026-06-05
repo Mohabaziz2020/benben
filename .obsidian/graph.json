@@ -71,6 +71,20 @@
       }
     },
     {
+      "query": "path:00_ROOT_DASHBOARD",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:README",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
       "query": "[color:red]",
       "color": {
         "a": 1,
@@ -151,6 +165,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 200,
-  "scale": 1,
+  "scale": 0.5087618855792585,
   "close": false
 }
