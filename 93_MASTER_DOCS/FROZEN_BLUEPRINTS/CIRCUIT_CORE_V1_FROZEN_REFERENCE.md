@@ -97,7 +97,7 @@ Architecture redesign during active implementation phases is prohibited.
 # SOURCE DOCUMENT
 
 Original Reference:
-"Circuit Core — Foundational Systems Blueprint v1.0 (Frozen)"
+"Circuit Core ï¿½ Foundational Systems Blueprint v1.0 (Frozen)"
 
 ---
 

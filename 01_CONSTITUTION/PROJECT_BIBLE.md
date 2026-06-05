@@ -1,7 +1,7 @@
 ---
 type: constitution
 status: active
-version: "2.9"
+version: "3.0"
 updated: 2026-06-05
 author: Maestro
 tags: [benbenhub, ssot, project-bible]
@@ -10,10 +10,11 @@ tags: [benbenhub, ssot, project-bible]
 # BenBenHub – Project Bible
 # بنبنهب — دستور المشروع
 
-**Single Source of Truth · مصدر الحقيقة الواحد** · **v2.9** · **2026-06-05** · Master Edition (EN/AR)
+**Single Source of Truth · مصدر الحقيقة الواحد** · **v3.0** · **2026-06-05** · Bilingual Master Edition (EN/AR)
 
-**EN** — Master constitution: hidden parent, three sovereign platforms, backend-only integration.  
-**AR** — الدستور الأعلى: أب مخفي، ثلاث منصات سيادية، تكامل خلفي فقط.
+**EN:** Master constitution for BENBENHUB: hidden parent entity, three sovereign platforms, backend-only integration, three governance gates.
+
+**AR:** الدستور الأعلى لـ BENBENHUB: كيان أب مخفي، ثلاث منصات سيادية معزولة، تكامل خلفي فقط، وثلاث بوابات حوكمة ملزمة.
 
 **Entry:** [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]]
 
@@ -52,141 +53,121 @@ tags: [benbenhub, ssot, project-bible]
 
 # Part I — Ecosystem Constitution · الجزء الأول — دستور المنظومة
 
-## Vision & Philosophy · الرؤية والفلسفة
+## Vision & Philosophy | الرؤية والفلسفة
 
-### Core Philosophy
+### Core Philosophy | الفلسفة الجوهرية
 
-BENBENHUB is a **hidden architectural parent entity** — a ghost architecture that guides sovereign digital platforms without public exposure. The ecosystem is three isolated islands:
+**EN:** BENBENHUB is a **hidden architectural parent entity** — ghost architecture that guides sovereign digital platforms without public consumer exposure. The ecosystem is three **isolated islands**: **Circuit Rack** (industrial commerce), **Circuit Labs** (knowledge and learning), and **Circuit Pro** (professional identity and geo-services). There is no public cross-branding. All integration is **backend and internal only**.
 
-- **Circuit Rack** — industrial commerce and marketplace
-- **Circuit Labs** — knowledge, documentation, and content
-- **Circuit Pro** — professional identity, geo-services, and discovery
+**AR:** BENBENHUB هو **كيان أب معماري مخفي** — هندسة شبحية توجّه منصات رقمية سيادية دون ظهور استهلاكي علني. المنظومة ثلاث **جزر معزولة**: **Circuit Rack** (تجارة صناعية)، **Circuit Labs** (معرفة وتعلم)، و**Circuit Pro** (هوية مهنية وخدمات جغرافية). لا تشعب علني بين العلامات. كل التكامل **خلفي وداخلي فقط**.
 
-No public cross-branding. All integration is **backend and internal only**.
+### North-Star Vision & Mission | الرؤية والمهمة المرجعية
 
-*الفلسفة:* كيان أب معماري مخفي · ثلاث جزر معزولة · التكامل خلفي فقط.
+**EN:** **Vision** — Become the hidden engine that elevates manufacturing toward system level. **Mission** — Achieve the highest industrial-economic return through manufacturing, knowledge, and commerce; transform knowledge into operational power; enable trusted commerce; build integrated demand. **Continuity** — Quality before speed; clarity before complexity; intellectual sovereignty; trust is manufactured, not claimed. **Power with restraint** — Strength with discipline and personalization. **Horizon** — Industrial products and services are strategic infrastructure, not peripherals.
 
-### North-Star Vision & Mission
+**AR:** **الرؤية** — أن نصبح المحرك المخفي الذي يرفع الصناعة إلى مستوى منظومة. **المهمة** — تحقيق أعلى عائد صناعي-اقتصادي عبر التصنيع والمعرفة والتجارة؛ تحويل المعرفة إلى قوة تشغيلية؛ تمكين تجارة موثوقة؛ وبناء طلب متكامل. **الاستمرارية** — الجودة قبل السرعة؛ الوضوح قبل التعقيد؛ السيادة الفكرية؛ الثقة تُصنَّع لا تُدعى. **القوة بضبط** — قوة مع انضباط وتخصيص. **الأفق** — المنتجات والخدمات الصناعية بنية تحتية استراتيجية وليست ملحقات.
 
-**Vision** — Become the hidden engine that elevates manufacturing toward system level.
+### Architectural Laws | القوانين المعمارية
 
-**Mission** — Highest industrial-economic return through manufacturing, knowledge, and commerce; transform knowledge into operational power; enable trusted commerce; build integrated demand.
+**EN:** (1) Full platform isolation. (2) Modular core architecture. (3) Lean execution. (4) AI-assisted development. (5) Hidden parent identity. (6) Backend connectivity only. (7) Documentation before expansion. (8) Decisions must be recorded. (9) Zero coupling between public brands. (10) Independent platform survivability.
 
-**Continuity (مقيم)** — Quality before speed; clarity before complexity; intellectual sovereignty; trust is manufactured, not claimed.
+**AR:** (1) عزل كامل للمنصات. (2) نواة معمارية معيارية. (3) تنفيذ رشيق. (4) تطوير بمساعدة الذكاء الاصطناعي. (5) هوية الأب المخفي. (6) اتصال خلفي فقط. (7) التوثيق قبل التوسع. (8) تسجيل القرارات إلزامي. (9) صفر اقتران بين العلامات العلنية. (10) استمرارية مستقلة لكل منصة.
 
-**Power with Restraint** — Strength with discipline and personalization.
+### Technical Direction | التوجه التقني
 
-**Horizon** — Industrial products and services are strategic infrastructure, not peripherals.
+**EN:** Modular architecture, documentation first, AI context preservation, incremental expansion, risk containment. **Long-term** — sovereign scalable systems under one invisible ecosystem. **Success** — multiple sovereign platforms with isolation and backend connectivity at scale, independent survivability, preserved architectural knowledge. **Non-goals** — public holding brand, tight monoliths, shared consumer UI, isolation shortcuts, external parent exposure.
 
-### Architectural Laws
-
-1. Full Platform Isolation
-2. Modular Core Architecture
-3. Lean Execution Strategy
-4. AI-Assisted Development
-5. Hidden Parent Identity
-6. Backend Connectivity Only
-7. Documentation Before Expansion
-8. Decisions Must Be Recorded
-9. Zero Coupling Between Public Brands
-10. Independent Platform Survivability
-
-### Technical Direction · Long-Term Goal · Success · Non-Goals
-
-Modular architecture · documentation first · AI context preservation · incremental expansion · risk containment.
-
-**Long-term** — Sovereign scalable systems under one invisible ecosystem.
-
-**Success** — Multiple sovereign platforms; isolation and backend connectivity at scale; independent survivability; preserved architectural knowledge.
-
-**Non-goals** — Public holding brand · tight monoliths · shared consumer UI · isolation shortcuts · external parent exposure.
+**AR:** معمارية معيارية، التوثيق أولاً، حفظ سياق الذكاء الاصطناعي، توسع تدريجي، واحتواء المخاطر. **طويل المدى** — أنظمة سيادية قابلة للتوسع تحت منظومة غير مرئية. **النجاح** — منصات سيادية متعددة مع عزل وتكامل خلفي على نطاق واسع وتعافٍ مستقل ومعرفة معمارية محفوظة. **غير الأهداف** — علامة قابضة علنية، monoliths ضيقة، واجهة استهلاكية مشتركة، اختصارات عزل، وكشف الأب خارجياً.
 
 ---
 
-## Company Structure & Governance · هيكل الشركة والحوكمة
+## Company Structure & Governance | هيكل الشركة والحوكمة
 
-### Hidden Parent
+### Hidden Parent | الأب المخفي
 
-BENBENHUB sets constitutional law, gates, and strategy. Not a consumer umbrella. Internal docs may reference the parent; external surfaces may not.
+**EN:** BENBENHUB sets constitutional law, governance gates, and strategy. It is not a consumer umbrella brand. Internal documentation may reference the parent; external consumer surfaces may not.
 
-### Operating Model
+**AR:** BENBENHUB يضع القانون الدستوري وبوابات الحوكمة والاستراتيجية. ليس علامة مظلة استهلاكية. الوثائق الداخلية قد تشير إلى الأب؛ الأسطح الاستهلاكية الخارجية لا تشير إليه.
 
-Integrated holding — not exposed, not fragmented. **Parent + isolated platform units.**
+### Operating Model | نموذج التشغيل
 
-- **Parent** — strategy, gates, integration contracts
-- **Platforms** — sovereign execution (Rack · Labs · Pro)
-- **Decisions** — immutable ADR trail
+**EN:** Integrated holding — not exposed, not fragmented: **parent + isolated platform units**. The parent owns strategy, gates, and integration contracts. Platforms own sovereign execution (Rack, Labs, Pro). Decisions follow an immutable ADR trail. Operating rhythm: document before expand; record every major decision.
 
-**Rhythm:** Document before expand · record every major decision.
+**AR:** قابضة متكاملة — غير مكشوفة وغير مجزأة: **أب + وحدات منصات معزولة**. الأب يملك الاستراتيجية والبوابات وعقود التكامل. المنصات تملك التنفيذ السيادي (Rack وLabs وPro). القرارات تتبع مسار ADR غير قابل للتحريف الصامت. إيقاع التشغيل: وثّق قبل التوسع؛ سجّل كل قرار رئيسي.
 
-### Platform Isolation & Sovereignty
+### Platform Isolation & Sovereignty | عزل المنصات والسيادة
 
-Each platform owns brand, delivery, recovery, backlog, and deployment. Cross-platform work uses backend contracts only. Cross-cutting changes require ADRs.
+**EN:** Each platform owns its brand, delivery, recovery, backlog, and deployment. Cross-platform work uses backend contracts only. Cross-cutting changes require ADRs and gate approval.
 
----
-
-## Branding & Visual Identity · الهوية البصرية والعلامة
-
-**Brand law** — Zero public cross-branding. Independent identity per platform. No BENBENHUB consumer umbrella UI.
-
-**Palette** — Obsidian Black `#0B0B0F` · Charcoal `#14141A` · Benben Gold `#D4AF37` · Accent `#43A047`
-
-**Typography** — Cairo + Noto Kufi (AR) · Inter + IBM Plex (EN) · RTL/LTR
-
-**Footer** — © 2026 [Platform Name]. A BenBenHub Company
-
-Per-platform visual systems are defined in each platform section below — tokens do not leak across brands.
+**AR:** كل منصة تملك علامتها وتسليمها وتعافيها وقائمة أعمالها ونشرها. العمل العابر للمنصات يستخدم عقوداً خلفية فقط. التغييرات العابرة تتطلب ADR وموافقة البوابات.
 
 ---
 
-## Key Governance Gates · بوابات الحوكمة
+## Branding & Visual Identity | الهوية البصرية والعلامة
 
-### State Of Truth Gate
+**EN:** **Brand law** — zero public cross-branding; independent identity per platform; no BENBENHUB consumer umbrella UI. **Palette** — Obsidian Black `#0B0B0F`, Charcoal `#14141A`, Benben Gold `#D4AF37`, Accent `#43A047`. **Typography** — Cairo + Noto Kufi (AR), Inter + IBM Plex (EN), RTL/LTR. **Footer** — © 2026 [Platform Name]. A BenBenHub Company. Per-platform visual systems are defined in platform sections — design tokens do not leak across public brands.
 
-Critical knowledge and decisions documented with maximum fidelity to reality.
-
-### Decision Immutability Gate
-
-Frozen decisions superseded only through formal process — never edited in place.
-
-### Scope Boundary Gate
-
-Work stays within focus, platform isolation, and hidden parent identity.
-
-*البوابات الثلاث — حقيقة · ثبات · حدود.*
+**AR:** **قانون العلامة** — صفر تشعب علني؛ هوية مستقلة لكل منصة؛ لا واجهة مظلة استهلاكية لـ BENBENHUB. **الألوان** — أسود Obsidian `#0B0B0F`، فحمي `#14141A`، ذهب Benben `#D4AF37`، لهجة `#43A047`. **الخطوط** — Cairo وNoto Kufi (عربي)، Inter وIBM Plex (إنجليزي)، RTL/LTR. **التذييل** — © 2026 [اسم المنصة]. A BenBenHub Company. أنظمة بصرية لكل منصة في أقسامها — الرموز التصميمية لا تتسرّب بين العلامات العلنية.
 
 ---
 
-## Platform Survivability & Continuity Vision · استمرارية المنصات والتعافي
+## Key Governance Gates | بوابات الحوكمة
 
-### Purpose
+### State Of Truth Gate | بوابة حالة الحقيقة
 
-Long-term survivability and operational continuity of sovereign platforms without compromising ecosystem principles.
+**EN:** Critical knowledge and operational reality must be documented with maximum fidelity to what is actually true before work is closed or promoted.
 
-### Core Principles
+**AR:** يجب توثيق المعرفة الحرجة والواقع التشغيلي بأقصى ولاء لما هو صحيح فعلاً قبل إغلاق العمل أو ترقيته.
 
-Platform Sovereignty · Platform Isolation · Risk Isolation · Independent Detachability · Truth Gate · Immutability Gate on continuity decisions.
+### Decision Immutability Gate | بوابة ثبات القرار
 
-### Requirements (Summary)
+**EN:** Frozen decisions are superseded only through a formal supersede process — never edited in place or silently rewritten.
 
-- Independent recoverability within platform RTO/RPO
-- Sovereign recovery without exposing internals to siblings
-- Recovery ownership per platform team
-- Clear recovery boundaries (failure vs migration, data scope, isolation perimeter)
-- Ecosystem failure prevention — avoid shared fate
-- Continuity pattern flexibility — no mandated DR; Twin Architecture optional
+**AR:** القرارات المقفلة تُستبدل فقط بعملية استبدال رسمية — لا تحرير في المكان ولا إعادة صياغة صامتة.
 
-### Terminology
+### Scope Boundary Gate | بوابة حدود النطاق
 
-**Circuit Twin** — future collaborative engineering product. **Not** infrastructure DR or failover for sovereign platforms.
+**EN:** Work must stay within declared focus, platform isolation boundaries, and hidden-parent identity rules. Cross-platform scope requires explicit gate passage.
+
+**AR:** يجب أن يبقى العمل ضمن التركيز المعلن وحدود عزل المنصات وقواعد الأب المخفي. النطاق العابر للمنصات يتطلب مروراً صريحاً عبر البوابات.
+
+---
+
+## Platform Survivability & Continuity Vision | استمرارية المنصات والتعافي
+
+### Purpose | الغرض
+
+**EN:** Ensure long-term survivability and operational continuity of sovereign platforms without compromising ecosystem isolation principles.
+
+**AR:** ضمان استمرارية المنصات السيادية وتعافيها التشغيلي على المدى الطويل دون المساس بمبادئ عزل المنظومة.
+
+### Core Principles | المبادئ الأساسية
+
+**EN:** Platform sovereignty, platform isolation, risk isolation, independent detachability, Truth Gate on continuity claims, Immutability Gate on continuity architecture decisions.
+
+**AR:** سيادة المنصة، عزل المنصات، عزل المخاطر، قابلية الفصل المستقلة، بوابة الحقيقة على ادعاءات الاستمرارية، وبوابة الثبات على قرارات بنية الاستمرارية.
+
+### Requirements (Summary) | المتطلبات (ملخص)
+
+**EN:** Independent recoverability within each platform’s RTO/RPO; sovereign recovery without exposing internals to siblings; recovery ownership per platform team; clear boundaries between failure, migration, data scope, and isolation perimeter; ecosystem failure prevention (avoid shared fate); flexible continuity patterns — no mandated DR; Twin Architecture optional.
+
+**AR:** تعافٍ مستقل ضمن RTO/RPO لكل منصة؛ تعافٍ سيادي دون كشف الداخل للأقران؛ ملكية التعافي لفريق كل منصة؛ حدود واضحة بين العطل والهجرة ونطاق البيانات ومحيط العزل؛ منع فشل مشترك في المنظومة؛ أنماط استمرارية مرنة — لا DR إلزامي؛ Twin Architecture اختياري.
+
+### Terminology | المصطلحات
+
+**EN:** **Circuit Twin** is a future collaborative engineering **product name**. It is **not** infrastructure DR or failover that couples sovereign platforms.
+
+**AR:** **Circuit Twin** اسم **منتج** هندسي تعاوني مستقبلي. **ليس** بنية تعافٍ من الكوارث أو failover يقترن المنصات السيادية.
 
 ---
 
 # Part II — Sovereign Platforms · الجزء الثاني — المنصات السيادية
 
-## Platforms Overview · نظرة عامة على المنصات
+## Platforms Overview | نظرة عامة على المنصات
 
-Three **sovereign platforms** under one hidden parent. Each has its own section with vision, audience, features, stack, isolation, and relationships. This overview is an index only — detail lives in dedicated sections.
+**EN:** Three **sovereign platforms** under one hidden parent. Each has a bilingual **Platform MOC** (`02_PLATFORMS/{rack|pro|labs}/README.md`) with vision, features, stack, isolation, relationships, and PROJECT_BIBLE quick links. This overview is an index — canonical detail lives in MOCs and sections below.
+
+**AR:** ثلاث **منصات سيادية** تحت أب مخفي واحد. لكل منصة **خريطة MOC ثنائية اللغة** (`02_PLATFORMS/{rack|pro|labs}/README.md`) تشمل الرؤية والميزات والتقنية والعزل والعلاقات وروابط الدستور. هذا القسم فهرس — التفاصيل المرجعية في خرائط MOC والأقسام أدناه.
 
 | Platform | Tier | One-line mission |
 |----------|------|------------------|
@@ -194,56 +175,51 @@ Three **sovereign platforms** under one hidden parent. Each has its own section 
 | **Circuit Pro** | Services & professionals | Identity, geo-services, reputation, discovery |
 | **Circuit Labs** | Knowledge | Documentation, learning, content ecosystem |
 
-**Ecosystem rules (all platforms)** — No public cross-branding · no shared consumer UI · backend-only cross-links · independent deploy and recovery · failure does not propagate.
+**EN:** **Ecosystem rules (all platforms)** — No public cross-branding; no shared consumer UI; backend-only cross-links; independent deploy and recovery; failure does not propagate across islands.
+
+**AR:** **قواعد المنظومة (كل المنصات)** — لا تشعب علني؛ لا واجهة استهلاكية مشتركة؛ روابط عابرة خلفية فقط؛ نشر وتعافٍ مستقلان؛ عطل منصة لا ينتشر إلى الأخرى.
 
 **Platform MOCs (bilingual · Maestro P3):** Each island **README = Platform MOC** — Vision & Mission, Features, Stack, Isolation, Relations, **PROJECT_BIBLE quick links** → `02_PLATFORMS/{rack|pro|labs}/README.md`
 
 | Platform | Folder | **Platform MOC (start here)** | Bible section | Modules | Isolation |
 |----------|--------|-------------------------------|---------------|---------|-----------|
-| **Circuit Rack** | `02_PLATFORMS/rack/` | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/rack/ISOLATION]] |
-| **Circuit Pro** | `02_PLATFORMS/pro/` | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
-| **Circuit Labs** | `02_PLATFORMS/labs/` | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
+| **Circuit Rack** | `02_PLATFORMS/rack/` | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/rack/ISOLATION]] |
+| **Circuit Pro** | `02_PLATFORMS/pro/` | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
+| **Circuit Labs** | `02_PLATFORMS/labs/` | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
 
 **Vault index:** [[INDEX#Platforms · المنصات]] · [[02_PLATFORMS/PLATFORMS_INDEX]] · **Module registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
 
 ---
 
-## Circuit Rack · سيركيت راك
+## Circuit Rack | سيركيت راك
 
-> **Sovereign commerce island · جزيرة التجارة السيادية** · Primary revenue engine · **Vault:** `02_PLATFORMS/rack/`
+> **Sovereign commerce island** · Primary revenue engine · **Vault:** `02_PLATFORMS/rack/`
 
-**→ Platform MOC (authoritative island map):** [[02_PLATFORMS/rack/README]] — Vision · Features · Stack · Isolation · Relations · Bible quick links  
-**Supporting:** [[02_PLATFORMS/rack/OVERVIEW]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
-
----
-
-### Vision & Mission · الرؤية والمهمة
-
-**EN — Vision** — Trustworthy, searchable industrial commerce (regulated marketplace). **Mission** — Product/commerce SSOT; buy·sell·guide; Boost, Bidding, Secondary Market, Hidden Offers; backend-only core auth/wallet.
-
-**AR — الرؤية** — تجارة صناعية موثوقة وقابلة للبحث. **المهمة** — SSOT للكتالوج والطلبات والسوق؛ تكامل خلفي مع النواة المشتركة فقط.
-
-*Full bilingual:* [[02_PLATFORMS/rack/README#Vision & Mission · الرؤية والمهمة]]
+**→ Platform MOC:** [[02_PLATFORMS/rack/README]] · **Supporting:** [[02_PLATFORMS/rack/OVERVIEW]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
 
 ---
 
-### Features · الميزات
+### Vision & Mission | الرؤية والمهمة
 
-**EN** — Core (R-C*): catalog, commerce, search, orders · Growth: Boost, Bidding, Secondary Market, Hidden Offers · [[02_PLATFORMS/rack/FEATURES_MODULES]]
+**EN:** Trustworthy, searchable industrial commerce as a regulated marketplace — not generic classifieds. Rack owns product and commerce SSOT; operates buy·sell·guide; Boost, Bidding, Secondary Market, Hidden Offers; shared identity and wallet backend only.
 
-**AR** — أساسي: كتالوج وتجارة وبحث · نمو: Boost، مزايدة، سوق ثانوي، عروض مخفية · [[02_PLATFORMS/rack/README#Key Features · الميزات الرئيسية]]
+**AR:** تجارة صناعية موثوقة وقابلة للبحث كسوق منضبط — وليس إعلانات عشوائية. راك يملك SSOT المنتجات والتجارة؛ يشغّل شراء·بيع·دليل؛ Boost والمزايدة والسوق الثانوي والعروض المخفية؛ الهوية والمحفظة من النواة خلفياً فقط.
 
-**Growth (R-G*)** — Boost · Bidding · Secondary Market · Hidden Offers · seller reviews · Rack notifications
-
-**Power (R-P*)** — Wholesale buyer RBAC · analytics · bundles · ERP API (gated)
-
-**Ecosystem modules used** — M-001 Identity · M-002 Catalog SSOT (Rack owner) · M-003 Search · M-004 Wallet (`platform_source=rack`) · M-005 linking (read Pro/Labs IDs)
-
-Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]]
+*Full:* [[02_PLATFORMS/rack/README#Vision & Mission | الرؤية والمهمة]]
 
 ---
 
-### Stack · التقنية
+### Features | الميزات
+
+**EN:** Core (R-C*): catalog, commerce, search, orders. Growth (R-G*): Boost, Bidding, Secondary Market, Hidden Offers, seller reviews, notifications. Power (R-P*): wholesale RBAC, analytics, bundles, ERP API (gated). Modules M-001–M-005; catalog SSOT owned by Rack.
+
+**AR:** أساسي (R-C*): كتالوج وتجارة وبحث وطلبات. نمو (R-G*): Boost ومزايدة وسوق ثانوي وعروض مخفية وتقييمات وإشعارات. قوة (R-P*): صلاحيات جملة وتحليلات وحزم وERP (مقيد). وحدات M-001–M-005؛ SSOT الكتالوج لراك.
+
+Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] · [[02_PLATFORMS/rack/README#Key Features | الميزات الرئيسية]]
+
+---
+
+### Stack | التقنية
 
 | Layer | Rack stack |
 |-------|------------|
@@ -257,28 +233,23 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]]
 | **Deploy** | `rack.*` subdomain · CDN/edge · independent CI |
 | **i18n** | AR/EN/ZH plumbing from core; **copy owned by Rack** |
 
-Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]] · **AR:** [[02_PLATFORMS/rack/README#Technical Stack · التقنية]]
+**EN:** Next.js on `platforms/rack/app`, Node.js commerce services, PostgreSQL schema `rack`, independent `rack.*` deploy. Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]] · [[02_PLATFORMS/rack/README#Technical Stack | التقنية]]
+
+**AR:** Next.js على `platforms/rack/app`، خدمات تجارة Node.js، مخطط PostgreSQL `rack`، نشر مستقل على `rack.*`. التفصيل: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]] · [[02_PLATFORMS/rack/README#Technical Stack | التقنية]]
 
 ---
 
-### Isolation · العزل
+### Isolation | العزل
 
-**EN** — 1. No sibling UI · 2. No cross-schema reads · 3. Wallet tagged `rack` · 4. Independent deploy · 5. Rack-only legal · 6. Product SSOT in Rack
+**EN:** No sibling UI on Rack routes; no cross-schema reads of `pro`/`labs`; wallet ledger in core with `platform_source=rack`; independent deploy and legal scope; product SSOT only in Rack DB.
 
-**AR** — 1. ممنوع واجهات الأخوة · 2. ممنوع مخططات مشتركة · 3. محفظة بوسم راك · 4. نشر مستقل · 5. قانون راك فقط · 6. SSOT المنتج في راك
+**AR:** لا واجهات أخوة على مسارات راك؛ لا قراءة مخاطات `pro`/`labs`؛ سجل المحفظة في النواة بوسم `platform_source=rack`؛ نشر وقانون مستقلان؛ SSOT المنتج في قاعدة راك فقط.
 
-1. **UI** — No Pro profile or Labs editor/chrome on Rack routes.
-2. **Data** — No cross-schema reads of `pro` or `labs` tables.
-3. **Wallet** — Ledger in core; commerce rules in Rack; tag `platform_source=rack`.
-4. **Deploy** — Rack releases independent of Pro/Labs uptime.
-5. **Legal** — Rack terms/pricing never bundled with siblings.
-6. **SSOT** — Product truth only in Rack DB.
-
-Full rules: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
+Full: [[02_PLATFORMS/rack/ISOLATION]] · [[02_PLATFORMS/rack/README#Isolation Rules | قواعد العزل]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
 ---
 
-### Relations · العلاقات
+### Relations | العلاقات
 
 | To | Type | Allowed | Forbidden |
 |----|------|---------|-----------|
@@ -287,32 +258,37 @@ Full rules: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES
 | **Core** | SDK/API | Auth, wallet, theme base, i18n | Commerce logic in core |
 | **BENBENHUB** | Governance | Gates, ADRs | Public umbrella marketing |
 
-**EN flow:** Rack `product_id` → Labs API metadata → Rack link card only. **AR:** راك → API لابز → بطاقة في واجهة راك فقط. → [[02_PLATFORMS/rack/README#Relationship to Other Platforms · العلاقات]]
+**EN:** Rack `product_id` → Labs API metadata → link card on Rack UI only; Pro trust via `profile_id` API; no iframes. **AR:** `product_id` في راك → API لابز → بطاقة في واجهة راك فقط؛ ثقة Pro عبر `profile_id`؛ لا iframe.
+
+→ [[02_PLATFORMS/rack/README#Relationships to Other Platforms | العلاقات]]
 
 ---
 
-## Circuit Pro · سيركيت برو
+## Circuit Pro | سيركيت برو
 
-> **Sovereign professional island · جزيرة الهوية المهنية** · Identity & geo layer · **Vault:** `02_PLATFORMS/pro/`
+> **Sovereign professional island** · Identity & geo layer · **Vault:** `02_PLATFORMS/pro/`
 
-**→ Platform MOC:** [[02_PLATFORMS/pro/README]] — full bilingual island map + Bible links  
-**Supporting:** [[02_PLATFORMS/pro/OVERVIEW]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
-
----
-
-### Vision & Mission · الرؤية والمهمة
-
-**EN** — Trusted professional/geo layer; profile & verification SSOT; APIs for Rack/Labs; no commerce or CMS.
-
-**AR** — طبقة مهنية وجغرافية؛ SSOT للملف والتحقق؛ APIs فقط؛ بدون تجارة أو محتوى.
-
-*Full:* [[02_PLATFORMS/pro/README#Vision & Mission · الرؤية والمهمة]]
+**→ Platform MOC:** [[02_PLATFORMS/pro/README]] · **Supporting:** [[02_PLATFORMS/pro/OVERVIEW]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
 
 ---
 
-### Features · الميزات
+### Vision & Mission | الرؤية والمهمة
 
-**EN** — Profiles, verification, geo, reputation APIs · **AR** — ملفات، تحقق، جغرافيا، سمعة · [[02_PLATFORMS/pro/README#Key Features · الميزات الرئيسية]]
+**EN:** Trusted professional and geo layer; profile and verification SSOT; discovery and trust APIs for Rack and Labs; no marketplace checkout or editorial CMS.
+
+**AR:** طبقة مهنية وجغرافية موثوقة؛ SSOT للملف والتحقق؛ واجهات اكتشاف وثقة لـ Rack وLabs؛ بدون دفع سوق أو CMS تحريري.
+
+*Full:* [[02_PLATFORMS/pro/README#Vision & Mission | الرؤية والمهمة]]
+
+---
+
+### Features | الميزات
+
+**EN:** Profiles, verification, geo discovery, reputation APIs; growth: portfolios, referrals, indexing for Rack/Labs; power: trust scoring, regional agent (gated).
+
+**AR:** ملفات وتحقق واكتشاف جغرافي وواجهات سمعة؛ نمو: معارض وإحالات وفهرسة لـ Rack/Labs؛ قوة: درجات ثقة ووكيل إقليمي (مقيد).
+
+→ [[02_PLATFORMS/pro/README#Key Features | الميزات الرئيسية]]
 
 **Growth (P-G*)** — Geo-services · portfolios/credentials · referrals (backend) · indexing API for Rack/Labs
 
@@ -337,23 +313,23 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 | **Deploy** | `pro.*` · independent CI + boundary scan |
 | **i18n** | Pro-owned strings |
 
-Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Pro Runtime]]
+**EN:** Next.js `platforms/pro/app`, schema `pro` only, `pro.*` deploy. **AR:** Next.js على `platforms/pro/app`، مخطط `pro` فقط، نشر `pro.*`.
+
+[[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Pro Runtime]] · [[02_PLATFORMS/pro/README#Technical Stack | التقنية]]
 
 ---
 
-### Isolation
+### Isolation | العزل
 
-1. **UI** — No Rack catalog/cart/bidding/checkout on Pro.
-2. **Data** — No Rack `products`/`orders` or Labs `articles` as Pro SSOT.
-3. **API** — Profile/reputation exported only via versioned contracts.
-4. **Deploy** — Independent of Rack traffic spikes / Labs content releases.
-5. **Verification** — Canonical state in Pro; siblings read snapshots only.
+**EN:** No Rack commerce UI or Labs CMS on Pro; no sibling tables as Pro SSOT; versioned API export only; independent deploy; verification canonical in Pro.
 
-Full rules: [[02_PLATFORMS/pro/ISOLATION]]
+**AR:** لا تجارة راك ولا CMS Labs على Pro؛ لا جداول أخوة كـ SSOT؛ تصدير API بنسخة فقط؛ نشر مستقل؛ التحقق في Pro هو المرجع.
+
+[[02_PLATFORMS/pro/ISOLATION]] · [[02_PLATFORMS/pro/README#Isolation Rules | قواعد العزل]]
 
 ---
 
-### Relations
+### Relations | العلاقات
 
 | To | Type | Allowed | Forbidden |
 |----|------|---------|-----------|
@@ -362,34 +338,37 @@ Full rules: [[02_PLATFORMS/pro/ISOLATION]]
 | **Core** | SDK/API | Auth, optional wallet, theme, i18n | Profile SSOT in core tables |
 | **BENBENHUB** | Governance | Gates only | Public parent brand |
 
-**Relations · العلاقات:** [[02_PLATFORMS/pro/README#Relationship to Other Platforms · العلاقات]] — EN/AR tables.
+**EN:** `profile.verified` → Rack badge via API only. **AR:** `profile.verified` → شارة راك عبر API فقط.
 
-**Flow:** `profile.verified` → Rack badge via API · **AR:** تحقق → شارة راك عبر API فقط.
-
----
-
-## Circuit Labs · سيركيت لابز
-
-> **Sovereign knowledge island · جزيرة المعرفة** · Documentation & learning · **Vault:** `02_PLATFORMS/labs/`
-
-**→ Platform MOC:** [[02_PLATFORMS/labs/README]] — full bilingual island map + Bible links  
-**Supporting:** [[02_PLATFORMS/labs/OVERVIEW]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
+→ [[02_PLATFORMS/pro/README#Relationships to Other Platforms | العلاقات]]
 
 ---
 
-### Vision & Mission · الرؤية والمهمة
+## Circuit Labs | سيركيت لابز
 
-**EN** — Knowledge as operational power; content/learning SSOT; API refs to Rack/Pro IDs only.
+> **Sovereign knowledge island** · Documentation & learning · **Vault:** `02_PLATFORMS/labs/`
 
-**AR** — المعرفة قوة تشغيلية؛ SSOT المحتوى؛ مراجع API فقط لمعرّفات راك/برو.
-
-*Full:* [[02_PLATFORMS/labs/README#Vision & Mission · الرؤية والمهمة]]
+**→ Platform MOC:** [[02_PLATFORMS/labs/README]] · **Supporting:** [[02_PLATFORMS/labs/OVERVIEW]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
 
 ---
 
-### Features · الميزات
+### Vision & Mission | الرؤية والمهمة
 
-**EN** — Publishing, KB, learning paths, moderation · **AR** — نشر، قواعد معرفة، مسارات، إشراف · [[02_PLATFORMS/labs/README#Key Features · الميزات الرئيسية]]
+**EN:** Knowledge as operational power; content and learning SSOT; publish under Labs legal scope; reference Rack `product_id` and Pro `profile_id` via API IDs only.
+
+**AR:** المعرفة قوة تشغيلية؛ SSOT المحتوى والتعلم؛ النشر ضمن قانون Labs؛ الإشارة إلى `product_id` و`profile_id` عبر معرّفات API فقط.
+
+*Full:* [[02_PLATFORMS/labs/README#Vision & Mission | الرؤية والمهمة]]
+
+---
+
+### Features | الميزات
+
+**EN:** Publishing, knowledge bases, learning paths, moderation; growth: cross-ref APIs, versioning; power: paid courses (gated).
+
+**AR:** نشر وقواعد معرفة ومسارات تعلم وإشراف؛ نمو: واجهات مرجعية وإصدارات؛ قوة: دورات مدفوعة (مقيدة).
+
+→ [[02_PLATFORMS/labs/README#Key Features | الميزات الرئيسية]]
 
 **Growth (L-G*)** — Learning paths · support-agent workflows · cross-ref APIs · versioning/lifecycle
 
@@ -414,23 +393,23 @@ Registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
 | **Deploy** | `labs.*` · independent CI |
 | **i18n** | Labs-owned editorial content |
 
-Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Labs Runtime]]
+**EN:** Next.js `platforms/labs/app`, schema `labs`, `labs.*` deploy. **AR:** Next.js على `platforms/labs/app`، مخطط `labs`، نشر `labs.*`.
+
+[[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Labs Runtime]] · [[02_PLATFORMS/labs/README#Technical Stack | التقنية]]
 
 ---
 
-### Isolation
+### Isolation | العزل
 
-1. **UI** — No Rack commerce/bidding/checkout; no Pro profile editor on Labs.
-2. **Data** — Not SSOT for price, inventory, or verification status.
-3. **Refs** — Rack/Pro entities by stable ID via API metadata — no iframes/shared routes.
-4. **Deploy** — Content releases independent of Rack marketplace cycles.
-5. **Content** — Article/course bodies stay in Labs schema only.
+**EN:** No Rack commerce or Pro profile editor on Labs; not SSOT for price, inventory, or verification; API refs only, no iframes; independent content deploy; bodies in `labs` schema only.
 
-Full rules: [[02_PLATFORMS/labs/ISOLATION]]
+**AR:** لا تجارة راك ولا محرر Pro على Labs؛ ليس SSOT للسعر أو المخزون أو التحقق؛ مراجع API فقط بلا iframe؛ نشر محتوى مستقل؛ النصوص في مخطط `labs` فقط.
+
+[[02_PLATFORMS/labs/ISOLATION]] · [[02_PLATFORMS/labs/README#Isolation Rules | قواعد العزل]]
 
 ---
 
-### Relations
+### Relations | العلاقات
 
 | To | Type | Allowed | Forbidden |
 |----|------|---------|-----------|
@@ -439,19 +418,21 @@ Full rules: [[02_PLATFORMS/labs/ISOLATION]]
 | **Core** | SDK/API | Auth, theme, i18n, wallet for paid courses | Content SSOT in core |
 | **BENBENHUB** | Governance | Gates only | Cross-brand public hub |
 
-**Relations · العلاقات:** [[02_PLATFORMS/labs/README#Relationship to Other Platforms · العلاقات]] — EN/AR.
+**EN:** Labs guide → `product_id` → Rack link card only. **AR:** دليل Labs → `product_id` → بطاقة راك فقط.
 
-**Flow:** Labs guide → `product_id` → Rack card · **AR:** دليل → معرّف منتج → بطاقة راك فقط.
+→ [[02_PLATFORMS/labs/README#Relationships to Other Platforms | العلاقات]]
 
 ---
 
-# Part III — Integration & Technology · الجزء الثالث — التكامل والتقنية
+# Part III — Integration & Technology | الجزء الثالث — التكامل والتقنية
 
-## Platform Relationships & Backend Integration Rules · العلاقات وقواعد التكامل الخلفي
+## Platform Relationships & Backend Integration Rules | العلاقات وقواعد التكامل الخلفي
 
-### Relationship Model
+### Relationship Model | نموذج العلاقات
 
-Platforms are **peers under a hidden parent**, not modules inside one app. Relationships are **contractual and directional**, never UI-embedded.
+**EN:** Platforms are **peers under a hidden parent**, not modules inside one consumer app. Relationships are **contractual and directional**, never UI-embedded.
+
+**AR:** المنصات **أقران تحت أب مخفي**، وليست وحدات داخل تطبيق استهلاكي واحد. العلاقات **تعاقدية واتجاهية**، ولا تُضمَّن في الواجهة أبداً.
 
 ```
                     ┌─────────────────┐
@@ -471,25 +452,23 @@ Platforms are **peers under a hidden parent**, not modules inside one app. Relat
                     (no shared public frontend)
 ```
 
-### Allowed Integration Patterns
+### Allowed Integration Patterns | أنماط التكامل المسموحة
 
-- **Identity handshake** — user logs in on one platform; core issues scoped token; target platform creates/loads platform identity
-- **Wallet events** — financial movements tagged with `platform_source`
-- **Reference linking** — stable IDs (product ID, profile ID, article ID) across APIs
-- **Event bus (optional)** — catalog.updated, profile.verified, article.published — consumers subscribe per contract
-- **SSOT boundaries** — product SSOT lives in Rack; profile SSOT in Pro; content SSOT in Labs; core holds user/wallet/governance only
+**EN:** Identity handshake (scoped token from core); wallet events tagged `platform_source`; reference linking via stable IDs (`product_id`, `profile_id`, `article_id`); optional event bus (`catalog.updated`, `profile.verified`, `article.published`); SSOT boundaries — product in Rack, profile in Pro, content in Labs, core holds user/wallet/governance only.
 
-### Forbidden Integration Patterns
+**AR:** مصافحة هوية (رمز نطاق من النواة)؛ أحداث محفظة بوسم `platform_source`؛ ربط مرجعي بمعرّفات ثابتة؛ حافلة أحداث اختيارية؛ حدود SSOT — المنتج في راك، الملف في Pro، المحتوى في Labs، النواة للمستخدم/المحفظة/الحوكمة فقط.
 
-- Shared consumer shell or cross-brand navigation bar
-- Cross-platform iframes or embedded UIs
-- Direct cross-schema SQL joins in application code
-- Shared deployment unit that couples release fate
-- Public marketing of BENBENHUB as umbrella brand
+### Forbidden Integration Patterns | أنماط ممنوعة
 
-### Contract Requirements
+**EN:** Shared consumer shell; cross-brand nav; cross-platform iframes; cross-schema SQL joins in app code; coupled deploy units; public BENBENHUB umbrella marketing.
 
-Every cross-platform capability requires: documented API contract · versioning · ADR if architectural · Scope Boundary Gate if new data flows · Truth Gate for operational runbooks.
+**AR:** قشرة استهلاكية مشتركة؛ تنقل مشترك بين العلامات؛ iframes عابرة؛ joins SQL بين المخططات؛ نشر مقترن؛ تسويق مظلة BENBENHUB علني.
+
+### Contract Requirements | متطلبات العقد
+
+**EN:** Every cross-platform capability needs documented API contract, versioning, ADR if architectural, Scope Boundary Gate for new data flows, Truth Gate for runbooks.
+
+**AR:** كل قدرة عابرة للمنصات تحتاج عقد API موثّقاً ونسخة وADR إن لزم وبوابة النطاق لتدفقات بيانات جديدة وبوابة الحقيقة لكتيبات التشغيل.
 
 **Expanded:** [[03_SHARED_CORE/PLATFORM_INTEGRATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
 
@@ -758,18 +737,16 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **2.7 · 2026-06-05** — Final polish: root README, INDEX v3, HOME pin, bookmarks
 - **2.8 · 2026-06-05** — Master Edition: bilingual bible headings, README & INDEX v3.1
 - **2.9 · 2026-06-05** — Maestro P3: detailed Platform MOCs (rack/pro/labs README); INDEX v3.2; PLATFORMS_INDEX
+- **3.0 · 2026-06-05** — Bilingual Completion Phase: **EN:** / **AR:** blocks across constitution and platform MOCs
 
 ---
 
-## Status · الحالة
+## Status | الحالة
 
-**PROJECT_BIBLE.md — Complete Master SSOT · دستور مكتمل — مصدر الحقيقة.**
+**EN:** **PROJECT_BIBLE.md** — Complete Master SSOT v3.0 with full **EN/AR** blocks on vision, governance, platforms, isolation, and integration. Platform MOCs are bilingual. Vault ready for daily Arabic-first and English architecture work.
 
-**BENBENHUB-CORE — Complete Master Edition · Ready for Daily Use.**  
-**خزنة BENBENHUB-CORE — النسخة الرئيسية المكتملة · جاهزة للاستخدام اليومي.**
+**AR:** **PROJECT_BIBLE.md** — دستور SSOT مكتمل v3.0 بكتل **EN/AR** كاملة للرؤية والحوكمة والمنصات والعزل والتكامل. خرائط المنصات ثنائية اللغة. الخزنة جاهزة للعمل اليومي عربي أولاً وإنجليزي معمارياً.
 
-Daily starters: [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · Vault guide: [[README]]
+Daily starters: [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]]
 
-Constitution · bilingual platform READMEs · phrase bank · governance · clear island separation.
-
-Documentation Before Expansion · Decisions Must Be Recorded.
+Documentation Before Expansion · Decisions Must Be Recorded · التوثيق قبل التوسع · تسجيل القرارات إلزامي.

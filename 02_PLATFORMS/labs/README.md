@@ -14,7 +14,7 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 
 # Circuit Labs · سيركيت لابز
 
-**Platform MOC · خريطة المنصة** — Sovereign knowledge island · جزيرة المعرفة
+**Platform MOC · خريطة المنصة**
 
 | | EN | AR |
 |---|----|-----|
@@ -23,140 +23,85 @@ aliases: [Circuit Labs MOC, Labs Platform MOC, سيركيت لابز]
 | **Runtime** | `labs.*` · schema `labs` · green theme | نطاق لابز · مخطط معزول · أخضر |
 | **SSOT owns** | Articles · courses · KB · learning paths | مقالات · دورات · قواعد معرفة · مسارات |
 
-**Not a marketplace. Not identity SSOT.** · **ليس سوقاً. ليس SSOT للهوية.**
+**EN:** Sovereign knowledge island — operational documentation and learning, not marketplace or identity SSOT.  
+**AR:** جزيرة معرفة سيادية — توثيق وتعليم تشغيلي، وليست سوقاً ولا مصدر حقيقة للهوية.
 
 ---
 
-## Navigate this island · تنقل داخل الجزيرة
+## Navigate this island | تنقل داخل الجزيرة
 
 | Doc | EN | AR |
 |-----|----|-----|
 | **This MOC** | Start here | ابدأ هنا |
 | [[02_PLATFORMS/labs/OVERVIEW]] | Short overview | نظرة مختصرة |
-| [[02_PLATFORMS/labs/FEATURES_MODULES]] | L-C* · L-G* · L-P* modules | وحدات الميزات |
+| [[02_PLATFORMS/labs/FEATURES_MODULES]] | L-C* · L-G* · L-P* | وحدات الميزات |
 | [[02_PLATFORMS/labs/ISOLATION]] | Full isolation checklist | قائمة العزل |
-| [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]] | Global registry | السجل العام |
 
-**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · **Home:** [[00_ROOT_DASHBOARD/HOME]] · **Index:** [[INDEX]]
-
----
-
-## PROJECT_BIBLE · الدستور (quick links)
-
-| Topic | EN | AR | Section |
-|-------|----|-----|---------|
-| Platforms overview | Three islands index | فهرس الجزر | [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]] |
-| **Labs (canonical)** | Constitution summary | ملخص الدستور | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] |
-| Vision & mission | Full EN/AR in Bible | رؤية ومهمة | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Mission · الرؤية والمهمة]] |
-| Features | L-C / L-G / L-P tiers | الميزات | [[01_CONSTITUTION/PROJECT_BIBLE#Features · الميزات]] |
-| Stack | Runtime table | التقنية | [[01_CONSTITUTION/PROJECT_BIBLE#Stack]] |
-| Isolation | Five+ rules | العزل | [[01_CONSTITUTION/PROJECT_BIBLE#Isolation]] |
-| Relations | Peer matrix | العلاقات | [[01_CONSTITUTION/PROJECT_BIBLE#Relations]] |
-| Integration law | Backend-only contracts | قانون التكامل | [[01_CONSTITUTION/PROJECT_BIBLE#Platform Relationships & Backend Integration Rules · العلاقات وقواعد التكامل الخلفي]] |
-| Feature modules | Labs module list in Bible | وحدات لابز | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs — Feature Modules]] |
-| Gates | Truth · Immutability · Scope | البوابات | [[01_CONSTITUTION/PROJECT_BIBLE#Governance Gates · بوابات الحوكمة]] |
+**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[INDEX]]
 
 ---
 
-## Vision & Mission · الرؤية والمهمة
+## PROJECT_BIBLE | الدستور (quick links)
 
-### English
-
-**Vision** — Industrial knowledge as **operational power** — documentation and learning that elevate manufacturing, not marketing noise.
-
-**Mission** — Own **content and learning SSOT** (`article_id`, courses, knowledge bases). Publish and moderate under **Labs legal scope**. Reference Rack `product_id` and Pro `profile_id` via **stable API IDs only** — never embed sibling UI.
-
-**Audience** — Writers, SMEs, learners; platforms consuming content APIs.
-
-### العربية
-
-**الرؤية** — المعرفة الصناعية **قوة تشغيلية** — توثيق وتعليم يرفع الصناعة، لا ضجيج تسويق.
-
-**المهمة** — امتلاك **SSOT** المحتوى والتعلم. النشر والإشراف ضمن **قانون Labs**. الإشارة إلى `product_id` و `profile_id` عبر **معرّفات API** فقط.
-
-**الجمهور** — كتّاب، خبراء، متعلمون؛ منصات تستهلك APIs محتوى.
+| Topic | Link |
+|-------|------|
+| Labs section | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] |
+| Vision & mission | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Mission \| الرؤية والمهمة]] |
+| Features | [[01_CONSTITUTION/PROJECT_BIBLE#Features \| الميزات]] |
+| Isolation | [[01_CONSTITUTION/PROJECT_BIBLE#Isolation \| العزل]] |
+| Gates | [[01_CONSTITUTION/PROJECT_BIBLE#Key Governance Gates \| بوابات الحوكمة]] |
 
 ---
 
-## Key Features · الميزات الرئيسية
+## Vision & Mission | الرؤية والمهمة
 
-### Content core · نواة المحتوى (L-C*)
+**EN:** **Vision** — Industrial knowledge as operational power: documentation and learning that elevate manufacturing, not marketing noise. **Mission** — Own content and learning SSOT (`article_id`, courses, knowledge bases). Publish and moderate under Labs legal scope. Reference Rack `product_id` and Pro `profile_id` via stable API IDs only — never embed sibling UI. **Audience** — Writers, SMEs, learners, and platforms consuming content APIs.
 
-| Feature | EN | AR |
-|---------|----|-----|
-| Publishing workflow | Draft → review → publish | سير تحرير |
-| Knowledge bases | Structured KB articles | قواعد معرفة |
-| Corpus search | Labs-owned content index | بحث في المحتوى |
-| Asset library | Media tied to `labs` schema | مكتبة أصول |
-
-### Community & growth · مجتمع ونمو (L-G*)
-
-| Feature | EN | AR |
-|---------|----|-----|
-| Moderation | Policy enforcement | إشراف |
-| Learning paths | Curated sequences | مسارات تعلم |
-| Cross-ref APIs | `product_id` · `profile_id` metadata | APIs مرجعية |
-| Versioning | Content lifecycle | دورة حياة المحتوى |
-
-### Power · قوة (L-P*)
-
-| Feature | EN | AR |
-|---------|----|-----|
-| Paid courses | Wallet gated · `platform_source=labs` | دورات مدفوعة |
-| Academy (future) | Gated roadmap item | أكاديمية (مستقبل) |
-| Partner content API | B2B syndication (gated) | API شركاء محتوى |
-
-**Detail:** [[02_PLATFORMS/labs/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Labs Modules]]
-
-**Phrases:** `L-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Roles:** `editor` · `support_agent`
+**AR:** **الرؤية** — المعرفة الصناعية قوة تشغيلية: توثيق وتعليم يرفع الصناعة بعيداً عن الضجيج التسويقي. **المهمة** — امتلاك مصدر الحقيقة للمحتوى والتعلم (`article_id`، دورات، قواعد معرفة)، والنشر والإشراف ضمن نطاق Labs القانوني، مع الإشارة إلى `product_id` و`profile_id` عبر معرّفات API ثابتة فقط دون تضمين واجهات المنصات الأخرى. **الجمهور** — كتّاب وخبراء ومتعلمون ومنصات تستهلك واجهات المحتوى.
 
 ---
 
-## Technical Stack · التقنية
+## Key Features | الميزات الرئيسية
 
-### English
+**EN:** **Core (L-C*)** — publishing workflow, knowledge bases, corpus search, asset library, moderation. **Growth (L-G*)** — learning paths, support-agent workflows, cross-ref APIs (`product_id`, `profile_id`), content versioning. **Power (L-P*)** — paid courses via wallet (gated, `platform_source=labs`), future Academy, partner content API. Modules: M-001 Identity, M-003 Search (Labs index), M-004 Wallet (courses), M-005 linking. Roles: `editor`, `support_agent`.
 
-| Layer | Stack | Notes |
-|-------|--------|-------|
-| **Languages** | TypeScript, SQL | Platform slice |
-| **Frontend** | Next.js · `platforms/labs/app` | Green · reading-first UX |
-| **Backend** | Node.js | Publishing, content, KB services |
-| **Database** | PostgreSQL · schema `labs` | Articles, courses, assets |
-| **Auth** | → [[03_SHARED_CORE/IDENTITY_SYSTEM]] | Editorial roles |
-| **Search** | Labs-owned corpus index | Not Rack product index |
-| **Wallet** | Paid courses (gated) | `platform_source=labs` |
-| **Deploy** | `labs.*` · **independent CI** | Content releases decoupled from Rack |
-| **i18n** | Labs-owned editorial strings | — |
+**AR:** **الأساسي (L-C*)** — سير نشر، قواعد معرفة، بحث في المحتوى، مكتبة أصول، إشراف. **النمو (L-G*)** — مسارات تعلم، سير عمل وكلاء الدعم، واجهات مرجعية (`product_id`، `profile_id`)، وإصدارات المحتوى. **القوة (L-P*)** — دورات مدفوعة عبر المحفظة (مقيدة، `platform_source=labs`)، أكاديمية مستقبلية، وAPI شركاء محتوى. الوحدات: M-001 الهوية، M-003 البحث (فهرس Labs)، M-004 المحفظة (دورات)، M-005 الربط. الأدوار: `editor`، `support_agent`.
 
-### العربية
+| Tier | EN | AR |
+|------|----|-----|
+| L-C* | Publishing · KB · search · moderation | نشر · قواعد معرفة · بحث · إشراف |
+| L-G* | Learning paths · cross-ref APIs | مسارات · مراجع API |
+| L-P* | Paid courses · Academy (gated) | دورات مدفوعة · أكاديمية |
 
-| الطبقة | المكدس | ملاحظات |
-|--------|--------|---------|
-| **الواجهة** | Next.js · أخضر | تجربة قراءة |
-| **الخلفية** | Node.js | نشر ومحتوى |
-| **البيانات** | `labs` | نصوص المقالات/الدورات هنا فقط |
-| **النشر** | `labs.*` · CI مستقل | مستقل عن دورات راك |
-
-**Architecture:** [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Labs Runtime]] · **Bible:** [[01_CONSTITUTION/PROJECT_BIBLE#Stack]]
+**Detail:** [[02_PLATFORMS/labs/FEATURES_MODULES]] · **Phrases:** `L-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]]
 
 ---
 
-## Isolation Rules · قواعد العزل
+## Technical Stack | التقنية
 
-| # | EN | AR |
-|---|----|-----|
-| 1 | **UI** — No Rack commerce, bidding, or checkout on Labs | **واجهة** — لا تجارة راك على Labs |
-| 2 | **UI** — No Pro profile editor / geo UI on Labs | لا محرر Pro على Labs |
-| 3 | **Data** — Not SSOT for price, inventory, or verification | **بيانات** — ليس SSOT للسعر أو التحقق |
-| 4 | **Refs** — Rack/Pro via API metadata · **no iframes** | **مراجع** — API فقط · لا iframe |
-| 5 | **Deploy** — Content cadence independent of Rack marketplace | **نشر** — مستقل عن راك |
-| 6 | **Content** — Article/course bodies **only** in `labs` schema | **محتوى** — النص في labs فقط |
+**EN:** TypeScript and SQL. Frontend: Next.js at `platforms/labs/app`, green theme, reading-first UX. Backend: Node.js for publishing, content, and KB services. Database: PostgreSQL schema `labs` for articles, courses, and assets. Auth via [[03_SHARED_CORE/IDENTITY_SYSTEM]] with editorial roles. Labs-owned corpus search index. Deploy on `labs.*` with independent CI — content cadence decoupled from Rack marketplace. Wallet for paid courses when gated.
 
-**Full:** [[02_PLATFORMS/labs/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · **Gates:** [[04_GOVERNANCE/GOVERNANCE_GATES]]
+**AR:** TypeScript وSQL. الواجهة: Next.js في `platforms/labs/app` بثيم أخضر وتجربة قراءة. الخلفية: Node.js لخدمات النشر والمحتوى وقواعد المعرفة. قاعدة البيانات: مخطط PostgreSQL `labs` للمقالات والدورات والأصول. المصادقة عبر [[03_SHARED_CORE/IDENTITY_SYSTEM]] بأدوار تحريرية. فهرس بحث المحتوى مملوك لـ Labs. النشر على `labs.*` بـ CI مستقل — إيقاع المحتوى منفصل عن سوق راك. محفظة للدورات المدفوعة عند الموافقة.
+
+**Architecture:** [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Labs Runtime]]
 
 ---
 
-## Relationships to Other Platforms · العلاقات
+## Isolation Rules | قواعد العزل
+
+**EN:** (1) **UI** — No Rack commerce, bidding, or checkout on Labs; no Pro profile editor or geo UI. (2) **Data** — Not SSOT for price, inventory, or verification status. (3) **Refs** — Rack/Pro entities via API metadata only; no iframes or shared routes. (4) **Deploy** — Content releases independent of Rack marketplace cycles. (5) **Content** — Article and course bodies stay in `labs` schema only.
+
+**AR:** (1) **الواجهة** — ممنوع تجارة راك والمزايدة والدفع على Labs؛ ممنوع محرر ملف Pro أو واجهة جغرافية. (2) **البيانات** — ليس SSOT للسعر أو المخزون أو حالة التحقق. (3) **المراجع** — كيانات راك/Pro عبر بيانات API فقط؛ لا iframe ولا مسارات مشتركة. (4) **النشر** — إصدارات المحتوى مستقلة عن دورات سوق راك. (5) **المحتوى** — نصوص المقالات والدورات في مخطط `labs` فقط.
+
+**Full:** [[02_PLATFORMS/labs/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]]
+
+---
+
+## Relationships to Other Platforms | العلاقات
+
+**EN:** **Rack** — guides reference `product_id`; Rack reads summary API; forbidden: Labs hosting Rack checkout or CMS. **Pro** — playbooks link `profile_id`; forbidden: Labs storing verification SSOT. **Shared core** — auth, theme, i18n, wallet for courses; forbidden: content SSOT in core. **BENBENHUB** — gates only. **Flow:** Labs guide `{article_id, product_id}` → link card on Rack UI only.
+
+**AR:** **Rack** — الأدلة تربط `product_id`؛ راك يقرأ ملخص API؛ ممنوع: Labs تستضيف دفع راك أو CMS. **Pro** — أدلة تربط `profile_id`؛ ممنوع: Labs تخزن SSOT التحقق. **النواة** — هوية وثيم وترجمة ومحفظة للدورات؛ ممنوع: SSOT المحتوى في النواة. **BENBENHUB** — بوابات فقط. **التدفق:** دليل Labs `{article_id, product_id}` → بطاقة رابط في واجهة راك فقط.
 
 ```mermaid
 flowchart LR
@@ -164,57 +109,33 @@ flowchart LR
     LUI[Labs UI]
     LDB[(schema labs)]
   end
-  Rack[Rack product cards]
+  Rack[Rack cards]
   Pro[Pro playbooks]
   Core[Shared Core]
   LUI --> LDB
   LDB -.->|product_id| Rack
   LDB -.->|profile_id| Pro
-  LUI -.->|auth wallet courses| Core
+  LUI -.->|auth wallet| Core
 ```
-
-### Peer matrix · مصفوفة الأقران
-
-| Peer | Allowed | Forbidden |
-|------|---------|-----------|
-| **Rack** | Guides with `product_id`; Rack reads summary API | Labs hosting Rack checkout/CMS |
-| **Pro** | Playbooks link `profile_id` | Labs storing verification SSOT |
-| **Shared core** | Auth, theme, i18n, wallet (courses) | Content SSOT in core |
-| **BENBENHUB** | Gates, ADRs | Cross-brand public knowledge hub |
-
-### Integration flows · تدفقات
-
-| Flow | EN | AR |
-|------|----|-----|
-| **Product guides** | Labs `{article_id, product_id}` → Rack **link card** (Rack UI only) | دليل → بطاقة في راك فقط |
-| **Expert playbooks** | `profile_id` in content · Pro remains verification SSOT | أدلة خبراء · التحقق في Pro |
 
 **Siblings:** [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/pro/README]]
 
 ---
 
-## SSOT & data ownership · ملكية الحقيقة
+## SSOT & Data Ownership | ملكية الحقيقة
 
-| Domain | Owner | Others may |
-|--------|-------|------------|
-| Articles & courses | **Labs** | API summaries |
-| KB structure | **Labs** | — |
-| Product truth | Rack | Labs references `product_id` |
-| Verification | Pro | Labs references `profile_id` |
-| Pricing / orders | Rack | Labs never stores |
-| User auth | Shared core (gated) | — |
+**EN:** Labs owns articles, courses, KB structure, and editorial lifecycle. Rack owns product truth. Pro owns verification. Shared core holds auth when gated.
+
+**AR:** Labs يملك المقالات والدورات وهيكل قواعد المعرفة ودورة المحتوى. راك يملك حقيقة المنتج. Pro يملك التحقق. النواة تحتفظ بالمصادقة عند الموافقة.
 
 ---
 
-## Before you ship · قبل الشحن
+## Before You Ship | قبل الشحن
 
-| Check | EN | AR |
-|-------|----|-----|
-| Scope | Labs editorial & schema only | ضمن Labs فقط |
-| Gates | New Rack/Pro surface? [[04_GOVERNANCE/GOVERNANCE_GATES]] | واجهة جديدة؟ البوابات |
-| Copy | `L-*` phrases | جمل لابز |
-| Bible | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] aligned | توافق الدستور |
+**EN:** Stay within Labs editorial scope; gate new Rack/Pro surfaces; use `L-*` phrases; align [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] if law changes.
+
+**AR:** ابقَ ضمن نطاق Labs التحريري؛ مرّر البوابات لأي سطح جديد مع راك/Pro؛ استخدم جمل `L-*`؛ حدّث الدستور إن تغيّر القانون.
 
 ---
 
-*Maestro · Labs MOC · [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] · [[02_PLATFORMS/PLATFORMS_INDEX]]*
+*Maestro · Labs MOC · [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]]*

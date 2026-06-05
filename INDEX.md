@@ -66,7 +66,7 @@ PLATFORM MOC →  rack | pro | labs     خريطة المنصة
 |--------|--------------|-----|-------|
 | [[README]] | Vault guide | دليل الخزنة | ✅ |
 | [[00_ROOT_DASHBOARD/HOME]] | Daily center | لوحة يومية | ✅ |
-| [[01_CONSTITUTION/PROJECT_BIBLE]] | SSOT v2.9 | الدستور | ✅ |
+| [[01_CONSTITUTION/PROJECT_BIBLE]] | SSOT v3.0 bilingual | الدستور ثنائي | ✅ |
 | [[02_PLATFORMS/PLATFORMS_INDEX]] | Platforms | المنصات | ✅ |
 | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] | Shared core | النواة | ✅ |
 | [[04_GOVERNANCE/GOVERNANCE_GATES]] | Governance | الحوكمة | ✅ |
@@ -98,7 +98,7 @@ Each MOC includes: **PROJECT_BIBLE quick links** · in-island navigation · SSOT
 | **Overview** | [[02_PLATFORMS/rack/OVERVIEW]] | [[02_PLATFORMS/pro/OVERVIEW]] | [[02_PLATFORMS/labs/OVERVIEW]] |
 | **Features** | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] |
 | **Isolation** | [[02_PLATFORMS/rack/ISOLATION]] | [[02_PLATFORMS/pro/ISOLATION]] | [[02_PLATFORMS/labs/ISOLATION]] |
-| **Bible section** | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] |
+| **Bible section** | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack \| سيركيت راك]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro \| سيركيت برو]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs \| سيركيت لابز]] |
 
 ---
 
