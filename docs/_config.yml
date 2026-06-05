@@ -1,0 +1,26 @@
+# GitHub Pages (Jekyll) — https://mohabaziz2020.github.io/benben/
+title: BENBENHUB-CORE
+tagline: Architecture SSOT Vault
+description: >-
+  Bilingual Obsidian architecture SSOT for BENBENHUB — hidden parent,
+  three sovereign platforms, backend-only integration, governance gates.
+lang: en
+locale: en_US
+baseurl: /benben
+url: https://mohabaziz2020.github.io
+repository: Mohabaziz2020/benben
+github:
+  is_project_page: true
+  repository_url: https://github.com/Mohabaziz2020/benben
+
+theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+show_downloads: true
