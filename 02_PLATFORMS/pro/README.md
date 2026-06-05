@@ -1,19 +1,60 @@
 ---
-type: platform
+type: moc
+role: platform-moc
 platform: pro
 status: active
 tier: services-professionals
+theme: purple
+domain: pro.*
 updated: 2026-06-05
 author: Maestro
-tags: [pro, identity, geo, readme, bilingual]
+tags: [pro, identity, geo, moc, bilingual]
+aliases: [Circuit Pro MOC, Pro Platform MOC, سيركيت برو]
 ---
 
 # Circuit Pro · سيركيت برو
 
-**EN** — Professional & geo island · `02_PLATFORMS/pro/` · `pro.*` · Purple theme  
-**AR** — جزيرة الهوية المهنية والخدمات الجغرافية
+**Platform MOC · خريطة المنصة** — Sovereign professional & geo island · جزيرة الهوية والجغرافيا
 
-**Links:** [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
+| | EN | AR |
+|---|----|-----|
+| **Tier** | Services & professionals | خدمات ومهنيون |
+| **Vault** | `02_PLATFORMS/pro/` | مجلد برو |
+| **Runtime** | `pro.*` · schema `pro` · purple theme | نطاق برو · مخطط معزول · بنفسجي |
+| **SSOT owns** | Profile · verification · reputation · geo discovery | ملف · تحقق · سمعة · اكتشاف جغرافي |
+
+**Not commerce. Not content publishing.** · **ليس تجارة. ليس نشر محتوى.**
+
+---
+
+## Navigate this island · تنقل داخل الجزيرة
+
+| Doc | EN | AR |
+|-----|----|-----|
+| **This MOC** | Start here | ابدأ هنا |
+| [[02_PLATFORMS/pro/OVERVIEW]] | Short overview | نظرة مختصرة |
+| [[02_PLATFORMS/pro/FEATURES_MODULES]] | P-C* · P-G* · P-P* modules | وحدات الميزات |
+| [[02_PLATFORMS/pro/ISOLATION]] | Full isolation checklist | قائمة العزل |
+| [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]] | Global registry | السجل العام |
+
+**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · **Home:** [[00_ROOT_DASHBOARD/HOME]] · **Index:** [[INDEX]]
+
+---
+
+## PROJECT_BIBLE · الدستور (quick links)
+
+| Topic | EN | AR | Section |
+|-------|----|-----|---------|
+| Platforms overview | Three islands index | فهرس الجزر | [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]] |
+| **Pro (canonical)** | Constitution summary | ملخص الدستور | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] |
+| Vision & mission | Full EN/AR in Bible | رؤية ومهمة | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Mission · الرؤية والمهمة]] |
+| Features | P-C / P-G / P-P tiers | الميزات | [[01_CONSTITUTION/PROJECT_BIBLE#Features · الميزات]] |
+| Stack | Runtime table | التقنية | [[01_CONSTITUTION/PROJECT_BIBLE#Stack]] |
+| Isolation | Five+ rules | العزل | [[01_CONSTITUTION/PROJECT_BIBLE#Isolation]] |
+| Relations | Peer matrix | العلاقات | [[01_CONSTITUTION/PROJECT_BIBLE#Relations]] |
+| Integration law | Backend-only contracts | قانون التكامل | [[01_CONSTITUTION/PROJECT_BIBLE#Platform Relationships & Backend Integration Rules · العلاقات وقواعد التكامل الخلفي]] |
+| Feature modules | Pro module list in Bible | وحدات برو | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro — Feature Modules]] |
+| Gates | Truth · Immutability · Scope | البوابات | [[01_CONSTITUTION/PROJECT_BIBLE#Governance Gates · بوابات الحوكمة]] |
 
 ---
 
@@ -21,41 +62,53 @@ tags: [pro, identity, geo, readme, bilingual]
 
 ### English
 
-**Vision** — Trusted professional and geo-service layer for industrial ecosystems — without owning commerce or content publishing.
+**Vision** — A trusted **professional and geo-service layer** for industrial ecosystems — without owning commerce or editorial content.
 
-**Mission** — Own **profile, verification, and reputation SSOT**. Deliver discovery and trust APIs for Rack and Labs. Never host marketplace checkout or editorial CMS.
+**Mission** — Own **profile, verification, and reputation SSOT**. Deliver discovery and trust APIs for Rack and Labs. **Never** host marketplace checkout, product catalog, or Labs CMS.
 
-**Audience** — Engineers, consultants, field services; orgs seeking verified regional expertise.
+**Audience** — Engineers, consultants, field services; organizations seeking verified regional expertise.
 
 ### العربية
 
-**الرؤية** — طبقة مهنية وجغرافية موثوقة للمنظومة الصناعية — دون امتلاك تجارة أو نشر محتوى.
+**الرؤية** — طبقة **مهنية وجغرافية موثوقة** للمنظومة الصناعية — دون امتلاك تجارة أو نشر تحريري.
 
-**المهمة** — امتلاك **SSOT** للملف المهني والتحقق والسمعة. تقديم APIs اكتشاف وثقة لـ Rack و Labs. ممنوع استضافة دفع السوق أو CMS تحريري.
+**المهمة** — امتلاك **SSOT** للملف المهني والتحقق والسمعة. APIs اكتشاف وثقة لـ Rack و Labs. **ممنوع** استضافة دفع السوق أو كتالوج راك أو CMS لابز.
 
-**الجمهور** — مهندسون، استشاريون، خدمات ميدانية؛ جهات تبحث خبرة موثقة حسب المنطقة.
+**الجمهور** — مهندسون، استشاريون، خدمات ميدانية؛ جهات تبحث خبرة إقليمية موثقة.
 
 ---
 
 ## Key Features · الميزات الرئيسية
 
-### English
+### Identity core · نواة الهوية (P-C*)
 
-**Identity** — Profiles · verification · reputation · discovery search
+| Feature | EN | AR |
+|---------|----|-----|
+| Professional profiles | Canonical profile records | ملفات مهنية |
+| Verification | `verified_pro` workflow | تحقق المحترف |
+| Reputation | Reviews & trust signals (Pro-owned) | سمعة وثقة |
+| Discovery search | Pro/geo index | بحث اكتشاف |
 
-**Geo** — Regional discovery · service areas · referrals (backend)
+### Geo & growth · جغرافيا ونمو (P-G*)
 
-**APIs** — Trust endpoints for Rack listings · playbook links for Labs
+| Feature | EN | AR |
+|---------|----|-----|
+| Regional discovery | Service areas, maps (backend) | اكتشاف إقليمي |
+| Portfolios | Credentials showcase | معرض خبرات |
+| Referrals | Backend referral graph (gated) | إحالات |
+| Indexing API | Listing refs for Rack/Labs | فهرسة للأخوة |
 
-**Modules** — P-C* · P-G* · P-P* → [[02_PLATFORMS/pro/FEATURES_MODULES]]
+### Power · قوة (P-P*)
 
-### العربية
+| Feature | EN | AR |
+|---------|----|-----|
+| Trust scoring | Advanced signals (gated) | درجات ثقة |
+| Regional agent | `regional_agent` role | وكيل إقليمي |
+| Partner API | B2B integrations (gated) | API شركاء |
 
-**الهوية** — ملفات · تحقق · سمعة · بحث اكتشاف
+**Detail:** [[02_PLATFORMS/pro/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Pro Modules]]
 
-**جغرافي** — اكتشاف إقليمي · نطاق خدمة · إحالات (خلفي)
-
-**واجهات** — ثقة للقوائم في راك · ربط أدلة في Labs
+**Phrases:** `P-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Roles:** `verified_pro` · `regional_agent`
 
 ---
 
@@ -63,72 +116,105 @@ tags: [pro, identity, geo, readme, bilingual]
 
 ### English
 
-| Layer | Stack |
-|-------|--------|
-| Frontend | Next.js · `platforms/pro/app` · purple · discovery UX |
-| Backend | Node.js — profile, verification, geo |
-| Database | PostgreSQL · schema `pro` only |
-| Auth | [[03_SHARED_CORE/IDENTITY_SYSTEM]] · `verified_pro`, `regional_agent` |
-| Deploy | `pro.*` · independent CI + boundary scan |
+| Layer | Stack | Notes |
+|-------|--------|-------|
+| **Languages** | TypeScript, SQL | Platform slice |
+| **Frontend** | Next.js · `platforms/pro/app` | Purple · discovery-first UX |
+| **Backend** | Node.js | Profile, verification, geo services |
+| **Database** | PostgreSQL · schema `pro` **only** | No Rack/Labs tables as SSOT |
+| **Auth** | → [[03_SHARED_CORE/IDENTITY_SYSTEM]] | Platform roles in JWT |
+| **Search** | Pro-owned professional/geo index | Separate from Rack catalog |
+| **Wallet** | Optional paid services (gated) | `platform_source=pro` when enabled |
+| **Deploy** | `pro.*` · **independent CI** + boundary scan | Isolated failure domain |
+| **i18n** | Pro-owned strings | Editorial in Pro scope |
 
 ### العربية
 
-| الطبقة | المكدس |
-|--------|--------|
-| الواجهة | Next.js · بنفسجي · UX اكتشاف |
-| الخلفية | Node.js — ملف، تحقق، جغرافيا |
-| البيانات | PostgreSQL · `pro` فقط |
-| الأدوار | محترف موثق · وكيل إقليمي |
-| النشر | `pro.*` · CI مستقل + فحص حدود |
+| الطبقة | المكدس | ملاحظات |
+|--------|--------|---------|
+| **الواجهة** | Next.js · بنفسجي | UX اكتشاف |
+| **الخلفية** | Node.js | ملف · تحقق · جغرافيا |
+| **البيانات** | `pro` فقط | لا SSOT من راك/لابز |
+| **النشر** | `pro.*` · CI + فحص حدود | عزل عن راك |
 
-Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Pro Runtime]]
+**Architecture:** [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Pro Runtime]] · **Bible:** [[01_CONSTITUTION/PROJECT_BIBLE#Stack]]
 
 ---
 
 ## Isolation Rules · قواعد العزل
 
-### English
+| # | EN | AR |
+|---|----|-----|
+| 1 | **UI** — No Rack catalog, cart, bidding, or checkout on Pro | **واجهة** — لا تجارة راك على Pro |
+| 2 | **UI** — No Labs editor/CMS chrome on Pro | لا محرر Labs على Pro |
+| 3 | **Data** — No Rack `products`/`orders` or Labs `articles` as Pro SSOT | **بيانات** — لا جداول الأخوة كـ SSOT |
+| 4 | **API** — Export profile/reputation via **versioned contracts** only | **API** — عقود نسخة فقط |
+| 5 | **Deploy** — Independent of Rack traffic / Labs content cycles | **نشر** — مستقل |
+| 6 | **Verification** — Canonical in Pro; siblings read **snapshots** only | **تحقق** — الحقيقة في Pro |
 
-1. No Rack catalog, cart, bidding, or checkout on Pro  
-2. No Labs editor/CMS on Pro  
-3. No Rack/Labs tables as Pro SSOT  
-4. Export profile/reputation via versioned API only  
-5. Independent deploy vs Rack/Labs cycles  
-6. Verification canonical in Pro — siblings read snapshots  
-
-### العربية
-
-1. ممنوع كتالوج راك وسلة ودفع على Pro  
-2. ممنوع محرر Labs على Pro  
-3. ممنوع جداول راك/Labs كـ SSOT لـ Pro  
-4. التصدير عبر API نسخة فقط  
-5. نشر مستقل عن دورات راك/Labs  
-6. التحقق في Pro — الباقي لقطات قراءة  
-
-Full: [[02_PLATFORMS/pro/ISOLATION]]
+**Full:** [[02_PLATFORMS/pro/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · **Gates:** [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 ---
 
-## Relationship to Other Platforms · العلاقات
+## Relationships to Other Platforms · العلاقات
 
-### English
+```mermaid
+flowchart LR
+  subgraph pro_island [Circuit Pro]
+    PUI[Pro UI]
+    PDB[(schema pro)]
+  end
+  Rack[Rack listings]
+  Labs[Labs playbooks]
+  Core[Shared Core]
+  PUI --> PDB
+  Rack -.->|GET trust profile_id| PUI
+  Labs -.->|profile_id refs| PUI
+  PUI -.->|auth| Core
+```
+
+### Peer matrix · مصفوفة الأقران
 
 | Peer | Allowed | Forbidden |
 |------|---------|-----------|
-| **Rack** | Trust API for listings; index listing refs | Rack UI, Pro checkout |
-| **Labs** | `profile_id` in playbooks | Labs owns verification |
-| **Core** | Auth, optional wallet, theme | Profile SSOT in core DB |
-| **Parent** | Gates, ADRs | Public umbrella brand |
+| **Rack** | `GET /profiles/{id}/trust` for listings; index listing refs | Rack UI on Pro; Pro hosting checkout |
+| **Labs** | Playbooks link `profile_id` | Labs owning verification records |
+| **Shared core** | Auth, optional wallet, theme, i18n | Profile SSOT in core DB tables |
+| **BENBENHUB** | Gates, ADRs | Public umbrella brand |
 
-**Flow:** `profile.verified` event → Rack badge via API — no Pro iframe.
+### Integration flows · تدفقات
 
-### العربية
+| Flow | EN | AR |
+|------|----|-----|
+| **Trust export** | Verification event → Rack badge via API (no iframe) | تحقق → شارة راك عبر API |
+| **Content ref** | Labs cites `profile_id`; Pro does not host articles | لابز ي引用 الملف · Pro لا يستضيف مقالات |
 
-| الطرف | مسموح | ممنوع |
-|-------|--------|--------|
-| **Rack** | API ثقة للقوائم | واجهة راك، دفع Pro |
-| **Labs** | `profile_id` في الأدلة | Labs تملك التحقق |
-| **النواة** | هوية، محفظة، ثيم | SSOT ملف في النواة |
-| **الأب** | بوابات | مظلة علنية |
+**Siblings:** [[02_PLATFORMS/rack/README]] · [[02_PLATFORMS/labs/README]]
 
-**التدفق:** تحقق Pro → حدث → شارة راك عبر API فقط.
+---
+
+## SSOT & data ownership · ملكية الحقيقة
+
+| Domain | Owner | Others may |
+|--------|-------|------------|
+| Profile & credentials | **Pro** | API read snapshots |
+| Verification status | **Pro** | Rack badge display |
+| Geo / service areas | **Pro** | — |
+| Product / orders | Rack | Pro never stores as SSOT |
+| Articles / courses | Labs | Pro links IDs only |
+| User auth | Shared core (gated) | — |
+
+---
+
+## Before you ship · قبل الشحن
+
+| Check | EN | AR |
+|-------|----|-----|
+| Scope | Pro slice only | ضمن برو فقط |
+| Gates | New Rack/Labs contract? [[04_GOVERNANCE/GOVERNANCE_GATES]] | عقد جديد؟ البوابات |
+| Copy | `P-*` phrases | جمل برو |
+| Bible | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] aligned | توافق الدستور |
+
+---
+
+*Maestro · Pro MOC · [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] · [[02_PLATFORMS/PLATFORMS_INDEX]]*

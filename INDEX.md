@@ -2,7 +2,7 @@
 type: moc
 status: complete
 edition: master
-version: "3.1"
+version: "3.2"
 updated: 2026-06-05
 author: Maestro
 tags: [benbenhub, index, moc, bilingual, entry]
@@ -36,7 +36,7 @@ HOME  →  today's links     لوحة اليوم
   ↓
 BIBLE →  law & gates       الدستور
   ↓
-PLATFORM README →  rack | pro | labs     المنصة
+PLATFORM MOC →  rack | pro | labs     خريطة المنصة
 ```
 
 | Step | EN | AR | Open |
@@ -66,7 +66,7 @@ PLATFORM README →  rack | pro | labs     المنصة
 |--------|--------------|-----|-------|
 | [[README]] | Vault guide | دليل الخزنة | ✅ |
 | [[00_ROOT_DASHBOARD/HOME]] | Daily center | لوحة يومية | ✅ |
-| [[01_CONSTITUTION/PROJECT_BIBLE]] | SSOT v2.8 | الدستور | ✅ |
+| [[01_CONSTITUTION/PROJECT_BIBLE]] | SSOT v2.9 | الدستور | ✅ |
 | [[02_PLATFORMS/PLATFORMS_INDEX]] | Platforms | المنصات | ✅ |
 | [[03_SHARED_CORE/SHARED_CORE_OVERVIEW]] | Shared core | النواة | ✅ |
 | [[04_GOVERNANCE/GOVERNANCE_GATES]] | Governance | الحوكمة | ✅ |
@@ -77,21 +77,28 @@ PLATFORM README →  rack | pro | labs     المنصة
 
 ## Platforms · المنصات
 
-> **Separate islands** — bilingual README each · no shared consumer UI  
-> **جزر منفصلة** — README ثنائي · لا واجهة مشتركة
+> **Three sovereign MOCs** — Vision · Features · Stack · Isolation · Relations · Bible links  
+> **ثلاث خرائط سيادية** — رؤية · ميزات · تقنية · عزل · علاقات · روابط الدستور
 
-| | Platform | Mission (EN) | AR | **README** |
-|---|----------|--------------|-----|------------|
-| 🔵 | **Circuit Rack** | Industrial commerce | تجارة صناعية | [[02_PLATFORMS/rack/README]] |
-| 🟣 | **Circuit Pro** | Identity & geo | هوية وجغرافيا | [[02_PLATFORMS/pro/README]] |
-| 🟢 | **Circuit Labs** | Knowledge & learning | معرفة وتعلم | [[02_PLATFORMS/labs/README]] |
+**Index:** [[02_PLATFORMS/PLATFORMS_INDEX]] · **Constitution:** [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]]
+
+| | Platform | Mission (EN) | AR | **Platform MOC** |
+|---|----------|--------------|-----|------------------|
+| 🔵 | **Circuit Rack** | Commerce SSOT · marketplace | تجارة · سوق | [[02_PLATFORMS/rack/README]] |
+| 🟣 | **Circuit Pro** | Profile & verification SSOT | هوية · تحقق | [[02_PLATFORMS/pro/README]] |
+| 🟢 | **Circuit Labs** | Content & learning SSOT | محتوى · تعلم | [[02_PLATFORMS/labs/README]] |
+
+Each MOC includes: **PROJECT_BIBLE quick links** · in-island navigation · SSOT table · peer relationships (API-only).
 
 **Modules · الوحدات:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
 
-| | Rack | Pro | Labs |
-|---|------|-----|------|
+| Layer | Rack | Pro | Labs |
+|-------|------|-----|------|
+| **MOC (start)** | [[02_PLATFORMS/rack/README]] | [[02_PLATFORMS/pro/README]] | [[02_PLATFORMS/labs/README]] |
+| **Overview** | [[02_PLATFORMS/rack/OVERVIEW]] | [[02_PLATFORMS/pro/OVERVIEW]] | [[02_PLATFORMS/labs/OVERVIEW]] |
 | **Features** | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] |
 | **Isolation** | [[02_PLATFORMS/rack/ISOLATION]] | [[02_PLATFORMS/pro/ISOLATION]] | [[02_PLATFORMS/labs/ISOLATION]] |
+| **Bible section** | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] |
 
 ---
 

@@ -1,19 +1,60 @@
 ---
-type: platform
+type: moc
+role: platform-moc
 platform: rack
 status: active
 tier: primary-commerce
+theme: blue
+domain: rack.*
 updated: 2026-06-05
 author: Maestro
-tags: [rack, commerce, marketplace, readme, bilingual]
+tags: [rack, commerce, marketplace, moc, bilingual]
+aliases: [Circuit Rack MOC, Rack Platform MOC, سيركيت راك]
 ---
 
 # Circuit Rack · سيركيت راك
 
-**EN** — Primary commerce island · `02_PLATFORMS/rack/` · `rack.*` · Blue theme  
-**AR** — جزيرة التجارة الأساسية · التجارة الصناعية والسوق
+**Platform MOC · خريطة المنصة** — Sovereign commerce island · جزيرة التجارة السيادية
 
-**Links:** [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
+| | EN | AR |
+|---|----|-----|
+| **Tier** | Primary commerce / revenue engine | تجارة أساسية / محرك إيرادات |
+| **Vault** | `02_PLATFORMS/rack/` | مجلد راك |
+| **Runtime** | `rack.*` · schema `rack` · blue theme | نطاق راك · مخطط معزول · ثيم أزرق |
+| **SSOT owns** | Products · catalog · orders · marketplace | منتجات · كتالوج · طلبات · سوق |
+
+**Do not mix with Pro or Labs consumer surfaces.** · **لا تدمج واجهات Pro أو Labs.**
+
+---
+
+## Navigate this island · تنقل داخل الجزيرة
+
+| Doc | EN | AR |
+|-----|----|-----|
+| **This MOC** | Start here | ابدأ هنا |
+| [[02_PLATFORMS/rack/OVERVIEW]] | Short overview | نظرة مختصرة |
+| [[02_PLATFORMS/rack/FEATURES_MODULES]] | R-C* · R-G* · R-P* modules | وحدات الميزات |
+| [[02_PLATFORMS/rack/ISOLATION]] | Full isolation checklist | قائمة العزل |
+| [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]] | Global registry | السجل العام |
+
+**Ecosystem:** [[02_PLATFORMS/PLATFORMS_INDEX]] · **Home:** [[00_ROOT_DASHBOARD/HOME]] · **Index:** [[INDEX]]
+
+---
+
+## PROJECT_BIBLE · الدستور (quick links)
+
+| Topic | EN | AR | Section |
+|-------|----|-----|---------|
+| Platforms overview | Three islands index | فهرس الجزر | [[01_CONSTITUTION/PROJECT_BIBLE#Platforms Overview · نظرة عامة على المنصات]] |
+| **Rack (canonical)** | Constitution summary | ملخص الدستور | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] |
+| Vision & mission | Full EN/AR in Bible | رؤية ومهمة | [[01_CONSTITUTION/PROJECT_BIBLE#Vision & Mission · الرؤية والمهمة]] |
+| Features | R-C / R-G / R-P tiers | الميزات | [[01_CONSTITUTION/PROJECT_BIBLE#Features · الميزات]] |
+| Stack | Runtime table | التقنية | [[01_CONSTITUTION/PROJECT_BIBLE#Stack · التقنية]] |
+| Isolation | Six rules | العزل | [[01_CONSTITUTION/PROJECT_BIBLE#Isolation · العزل]] |
+| Relations | Peer matrix | العلاقات | [[01_CONSTITUTION/PROJECT_BIBLE#Relations · العلاقات]] |
+| Integration law | Backend-only contracts | قانون التكامل | [[01_CONSTITUTION/PROJECT_BIBLE#Platform Relationships & Backend Integration Rules · العلاقات وقواعد التكامل الخلفي]] |
+| Feature modules | Rack module list in Bible | وحدات راك | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack — Feature Modules]] |
+| Gates | Truth · Immutability · Scope | البوابات | [[01_CONSTITUTION/PROJECT_BIBLE#Governance Gates · بوابات الحوكمة]] |
 
 ---
 
@@ -21,41 +62,55 @@ tags: [rack, commerce, marketplace, readme, bilingual]
 
 ### English
 
-**Vision** — Industrial commerce that is trustworthy, searchable, and operationally serious. Rack is the primary revenue engine: a regulated marketplace, not generic classifieds.
+**Vision** — Industrial commerce that is trustworthy, searchable, and operationally serious. Rack is the **primary revenue engine**: a regulated marketplace, not generic classifieds.
 
-**Mission** — Own the **product and commerce SSOT** (catalog, listings, orders, marketplace mechanics). Connect supply and demand through buy · sell · guide. Operate Boost, Bidding, Secondary Market, and Hidden Offers under Rack UX and legal terms. Use shared identity and wallet **backend only**.
+**Mission** — Own the **product and commerce SSOT** (catalog, listings, orders, marketplace mechanics). Connect supply and demand through **buy · sell · guide**. Operate **Boost**, **Bidding**, **Secondary Market**, and **Hidden Offers** under Rack UX and legal terms. Consume shared identity and wallet **backend only** — never sibling UI.
 
 **Audience** — Manufacturers, suppliers, B2B buyers, procurement; Arabic-first (EN/ZH expansion).
 
 ### العربية
 
-**الرؤية** — تجارة صناعية موثوقة، قابلة للبحث، وذات جدية تشغيلية. راك هو محرك الإيرادات الأساسي: سوق منضبط وليس إعلانات عشوائية.
+**الرؤية** — تجارة صناعية موثوقة، قابلة للبحث، وذات جدية تشغيلية. راك محرك الإيرادات الأساسي: **سوق منضبط** وليس إعلانات عشوائية.
 
-**المهمة** — امتلاك **مصدر الحقيقة** للمنتجات والتجارة (الكتالوج، القوائم، الطلبات، آليات السوق). ربط العرض والطلب عبر الشراء · البيع · الدليل. تشغيل Boost والمزايدة والسوق الثانوي والعروض المخفية ضمن شروط راك. استخدام الهوية والمحفظة المشتركة **خلفياً فقط**.
+**المهمة** — امتلاك **SSOT** للمنتجات والتجارة (الكتالوج، القوائم، الطلبات، آليات السوق). ربط العرض والطلب عبر **شراء · بيع · دليل**. تشغيل **Boost** والمزايدة والسوق الثانوي والعروض المخفية ضمن شروط راك. الهوية والمحفظة من النواة **خلفياً فقط**.
 
-**الجمهور** — المصنّعون والموردون؛ مشتري B2B والمشتريات؛ عربي أولاً (توسع إنجليزي/صيني).
+**الجمهور** — المصنّعون والموردون؛ مشتري B2B والمشتريات؛ عربي أولاً.
 
 ---
 
 ## Key Features · الميزات الرئيسية
 
-### English
+### Commerce core · نواة التجارة (R-C*)
 
-**Commerce core** — Catalog SSOT · buy/sell/guide · industrial search · seller onboarding · orders (Rack DB)
+| Feature | EN | AR |
+|---------|----|-----|
+| Catalog SSOT | Products, variants, industrial taxonomy | كتالوج · تصنيف صناعي |
+| Buy · Sell · Guide | Regulated listing and transaction flows | شراء · بيع · دليل |
+| Search | Product & marketplace index (Rack-owned) | بحث صناعي |
+| Seller onboarding | KYC hooks, listing consents | تسجيل البائع |
+| Orders | Order lifecycle in `rack` schema | دورة الطلبات |
 
-**Marketplace** — **Boost** · **Bidding** · **Secondary Market** · **Hidden Offers**
+### Marketplace growth · نمو السوق (R-G*)
 
-**Operations** — Seller reviews (Rack-scoped) · notifications · refund/warranty terms · Wallet (`platform_source=rack`)
+| Feature | EN | AR |
+|---------|----|-----|
+| **Boost** | Paid visibility for listings | تعزيز ظهور القوائم |
+| **Bidding** | Auction / bid mechanics | مزايدة |
+| **Secondary Market** | Resale flows | سوق ثانوي |
+| **Hidden Offers** | Private offer channels | عروض مخفية |
 
-**Modules** — R-C* · R-G* · R-P* → [[02_PLATFORMS/rack/FEATURES_MODULES]]
+### Power & ops · قوة وتشغيل (R-P*)
 
-### العربية
+| Feature | EN | AR |
+|---------|----|-----|
+| Wholesale RBAC | Buyer tiers (gated) | صلاحيات مشتري جملة |
+| Analytics | Rack-scoped metrics | تحليلات راك |
+| Notifications | Commerce events | إشعارات تجارة |
+| Wallet | `platform_source=rack` settlements | محفظة بوسم راك |
 
-**نواة التجارة** — كتالوج SSOT · شراء/بيع/دليل · بحث صناعي · onboarding البائع · الطلبات (قاعدة راك)
+**Detail:** [[02_PLATFORMS/rack/FEATURES_MODULES]] · **Registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE#Circuit Rack Modules]]
 
-**السوق** — **Boost** تعزيز ظهور · **مزايدة** · **سوق ثانوي** · **عروض مخفية**
-
-**التشغيل** — تقييمات البائع (ضمن راك) · إشعارات · شروط الاسترجاع/الضمان · محفظة (`platform_source=rack`)
+**Phrases:** `R-*` in [[03_SHARED_CORE/REUSABLE_PHRASES]] · **Ecosystem modules:** M-001 Identity · M-002 Catalog (Rack owner) · M-003 Search · M-004 Wallet · M-005 linking
 
 ---
 
@@ -63,75 +118,111 @@ tags: [rack, commerce, marketplace, readme, bilingual]
 
 ### English
 
-| Layer | Stack |
-|-------|--------|
-| Languages | TypeScript, SQL |
-| Frontend | Next.js · `platforms/rack/app` · blue theme |
-| Backend | Node.js — catalog, commerce |
-| Database | PostgreSQL · schema `rack` |
-| Auth | → [[03_SHARED_CORE/IDENTITY_SYSTEM]] |
-| Payments | → [[03_SHARED_CORE/CIRCUIT_WALLET]] + Rack rules |
-| Deploy | `rack.*` · CDN · independent CI |
+| Layer | Stack | Notes |
+|-------|--------|-------|
+| **Languages** | TypeScript, SQL | Platform slice in monorepo |
+| **Frontend** | Next.js App Router · `platforms/rack/app` | Blue theme · Rack-only routes |
+| **Backend** | Node.js | Catalog, commerce, marketplace services |
+| **Database** | PostgreSQL · Prisma schema `rack` | **No** `pro` / `labs` joins |
+| **Auth** | Rack UX → [[03_SHARED_CORE/IDENTITY_SYSTEM]] | JWT · platform roles |
+| **Payments** | [[03_SHARED_CORE/CIRCUIT_WALLET]] + Rack rules | Ledger in core; policy in Rack |
+| **Search** | Rack-owned product/marketplace index | Not Pro/Labs corpus |
+| **Deploy** | `rack.*` · CDN · **independent CI** | Failure domain isolated |
+| **i18n** | AR/EN/ZH plumbing from core; **copy owned by Rack** | [[03_SHARED_CORE/THEME_AND_I18N]] |
 
 ### العربية
 
-| الطبقة | المكدس |
-|--------|--------|
-| اللغات | TypeScript، SQL |
-| الواجهة | Next.js · ثيم أزرق · راك فقط |
-| الخلفية | Node.js — كتالوج وتجارة |
-| البيانات | PostgreSQL · مخطط `rack` معزول |
-| الهوية/الدفع | نواة مشتركة (خلفي) · قواعد التسوية في راك |
-| النشر | نطاق `rack.*` · CI مستقل |
+| الطبقة | المكدس | ملاحظات |
+|--------|--------|---------|
+| **الواجهة** | Next.js · ثيم أزرق | مسارات راك فقط |
+| **الخلفية** | Node.js | كتالوج وتجارة |
+| **البيانات** | PostgreSQL · `rack` | بدون ربط مخططات الأخوة |
+| **الهوية/الدفع** | نواة مشتركة (خلفي) | قواعد التسوية في راك |
+| **النشر** | `rack.*` · CI مستقل | عزل التعافي |
 
-Detail: [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]]
+**Architecture detail:** [[03_SHARED_CORE/TECHNICAL_ARCHITECTURE#Circuit Rack Runtime]] · **Bible:** [[01_CONSTITUTION/PROJECT_BIBLE#Stack · التقنية]]
 
 ---
 
 ## Isolation Rules · قواعد العزل
 
-### English
+> Rack **never** becomes a shell for Pro or Labs. · راك **ليس** قشرة لـ Pro أو Labs.
 
-1. No Pro/Labs UI or cross-brand nav on Rack  
-2. No reads/joins into `pro` or `labs` schemas  
-3. Wallet in core; commerce rules in Rack; `platform_source=rack`  
-4. Independent deploy and recovery  
-5. Rack legal/pricing never bundled with siblings  
-6. Product SSOT only in Rack — others use `product_id` API  
+| # | EN | AR |
+|---|----|-----|
+| 1 | **UI** — No Pro profile chrome or Labs editor on Rack routes | **واجهة** — لا Pro ولا محرر Labs على راك |
+| 2 | **Data** — No reads/joins into `pro` or `labs` schemas | **بيانات** — لا قراءة مخططات الأخوة |
+| 3 | **Wallet** — Ledger in core; commerce rules in Rack; `platform_source=rack` | **محفظة** — قواعد التجارة في راك |
+| 4 | **Deploy** — Independent release & recovery vs siblings | **نشر** — مستقل عن Pro/Labs |
+| 5 | **Legal** — Rack terms/pricing never bundled with siblings | **قانون** — شروط راك فقط |
+| 6 | **SSOT** — Product truth **only** in Rack; peers use `product_id` API | **SSOT** — المنتج في راك فقط |
 
-### العربية
-
-1. ممنوع واجهة Pro/Labs أو تنقل مشترك على راك  
-2. ممنوع قراءة/ربط مخططات `pro` أو `labs`  
-3. المحفظة في النواة؛ قواعد التجارة في راك  
-4. نشر وتعافٍ مستقلان  
-5. الشروط والتسعير لا تُدمج مع منصات أخرى  
-6. حقيقة المنتج في راك فقط — المرجع عبر API  
-
-Full: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES]]
+**Full checklist:** [[02_PLATFORMS/rack/ISOLATION]] · **Law:** [[04_GOVERNANCE/INTEGRATION_RULES]] · **Before cross-platform work:** [[04_GOVERNANCE/GOVERNANCE_GATES]]
 
 ---
 
-## Relationship to Other Platforms · العلاقات
+## Relationships to Other Platforms · العلاقات
 
-### English
+```mermaid
+flowchart LR
+  subgraph rack_island [Circuit Rack]
+    RUI[Rack UI]
+    RDB[(schema rack)]
+  end
+  subgraph peers [Peers — API only]
+    Pro[Pro trust API]
+    Labs[Labs guide API]
+  end
+  Core[Shared Core]
+  RUI --> RDB
+  RUI -.->|profile_id| Pro
+  RUI -.->|product_id article_id| Labs
+  RUI -.->|auth wallet| Core
+```
+
+### Peer matrix · مصفوفة الأقران
 
 | Peer | Mode | Allowed | Forbidden |
 |------|------|---------|-----------|
-| **Pro** | API | Trust via `profile_id` | Pro UI, Pro SSOT in Rack |
-| **Labs** | API | Guides via `product_id` | Labs CMS/checkout on Rack |
-| **Core** | SDK | Auth, wallet, theme, i18n | Commerce logic in core |
-| **Parent** | Governance | Gates, ADRs | Public umbrella brand |
+| **Pro** | API | Trust via `profile_id`; listing badges | Pro UI, Pro SSOT in Rack DB |
+| **Labs** | API | Guides via `product_id` / `article_id` | Labs CMS, checkout on Rack |
+| **Shared core** | SDK/API | Auth, wallet, theme base, i18n | Commerce logic in core |
+| **BENBENHUB** | Governance | Gates, ADRs, survivability vision | Public umbrella consumer brand |
 
-**Flow:** Rack SKU → Labs metadata API → link card on Rack UI only.
+### Integration flows · تدفقات التكامل
 
-### العربية
+| Flow | EN | AR |
+|------|----|-----|
+| **Trust** | `profile.verified` event → Rack badge via API (no iframe) | تحقق Pro → شارة راك عبر API |
+| **Knowledge** | Rack `product_id` → Labs metadata API → **link card on Rack UI only** | منتج راك → API لابز → بطاقة في راك |
+| **Wallet** | Spend/earn tagged `rack`; settlement rules in Rack | محفظة بوسم راك |
 
-| الطرف | النمط | مسموح | ممنوع |
-|-------|-------|--------|--------|
-| **Pro** | API | ثقة عبر `profile_id` | واجهة Pro، SSOT Pro في راك |
-| **Labs** | API | أدلة عبر `product_id` | CMS Labs، دفع على راك |
-| **النواة** | SDK | هوية، محفظة، ثيم | منطق تجارة في النواة |
-| **الأب** | حوكمة | بوابات، ADR | علامة مظلة علنية |
+**Siblings (stay in their islands):** [[02_PLATFORMS/pro/README]] · [[02_PLATFORMS/labs/README]]
 
-**التدفق:** منتج راك → API لابز → بطاقة رابط في واجهة راك فقط.
+---
+
+## SSOT & data ownership · ملكية الحقيقة
+
+| Domain | Owner | Others may |
+|--------|-------|------------|
+| Product catalog | **Rack** | Read via API + stable `product_id` |
+| Orders & checkout | **Rack** | — |
+| Marketplace rules | **Rack** | — |
+| Profile / verification | Pro | Rack consumes snapshots |
+| Articles / courses | Labs | Rack links summaries only |
+| User auth ledger | Shared core (gated) | All platforms |
+
+---
+
+## Before you ship · قبل الشحن
+
+| Check | EN | AR |
+|-------|----|-----|
+| Scope | Change stays in Rack slice / schema | ضمن شريحة راك |
+| Gates | Cross-platform? [[04_GOVERNANCE/GOVERNANCE_GATES]] | عابر؟ البوابات |
+| Copy | UI strings from `R-*` phrases | نصوص من بنك الجمل |
+| Bible | Constitution section updated if law changed | تحديث الدستور إن تغيّر القانون |
+
+---
+
+*Maestro · Rack MOC · [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] · [[02_PLATFORMS/PLATFORMS_INDEX]]*

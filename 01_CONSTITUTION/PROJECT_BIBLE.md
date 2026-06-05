@@ -1,7 +1,7 @@
 ---
 type: constitution
 status: active
-version: "2.8"
+version: "2.9"
 updated: 2026-06-05
 author: Maestro
 tags: [benbenhub, ssot, project-bible]
@@ -10,7 +10,7 @@ tags: [benbenhub, ssot, project-bible]
 # BenBenHub – Project Bible
 # بنبنهب — دستور المشروع
 
-**Single Source of Truth · مصدر الحقيقة الواحد** · **v2.8** · **2026-06-05** · Master Edition (EN/AR)
+**Single Source of Truth · مصدر الحقيقة الواحد** · **v2.9** · **2026-06-05** · Master Edition (EN/AR)
 
 **EN** — Master constitution: hidden parent, three sovereign platforms, backend-only integration.  
 **AR** — الدستور الأعلى: أب مخفي، ثلاث منصات سيادية، تكامل خلفي فقط.
@@ -196,15 +196,15 @@ Three **sovereign platforms** under one hidden parent. Each has its own section 
 
 **Ecosystem rules (all platforms)** — No public cross-branding · no shared consumer UI · backend-only cross-links · independent deploy and recovery · failure does not propagate.
 
-**Platform population (bilingual):** Each island **README** — Vision & Mission (EN + AR), Features, Stack, Isolation, Relations → `02_PLATFORMS/{rack|pro|labs}/README.md`
+**Platform MOCs (bilingual · Maestro P3):** Each island **README = Platform MOC** — Vision & Mission, Features, Stack, Isolation, Relations, **PROJECT_BIBLE quick links** → `02_PLATFORMS/{rack|pro|labs}/README.md`
 
-| Platform | Folder | **README (start here)** | Modules | Isolation detail |
-|----------|--------|-------------------------|---------|------------------|
-| **Circuit Rack** | `02_PLATFORMS/rack/` | [[02_PLATFORMS/rack/README]] | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/rack/ISOLATION]] |
-| **Circuit Pro** | `02_PLATFORMS/pro/` | [[02_PLATFORMS/pro/README]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
-| **Circuit Labs** | `02_PLATFORMS/labs/` | [[02_PLATFORMS/labs/README]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
+| Platform | Folder | **Platform MOC (start here)** | Bible section | Modules | Isolation |
+|----------|--------|-------------------------------|---------------|---------|-----------|
+| **Circuit Rack** | `02_PLATFORMS/rack/` | [[02_PLATFORMS/rack/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Rack · سيركيت راك]] | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/rack/ISOLATION]] |
+| **Circuit Pro** | `02_PLATFORMS/pro/` | [[02_PLATFORMS/pro/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Pro · سيركيت برو]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
+| **Circuit Labs** | `02_PLATFORMS/labs/` | [[02_PLATFORMS/labs/README]] | [[01_CONSTITUTION/PROJECT_BIBLE#Circuit Labs · سيركيت لابز]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
 
-Index: [[02_PLATFORMS/PLATFORMS_INDEX]] · Module registry: [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
+**Vault index:** [[INDEX#Platforms · المنصات]] · [[02_PLATFORMS/PLATFORMS_INDEX]] · **Module registry:** [[02_PLATFORMS/FEATURES_MODULES_DATABASE]]
 
 ---
 
@@ -212,8 +212,8 @@ Index: [[02_PLATFORMS/PLATFORMS_INDEX]] · Module registry: [[02_PLATFORMS/FEATU
 
 > **Sovereign commerce island · جزيرة التجارة السيادية** · Primary revenue engine · **Vault:** `02_PLATFORMS/rack/`
 
-**→ Bilingual platform doc:** [[02_PLATFORMS/rack/README]] · EN/AR: Vision · Features · Stack · Isolation · Relations  
-**Supporting:** [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
+**→ Platform MOC (authoritative island map):** [[02_PLATFORMS/rack/README]] — Vision · Features · Stack · Isolation · Relations · Bible quick links  
+**Supporting:** [[02_PLATFORMS/rack/OVERVIEW]] · [[02_PLATFORMS/rack/FEATURES_MODULES]] · [[02_PLATFORMS/rack/ISOLATION]]
 
 ---
 
@@ -295,8 +295,8 @@ Full rules: [[02_PLATFORMS/rack/ISOLATION]] · [[04_GOVERNANCE/INTEGRATION_RULES
 
 > **Sovereign professional island · جزيرة الهوية المهنية** · Identity & geo layer · **Vault:** `02_PLATFORMS/pro/`
 
-**→ Bilingual platform doc:** [[02_PLATFORMS/pro/README]] · EN/AR sections  
-**Supporting:** [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/pro/README]] — full bilingual island map + Bible links  
+**Supporting:** [[02_PLATFORMS/pro/OVERVIEW]] · [[02_PLATFORMS/pro/FEATURES_MODULES]] · [[02_PLATFORMS/pro/ISOLATION]]
 
 ---
 
@@ -372,8 +372,8 @@ Full rules: [[02_PLATFORMS/pro/ISOLATION]]
 
 > **Sovereign knowledge island · جزيرة المعرفة** · Documentation & learning · **Vault:** `02_PLATFORMS/labs/`
 
-**→ Bilingual platform doc:** [[02_PLATFORMS/labs/README]] · EN/AR sections  
-**Supporting:** [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
+**→ Platform MOC:** [[02_PLATFORMS/labs/README]] — full bilingual island map + Bible links  
+**Supporting:** [[02_PLATFORMS/labs/OVERVIEW]] · [[02_PLATFORMS/labs/FEATURES_MODULES]] · [[02_PLATFORMS/labs/ISOLATION]]
 
 ---
 
@@ -757,6 +757,7 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **2.6 · 2026-06-05** — Bilingual EN/AR in platform READMEs and constitution platform sections
 - **2.7 · 2026-06-05** — Final polish: root README, INDEX v3, HOME pin, bookmarks
 - **2.8 · 2026-06-05** — Master Edition: bilingual bible headings, README & INDEX v3.1
+- **2.9 · 2026-06-05** — Maestro P3: detailed Platform MOCs (rack/pro/labs README); INDEX v3.2; PLATFORMS_INDEX
 
 ---
 

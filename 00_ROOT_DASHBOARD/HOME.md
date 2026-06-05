@@ -51,8 +51,8 @@ pin: true
 
 > **Separate islands** — no shared consumer UI · no cross-schema DB · backend-only links
 
-| Island | EN role | AR | Start here | Modules | Isolation |
-|--------|---------|-----|------------|---------|-----------|
+| Island | EN role | AR | **Platform MOC** | Modules | Isolation |
+|--------|---------|-----|------------------|---------|-----------|
 | **Rack** | Commerce & catalog SSOT | تجارة | [[02_PLATFORMS/rack/README]] | [[02_PLATFORMS/rack/FEATURES_MODULES]] | [[02_PLATFORMS/rack/ISOLATION]] |
 | **Pro** | Identity, geo, verification SSOT | هوية/جغرافيا | [[02_PLATFORMS/pro/README]] | [[02_PLATFORMS/pro/FEATURES_MODULES]] | [[02_PLATFORMS/pro/ISOLATION]] |
 | **Labs** | Content & knowledge SSOT | معرفة | [[02_PLATFORMS/labs/README]] | [[02_PLATFORMS/labs/FEATURES_MODULES]] | [[02_PLATFORMS/labs/ISOLATION]] |
