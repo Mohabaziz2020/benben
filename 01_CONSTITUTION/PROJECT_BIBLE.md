@@ -1153,19 +1153,15 @@ BENBENHUB-CORE populated structure — constitution remains SSOT; detail lives i
 - **3.5 · 2026-06-05** — Notion Content Polish: strategic Part I tables, deduplicated bible body, archive appendix link
 - **3.5.1 · 2026-06-05** — Branding polish: platform colors & logos table, `03_SHARED_CORE/branding/` embeds
 - **3.6 · 2026-06-05** — Graph MOC v2.0: central visual hub, filter recipes, mermaid mesh, graph.json hub paths
-- **3.7 · 2026-06-06** — Governance Core freeze: ADR_RULES, VAULT_GOVERNANCE, AI_MEMORY_PROTOCOL; [[91_DECISIONS/ADR-2026-06-06-001]]; Governance Core section in bible
-- **3.7.1 · 2026-06-06** — Governance Core section cleaned: single canonical table, frozen files list, no duplication
-- **3.7.2 · 2026-06-06** — Final Governance Core trim: lean table, consolidated frozen list, ADR in Related only
-- **3.7.3 · 2026-06-06** — Ultimate Governance Core: single canonical section, EN/AR description columns, one-line frozen status
-- **3.7.4 · 2026-06-06** — Ultimate final clean: one Governance Core section only; deduped gate links → anchor
+- **3.7 · 2026-06-06** — [[#Governance Core]] frozen & canonicalized ([[91_DECISIONS/ADR-2026-06-06-001]]); single section after Key Governance Gates; deduped references
 
 ---
 
 ## Status | الحالة
 
-**EN:** **PROJECT_BIBLE.md** — Master SSOT **v3.7**: strategic constitution + **frozen Governance Core** ([[04_GOVERNANCE/VAULT_GOVERNANCE]], [[04_GOVERNANCE/ADR_RULES]], [[04_GOVERNANCE/AI_MEMORY_PROTOCOL]]). Ratified: [[91_DECISIONS/ADR-2026-06-06-001]]. Notion archive: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]].
+**EN:** **PROJECT_BIBLE.md** — Master SSOT **v3.7**: strategic constitution + **frozen [[#Governance Core]]**. Ratified: [[91_DECISIONS/ADR-2026-06-06-001]]. Notion archive: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]].
 
-**AR:** **PROJECT_BIBLE.md** — دستور SSOT **v3.7**: دستور استراتيجي + **نواة حوكمة مجمّدة**. معتمد: [[91_DECISIONS/ADR-2026-06-06-001]]. أرشيف نوشن: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]].
+**AR:** **PROJECT_BIBLE.md** — دستور SSOT **v3.7**: دستور استراتيجي + **[[#Governance Core | نواة حوكمة مجمّدة]]**. معتمد: [[91_DECISIONS/ADR-2026-06-06-001]]. أرشيف نوشن: [[01_CONSTITUTION/NOTION_SOURCE_ARCHIVE]].
 
 Daily starters: [[INDEX]] · [[00_ROOT_DASHBOARD/HOME]] · [[README]]
 
